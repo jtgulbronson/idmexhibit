@@ -1,0 +1,78 @@
+html {
+  overflow: hidden; }
+
+body {
+  background-color: #f7f7f7; }
+
+.wrapper {
+  width: 100%;
+  height: auto;
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  color: #fff;
+  font-family: sans-serif;
+  font-weight: 600;
+  font-size: 1em;
+  text-align: center;
+}
+
+.circle-wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 1.5% 10%;
+}
+
+.circle-wrapper .tap_block {
+    float: left;
+    background-color: #333;
+    border-radius: 50%;
+    width: 100px;
+    padding: 37% 0;
+    margin: 10%;
+    font-family: sans-serif;
+    font-weight: 600;
+    font-size: .6em;
+    text-align: center;
+  }
+
+  .wrapper #middle-square {
+    position: absolute;
+    left: 475px;
+    height: 100vh;
+    width: 500px;
+    margin-top: -.7%;
+    background-color: #ccc;
+    transition: all 1s ease-in-out;
+  }
+
+.square-wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 1.5% 10%;
+} 
+ .square-wrapper .press_block {
+    background-color: #555;
+    position: absolute;
+    width: 100px;
+    padding: 2% 0;
+    margin: 1%;
+    text-align: center;
+    left: 75%;
+    top: 1%;
+    right: auto;
+    font-family: sans-serif;
+    font-weight: 600;
+}
+
+.square-wrapper .press_block:nth-child(2) {
+    top: 41%;
+}
+
+.square-wrapper .press_block:nth-child(3) {
+    top: 81%;
+}
+
+/*# sourceMappingURL=style.css.map */

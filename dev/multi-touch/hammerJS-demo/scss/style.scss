@@ -1,0 +1,123 @@
+//////////////////////////////////////////
+//Base Css
+//////////////////////////////////////////
+
+html{
+    overflow: hidden;
+}
+
+body{
+    background-color: black;
+}
+
+//////////////////////////////////////////
+//Base User Code - some carries to other users
+//////////////////////////////////////////
+
+.wrapper{
+    width: 96%;
+    height: 33%;
+    position: fixed;
+    bottom: 2%;
+    left:2%;
+    display: block;
+
+    border: 2px solid white;
+    #pan_obj{
+        background-color: #C3C3C3;
+    }
+    #tap_obj{
+        background-color: #F3F3F3;
+    }
+    #press_obj{
+        background-color: #939393;
+        position: absolute;
+        top:auto;
+        right: auto;
+    }
+}
+.example_block{
+	width: 15%;
+    height: 80px;
+    display:inline-block;
+    // float: left;
+    margin: 2% 5%;
+    // padding: 2%;
+	text-align: center;
+    padding: 5px;
+}
+
+
+//////////////////////////////////////////
+//User 2 Css
+//////////////////////////////////////////
+
+.wrapper_u2{
+    width: 45%;
+    height:450px;
+    display:block;
+    position: fixed;
+    top: 5%;
+    left: 1%;
+    // margin: 2% 0%;
+    // padding: 2%;
+    border: 2px solid white;
+
+    .example_block{
+        width: 38%;
+        display: inline-block;
+        margin: 15% auto;
+        transform: rotate(90deg);
+
+    }
+    #pan_obj_u2{
+        background-color: #C3C3C3;
+    }
+    #tap_obj_u2{
+        background-color: #F3F3F3;
+    }
+    #press_obj_u2{
+        background-color: #939393;
+        position: absolute;
+        bottom: 0;
+        left:0;
+
+    }
+}
+
+//////////////////////////////////////////
+//User Three Css
+//////////////////////////////////////////
+
+.wrapper_u3{
+    width: 45%;
+    height:450px;
+    display:block;
+    position: absolute;
+    top: 5%;
+    right: 1%;
+    // margin: 2% 0%;
+    // padding: 2%;
+    border: 2px solid white;
+
+    .example_block{
+        width: 38%;
+        display: inline-block;
+        margin: 15% auto;
+        transform: rotate(-90deg);
+
+    }
+}
+
+#pan_obj_u3{
+    background-color: #C3C3C3;
+}
+#tap_obj_u3{
+    background-color: #F3F3F3;
+}
+#press_obj_u3{
+    background-color: #939393;
+    position: absolute;
+    bottom: 0;
+    left:0;
+}
