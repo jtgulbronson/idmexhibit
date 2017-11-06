@@ -50,7 +50,7 @@ window.addEventListener('load', function() {
           pressObj.textContent = "click to zoom/flip press and hold to exit";
         }
     });
-    pressEx.on("tap", function(scaleUp) {
+    pressEx.on("doubletap", function(scaleUp) {
         // console.log(pressObj.style.transform);
         switch (pressObj.style.transform){
             case "scale(1)" :
