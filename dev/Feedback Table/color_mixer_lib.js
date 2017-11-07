@@ -4,7 +4,6 @@
  * Author: Andy Soiron
  * http://www.andysoiron.de
  */
-var cyan, magenta, yellow, black;
 
 Color_mixer = function(){};
 
