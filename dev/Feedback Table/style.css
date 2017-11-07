@@ -95,3 +95,23 @@ body, html {
     margin: 0;
     text-align: center;
 }
+
+/* Test elements */
+#test-strip {
+    background-color: #ffffff;
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 1%;
+}
+
+#mix-colors {
+    font-family: sans-serif;
+    background-color: #000;
+    color: #fff;
+    font-size: 2em;
+    padding: 10px;
+    margin: 30px auto;
+    text-align: center;
+}
