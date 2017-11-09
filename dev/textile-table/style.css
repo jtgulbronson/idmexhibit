@@ -96,6 +96,26 @@ body, html {
     text-align: center;
 }
 
+#wrapper3 {
+    display: none;
+    background: #ccc;
+    background-size: 100%;
+    width: 100%;
+    height: 100vh;
+    margin: 0px auto;
+    padding: 5% 2%;
+}
+
+/* Textile */
+#wrapper4 {
+    background: #ccc;
+    background-size: 100%;
+    width: 100%;
+    height: 100vh;
+    margin: 0px auto;
+    padding: 5% 2%;
+}
+
 /* Test elements */
 #test-strip {
     background-color: #ffffff;
