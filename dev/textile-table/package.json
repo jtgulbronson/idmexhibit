@@ -1,0 +1,17 @@
+{
+  "name": "textile-table",
+  "version": "1.0.0",
+  "description": "Textile Table",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js"
+  },
+  "author": "Jordan",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.15.2",
+    "http": "0.0.0",
+    "socket.io": "^2.0.4",
+    "ws": "^3.0.0"
+  }
+}
