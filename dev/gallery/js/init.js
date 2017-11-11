@@ -1,5 +1,9 @@
 $(function(){
-       $(".example_block").draggable();
+       $(".example_block").draggable({
+		start: function(){
+                 $('#photo_1').css('transform', 'scale(1)rotateY(0deg)');
+              }
+	   });
        $('#photo_1').click(function(){
          var transformed = $('#photo_1').css('transform');
   	      switch (transformed){

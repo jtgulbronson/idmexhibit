@@ -11,7 +11,11 @@ body {
   text-align: center;
   padding: 15px;
   margin: 30px;
-  float: left; }
+  float: left;
+  -webkit-transition: -webkit-transform .5s ease;
+  transition: -webkit-transform .5s ease;
+  transition: transform .5s ease;
+  transition: transform .5s ease, -webkit-transform .5s ease; }
 
 #photo_1 {
   -webkit-transform: scale(1);
