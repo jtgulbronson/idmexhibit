@@ -1,7 +1,7 @@
 window.onload = function () {
     // Setting up colors array
     var colors = [];
-    var mixed_color;
+    var mixed_color = "#ffffff";
     var info,
         region,
         spice;
@@ -59,6 +59,7 @@ window.onload = function () {
         changeColor();
         $("#wrapper2").css("display", "none");
         $("#wrapper3").css("display", "block");
+        $("canvas").css("display","block");
 
         socket.emit('toTextile', mixed_color);
     });
