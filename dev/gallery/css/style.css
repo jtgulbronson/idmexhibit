@@ -1,13 +1,16 @@
-@import url("https://fonts.googleapis.com/css?family=Dosis");
 body {
   background-color: black;
-  font-family: 'Dosis', monospace;
-  font-size: 23px; }
+  font-family: sans-serif;
+  font-size: 23px;
+  overflow: hidden;
+  width: 100vw;
+  height: 100vh; }
 
 .example_block {
   background-color: gray;
-  width: 300px;
-  height: 100px;
+  width: 250px;
+  height: 150px;
+  position: absolute;
   text-align: center;
   padding: 15px;
   margin: 30px;
@@ -17,11 +20,18 @@ body {
   transition: transform .5s ease;
   transition: transform .5s ease, -webkit-transform .5s ease; }
 
+.rotateHand {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 40px;
+  height: 40px;
+  background-color: blue; }
+
 #photo_1 {
+  width: 250px;
+  height: 150px;
   -webkit-transform: scale(1);
   transform: scale(1); }
-
-.example_block:hover {
-  cursor: pointer; }
 
 /*# sourceMappingURL=style.css.map */
