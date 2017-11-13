@@ -58,17 +58,19 @@ window.onload = function () {
         result_color._rgba.splice(-1, 1);
         var exportedRgba = result_color._rgba.join(", ");
         console.log(exportedRgba);
-        mixed_color = rgb2hex(exportedRgba);
-        // https://stackoverflow.com/questions/5623838/rgb-to-hex-and-hex-to-rgb
-        function rgb2hex(r, g, b) {
-            var rgb = b | (g << 8) | (r << 16);
-            return '#' + (0x1000000 + rgb).toString(16).slice(1);
+        // https://gist.github.com/sabman/1018594/b58cbe80342a7a9f302987e6585be27be270b6be
+        function rgb2hex(rgb)
+        {
+            rgb = rgb.match(/^rgb\((\d+),\s*(\d+),\s*(\d+)\)$/);
+            function hex(x) {
+                return ("0" + parseInt(x).toString(16)).slice(-2);
+            }
+            return "#" + hex(rgb[1]) + hex(rgb[2]) + hex(rgb[3]);
         }
+        mixed_color = rgb2hex(exportedRgba);
+        console.log(mixed_color);
 
         // location.href = "/textile.html";
-
-        textiles.push(mixed_color);
-        console.log("textile.push: " + textiles);
 
         socket.emit('toTextile', mixed_color);
     });
@@ -81,8 +83,12 @@ window.onload = function () {
         } else {
             $("#test-strip").css("background-color", dataTwo);
 
+            textiles.push(dataTwo);
+            console.log("textile.push: " + textiles);
+
             colors = [];
         }
+
 
     });
 

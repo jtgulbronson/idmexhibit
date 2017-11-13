@@ -28,6 +28,7 @@ io.sockets.on('connection', function (socket) {
     socket.on('toTextile', function (dataTwo) {
         console.log(dataTwo);
         socket.broadcast.emit('toTextile', dataTwo);
+        socket.emit('toTextile', dataTwo);
     });
 
 });
