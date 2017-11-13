@@ -5,6 +5,7 @@ window.onload = function () {
     var info,
         region,
         spice;
+    var textiles = [];
 
     //Setting up Hammer.js with jQuery
     var toTap = $(".spice");
@@ -36,56 +37,63 @@ window.onload = function () {
         }
 
         socket.emit('myTap', info);
-        
+
     });
 
     var socket = io.connect();
 
+    socket.on('loadAll', function (users) {
+        console.log(users);
+
+        users.forEach(function (user, index) {
+            generateAvatar(user);
+        });
+    });
+
     socket.on('addThread', function (data) {
-            console.log("Thread added");
-            console.log(data);
-            console.log(result_color);
-            console.log(result_color._rgba);
-            result_color._rgba.splice(-1, 1);
-            var exportedRgba = result_color._rgba.join(", ");
-            console.log(exportedRgba);
-            mixed_color = rgb2hex(exportedRgba);
-            // https://stackoverflow.com/questions/5623838/rgb-to-hex-and-hex-to-rgb
-            function rgb2hex(r, g, b) {
-                var rgb = b | (g << 8) | (r << 16);
-                return '#' + (0x1000000 + rgb).toString(16).slice(1);
+        console.log("Thread added");
+        console.log(data);
+        console.log(result_color);
+        console.log(result_color._rgba);
+        result_color._rgba.splice(-1, 1);
+        var exportedRgba = result_color._rgba.join(", ");
+        console.log(exportedRgba);
+        mixed_color = rgb2hex(exportedRgba);
+        // https://stackoverflow.com/questions/5623838/rgb-to-hex-and-hex-to-rgb
+        function rgb2hex(r, g, b) {
+            var rgb = b | (g << 8) | (r << 16);
+            return '#' + (0x1000000 + rgb).toString(16).slice(1);
         }
 
-        changeColor();
-        $("#wrapper2").css("display", "none");
-        $("#wrapper3").css("display", "block");
-        $("canvas").css("display","block");
+        // location.href = "/textile.html";
+
+        textiles.push(mixed_color);
+        console.log("textile.push: " + textiles);
 
         socket.emit('toTextile', mixed_color);
     });
 
     socket.on('toTextile', function (dataTwo) {
-            console.log(dataTwo);
+        console.log(dataTwo);
 
-            if (dataTwo === "undefined") {
-                $("#test-strip").css("background-color", "#ffffff");
-            } else {
-                $("#test-strip").css("background-color", dataTwo);
-    
-                colors = [];
-            }
-        
-    });
-
-    function changeColor() {
-        if (mixed_color === "undefined") {
+        if (dataTwo === "undefined") {
             $("#test-strip").css("background-color", "#ffffff");
         } else {
-            $("#test-strip").css("background-color", mixed_color);
+            $("#test-strip").css("background-color", dataTwo);
 
             colors = [];
         }
-    }
+
+    });
+
+    // function changeColor() {
+    //     if (mixed_color === "undefined") {
+    //         $("#test-strip").css("background-color", "#ffffff");
+    //     } else {
+    //         $("#test-strip").css("background-color", mixed_color);
+
+    //         colors = [];
+    //     }
 
     document.body.addEventListener('touchstart', log, false);
     document.body.addEventListener('touchmove', log, false);
