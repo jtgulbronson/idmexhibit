@@ -104,12 +104,12 @@ body, html {
     padding: 5% 2%;
 }
 
-canvas {
+/* canvas {
     position: fixed;
     top:0;
     left:0;
     z-index:-1;
-}
+} */
 
 /* Textile */
 #wrapper4 {
