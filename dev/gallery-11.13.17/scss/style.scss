@@ -1,12 +1,12 @@
 @import url('https://fonts.googleapis.com/css?family=Dosis');
 body{
-  background-color: black;
+  background-color: white;
   font-family: 'Dosis', monospace;
   font-size: 23px;
 }
 
 .example_block{
-  background-color: gray;
+  background-color: #28464B;
   width: 300px;
   height: 100px;
   text-align: center;
@@ -23,4 +23,16 @@ transition: transform .5s ease, -webkit-transform .5s ease;
 #photo_1{
 	-webkit-transform: scale(1);
 	        transform: scale(1);
+  position: absolute;
+	top: 0;
+	left: 0;
+}
+
+#photo_2{
+  background-color:#326771;
+  -webkit-transform: scale(1);
+	        transform: scale(1);
+          position: absolute;
+        	top: 0px;
+        	left: 400px;
 }
