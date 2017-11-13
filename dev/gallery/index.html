@@ -6,7 +6,16 @@
 		<script type="text/javascript" src="js/jquery.3.2.1.js"></script>
 		<script type="text/javascript" src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
 		<script type="text/javascript" src="js/touch-emulator.js"></script>
-		<script type="text/javascript">TouchEmulator();</script>
+		<script type="text/javascript">
+			TouchEmulator();
+			function log(ev) {
+				 console.log(ev);
+				}
+
+				document.body.addEventListener('touchstart', log, false);
+				document.body.addEventListener('touchmove', log, false);
+				document.body.addEventListener('touchend', log, false);
+		</script>
 		<script type="text/javascript" src="js/Matrix.js"></script>
 		<script type="text/javascript" src="js/jquery.freetrans.js"></script>
 		<script type="text/javascript" src="js/init.js"></script>
