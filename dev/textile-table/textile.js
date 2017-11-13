@@ -27,7 +27,7 @@ function setup() {
   background(0);
   // frameRate(30);
 
-  hColor = color("#fff");
+  hColor = color("#ff0000");
 
 } 
 
@@ -117,6 +117,6 @@ function mousePressed(){
 	// btwSpace = 20; // density 40 
 	// stitch = (btwSpace*2)-hThickness; 
 
-	hColor = color("#fff");
+	hColor = color("#00ff00");
 	hWidth = 0;
 }
