@@ -5,7 +5,7 @@ $(function(){
         }
     });
 
-       $('#photo_1').click(function(){
+       $('#photo_1').on('click touchstart', function (){
          var transformed = $('#photo_1').css('transform');
   	      switch (transformed){
               case "matrix(1, 0, 0, 1, 0, 0)" :
