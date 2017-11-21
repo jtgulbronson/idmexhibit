@@ -8,10 +8,10 @@ Plain Weaving Generator
 - move : changing vertical thread color 
 */
 
-var hThickness = 10; // horizontal thread thickness 20 
-var vThickness = 7;  // vertical thread thickness 20  
-var btwSpace = 12; // density 40
-var stitch = (btwSpace*2)-hThickness; 
+var hThickness = 20; // horizontal thread thickness 20 
+var vThickness = 4;  // vertical thread thickness 20  
+var btwSpace = 24; // density 40
+var stitch = (btwSpace*2)-hThickness;
 
 var speed = 7; 
 
@@ -19,12 +19,12 @@ var hColor;
 var vColor_1; 
 var vColor_2; 
 
-var hWidth = 0; 
+var hWidth = 1; 
 var hStep = 0; 
 
 function setup() { 
-  createCanvas(1024, 1024);
-  background(0);
+  createCanvas(1366, 1366);
+  background("#000080");
   // frameRate(30);
 
   hColor = color("#ff0000");
@@ -32,12 +32,12 @@ function setup() {
 } 
 
 function draw() { 
-	background(0);
+	background("#333333");
 	noStroke(); 
 	smooth(); 
 
-	vColor_1 = color("#444");
-	vColor_2 = color("#444");
+	vColor_1 = color("#FFFDD0");
+	vColor_2 = color("#FFFDD0");
 
 	//default
 	for(var i = btwSpace; i<height; i +=btwSpace*2){

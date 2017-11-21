@@ -9,9 +9,10 @@
 </head>
 <body>
     <a-scene>
-        <a-entity id="camera" look-controls wasd-controls camera="userHeight 1.5" position="0, 1.5, -2" rotation="0, 0, 0" wasd-controls-enabled="true" look-controls-enabled="true"></a-entity>
-        <a-entity id="weaving-textile" position="0, 0, -4" scale=".009, .009, .009" material="color: #ffffff;" obj-model="obj: assets/weaving-table.obj"></a-entity>
-        <a-plane position="0 0 -4" rotation="-90 0 0" width="10" height="10" color="#555"></a-plane>
+        <a-entity id="camera" look-controls wasd-controls camera="userHeight 1.5" position="-1, 1.5, 1" rotation="0, 0, 0" wasd-controls-enabled="true" look-controls-enabled="true"></a-entity>
+        <a-entity id="full-model" position="-1, 0, -4" scale=".009, .009, .009" material="color: #fff" obj-model="obj: assets/full-model.obj"></a-entity>
+        <a-entity id="walls" position="-1, 0, -4" scale=".009, .009, .009" material="color: #777" obj-model="obj: assets/walls.obj"></a-entity>
+        <!-- <a-plane position="0 0 -4" rotation="-90 0 0" width="10" height="10" color="#555"></a-plane> -->
         <a-sky color="#bbbbbb"></a-sky>
       </a-scene>
 </body>

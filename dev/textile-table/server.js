@@ -17,8 +17,19 @@ var io = require('socket.io')(server);
 
 console.log("Socket.io Server was created");
 
+var connections = [];
+var users = [];
+
 io.sockets.on('connection', function (socket) {
-    console.log("socket connected");
+    connections.push(socket);
+
+    console.log("User Connected");
+
+    socket.on('loadAll', function (user) {
+        socket.emit('loadAll', users);
+        users.push(user);
+        socket.broadcast.emit('register', user);
+    });
 
     // console.log(socket);
     socket.on('myTap', function (data) {

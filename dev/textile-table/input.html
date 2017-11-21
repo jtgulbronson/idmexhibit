@@ -13,7 +13,10 @@
     <script src="js/color_mixer_lib.js"></script>
     <script src="/socket.io/socket.io.js"></script>
     <script src="js/touch-emulator.js"></script>
-    <script> TouchEmulator(); </script>
+    <script>
+        TouchEmulator();
+    </script>
+    <script src="modules/user.js"></script>
     <script src="client.js"></script>
     <title>Textile Table - Spices</title>
 </head>
@@ -22,31 +25,48 @@
     <div id="wrapper2">
         <div id="log"></div>
         <h2>Choose Your Spices</h2>
-            <div id="o-1" name="$.Color('#333333')" data-region="asia" data-spice="ginger" class="spice">
-                <img src="http://via.placeholder.com/250x250" alt="option one image" />
-                <h3>Ginger</h3>
+        <div id="o-1" name="$.Color('#333333')" data-region="asia" data-spice="ginger" class="spice">
+            <img src="http://via.placeholder.com/250x250" alt="option one image" />
+            <h3>Ginger</h3>
+        </div>
+        <div id="o-2" name="$.Color('#ffffff')" data-region="europe" data-spice="chives" class="spice">
+            <img src="http://via.placeholder.com/250x250" alt="option two image" />
+            <h3>Chives</h3>
+        </div>
+        <div id="o-3" name="$.Color('#cccccc')" data-region="africa" data-spice="coriander" class="spice">
+            <img src="http://via.placeholder.com/250x250" alt="option one image" />
+            <h3>Coriander</h3>
+        </div>
+        <div id="o-4" name="$.Color('#00ff00')" data-region="north america" data-spice="salt" class="spice">
+            <img src="http://via.placeholder.com/250x250" alt="option two image" />
+            <h3>Salt</h3>
+        </div>
+        <div id="o-5" name="$.Color('#0000ff')" data-region="south america" data-spice="cilantro" class="spice">
+            <img src="http://via.placeholder.com/250x250" alt="option one image" />
+            <h3>Cilantro</h3>
+        </div>
+        <div id="o-1" name="$.Color('#ff0000')" data-region="arctic circle" data-spice="wakame" class="spice">
+            <img src="http://via.placeholder.com/250x250" alt="option one image" />
+            <h3>Wakame</h3>
+        </div>
+        <div id="ver-btn" name="ver" class="dir">
+            <h3>Vertical</h3>
+        </div>
+        <div id="hor-btn" name="hor" class="dir">
+            <h3>Horizontal</h3>
+        </div>
+        <div id="mix-colors">Mix Colors</div>
+    </div>
+    <div id="log"></div>
+    <div id="wrapper4">
+        <div class="textileVer">
+            <div class="thread ver">
             </div>
-            <div id="o-2" name="$.Color('#ffffff')" data-region="europe" data-spice="chives" class="spice">
-                <img src="http://via.placeholder.com/250x250" alt="option two image" />
-                <h3>Chives</h3>
+        </div>
+        <div class="textileHor">
+            <div class="thread hor">
             </div>
-            <div id="o-3" name="$.Color('#cccccc')" data-region="africa" data-spice="coriander" class="spice">
-                <img src="http://via.placeholder.com/250x250" alt="option one image" />
-                <h3>Coriander</h3>
-            </div>
-            <div id="o-4" name="$.Color('#00ff00')" data-region="north america" data-spice="salt" class="spice">
-                <img src="http://via.placeholder.com/250x250" alt="option two image" />
-                <h3>Salt</h3>
-            </div>
-            <div id="o-5" name="$.Color('#0000ff')" data-region="south america" data-spice="cilantro" class="spice">
-                <img src="http://via.placeholder.com/250x250" alt="option one image" />
-                <h3>Cilantro</h3>
-            </div>
-            <div id="o-1" name="$.Color('#ff0000')" data-region="arctic circle" data-spice="wakame" class="spice">
-                    <img src="http://via.placeholder.com/250x250" alt="option one image" />
-                    <h3>Wakame</h3>
-                </div>
-            <div id="mix-colors">Mix Colors</div>
+        </div>
     </div>
 </body>
 
