@@ -1,55 +1,95 @@
 @import url("https://fonts.googleapis.com/css?family=Dosis");
 body {
-  background-color: white;
+  background-color: #e2e2d9;
   font-family: 'Dosis', monospace;
-  font-size: 23px; }
+  font-size: 16px; }
 
 .wrapper {
+  position: relative;
+  top: 0;
+  left: 0;
   width: 100vw;
   height: 100vh;
   overflow: hidden; }
 
-#transform-info {
+.dropzone {
+  width: 400px;
+  height: 200px;
   position: absolute;
-  top: 0;
-  left: 0; }
+  z-index: -2;
+  bottom: 100px;
+  left: 50%;
+  margin-left: -200px;
+  background-color: transparent;
+  border-style: dotted;
+  border-color: #a64a60;
+  border-width: 2px;
+  text-align: center;
+  font-size: 14px;
+  padding: 10px; }
 
-#transform-info2 {
-  position: absolute;
-  top: 0;
-  right: 0; }
+.drop-active {
+  border-color: #788c71; }
 
 .example_block {
-  background-color: #28464B;
   text-align: center;
   float: left;
+  width: 250px;
+  height: 150px;
+  padding: 10px 0px 30px;
   -webkit-transition: width .5s ease;
   transition: width .5s ease;
   -webkit-transition: height .5s ease;
   transition: height .5s ease; }
 
 #photo_1 {
-  -webkit-transform: scale(1);
-  transform: scale(1);
-  background: #28464B;
+  background: #788c71;
   background-position: center center;
   background-size: auto;
   background-repeat: no-repeat;
   position: absolute;
-  top: 0;
-  left: 0;
-  min-width: 300px;
-  min-height: 150px;
-  max-width: 600px;
-  max-height: 300px;
+  top: 100px;
+  left: 200px;
+  transform-origin: center;
   color: white; }
   #photo_1 #photo_1_text {
     color: black;
     position: absolute;
-    background-color: white;
-    padding: 20px 0px;
+    background-color: #f3f3ec;
+    padding: 5px 0px;
     bottom: 0;
-    width: 600px;
-    display: none; }
+    width: 100%;
+    height: 20px;
+    display: none;
+    font-size: 10px; }
+
+#photo_2 {
+  background: #ebce50;
+  background-position: center center;
+  background-size: auto;
+  background-repeat: no-repeat;
+  position: absolute;
+  top: 120px;
+  left: 400px;
+  transform-origin: center;
+  color: black; }
+  #photo_2 #photo_2_text {
+    color: black;
+    position: absolute;
+    background-color: #f3f3ec;
+    padding: 5px 0px;
+    bottom: 0;
+    width: 100%;
+    height: 20px;
+    display: none;
+    font-size: 10px; }
+
+.dropped-element {
+  -webkit-transform: scale(2);
+  transform: scale(2); }
+
+.removed-element {
+  -webkit-transform: scale(1);
+  transform: scale(1); }
 
 /*# sourceMappingURL=style.css.map */
