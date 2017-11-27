@@ -1,7 +1,7 @@
 (function(window, document, exportName, undefined) {
     "use strict";
 
-    var isMultiTouch = true;
+    var isMultiTouch = false;
     var multiTouchStartPos;
     var eventTarget;
     var touchElements = {};
