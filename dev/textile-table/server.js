@@ -18,28 +18,24 @@ var io = require('socket.io')(server);
 console.log("Socket.io Server was created");
 
 var connections = [];
-var users = [];
+var threads = [];
 
 io.sockets.on('connection', function (socket) {
     connections.push(socket);
 
     console.log("User Connected");
 
-    socket.on('loadAll', function (user) {
-        socket.emit('loadAll', users);
-        users.push(user);
-        socket.broadcast.emit('register', user);
+    socket.on('loadAll', function (thread) {
+        threads.push(thread);
+        console.log(threads);
+        socket.emit('loadAll', threads);
     });
 
     // console.log(socket);
     socket.on('myTap', function (data) {
         console.log(data);
-        socket.emit('addThread', data);
-    });
-    socket.on('toTextile', function (dataTwo) {
-        console.log(dataTwo);
-        socket.broadcast.emit('toTextile', dataTwo);
-        socket.emit('toTextile', dataTwo);
+        socket.broadcast.emit('toTextile', data);
+        socket.emit('toTextile', data);
     });
 
 });

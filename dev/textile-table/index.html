@@ -1,27 +1,86 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <script src="js/jquery.3.2.1.js"></script>
     <link rel="stylesheet" href="style.css">
-    <title>Textile Table - Choose</title>
+    <script src="js/jquery.3.2.1.js"></script>
+    <script src="js/hammer.js"></script>
+    <script src="js/jquery.hammer.js"></script>
+    <script src="js/jquery-color/jquery.color.js"></script>
+    <script src="js/color_mixer_lib.js"></script>
+    <script src="/socket.io/socket.io.js"></script>
+    <script src="js/touch-emulator.js"></script>
+    <script>
+        TouchEmulator();
+    </script>
+    <script src="modules/user.js"></script>
+    <script src="client.js"></script>
+    <title>Textile Table - Spices</title>
 </head>
+
 <body>
-    <div id="wrapper1">
-        <a href="input.html">
-            <div id="option1" class="card">
+    <div id="wrapper">
+        <div id="wrapper-intro">
+            <a href="#textile">
+                <div id="option1" class="card">
                     <img src="http://via.placeholder.com/500x300" alt="option one image" />
-                <h3>view threads from other visitors</h3>
-            </div>
-        </a>
-        <a href="textile.html">
+                    <h3>view threads from other visitors</h3>
+                </div>
+            </a>
+            <a href="#spice-select">
                 <div id="option2" class="card">
-                        <img src="http://via.placeholder.com/500x300" alt="option two image" />
+                    <img src="http://via.placeholder.com/500x300" alt="option two image" />
                     <h3>add your own thread</h3>
                 </div>
             </a>
+        </div>
+        <div id="spice-select">
+            <div id="log"></div>
+            <h2>Choose Your Spices</h2>
+            <div id="o-1" name="$.Color('#333333')" data-region="asia" data-spice="ginger" class="spice">
+                <img src="http://via.placeholder.com/250x250" alt="option one image" />
+                <h3>Ginger</h3>
+            </div>
+            <div id="o-2" name="$.Color('#ffffff')" data-region="europe" data-spice="chives" class="spice">
+                <img src="http://via.placeholder.com/250x250" alt="option two image" />
+                <h3>Chives</h3>
+            </div>
+            <div id="o-3" name="$.Color('#cccccc')" data-region="africa" data-spice="coriander" class="spice">
+                <img src="http://via.placeholder.com/250x250" alt="option one image" />
+                <h3>Coriander</h3>
+            </div>
+            <div id="o-4" name="$.Color('#00ff00')" data-region="north america" data-spice="salt" class="spice">
+                <img src="http://via.placeholder.com/250x250" alt="option two image" />
+                <h3>Salt</h3>
+            </div>
+            <div id="o-5" name="$.Color('#0000ff')" data-region="south america" data-spice="cilantro" class="spice">
+                <img src="http://via.placeholder.com/250x250" alt="option one image" />
+                <h3>Cilantro</h3>
+            </div>
+            <div id="o-1" name="$.Color('#ff0000')" data-region="arctic circle" data-spice="wakame" class="spice">
+                <img src="http://via.placeholder.com/250x250" alt="option one image" />
+                <h3>Wakame</h3>
+            </div>
+            <div id="ver-btn" name="ver" class="dir">
+                <h3>Vertical</h3>
+            </div>
+            <div id="hor-btn" name="hor" class="dir">
+                <h3>Horizontal</h3>
+            </div>
+            <div id="mix-colors">Mix Colors</div>
+        </div>
+        <div id="log"></div>
+        <div id="textile">
+            <div class="textile-ver">
+            </div>
+            <div class="textile-hor">
+            </div>
+        </div>
     </div>
 </body>
+
+
 </html>

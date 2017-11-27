@@ -1,83 +1,43 @@
 window.onload = function () {
     // Setting up colors array
     var colors = [];
-    var mixed_color = "#ffffff";
-    var info,
-        region,
+    var mixed_color;
+    var region,
         spice;
-    var textiles = [];
     var direction;
-    var user = new User();
-
-    //Setting up Hammer.js with jQuery
-    var toTap = $(".spice");
-    toTap.hammer().on("tap", function (ev) {
-        console.log('tap spice successful');
-        //Making currentHex the name value of colors
-        let currentHex = eval(this.attributes["name"].value);
-        region = this.attributes["data-region"].value;
-        spice = this.attributes["data-spice"].value;
-        //Pushing name value to colors array
-        colors.push(currentHex);
-        console.log(colors);
-        return colors;
-        return region;
-        return spice;
-    });
-
+    var count = 1;
+    var thread = {};
     var socket = io.connect();
 
-    socket.on('connect', function() {
+    socket.on('connect', function () {
 
-        socket.emit('loadAll', user);
+        socket.emit('loadAll', thread);
 
     })
 
-    socket.on('loadAll', function (users) {
-        console.log(users);
+    socket.on('loadAll', function (threads) {
+        console.log(threads);
 
-        users.forEach(function (user, index) {
-            generateThread(user);
+        if (count > 1) {
+        threads.forEach(function (thread, index) {
+            console.log(thread.dir);
+            $(`.textile-${thread.dir}`).append(`<div class="thread ${thread.dir} id="${thread.id}" style="background-color:${thread.color}; display: block;"></div> `);
         });
+    }
     });
 
-    socket.on('addThread', function (data) {
+    socket.on('toTextile', function (data) {
 
-        mixed_color = result_color.toHexString();
-
-        console.log(mixed_color);
-
-        // Send user to page with textile
-        // location.href = "/textile.html";
-
-        // Send mixed_color to server.js
-        socket.emit('toTextile', mixed_color);
-    });
-
-    socket.on('toTextile', function (dataTwo) {
-
-        if (direction === "ver" && dataTwo !== "undefined") {
-            $(".ver").css("display", "block");
-            $(".ver").css("background-color", dataTwo);
-            // Add color to textiles array for the loadAll function for all new users
-            textiles.push(dataTwo + counter);
-            console.log("textile.push: " + textiles);
-
-            // Reset colors array for new user
+        if (count < 24) {
+            $(`.textile-${thread.dir}`).append(`<div class="thread ${thread.dir} id="${thread.id}" style="background-color:${thread.color}; display: block; z-index:${count};"></div> `);
+    
+            console.log(`.textile-${thread.dir}`);
             colors = [];
-        } else if (direction === "hor" && dataTwo !== "undefined") {
-            $(".hor").css("display", "block");
-            $(".hor").css("background-color", dataTwo);
-            // Add color to textiles array for the loadAll function for all new users
-            textiles.push(dataTwo + counter);
-            console.log("textile.push: " + textiles);
-
-            // Reset colors array for new user
-            colors = [];
-        } else if (dataTwo === "undefined") {
-            this.css("background-color", "#ffffff");
+        } else {
+            $('.thread').hide();
         }
-
+    
+        count++;
 
     });
 
@@ -101,17 +61,9 @@ window.onload = function () {
     var toTap = $(".dir");
     toTap.hammer().on("tap", function (ev) {
         console.log('tap dir successful');
-
-        // Take direction value from input.html
         direction = this.attributes["name"].value;
 
-        // Generate Thread Direction in user.js
-        user.dir = user.generateThreadDir();
-        this.append(user.dir);
-        console.log(user.dir);
-
-        // Emit direction to server
-        socket.emit('addDirection', user);
+        console.log(direction);
         return direction;
     });
 
@@ -122,21 +74,35 @@ window.onload = function () {
         //Mixing colors through Color_mixer https://github.com/AndreasSoiron/Color_mixer
         result_color = Color_mixer.mix(colors);
 
-        user = {
-            color: result_color,
+        mixed_color = result_color.toHexString();
+
+        let id = Math.random().toString(36).substr(2, 9);
+        console.log(direction);
+        console.log(mixed_color);
+
+        thread = {
+            id: id,
+            color: mixed_color,
             region: region,
-            spice: spice
+            spice: spice,
+            dir: direction
         }
 
-        console.log(user);
+        console.log(thread);
 
-        $("#wrapper2").css("display", "none");
-        $("#wrapper4").css("display", "block");
-        socket.emit('myTap', user);
+
+        socket.emit('myTap', thread);
 
     });
 
     document.body.addEventListener('touchstart', log, false);
     document.body.addEventListener('touchmove', log, false);
     document.body.addEventListener('touchend', log, false);
+    //scroll smooth
+    // $('a').click(function () {
+    //     $('html, body').animate({
+    //         scrollLeft: $('[name="' + $.attr(this, 'href').substr(1) + '"]').offset().left - 70
+    //     }, 500);
+    //     return false;
+    // });
 }
