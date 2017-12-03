@@ -1,0 +1,11 @@
+{
+  "name": "weaving",
+  "version": "1.0.0",
+  "description": "A weaving interaction for the IDM exhibit",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Jordan Gulbronson",
+  "license": "ISC"
+}

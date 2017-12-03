@@ -1,11 +1,17 @@
 newmtl initialShadingGroup
 illum 4
-Kd 0.50 0.50 0.50
+Kd 0.73 0.73 0.73
 Ka 0.00 0.00 0.00
 Tf 1.00 1.00 1.00
 Ni 1.00
 Ks 0.00 0.00 0.00
 Ns 18.00
+newmtl model1:mat18
+illum 4
+Kd 1.00 0.80 0.53
+Ka 1.00 0.80 0.53
+Tf 1.00 1.00 1.00
+Ni 1.00
 newmtl phong3SG
 illum 4
 Kd 1.00 1.00 1.00

@@ -25,17 +25,17 @@ io.sockets.on('connection', function (socket) {
 
     console.log("User Connected");
 
-    socket.on('loadAll', function (thread) {
-        threads.push(thread);
+    socket.on('loadAll', function (threadTwo) {
+        threads.push(threadTwo);
         console.log(threads);
         socket.emit('loadAll', threads);
     });
 
     // console.log(socket);
-    socket.on('myTap', function (data) {
-        console.log(data);
-        socket.broadcast.emit('toTextile', data);
-        socket.emit('toTextile', data);
+    socket.on('myTap', function (thread) {
+        console.log(thread);
+        socket.broadcast.emit('toTextile', thread);
+        socket.emit('toTextile', thread);
     });
 
 });

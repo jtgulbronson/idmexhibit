@@ -1,0 +1,15 @@
+<svg id="svg-thread" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" width="1960" height="75" viewBox="0 0 1960 75">
+  <title>odd</title>
+  <g>
+    <rect width="135" height="75"/>
+    <rect x="210" width="135" height="75"/>
+    <rect x="420" width="135" height="75"/>
+    <rect x="630" width="135" height="75"/>
+    <rect x="840" width="135" height="75"/>
+    <rect x="1050" width="135" height="75"/>
+    <rect x="1260" width="135" height="75"/>
+    <rect x="1470" width="135" height="75"/>
+    <rect x="1680" width="135" height="75"/>
+    <rect x="1890" width="75" height="75"/>
+  </g>
+</svg>

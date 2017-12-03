@@ -1,11 +1,13 @@
 /*
+
 Plain Weaving Generator
 
 - Drag : zoom & resize each vertical, horizontal thread thickness and density 
         
 - click : change horizontal thread color / restart animation 
 
-- move : changing vertical thread color 
+- move : changing vertical thread color
+
 */
 
 var hThickness = 20; // horizontal thread thickness 20 
