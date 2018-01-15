@@ -12,6 +12,7 @@ window.onload = function () {
 
         socket.emit('loadAll', thread);
 
+        //----- Adding the initial threads
         var toAdd = document.createDocumentFragment();
         for (var i = 0; i < 20; i++) {
             var threadDiv = document.createElement('div');
@@ -32,6 +33,7 @@ window.onload = function () {
         //}
     });
 
+    //----- Textile info to send to the server
     socket.on('toTextile', function (thread) {
 
         if (count < 25) {
@@ -77,7 +79,7 @@ window.onload = function () {
 
     });
 
-    // Start of Event Handlers
+    //----- Selecting all the spices
     var toTap = $(".spice");
     toTap.hammer().on("tap", function (ev) {
         console.log('tap spice successful');
@@ -91,7 +93,7 @@ window.onload = function () {
         return spice;
     });
 
-    //Setting up Hammer.js with jQuery
+    //----- Mixing all the colors
     var toTapBtn = $("#mix-colors");
     toTapBtn.hammer().on("tap", function (ev) {
         console.log(colors);
@@ -113,22 +115,16 @@ window.onload = function () {
             spice: spice,
         }
 
-        console.log(thread);
+        $("#wrapper-intro").animate({left:'-100%'});
+        $("#spice-select").animate({left:'-100%'});
+        $("#textile").animate({left:'0%'});
 
 
         socket.emit('myTap', thread);
 
     });
 
-    //Setting up Hammer.js with jQuery
-    // var toTapRect = $(".svg-thread");
-    // toTapRect.hammer().on("tap", function (ev) {
-
-    //     console.log('thread-tapped');
-    //     // $('#user-info').append(`<p class="user-inner">${this.id}<br/>${this.spice}<br/>${this.color}</p>`);
-
-    // });
-
+    //----- Applying one of the threads
     $('.textile-hor').on('click', '.thread', function () {
 
         console.log('thread-tapped');
@@ -136,22 +132,49 @@ window.onload = function () {
 
     });
 
-    // var userThread = $(".textile-hor");
-    // userThread.hammer().on("tap", '.thread', function (ev) {
-    //     console.log('thread-tapped');
-    //     $('#user-info').html(`<p class="user-inner">${this.id}<br/>${$(this).data("spice")}<br/>${$(this).data("color")}</p>`);
+    //----- Navigating all the screens
+    var toTapBtn = $("#textile-a");
+    toTapBtn.hammer().on("tap", function (ev) {
+        
+        $("#wrapper-intro").animate({left:'-100%'});
+        $("#textile").animate({left:'0'});
 
-    // });
+    });
+
+    var toTapBtn = $("#spice-select-a");
+
+    toTapBtn.hammer().on("tap", function (ev) {
+        
+        $("#wrapper-intro").animate({left:'-100%'});
+        $("#spice-select").animate({left:'0'});
+        $("#textile").animate({left:'100%'});
+
+    });
 
 
     document.body.addEventListener('touchstart', log, false);
     document.body.addEventListener('touchmove', log, false);
     document.body.addEventListener('touchend', log, false);
-    //scroll smooth
-    // $('a').click(function () {
-    //     $('html, body').animate({
-    //         scrollLeft: $('[name="' + $.attr(this, 'href').substr(1) + '"]').offset().left - 70
-    //     }, 500);
-    //     return false;
+
+    //Scroll Magic
+    // init controller
+    // var controller = new ScrollMagic.Controller({
+    //     vertical: false
     // });
+
+    // // create a scene
+    // new ScrollMagic.Scene({
+    //         duration: 1400, // the scene should last for a scroll distance of 100px
+    //         offset: 0 // start this scene after scrolling for 50px
+    //     })
+    //     .setPin("#wrapper-intro") // pins the element for the the scene's duration
+    //     .addTo(controller); // assign the scene to the controller
+
+    // // create a scene
+    // new ScrollMagic.Scene({
+    //         duration: 1400, // the scene should last for a scroll distance of 100px
+    //         offset: 0 // start this scene after scrolling for 50px
+    //     })
+    //     .setPin("#spice-select") // pins the element for the the scene's duration
+    //     .addTo(controller); // assign the scene to the controller
 }
