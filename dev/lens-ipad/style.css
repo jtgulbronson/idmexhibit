@@ -2,38 +2,43 @@ html, body {
     box-sizing: border-box;
     margin: 0;
     padding: 0;
+    max-height: 2304px;
+    max-width: 4096px;
 }
 
 #wrapper {
     position: fixed;
     left: 0;
     top: 0;
-    display: grid;
-    grid-template-columns: [intro] 1024px [stories] 3072px;
-    grid-template-rows: [story-1] 768px [story-2] 768px;
-    width: 4096px;
-    height: 1536px;
+    display: flex;
+    flex-direction: column;
+    width: 300vw;
+    height: 300vh;
 }
 
 #intro {
-    grid-column-start: 1;
-    grid-column-end: 2;
-    grid-row-start: 1;
-    grid-row-end: 2;
+    width: 100vw;
+    height: 100vh;
 }
 
 #top-story {
-    grid-column-start: 2;
-    grid-row-start: 1;
-    grid-row-end: 2;
+    width: 100vw;
+    height: 100vh;
+    overflow: scroll;
 }
 
 #bottom-story {
-    grid-column-start: 2;
-    grid-row-start: 2;
+    width: 100vw;
+    height: 100vh;
+    overflow: scroll;
 }
 
-img {
+.img-len {
     width: 100%;
+    height: 100%;
+}
+
+.img-story {
+    width: 300%;
     height: 100%;
 }
