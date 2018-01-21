@@ -48,11 +48,13 @@ var glassTwo = $('#glass_2');
            case 'glass_2':
            $('#right_instruct').hide();
            break;
+           //this hides the instructions based on what magnifier is moved
          }
 
       dragOne.preventDefault();
     };
 
+ //V element interaction
     // enable draggables to be dropped into this
     interact('#v').dropzone({
       // only accept elements matching this CSS selector
@@ -98,6 +100,56 @@ var glassTwo = $('#glass_2');
         }
       }
     });
+
+//Flower element interaction
+       // enable draggables to be dropped into this
+       interact('#flower').dropzone({
+         // only accept elements matching this CSS selector
+         accept: '.magnify_glass',
+         // Require a 75% element overlap for a drop to be possible
+         overlap: 0.25,
+         ondragenter: function (event) {
+          var draggableElement = event.relatedTarget,
+          dropzoneElement = event.target;
+          draggableElement.classList.add('dropped-element');
+          draggableElement.classList.remove('removed-element');
+          var glass = draggableElement.getAttribute('id');
+          switch(glass){
+             case 'glass_1':
+             $('#flower_image').css("transform", "scale(2)");
+             $('#glass_1').css("transform","scale(2.5)");
+             $('.flower_info').show().css("left",'0px');
+             break;
+             case 'glass_2':
+             $('#flower_image').css("transform", "scale(2)");
+             $('#glass_2').css("transform","scale(2.5)");
+             $('.flower_info').show().css("right","0px");
+             break;
+          }
+         },
+         ondragleave: function (event) {
+          var draggableElement = event.relatedTarget,
+          dropzoneElement = event.target;
+            draggableElement.classList.add('removed-element');
+          draggableElement.classList.remove('dropped-element');
+          var glass = draggableElement.getAttribute('id');
+          switch(glass){
+             case 'glass_1':
+             $('#flower_image').css("transform", "scale(1)");
+             $('#glass_1').css("transform","scale(1)");
+             $('.flower_info').hide().css("left", "");
+             break;
+             case 'glass_2':
+             $('#flower_image').css("transform", "scale(1)");
+             $('#glass_2').css("transform","scale(1)");
+             $('.flower_info').hide().css("right","");
+             break;
+          }
+         }
+       });
+
+
+    //Browser Idle Refresh
 
     var time = new Date().getTime();
      $(document.body).bind("touchmove mousemove keypress", function(e) {
