@@ -28,6 +28,33 @@ body {
 -moz-box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.75);
 box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.75);
 }
+.initial_content{
+  padding: 40px;
+  position:absolute;
+  top: 200px;
+  .title{
+    font-size: 2rem;
+    padding: 20px 0px;
+    font-weight: bold;
+    font-family: $pt_serif;
+    letter-spacing: 1px;
+  }
+  .instructions{
+    line-height: 30px;
+  }
+}
+
+#left_instruct{
+  .title{
+    color: $blue;
+  }
+}
+
+#right_instruct{
+  .title{
+    color: $rouge;
+  }
+}
 
 #left_panel{
   position: absolute;
@@ -59,7 +86,7 @@ box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.75);
   -webkit-transform-origin: center;
   transform-origin: center;
   border-radius: 50%;
-  border: solid #4961a5 5px;
+  border: solid $blue 5px;
   color: white;
   z-index: 2;
    transition: transform .25s ease;
@@ -107,4 +134,15 @@ box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.75);
   position: absolute;
   top:0;
   display: none;
+  .info_image{
+    background-image: url('../img/v.png');
+    background-size: contain;
+    background-position: center center;
+    background-repeat: no-repeat;
+    margin: 0px 0px 20px;
+    width: 100%;
+    height: 80px;
+    top: 0;
+
+  }
 }
