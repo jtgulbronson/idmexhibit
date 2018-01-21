@@ -10,6 +10,8 @@ $( document ).ready(function(){
 // Drag and Drop
 ////////////////////////////////////
 
+var glassOne = $('#glass_1');
+var glassTwo = $('#glass_2');
 // Draggable
    interact('.magnify_glass')
     .draggable({
@@ -23,11 +25,11 @@ $( document ).ready(function(){
       autoScroll: false,  // disable scroll via drag
       onmove: dragHandler, // call this function on every dragmove event
     })
-    .on('tap', function(tapHandler){
-      var tappedElement = tapHandler.target;
-      var id = tappedElement.getAttribute('id');
-      // event.preventDefault();
-   });
+   //  .on('tap', function(tapHandler){
+   //    var tappedElement = tapHandler.target;
+   //    var id = tappedElement.getAttribute('id');
+   //    // event.preventDefault();
+   // });
     function dragHandler (dragOne) {
       var target = dragOne.target;
         x = (parseFloat(target.getAttribute('data-x')) || 0) + dragOne.dx,
@@ -38,6 +40,16 @@ $( document ).ready(function(){
 	      target.setAttribute('data-x', x);
 	      target.setAttribute('data-y', y);
 	      // document.getElementById('transform-info').textContent = 'position = ' + x + ',' + y;
+         var hideMe = target.getAttribute('id');
+         switch(hideMe){
+           case 'glass_1':
+           $('#left_instruct').hide();
+           break;
+           case 'glass_2':
+           $('#right_instruct').hide();
+           break;
+         }
+
       dragOne.preventDefault();
     };
 
@@ -86,5 +98,19 @@ $( document ).ready(function(){
         }
       }
     });
+
+    var time = new Date().getTime();
+     $(document.body).bind("touchmove mousemove keypress", function(e) {
+         time = new Date().getTime();
+     });
+
+     function refresh() {
+         if(new Date().getTime() - time >= 120000)
+             window.location.reload(true);
+         else
+             setTimeout(refresh, 20000);
+     }
+
+     setTimeout(refresh, 20000);
 
 });//do not lose this closing bracket - unless you like breaking everything for fun
