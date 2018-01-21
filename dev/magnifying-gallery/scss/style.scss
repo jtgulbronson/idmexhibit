@@ -1,5 +1,9 @@
 @import 'var.scss';
 
+///////////////////////////////////////////////
+//Base styles
+///////////////////////////////////////////////
+
 html {
   overflow-x: hidden;
   overflow-y: hidden;
@@ -12,6 +16,7 @@ body {
 }
 
 .wrapper {
+  background-color: $foreground;
   position: relative;
   top: 0;
   left: 0;
@@ -20,9 +25,14 @@ body {
   overflow: hidden;
 }
 
+///////////////////////////////////////////////
+//Generic Class Styles
+///////////////////////////////////////////////
+
 .side_panel{
   height: 100vh;
   width: 400px;
+  z-index: 3;
   background-color: $background;
   -webkit-box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.75);
 -moz-box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.75);
@@ -43,6 +53,10 @@ box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.75);
     line-height: 30px;
   }
 }
+
+///////////////////////////////////////////////
+//Specific Background Element styles
+///////////////////////////////////////////////
 
 #left_instruct{
   .title{
@@ -68,6 +82,10 @@ box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.75);
   right: 0;
 }
 
+///////////////////////////////////////////////
+//User Magnifying glass Styles
+///////////////////////////////////////////////
+
 .magnify_glass {
   text-align: center;
   float: left;
@@ -88,7 +106,7 @@ box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.75);
   border-radius: 50%;
   border: solid $blue 5px;
   color: white;
-  z-index: 2;
+  z-index: 5;
    transition: transform .25s ease;
 }
 
@@ -102,9 +120,25 @@ box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.75);
   border-radius: 50%;
   border: solid #a5495f 5px;
   color: black;
-  z-index: 2;
+  z-index: 5;
    transition: transform .25s ease;
 }
+
+///////////////////////////////////////////////
+//Generic Element styles
+///////////////////////////////////////////////
+
+.info_content{
+  line-height: 30px;
+  div{
+    padding: 10px 0px;
+
+  }
+}
+
+///////////////////////////////////////////////
+//V Element
+///////////////////////////////////////////////
 
 #v {
   position: absolute;
@@ -132,6 +166,7 @@ box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.75);
   background: transparent;
   color: #000;
   position: absolute;
+  z-index: 3;
   top:0;
   display: none;
   .info_image{
@@ -143,6 +178,51 @@ box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.75);
     width: 100%;
     height: 80px;
     top: 0;
+  }
+}
 
+///////////////////////////////////////////////
+//Flower Element
+///////////////////////////////////////////////
+
+
+#flower {
+  position: absolute;
+  width: 100px;
+  height: 150px;
+  top: 300px;
+  left: 800px;
+  z-index: 1;
+}
+
+#flower_image {
+  background: url('../img/flower.png');
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+  width:240px;
+  height: 280px;
+  transition: transform .25s ease;
+}
+
+.flower_info{
+  width: 320px;
+  height: 100vh;
+  padding: 40px;
+  background: transparent;
+  color: #000;
+  position: absolute;
+  z-index: 3;
+  top:0;
+  display: none;
+  .info_image{
+    background-image: url('../img/flower.png');
+    background-size: contain;
+    background-position: center center;
+    background-repeat: no-repeat;
+    margin: 0px 0px 20px;
+    width: 100%;
+    height: 80px;
+    top: 0;
   }
 }
