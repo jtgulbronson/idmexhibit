@@ -1,0 +1,17 @@
+.red {
+	background-color: red;
+	text-align: center;
+	color: #fff;
+	width: 100px;
+	height: 100px;
+	float: left;
+}
+
+.blue {
+	background-color: blue;
+	text-align: center;
+	color: #fff;
+	width: 100px;
+	height: 100px;
+	float: right;
+}
