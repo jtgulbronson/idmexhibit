@@ -12,9 +12,6 @@ body {
 }
 
 .wrapper {
-  background: url('../img/gallery-1.png');
-  background-size: cover;
-  background-repeat: no-repeat;
   position: relative;
   top: 0;
   left: 0;
@@ -23,7 +20,28 @@ body {
   overflow: hidden;
 }
 
-.example_block {
+.side_panel{
+  height: 100vh;
+  width: 400px;
+  background-color: $background;
+  -webkit-box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.75);
+-moz-box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.75);
+box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.75);
+}
+
+#left_panel{
+  position: absolute;
+  top:0;
+  left:0;
+}
+
+#right_panel{
+  position: absolute;
+  top:0;
+  right: 0;
+}
+
+.magnify_glass {
   text-align: center;
   float: left;
   width: 60px;
@@ -37,57 +55,56 @@ box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.75);
   background: transparent;
   position: absolute;
   top: 50px;
-  left: 450px;
+  left: 365px;
   -webkit-transform-origin: center;
   transform-origin: center;
   border-radius: 50%;
   border: solid #4961a5 5px;
   color: white;
   z-index: 2;
+   transition: transform .25s ease;
 }
 
 #glass_2 {
   background: transparent;
   position: absolute;
-  top: 220px;
-  left: 300px;
+  top: 50px;
+  left: 1165px;
   -webkit-transform-origin: center;
   transform-origin: center;
   border-radius: 50%;
   border: solid #a5495f 5px;
   color: black;
   z-index: 2;
+   transition: transform .25s ease;
 }
 
 #v {
   position: absolute;
   width: 100px;
   height: 150px;
-  top: 700px;
-  left: 500px;
+  top: 200px;
+  left: 700px;
   z-index: 1;
 }
 
-#v-image {
+#v_image {
   background: url('../img/v.png');
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
   width:60px;
   height: 70px;
-  transition: grow 2s;
+  transition: transform .25s ease;
 }
 
-
-#side {
-  display: none;
-  background: url('../img/side-panel.png');
-  background-size: cover;
-  background-repeat: no-repeat;
-  position: absolute;
-  width: 29vw;
+.v_info{
+  width: 320px;
   height: 100vh;
-  top: 0;
-  left: 0;
-  z-index: 1;
+  padding: 40px;
+  background: transparent;
+  color: #000;
+  position: absolute;
+  top:0;
+  display: none;
 }
