@@ -11,7 +11,7 @@ $( document ).ready(function(){
 ////////////////////////////////////
 
 // Draggable
-   interact('.example_block')
+   interact('.magnify_glass')
     .draggable({
       inertia: false, //makes the element stop when user stops
       // keep the element within the area of it's parent -- doesnt work??
@@ -44,7 +44,7 @@ $( document ).ready(function(){
     // enable draggables to be dropped into this
     interact('#v').dropzone({
       // only accept elements matching this CSS selector
-      accept: '.example_block',
+      accept: '.magnify_glass',
       // Require a 75% element overlap for a drop to be possible
       overlap: 0.25,
       ondragenter: function (event) {
@@ -52,17 +52,17 @@ $( document ).ready(function(){
         dropzoneElement = event.target;
         draggableElement.classList.add('dropped-element');
         draggableElement.classList.remove('removed-element');
-        var id = draggableElement.getAttribute('id');
-        switch(id){
+        var glass = draggableElement.getAttribute('id');
+        switch(glass){
           case 'glass_1':
-          $('#v-image').css("width","90px").css("height","100px").css("top","685px").css("left","485px");
-          $('#glass_1').css("width","120px").css("height","120px");
-          $('#side').css("display","block");
+          $('#v_image').css("transform", "scale(2)");
+          $('#glass_1').css("transform","scale(2.5)");
+          $('.v_info').show().css("left",'0px');
           break;
           case 'glass_2':
-          $('#v-image').css("width","90px").css("height","100px").css("top","685px").css("left","485px");
-          $('#glass_2').css("width","120px").css("height","120px");
-          $('#side').css("display","block");
+          $('#v_image').css("transform", "scale(2)");
+          $('#glass_2').css("transform","scale(2.5)");
+          $('.v_info').show().css("right","0px");
           break;
         }
       },
@@ -71,17 +71,17 @@ $( document ).ready(function(){
         dropzoneElement = event.target;
          draggableElement.classList.add('removed-element');
         draggableElement.classList.remove('dropped-element');
-        var id = draggableElement.getAttribute('id');
-        switch(id){
+        var glass = draggableElement.getAttribute('id');
+        switch(glass){
           case 'glass_1':
-          $('#v-image').css("width","60px").css("height","70px").css("top","700px").css("left","500px");
-          $('#glass_1').css("width","60px").css("height","60px");
-          $('#side').css("display","none");
+          $('#v_image').css("transform", "scale(1)");
+          $('#glass_1').css("transform","scale(1)");
+          $('.v_info').hide().css("left", "");
           break;
           case 'glass_2':
-          $('#v-image').css("width","60px").css("height","70px").css("top","700px").css("left","500px");
-          $('#glass_2').css("width","60px").css("height","60px");
-          $('#side').css("display","none");
+          $('#v_image').css("transform", "scale(1)");
+          $('#glass_2').css("transform","scale(1)");
+          $('.v_info').hide().css("right","");
           break;
         }
       }
