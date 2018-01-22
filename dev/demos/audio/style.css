@@ -1,4 +1,4 @@
-.red {
+#red {
 	background-color: red;
 	text-align: center;
 	color: #fff;
@@ -7,7 +7,7 @@
 	float: left;
 }
 
-.blue {
+#blue {
 	background-color: blue;
 	text-align: center;
 	color: #fff;

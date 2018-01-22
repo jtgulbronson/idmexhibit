@@ -1,23 +1,31 @@
-//StereoPannerNode experiment from WebAudio API - https://developer.mozilla.org/en-US/docs/Web/API/StereoPannerNode
-var audioCtx = new (window.AudioContext || window.webkitAudioContext)();
+onload = function () { //this will be executed when the page is ready
+	window.audioFiles = ['reverb.mp3', 'strings.mp3']; //this is gonna be the array with all file names
+	window.audio = document.getElementById('audio');
+	window.red = document.getElementById('red');
+	window.blue = document.getElementById('blue');
+	window.AudioContext = window.AudioContext || window.webkitAudioContext;
+	context = new AudioContext();
+	source = context.createMediaElementSource(audio);
+	analyser = context.createAnalyser();
+	panNodeL = context.createStereoPanner();
+	panNodeR = context.createStereoPanner();
+	source.connect(analyser);
+	source.connect(panNodeL);
+	source.connect(panNodeR);
 
-var redAudio = document.getElementById('#firstAudio');
-var blueAudio = document.getElementById('#secondAudio');
+	red.onclick = function () {
+		audio.src = audioFiles[0];
+		panNodeL.pan.value = -1;
+		audio.play();
+	}
 
-//setting up two audio channels for WebAudio API
-var source = audioCtx.createMediaElementSource(redAudio);
+	blue.onclick = function () {
+		audio.src = audioFiles[1];
+		panNodeR.pan.value = 1;
+		audio.play();
+	}
 
-//setting up StereoPanner
-var panNode = audioCtx.createStereoPanner();
-
-var redBtn = document.getElementById("#red");
-redBtn.click(function() {
-  panNode.pan.value = -1;
-	redAudio.play();
-	console.log("click is working");
-});
-
-
-//connecting everything at the end
-source.connect(panNode);
-panNode.connect(audioCtx.destination);
+	analyser.connect(context.destination);
+	panNodeL.connect(context.destination);
+	panNodeR.connect(context.destination);
+}
