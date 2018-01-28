@@ -44,7 +44,7 @@ box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.75);
   padding: 40px;
   position:absolute;
   top: 200px;
-  width: 250px;
+  width: 220px;
   .title{
     font-size: 2rem;
     padding: 20px 0px;
@@ -102,8 +102,8 @@ box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.75);
 #glass_1 {
   background: transparent;
   position: absolute;
-  top: 50px;
-  left: 365px;
+  top: 200px;
+  left: 265px;
   -webkit-transform-origin: center;
   transform-origin: center;
   border-radius: 50%;
@@ -116,8 +116,8 @@ box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.75);
 #glass_2 {
   background: transparent;
   position: absolute;
-  top: 50px;
- right: 365px;
+  top: 200px;
+ right: 265px;
   -webkit-transform-origin: center;
   transform-origin: center;
   border-radius: 50%;
@@ -128,17 +128,58 @@ box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.75);
 }
 
 ///////////////////////////////////////////////
-//Generic Element styles
+//Side bar info
 ///////////////////////////////////////////////
-
-.info_content{
-  line-height: 30px;
-  width: 225px;
-  div{
-    padding: 10px 0px;
-
+.info_bar_left{
+  display: block;
+  position: absolute;
+  top: 50px;
+  left: 30px;
+  width:240px;
+  height: auto;
+  .info_image{
+    width: 100%;
+    height: 100px;
+    display: block;
+    margin:auto;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+  }
+  .info_content{
+    width: 100%;
+    display: block;
+    text-align: left;
+    padding: 30px 0px;
+    line-height: 30px;
   }
 }
+
+.info_bar_right{
+  display: block;
+  position: absolute;
+  top: 50px;
+  left: 30px;
+  width:240px;
+  height: auto;
+  .info_image{
+    width: 100%;
+    height: 100px;
+    display: block;
+    margin:auto;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+  }
+  .info_content{
+    width: 100%;
+    display: block;
+    text-align: left;
+    padding: 30px 0px;
+    line-height: 30px;
+  }
+}
+
 
 ///////////////////////////////////////////////
 //V Element
@@ -151,40 +192,18 @@ box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.75);
   top: 200px;
   left: 700px;
   z-index: 1;
+
 }
 
 #v_image {
-  background: url('../img/v.png');
-  background-size: cover;
+  background: url('../img/v-small.png');
+  background-size: contain;
   background-position: center;
   background-repeat: no-repeat;
-  width:60px;
-  height: 70px;
+  width: 100px;
+  height: 150px;
   transition: transform .25s ease;
 }
-
-.v_info{
-  width: 320px;
-  height: 80vh;
-  padding: 40px;
-  background: transparent;
-  color: #000;
-  position: absolute;
-  z-index: 3;
-  top:0;
-  display: none;
-  .info_image{
-    background-image: url('../img/v.png');
-    background-size: contain;
-    background-position: center center;
-    background-repeat: no-repeat;
-    margin: 0px 0px 20px;
-    width: 100%;
-    height: 80px;
-    top: 0;
-  }
-}
-
 ///////////////////////////////////////////////
 //Flower Element
 ///////////////////////////////////////////////
@@ -192,8 +211,8 @@ box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.75);
 
 #flower {
   position: absolute;
-  width: 100px;
-  height: 150px;
+  width: 200px;
+  height: 250px;
   top: 300px;
   left: 800px;
   z-index: 1;
@@ -204,29 +223,7 @@ box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.75);
   background-size: contain;
   background-position: center;
   background-repeat: no-repeat;
-  width:240px;
-  height: 280px;
+  width: 200px;
+  height: 250px;
   transition: transform .25s ease;
-}
-
-.flower_info{
-  width: 320px;
-  height: 100vh;
-  padding: 40px;
-  background: transparent;
-  color: #000;
-  position: absolute;
-  z-index: 3;
-  top:0;
-  display: none;
-  .info_image{
-    background-image: url('../img/flower.png');
-    background-size: contain;
-    background-position: center center;
-    background-repeat: no-repeat;
-    margin: 0px 0px 20px;
-    width: 100%;
-    height: 80px;
-    top: 0;
-  }
 }
