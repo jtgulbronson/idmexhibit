@@ -18,8 +18,10 @@ body {
   overflow: hidden; }
 
 .side_panel {
-  height: 100vh;
-  width: 400px;
+  position: relative;
+  height: 80vh;
+  width: 300px;
+  margin-top: 10vh;
   z-index: 3;
   background-color: #e0d9d7;
   -webkit-box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.75);
@@ -29,7 +31,8 @@ body {
 .initial_content {
   padding: 40px;
   position: absolute;
-  top: 200px; }
+  top: 200px;
+  width: 220px; }
   .initial_content .title {
     font-size: 2rem;
     padding: 20px 0px;
@@ -67,8 +70,8 @@ body {
 #glass_1 {
   background: transparent;
   position: absolute;
-  top: 50px;
-  left: 365px;
+  top: 200px;
+  left: 265px;
   -webkit-transform-origin: center;
   transform-origin: center;
   border-radius: 50%;
@@ -80,8 +83,8 @@ body {
 #glass_2 {
   background: transparent;
   position: absolute;
-  top: 50px;
-  right: 365px;
+  top: 200px;
+  right: 265px;
   -webkit-transform-origin: center;
   transform-origin: center;
   border-radius: 50%;
@@ -90,10 +93,49 @@ body {
   z-index: 5;
   transition: transform .25s ease; }
 
-.info_content {
-  line-height: 30px; }
-  .info_content div {
-    padding: 10px 0px; }
+.info_bar_left {
+  display: block;
+  position: absolute;
+  top: 50px;
+  left: 30px;
+  width: 240px;
+  height: auto; }
+  .info_bar_left .info_image {
+    width: 100%;
+    height: 100px;
+    display: block;
+    margin: auto;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain; }
+  .info_bar_left .info_content {
+    width: 100%;
+    display: block;
+    text-align: left;
+    padding: 30px 0px;
+    line-height: 30px; }
+
+.info_bar_right {
+  display: block;
+  position: absolute;
+  top: 50px;
+  left: 30px;
+  width: 240px;
+  height: auto; }
+  .info_bar_right .info_image {
+    width: 100%;
+    height: 100px;
+    display: block;
+    margin: auto;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain; }
+  .info_bar_right .info_content {
+    width: 100%;
+    display: block;
+    text-align: left;
+    padding: 30px 0px;
+    line-height: 30px; }
 
 #v {
   position: absolute;
@@ -104,38 +146,18 @@ body {
   z-index: 1; }
 
 #v_image {
-  background: url("../img/v.png");
-  background-size: cover;
+  background: url("../img/v-small.png");
+  background-size: contain;
   background-position: center;
   background-repeat: no-repeat;
-  width: 60px;
-  height: 70px;
+  width: 100px;
+  height: 150px;
   transition: transform .25s ease; }
-
-.v_info {
-  width: 320px;
-  height: 100vh;
-  padding: 40px;
-  background: transparent;
-  color: #000;
-  position: absolute;
-  z-index: 3;
-  top: 0;
-  display: none; }
-  .v_info .info_image {
-    background-image: url("../img/v.png");
-    background-size: contain;
-    background-position: center center;
-    background-repeat: no-repeat;
-    margin: 0px 0px 20px;
-    width: 100%;
-    height: 80px;
-    top: 0; }
 
 #flower {
   position: absolute;
-  width: 100px;
-  height: 150px;
+  width: 200px;
+  height: 250px;
   top: 300px;
   left: 800px;
   z-index: 1; }
@@ -145,28 +167,8 @@ body {
   background-size: contain;
   background-position: center;
   background-repeat: no-repeat;
-  width: 240px;
-  height: 280px;
+  width: 200px;
+  height: 250px;
   transition: transform .25s ease; }
-
-.flower_info {
-  width: 320px;
-  height: 100vh;
-  padding: 40px;
-  background: transparent;
-  color: #000;
-  position: absolute;
-  z-index: 3;
-  top: 0;
-  display: none; }
-  .flower_info .info_image {
-    background-image: url("../img/flower.png");
-    background-size: contain;
-    background-position: center center;
-    background-repeat: no-repeat;
-    margin: 0px 0px 20px;
-    width: 100%;
-    height: 80px;
-    top: 0; }
 
 /*# sourceMappingURL=style.css.map */
