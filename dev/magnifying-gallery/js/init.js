@@ -3,9 +3,10 @@ $( document ).ready(function(){
 // PLZ dont autoScroll
 //////////////////////////////////////
 
-   document.body.addEventListener('touchmove', function(event) {
+document.body.addEventListener('touchmove', function(event) {
      event.preventDefault();
-   }, false);
+  }, false);
+
 /////////////////////////////////////
 // Drag and Drop
 ////////////////////////////////////
@@ -71,12 +72,14 @@ var glassTwo = $('#glass_2');
           case 'glass_1':
           $('#v_image').css("transform", "scale(2)");
           $('#glass_1').css("transform","scale(2.5)");
-          $('.v_info').show().css("left",'0px');
+          $('.info_bar_left > .info_image').css('background-image', 'url("img/v.png")');
+          $('.info_bar_left > .info_content > .info_content_wrap').html("This is where the information about the magnified object would display.");
           break;
           case 'glass_2':
           $('#v_image').css("transform", "scale(2)");
           $('#glass_2').css("transform","scale(2.5)");
-          $('.v_info').show().css("right","0px");
+          $('.info_bar_right > .info_image').css('background-image', 'url("img/v.png")');
+          $('.info_bar_right > .info_content > .info_content_wrap').html("This is where the information about the magnified object would display.");
           break;
         }
       },
@@ -90,12 +93,14 @@ var glassTwo = $('#glass_2');
           case 'glass_1':
           $('#v_image').css("transform", "scale(1)");
           $('#glass_1').css("transform","scale(1)");
-          $('.v_info').hide().css("left", "");
+          $('.info_bar_left > .info_image').css('background-image', 'none');
+          $('.info_bar_left > .info_content > .info_content_wrap').html("");
           break;
           case 'glass_2':
           $('#v_image').css("transform", "scale(1)");
           $('#glass_2').css("transform","scale(1)");
-          $('.v_info').hide().css("right","");
+          $('.info_bar_right > .info_image').css('background-image', 'none');
+          $('.info_bar_right > .info_content > .info_content_wrap').html("");
           break;
         }
       }
@@ -118,12 +123,14 @@ var glassTwo = $('#glass_2');
              case 'glass_1':
              $('#flower_image').css("transform", "scale(2)");
              $('#glass_1').css("transform","scale(2.5)");
-             $('.flower_info').show().css("left",'0px');
+             $('.info_bar_left > .info_image').css('background-image', 'url("img/flower.png")');
+             $('.info_bar_left > .info_content > .info_content_wrap').html("This is where the information about the magnified object would display.");
              break;
              case 'glass_2':
              $('#flower_image').css("transform", "scale(2)");
              $('#glass_2').css("transform","scale(2.5)");
-             $('.flower_info').show().css("right","0px");
+             $('.info_bar_right > .info_image').css('background-image', 'url("img/flower.png")');
+             $('.info_bar_right > .info_content > .info_content_wrap').html("This is where the information about the magnified object would display.");
              break;
           }
          },
@@ -137,12 +144,14 @@ var glassTwo = $('#glass_2');
              case 'glass_1':
              $('#flower_image').css("transform", "scale(1)");
              $('#glass_1').css("transform","scale(1)");
-             $('.flower_info').hide().css("left", "");
+             $('.info_bar_left > .info_image').css('background-image', 'none');
+             $('.info_bar_left > .info_content > .info_content_wrap').html("");
              break;
              case 'glass_2':
              $('#flower_image').css("transform", "scale(1)");
              $('#glass_2').css("transform","scale(1)");
-             $('.flower_info').hide().css("right","");
+             $('.info_bar_right > .info_image').css('background-image', 'none');
+             $('.info_bar_right > .info_content > .info_content_wrap').html("");
              break;
           }
          }

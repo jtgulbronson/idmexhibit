@@ -32,7 +32,7 @@ body {
   padding: 40px;
   position: absolute;
   top: 200px;
-  width: 250px; }
+  width: 220px; }
   .initial_content .title {
     font-size: 2rem;
     padding: 20px 0px;
@@ -70,8 +70,8 @@ body {
 #glass_1 {
   background: transparent;
   position: absolute;
-  top: 50px;
-  left: 365px;
+  top: 200px;
+  left: 265px;
   -webkit-transform-origin: center;
   transform-origin: center;
   border-radius: 50%;
@@ -83,8 +83,8 @@ body {
 #glass_2 {
   background: transparent;
   position: absolute;
-  top: 50px;
-  right: 365px;
+  top: 200px;
+  right: 265px;
   -webkit-transform-origin: center;
   transform-origin: center;
   border-radius: 50%;
@@ -93,11 +93,49 @@ body {
   z-index: 5;
   transition: transform .25s ease; }
 
-.info_content {
-  line-height: 30px;
-  width: 225px; }
-  .info_content div {
-    padding: 10px 0px; }
+.info_bar_left {
+  display: block;
+  position: absolute;
+  top: 50px;
+  left: 30px;
+  width: 240px;
+  height: auto; }
+  .info_bar_left .info_image {
+    width: 100%;
+    height: 100px;
+    display: block;
+    margin: auto;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain; }
+  .info_bar_left .info_content {
+    width: 100%;
+    display: block;
+    text-align: left;
+    padding: 30px 0px;
+    line-height: 30px; }
+
+.info_bar_right {
+  display: block;
+  position: absolute;
+  top: 50px;
+  left: 30px;
+  width: 240px;
+  height: auto; }
+  .info_bar_right .info_image {
+    width: 100%;
+    height: 100px;
+    display: block;
+    margin: auto;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain; }
+  .info_bar_right .info_content {
+    width: 100%;
+    display: block;
+    text-align: left;
+    padding: 30px 0px;
+    line-height: 30px; }
 
 #v {
   position: absolute;
@@ -116,26 +154,6 @@ body {
   height: 70px;
   transition: transform .25s ease; }
 
-.v_info {
-  width: 320px;
-  height: 80vh;
-  padding: 40px;
-  background: transparent;
-  color: #000;
-  position: absolute;
-  z-index: 3;
-  top: 0;
-  display: none; }
-  .v_info .info_image {
-    background-image: url("../img/v.png");
-    background-size: contain;
-    background-position: center center;
-    background-repeat: no-repeat;
-    margin: 0px 0px 20px;
-    width: 100%;
-    height: 80px;
-    top: 0; }
-
 #flower {
   position: absolute;
   width: 100px;
@@ -152,25 +170,5 @@ body {
   width: 240px;
   height: 280px;
   transition: transform .25s ease; }
-
-.flower_info {
-  width: 320px;
-  height: 100vh;
-  padding: 40px;
-  background: transparent;
-  color: #000;
-  position: absolute;
-  z-index: 3;
-  top: 0;
-  display: none; }
-  .flower_info .info_image {
-    background-image: url("../img/flower.png");
-    background-size: contain;
-    background-position: center center;
-    background-repeat: no-repeat;
-    margin: 0px 0px 20px;
-    width: 100%;
-    height: 80px;
-    top: 0; }
 
 /*# sourceMappingURL=style.css.map */
