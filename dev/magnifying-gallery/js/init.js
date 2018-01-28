@@ -1,12 +1,16 @@
 $( document ).ready(function(){
 //////////////////////////////////////
-// PLZ dont autoScroll
+// disabling some default functionality of browser
 //////////////////////////////////////
-
+//drag to scroll
 document.body.addEventListener('touchmove', function(event) {
      event.preventDefault();
   }, false);
 
+//press and hold to select
+var element = $("html");
+
+element.attr('unselectable', 'on').css('user-select', 'none').on('selectstart dragstart', false);
 /////////////////////////////////////
 // Drag and Drop
 ////////////////////////////////////
@@ -72,13 +76,13 @@ var glassTwo = $('#glass_2');
           case 'glass_1':
           $('#v_image').css("transform", "scale(2)");
           $('#glass_1').css("transform","scale(2.5)");
-          $('.info_bar_left > .info_image').css('background-image', 'url("img/v.png")');
+          $('.info_bar_left > .info_image').css('background-image', 'url("img/v-small.png")');
           $('.info_bar_left > .info_content > .info_content_wrap').html("This is where the information about the magnified object would display.");
           break;
           case 'glass_2':
           $('#v_image').css("transform", "scale(2)");
           $('#glass_2').css("transform","scale(2.5)");
-          $('.info_bar_right > .info_image').css('background-image', 'url("img/v.png")');
+          $('.info_bar_right > .info_image').css('background-image', 'url("img/v-small.png")');
           $('.info_bar_right > .info_content > .info_content_wrap').html("This is where the information about the magnified object would display.");
           break;
         }

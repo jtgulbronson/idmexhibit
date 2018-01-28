@@ -192,15 +192,16 @@ box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.75);
   top: 200px;
   left: 700px;
   z-index: 1;
+
 }
 
 #v_image {
-  background: url('../img/v.png');
-  background-size: cover;
+  background: url('../img/v-small.png');
+  background-size: contain;
   background-position: center;
   background-repeat: no-repeat;
-  width:60px;
-  height: 70px;
+  width: 100px;
+  height: 150px;
   transition: transform .25s ease;
 }
 ///////////////////////////////////////////////
@@ -210,8 +211,8 @@ box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.75);
 
 #flower {
   position: absolute;
-  width: 100px;
-  height: 150px;
+  width: 200px;
+  height: 250px;
   top: 300px;
   left: 800px;
   z-index: 1;
@@ -222,7 +223,7 @@ box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.75);
   background-size: contain;
   background-position: center;
   background-repeat: no-repeat;
-  width:240px;
-  height: 280px;
+  width: 200px;
+  height: 250px;
   transition: transform .25s ease;
 }
