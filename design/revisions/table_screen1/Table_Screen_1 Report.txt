@@ -1,0 +1,119 @@
+Package Report
+
+-----------------------------------------------------------------------------
+Document:
+Name: Table_Screen_1.ai
+Color Mode: RGB color
+Color Profile: sRGB IEC61966-2.1
+Ruler Units: inches
+Artboard Dimensions: 9.8 in x 6.8 in
+Show Images in Outline Mode: OFF
+Highlight Substituted Fonts: OFF
+Highlight Substituted Glyphs: OFF
+Preserve Text Editability
+Simulate Colored Paper: OFF
+
+-----------------------------------------------------------------------------
+Spot Color Objects:
+
+-----------------------------------------------------------------------------
+Missing Fonts:NONE
+
+-----------------------------------------------------------------------------
+Protected Fonts that were not packaged:NONE
+
+-----------------------------------------------------------------------------
+Fonts:
+Montserrat Light (OTF)
+Montserrat (OTF)
+Montserrat Medium (OTF)
+PT Serif Italic (OTF)
+PT Serif Bold (OTF)
+
+-----------------------------------------------------------------------------
+Embedded Fonts:
+NONE
+
+-----------------------------------------------------------------------------
+Missing Links:
+NONE
+
+-----------------------------------------------------------------------------
+Linked Images:
+
+/Users/jakepettit/Documents/sproj/Layer 3.png
+Type: Transparent RGB
+Bits per Pixel: 32
+Channels: 4
+Size: 4149K, 1524 by 697 pixels
+Dimensions: 526.61 by 382.926 points 
+Resolution: 208.367 by 131.054 pixels per inch
+
+
+/Users/jakepettit/Documents/sproj/Group 1.png
+Type: Transparent RGB
+Bits per Pixel: 32
+Channels: 4
+Size: 4149K, 1524 by 697 pixels
+Dimensions: 445.005 by 203.523 points 
+Resolution: 246.577 by 246.577 pixels per inch
+
+
+/Users/jakepettit/Downloads/ThinkDesign-SubtleGrungeVectors/ThinkDesign-SubtleGrungeVector12.eps
+Type: EPS
+
+/Users/jakepettit/Downloads/ThinkDesign-SubtleGrungeVectors/ThinkDesign-SubtleGrungeVector12.eps
+Type: EPS
+
+/Users/jakepettit/Downloads/ThinkDesign-SubtleGrungeVectors/ThinkDesign-SubtleGrungeVector10.eps
+Type: EPS
+
+/Users/jakepettit/Downloads/ThinkDesign-SubtleGrungeVectors/ThinkDesign-SubtleGrungeVector12.eps
+Type: EPS
+
+/Users/jakepettit/Documents/sproj/g2.png
+Type: Transparent RGB
+Bits per Pixel: 32
+Channels: 4
+Size: 1343K, 362 by 950 pixels
+Dimensions: 137.857 by 285.047 points 
+Resolution: 189.065 by 239.96 pixels per inch
+
+
+/Users/jakepettit/Downloads/ThinkDesign-SubtleGrungeVectors/ThinkDesign-SubtleGrungeVector10.eps
+Type: EPS
+
+/Users/jakepettit/Documents/sproj/Group1.png
+Type: Transparent RGB
+Bits per Pixel: 32
+Channels: 4
+Size: 1343K, 362 by 950 pixels
+Dimensions: 191.306 by 279.902 points 
+Resolution: 136.242 by 244.371 pixels per inch
+
+
+/Users/jakepettit/Downloads/ThinkDesign-SubtleGrungeVectors/ThinkDesign-SubtleGrungeVector12.eps
+Type: EPS
+
+/Users/jakepettit/Downloads/ThinkDesign-SubtleGrungeVectors/ThinkDesign-SubtleGrungeVector12.eps
+Type: EPS
+
+/Users/jakepettit/Documents/sproj/g2.png
+Type: Transparent RGB
+Bits per Pixel: 32
+Channels: 4
+Size: 1343K, 362 by 950 pixels
+Dimensions: 309.113 by 68.599 points 
+Resolution: 84.319 by 997.101 pixels per inch
+
+
+/Users/jakepettit/Downloads/ThinkDesign-SubtleGrungeVectors/ThinkDesign-SubtleGrungeVector12.eps
+Type: EPS
+
+/Users/jakepettit/Documents/sproj/Group1.png
+Type: Transparent RGB
+Bits per Pixel: 32
+Channels: 4
+Size: 1343K, 362 by 950 pixels
+Dimensions: 256.123 by 176.989 points 
+Resolution: 101.764 by 386.464 pixels per inch
