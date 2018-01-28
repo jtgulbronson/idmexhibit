@@ -7,10 +7,9 @@ document.body.addEventListener('touchmove', function(event) {
      event.preventDefault();
   }, false);
 
-//press and hold to select
-var element = $("html");
-
-element.attr('unselectable', 'on').css('user-select', 'none').on('selectstart dragstart', false);
+//keeps users from selecting text (highlighting)
+var textSelect = $("html");
+textSelect.attr('unselectable', 'on').css('user-select', 'none').on('selectstart dragstart', false);
 /////////////////////////////////////
 // Drag and Drop
 ////////////////////////////////////
