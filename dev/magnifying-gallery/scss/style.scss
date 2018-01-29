@@ -216,10 +216,10 @@ box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.75);
   height: 150px;
   transition: transform .25s ease;
 }
+
 ///////////////////////////////////////////////
 //Flower Element
 ///////////////////////////////////////////////
-
 
 #flower {
   position: absolute;
@@ -238,5 +238,29 @@ box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.75);
   background-repeat: no-repeat;
   width: 250px;
   height: 300px;
+  transition: transform .25s ease;
+}
+
+///////////////////////////////////////////////
+//Leaf Element
+///////////////////////////////////////////////
+
+#leaf {
+  position: absolute;
+  width: 200px;
+  height: 250px;
+  top: 200px;
+  right: 600px;
+  transform: rotate(-45deg);
+  z-index: 1;
+}
+
+#leaf_image{
+  background: url('../img/leaf.png');
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+  width: 150px;
+  height: 200px;
   transition: transform .25s ease;
 }

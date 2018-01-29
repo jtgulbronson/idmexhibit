@@ -173,4 +173,22 @@ body {
   height: 300px;
   transition: transform .25s ease; }
 
+#leaf {
+  position: absolute;
+  width: 200px;
+  height: 250px;
+  top: 200px;
+  right: 600px;
+  transform: rotate(-45deg);
+  z-index: 1; }
+
+#leaf_image {
+  background: url("../img/leaf.png");
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+  width: 150px;
+  height: 200px;
+  transition: transform .25s ease; }
+
 /*# sourceMappingURL=style.css.map */
