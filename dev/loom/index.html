@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>NFC POC</title>
+</head>
+
+<body>
+<script src="require.js">
+    "use strict";
+// #############
+// Logs cards' uid
+// #############
+
+//import { NFC } from '../nfc-pcsc-0.6.0/src/index.js';
+
+var _index = require('../nfc-pcsc-0.6.0/src/index.js');
+
+
+const nfc = new NFC();
+
+nfc.on('reader', reader => {
+
+	console.log(reader.name + ' reader attached, waiting for cards ...');
+
+	reader.on('card', card => {
+		console.log(card.uid);
+	});
+
+	reader.on('error', err => {
+		console.error('reader error', err);
+	});
+
+	reader.on('end', () => {
+		console.log(reader.name + ' reader disconnected.');
+	});
+
+
+});
+
+nfc.on('error', err => {
+	console.error(err);
+});</script>
+    </body>
+</html>
