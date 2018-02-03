@@ -22,29 +22,49 @@ body {
   width: 100vw;
   height: 100vh;
   overflow: hidden;
-}
-
-.background-img{
-  background-color: $foreground;
-  background-image: url('../img/Collage_Background.jpg');
-  background-position: center center;
-  background-size: contain;
+  background-image: url('../img/BG.jpg');
+  background-size: 100%;
+  background-position: center;
   background-repeat: no-repeat;
-  width: 100vw;
-  height:100vh;
-
 }
+
+.bg_flower_1{
+  position: absolute;
+  z-index: 5;
+  top:0;
+  right:0;
+  background-image: url('../img/FLOWER01.png');
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+  width: 430px;
+  height: 250px;
+}
+
+.bg_flower_2{
+  position: absolute;
+  z-index: 5;
+  bottom:0;
+  left:0;
+  background-image: url('../img/FLOWER02.png');
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+  width: 430px;
+  height: 430px;
+}
+
 ///////////////////////////////////////////////
 //Generic Class Styles
 ///////////////////////////////////////////////
 
 .side_panel{
   position: relative;
-  height: 80vh;
-  width: 300px;
-  margin-top: 10vh;
+  height: 65vh;
+  width: 350px;
+  margin-top: 15vh;
   z-index: 3;
-  background-color: $background;
+  background-color: $foreground;
   -webkit-box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.75);
 -moz-box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.75);
 box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.75);
@@ -53,7 +73,7 @@ box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.75);
   padding: 40px;
   position:absolute;
   top: 200px;
-  width: 220px;
+  width: 270px;
   .title{
     font-size: 2rem;
     padding: 20px 0px;
@@ -70,17 +90,17 @@ box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.75);
 //Specific Background Element styles
 ///////////////////////////////////////////////
 //
-// #left_instruct{
-//   .title{
-//     color: $forest;
-//   }
-// }
-//
-// #right_instruct{
-//   .title{
-//     color: $yellow;
-//   }
-// }
+#left_instruct{
+  .title{
+    color: $rouge;
+  }
+}
+
+#right_instruct{
+  .title{
+    color: $blue;
+  }
+}
 
 #left_panel{
   position: absolute;
@@ -115,11 +135,11 @@ box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.75);
   background: transparent;
   position: absolute;
   top: 200px;
-  left: 240px;
+  left: 295px;
   -webkit-transform-origin: center;
   transform-origin: center;
   border-radius: 50%;
-  border: solid $forest 5px;
+  border: solid $rouge 6px;
   color: white;
   z-index: 5;
    transition: transform .25s ease;
@@ -129,11 +149,11 @@ box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.75);
   background: transparent;
   position: absolute;
   top: 200px;
- right: 240px;
+  left: 1755px;
   -webkit-transform-origin: center;
   transform-origin: center;
   border-radius: 50%;
-  border: solid $yellow 5px;
+  border: solid $blue 6px;
   color: black;
   z-index: 5;
    transition: transform .25s ease;
@@ -147,7 +167,7 @@ box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.75);
   position: absolute;
   top: 50px;
   left: 30px;
-  width:240px;
+  width:270px;
   height: auto;
   .info_image{
     width: 100%;
@@ -172,7 +192,7 @@ box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.75);
   position: absolute;
   top: 50px;
   left: 30px;
-  width:240px;
+  width:270px;
   height: auto;
   .info_image{
     width: 100%;
