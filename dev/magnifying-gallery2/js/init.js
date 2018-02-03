@@ -74,13 +74,13 @@ $(document).ready(function() {
             var glass = draggableElement.getAttribute('id');
             switch (glass) {
                 case 'glass_1':
-                    $('#len_1_image').css("transform", "scale(1.2)");
+                    // $('#len_1_image').css("transform", "scale(1.2)");
                     $('#glass_1').css("transform", "scale(2.5)");
                     $('.info_bar_left > .info_image').css('background-image', 'url("img/len-1.jpeg")');
                     $('.info_bar_left > .info_content > .info_content_wrap').html("This is where the information about the magnified object would display.");
                     break;
                 case 'glass_2':
-                    $('#len_1_image').css("transform", "scale(1.2)");
+                    // $('#len_1_image').css("transform", "scale(1.2)");
                     $('#glass_2').css("transform", "scale(2.5)");
                     $('.info_bar_right > .info_image').css('background-image', 'url("img/len-1.jpeg")');
                     $('.info_bar_right > .info_content > .info_content_wrap').html("This is where the information about the magnified object would display.");
@@ -95,13 +95,13 @@ $(document).ready(function() {
             var glass = draggableElement.getAttribute('id');
             switch (glass) {
                 case 'glass_1':
-                    $('#len_1_image').css("transform", "scale(1)");
+                    // $('#len_1_image').css("transform", "scale(1)");
                     $('#glass_1').css("transform", "scale(1)");
                     $('.info_bar_left > .info_image').css('background-image', 'none');
                     $('.info_bar_left > .info_content > .info_content_wrap').html("");
                     break;
                 case 'glass_2':
-                    $('#len_1_image').css("transform", "scale(1)");
+                    // $('#len_1_image').css("transform", "scale(1)");
                     $('#glass_2').css("transform", "scale(1)");
                     $('.info_bar_right > .info_image').css('background-image', 'none');
                     $('.info_bar_right > .info_content > .info_content_wrap').html("");
@@ -125,13 +125,13 @@ $(document).ready(function() {
             var glass = draggableElement.getAttribute('id');
             switch (glass) {
                 case 'glass_1':
-                    $('#len_2_image').css("transform", "scale(1.2)");
+                    // $('#len_2_image').css("transform", "scale(1.2)");
                     $('#glass_1').css("transform", "scale(2)");
                     $('.info_bar_left > .info_image').css('background-image', 'url("img/len-2.jpeg")');
                     $('.info_bar_left > .info_content > .info_content_wrap').html("This is where the information about the magnified object would display.");
                     break;
                 case 'glass_2':
-                    $('#len_2_image').css("transform", "scale(1.2)");
+                    // $('#len_2_image').css("transform", "scale(1.2)");
                     $('#glass_2').css("transform", "scale(2)");
                     $('.info_bar_right > .info_image').css('background-image', 'url("img/len-2.jpeg")');
                     $('.info_bar_right > .info_content > .info_content_wrap').html("This is where the information about the magnified object would display.");
@@ -146,13 +146,13 @@ $(document).ready(function() {
             var glass = draggableElement.getAttribute('id');
             switch (glass) {
                 case 'glass_1':
-                    $('#len_2_image').css("transform", "scale(1)");
+                    // $('#len_2_image').css("transform", "scale(1)");
                     $('#glass_1').css("transform", "scale(1)");
                     $('.info_bar_left > .info_image').css('background-image', 'none');
                     $('.info_bar_left > .info_content > .info_content_wrap').html("");
                     break;
                 case 'glass_2':
-                    $('#len_2_image').css("transform", "scale(1)");
+                    // $('#len_2_image').css("transform", "scale(1)");
                     $('#glass_2').css("transform", "scale(1)");
                     $('.info_bar_right > .info_image').css('background-image', 'none');
                     $('.info_bar_right > .info_content > .info_content_wrap').html("");
@@ -176,13 +176,13 @@ $(document).ready(function() {
             var glass = draggableElement.getAttribute('id');
             switch (glass) {
                 case 'glass_1':
-                    $('#len_3_image').css("transform", "scale(1.2)");
+                    // $('#len_3_image').css("transform", "scale(1.2)");
                     $('#glass_1').css("transform", "scale(2)");
                     $('.info_bar_left > .info_image').css('background-image', 'url("img/len-3.jpeg")');
                     $('.info_bar_left > .info_content > .info_content_wrap').html("This is where the information about the magnified object would display.");
                     break;
                 case 'glass_2':
-                    $('#len_3_image').css("transform", "scale(1.2)");
+                    // $('#len_3_image').css("transform", "scale(1.2)");
                     $('#glass_2').css("transform", "scale(2)");
                     $('.info_bar_right > .info_image').css('background-image', 'url("img/len-3.jpeg")');
                     $('.info_bar_right > .info_content > .info_content_wrap').html("This is where the information about the magnified object would display.");
@@ -197,13 +197,13 @@ $(document).ready(function() {
             var glass = draggableElement.getAttribute('id');
             switch (glass) {
                 case 'glass_1':
-                    $('#len_3_image').css("transform", "scale(1)");
+                    // $('#len_3_image').css("transform", "scale(1)");
                     $('#glass_1').css("transform", "scale(1)");
                     $('.info_bar_left > .info_image').css('background-image', 'none');
                     $('.info_bar_left > .info_content > .info_content_wrap').html("");
                     break;
                 case 'glass_2':
-                    $('#len_3_image').css("transform", "scale(1)");
+                    // $('#len_3_image').css("transform", "scale(1)");
                     $('#glass_2').css("transform", "scale(1)");
                     $('.info_bar_right > .info_image').css('background-image', 'none');
                     $('.info_bar_right > .info_content > .info_content_wrap').html("");
@@ -228,13 +228,13 @@ $(document).ready(function() {
             var glass = draggableElement.getAttribute('id');
             switch (glass) {
                 case 'glass_1':
-                    $('#len_4_image').css("transform", "scale(1.2)");
+                    // $('#len_4_image').css("transform", "scale(1.2)");
                     $('#glass_1').css("transform", "scale(2)");
                     $('.info_bar_left > .info_image').css('background-image', 'url("img/len-4.jpeg")');
                     $('.info_bar_left > .info_content > .info_content_wrap').html("This is where the information about the magnified object would display.");
                     break;
                 case 'glass_2':
-                    $('#len_4_image').css("transform", "scale(1.2)");
+                    // $('#len_4_image').css("transform", "scale(1.2)");
                     $('#glass_2').css("transform", "scale(2)");
                     $('.info_bar_right > .info_image').css('background-image', 'url("img/len-4.jpeg")');
                     $('.info_bar_right > .info_content > .info_content_wrap').html("This is where the information about the magnified object would display.");
@@ -249,13 +249,13 @@ $(document).ready(function() {
             var glass = draggableElement.getAttribute('id');
             switch (glass) {
                 case 'glass_1':
-                    $('#len_4_image').css("transform", "scale(1)");
+                    // $('#len_4_image').css("transform", "scale(1)");
                     $('#glass_1').css("transform", "scale(1)");
                     $('.info_bar_left > .info_image').css('background-image', 'none');
                     $('.info_bar_left > .info_content > .info_content_wrap').html("");
                     break;
                 case 'glass_2':
-                    $('#len_4_image').css("transform", "scale(1)");
+                    // $('#len_4_image').css("transform", "scale(1)");
                     $('#glass_2').css("transform", "scale(1)");
                     $('.info_bar_right > .info_image').css('background-image', 'none');
                     $('.info_bar_right > .info_content > .info_content_wrap').html("");
@@ -279,13 +279,13 @@ $(document).ready(function() {
             var glass = draggableElement.getAttribute('id');
             switch (glass) {
                 case 'glass_1':
-                    $('#len_5_image').css("transform", "scale(1.2)");
+                    // $('#len_5_image').css("transform", "scale(1.2)");
                     $('#glass_1').css("transform", "scale(2)");
                     $('.info_bar_left > .info_image').css('background-image', 'url("img/len-5.jpeg")');
                     $('.info_bar_left > .info_content > .info_content_wrap').html("This is where the information about the magnified object would display.");
                     break;
                 case 'glass_2':
-                    $('#len_5_image').css("transform", "scale(1.2)");
+                    // $('#len_5_image').css("transform", "scale(1.2)");
                     $('#glass_2').css("transform", "scale(2)");
                     $('.info_bar_right > .info_image').css('background-image', 'url("img/len-5.jpeg")');
                     $('.info_bar_right > .info_content > .info_content_wrap').html("This is where the information about the magnified object would display.");
@@ -300,13 +300,13 @@ $(document).ready(function() {
             var glass = draggableElement.getAttribute('id');
             switch (glass) {
                 case 'glass_1':
-                    $('#len_5_image').css("transform", "scale(1)");
+                    // $('#len_5_image').css("transform", "scale(1)");
                     $('#glass_1').css("transform", "scale(1)");
                     $('.info_bar_left > .info_image').css('background-image', 'none');
                     $('.info_bar_left > .info_content > .info_content_wrap').html("");
                     break;
                 case 'glass_2':
-                    $('#len_5_image').css("transform", "scale(1)");
+                    // $('#len_5_image').css("transform", "scale(1)");
                     $('#glass_2').css("transform", "scale(1)");
                     $('.info_bar_right > .info_image').css('background-image', 'none');
                     $('.info_bar_right > .info_content > .info_content_wrap').html("");
@@ -330,13 +330,13 @@ $(document).ready(function() {
             var glass = draggableElement.getAttribute('id');
             switch (glass) {
                 case 'glass_1':
-                    $('#len_8_image').css("transform", "scale(1.2)");
+                    // $('#len_8_image').css("transform", "scale(1.2)");
                     $('#glass_1').css("transform", "scale(2)");
                     $('.info_bar_left > .info_image').css('background-image', 'url("img/len-8.jpeg")');
                     $('.info_bar_left > .info_content > .info_content_wrap').html("This is where the information about the magnified object would display.");
                     break;
                 case 'glass_2':
-                    $('#len_8_image').css("transform", "scale(1.2)");
+                    // $('#len_8_image').css("transform", "scale(1.2)");
                     $('#glass_2').css("transform", "scale(2)");
                     $('.info_bar_right > .info_image').css('background-image', 'url("img/len-8.jpeg")');
                     $('.info_bar_right > .info_content > .info_content_wrap').html("This is where the information about the magnified object would display.");
@@ -351,13 +351,13 @@ $(document).ready(function() {
             var glass = draggableElement.getAttribute('id');
             switch (glass) {
                 case 'glass_1':
-                    $('#len_8_image').css("transform", "scale(1)");
+                    // $('#len_8_image').css("transform", "scale(1)");
                     $('#glass_1').css("transform", "scale(1)");
                     $('.info_bar_left > .info_image').css('background-image', 'none');
                     $('.info_bar_left > .info_content > .info_content_wrap').html("");
                     break;
                 case 'glass_2':
-                    $('#len_8_image').css("transform", "scale(1)");
+                    // $('#len_8_image').css("transform", "scale(1)");
                     $('#glass_2').css("transform", "scale(1)");
                     $('.info_bar_right > .info_image').css('background-image', 'none');
                     $('.info_bar_right > .info_content > .info_content_wrap').html("");
@@ -381,13 +381,13 @@ $(document).ready(function() {
             var glass = draggableElement.getAttribute('id');
             switch (glass) {
                 case 'glass_1':
-                    $('#ange_1_image').css("transform", "scale(1.2)");
+                    // $('#ange_1_image').css("transform", "scale(1.2)");
                     $('#glass_1').css("transform", "scale(2)");
                     $('.info_bar_left > .info_image').css('background-image', 'url("img/ange-1.jpg")');
                     $('.info_bar_left > .info_content > .info_content_wrap').html("This is where the information about the magnified object would display.");
                     break;
                 case 'glass_2':
-                    $('#ange_1_image').css("transform", "scale(1.2)");
+                    // $('#ange_1_image').css("transform", "scale(1.2)");
                     $('#glass_2').css("transform", "scale(2)");
                     $('.info_bar_right > .info_image').css('background-image', 'url("img/ange-1.jpg")');
                     $('.info_bar_right > .info_content > .info_content_wrap').html("This is where the information about the magnified object would display.");
@@ -402,13 +402,13 @@ $(document).ready(function() {
             var glass = draggableElement.getAttribute('id');
             switch (glass) {
                 case 'glass_1':
-                    $('#ange_1_image').css("transform", "scale(1)");
+                    // $('#ange_1_image').css("transform", "scale(1)");
                     $('#glass_1').css("transform", "scale(1)");
                     $('.info_bar_left > .info_image').css('background-image', 'none');
                     $('.info_bar_left > .info_content > .info_content_wrap').html("");
                     break;
                 case 'glass_2':
-                    $('#ange_1_image').css("transform", "scale(1)");
+                    // $('#ange_1_image').css("transform", "scale(1)");
                     $('#glass_2').css("transform", "scale(1)");
                     $('.info_bar_right > .info_image').css('background-image', 'none');
                     $('.info_bar_right > .info_content > .info_content_wrap').html("");
