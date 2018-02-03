@@ -103,7 +103,7 @@ body {
   height: auto; }
   .info_bar_left .info_image {
     width: 100%;
-    height: 100px;
+    height: 200px;
     display: block;
     margin: auto;
     background-position: center;
@@ -125,7 +125,7 @@ body {
   height: auto; }
   .info_bar_right .info_image {
     width: 100%;
-    height: 100px;
+    height: 200px;
     display: block;
     margin: auto;
     background-position: center;
@@ -138,34 +138,34 @@ body {
     padding: 30px 0px;
     line-height: 30px; }
 
-#v {
+#bird {
   position: absolute;
   width: 200px;
-  height: 300px;
+  height: 200px;
   top: 200px;
-  left: 500px;
-  z-index: 1; }
+  left: 400px;
+  z-index: 1;
+  transform: rotateY(180deg); }
 
-#v_image {
-  background: url("../img/v-small.png");
+#bird_image {
+  background: url("../img/bird.png");
   background-size: contain;
   background-position: center;
   background-repeat: no-repeat;
-  width: 100px;
-  height: 150px;
+  width: 200px;
+  height: 200px;
   transition: transform .25s ease; }
 
-#flower {
+#bass {
   position: absolute;
   width: 200px;
   height: 250px;
   top: 700px;
-  right: 400px;
-  transform: rotate(15deg);
+  right: 550px;
   z-index: 1; }
 
-#flower_image {
-  background: url("../img/flower.png");
+#bass_image {
+  background: url("../img/bass.png");
   background-size: contain;
   background-position: center;
   background-repeat: no-repeat;
@@ -173,21 +173,37 @@ body {
   height: 300px;
   transition: transform .25s ease; }
 
-#leaf {
+#stamp {
   position: absolute;
   width: 200px;
   height: 250px;
   top: 200px;
   right: 600px;
-  transform: rotate(-45deg);
   z-index: 1; }
 
-#leaf_image {
-  background: url("../img/leaf.png");
+#stamp_image {
+  background: url("../img/stamp.png");
   background-size: contain;
   background-position: center;
   background-repeat: no-repeat;
   width: 150px;
+  height: 200px;
+  transition: transform .25s ease; }
+
+#diver {
+  position: absolute;
+  width: 200px;
+  height: 250px;
+  top: 650px;
+  left: 600px;
+  z-index: 1; }
+
+#diver_image {
+  background: url("../img/diver.jpg");
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+  width: 300px;
   height: 200px;
   transition: transform .25s ease; }
 
