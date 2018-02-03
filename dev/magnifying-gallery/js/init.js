@@ -314,6 +314,108 @@ var glassTwo = $('#glass_2');
                             }
                           });
 
+                          //diver element interaction
+                                 // enable draggables to be dropped into this
+                                 interact('#len_8').dropzone({
+                                   // only accept elements matching this CSS selector
+                                   accept: '.magnify_glass',
+                                   // Require a 75% element overlap for a drop to be possible
+                                   overlap: 0.25,
+                                   ondragenter: function (event) {
+                                    var draggableElement = event.relatedTarget,
+                                    dropzoneElement = event.target;
+                                    draggableElement.classList.add('dropped-element');
+                                    draggableElement.classList.remove('removed-element');
+                                    var glass = draggableElement.getAttribute('id');
+                                    switch(glass){
+                                       case 'glass_1':
+                                       $('#len_8_image').css("transform", "scale(1.2)");
+                                       $('#glass_1').css("transform","scale(2)");
+                                       $('.info_bar_left > .info_image').css('background-image', 'url("img/len-8.jpeg")');
+                                       $('.info_bar_left > .info_content > .info_content_wrap').html("This is where the information about the magnified object would display.");
+                                       break;
+                                       case 'glass_2':
+                                       $('#len_8_image').css("transform", "scale(1.2)");
+                                       $('#glass_2').css("transform","scale(2)");
+                                       $('.info_bar_right > .info_image').css('background-image', 'url("img/len-8.jpeg")');
+                                       $('.info_bar_right > .info_content > .info_content_wrap').html("This is where the information about the magnified object would display.");
+                                       break;
+                                    }
+                                   },
+                                   ondragleave: function (event) {
+                                    var draggableElement = event.relatedTarget,
+                                    dropzoneElement = event.target;
+                                      draggableElement.classList.add('removed-element');
+                                    draggableElement.classList.remove('dropped-element');
+                                    var glass = draggableElement.getAttribute('id');
+                                    switch(glass){
+                                       case 'glass_1':
+                                       $('#len_8_image').css("transform", "scale(1)");
+                                       $('#glass_1').css("transform","scale(1)");
+                                       $('.info_bar_left > .info_image').css('background-image', 'none');
+                                       $('.info_bar_left > .info_content > .info_content_wrap').html("");
+                                       break;
+                                       case 'glass_2':
+                                       $('#len_8_image').css("transform", "scale(1)");
+                                       $('#glass_2').css("transform","scale(1)");
+                                       $('.info_bar_right > .info_image').css('background-image', 'none');
+                                       $('.info_bar_right > .info_content > .info_content_wrap').html("");
+                                       break;
+                                    }
+                                   }
+                                 });
+
+                                 //diver element interaction
+                                        // enable draggables to be dropped into this
+                                        interact('#ange_1').dropzone({
+                                          // only accept elements matching this CSS selector
+                                          accept: '.magnify_glass',
+                                          // Require a 75% element overlap for a drop to be possible
+                                          overlap: 0.25,
+                                          ondragenter: function (event) {
+                                           var draggableElement = event.relatedTarget,
+                                           dropzoneElement = event.target;
+                                           draggableElement.classList.add('dropped-element');
+                                           draggableElement.classList.remove('removed-element');
+                                           var glass = draggableElement.getAttribute('id');
+                                           switch(glass){
+                                              case 'glass_1':
+                                              $('#ange_1_image').css("transform", "scale(1.2)");
+                                              $('#glass_1').css("transform","scale(2)");
+                                              $('.info_bar_left > .info_image').css('background-image', 'url("img/ange-1.jpg")');
+                                              $('.info_bar_left > .info_content > .info_content_wrap').html("This is where the information about the magnified object would display.");
+                                              break;
+                                              case 'glass_2':
+                                              $('#ange_1_image').css("transform", "scale(1.2)");
+                                              $('#glass_2').css("transform","scale(2)");
+                                              $('.info_bar_right > .info_image').css('background-image', 'url("img/ange-1.jpg")');
+                                              $('.info_bar_right > .info_content > .info_content_wrap').html("This is where the information about the magnified object would display.");
+                                              break;
+                                           }
+                                          },
+                                          ondragleave: function (event) {
+                                           var draggableElement = event.relatedTarget,
+                                           dropzoneElement = event.target;
+                                             draggableElement.classList.add('removed-element');
+                                           draggableElement.classList.remove('dropped-element');
+                                           var glass = draggableElement.getAttribute('id');
+                                           switch(glass){
+                                              case 'glass_1':
+                                              $('#ange_1_image').css("transform", "scale(1)");
+                                              $('#glass_1').css("transform","scale(1)");
+                                              $('.info_bar_left > .info_image').css('background-image', 'none');
+                                              $('.info_bar_left > .info_content > .info_content_wrap').html("");
+                                              break;
+                                              case 'glass_2':
+                                              $('#ange_1_image').css("transform", "scale(1)");
+                                              $('#glass_2').css("transform","scale(1)");
+                                              $('.info_bar_right > .info_image').css('background-image', 'none');
+                                              $('.info_bar_right > .info_content > .info_content_wrap').html("");
+                                              break;
+                                           }
+                                          }
+                                        });
+
     //Browser Idle Refresh
 
     var time = new Date().getTime();
