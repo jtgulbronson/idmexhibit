@@ -223,7 +223,7 @@ body {
   -webkit-clip-path: polygon(50% 0%, 77% 4%, 76% 23%, 82% 42%, 69% 85%, 43% 94%, 21% 91%, 26% 50%, 27% 30%, 38% 12%);
   clip-path: polygon(50% 0%, 77% 4%, 76% 23%, 82% 42%, 69% 85%, 43% 94%, 21% 91%, 26% 50%, 27% 30%, 38% 12%); }
 
-#diver {
+#len_4 {
   position: absolute;
   width: 200px;
   height: 250px;
@@ -231,13 +231,35 @@ body {
   left: 600px;
   z-index: 1; }
 
-#diver_image {
-  background: url("../img/diver.jpg");
+#len_4_image {
+  background: url("../img/len-4.jpeg");
   background-size: contain;
   background-position: center;
   background-repeat: no-repeat;
-  width: 300px;
-  height: 200px;
-  transition: transform .25s ease; }
+  width: 350px;
+  height: 300px;
+  transition: transform .25s ease;
+  -webkit-clip-path: polygon(0 47%, 14% 45%, 34% 36%, 51% 40%, 75% 35%, 96% 38%, 100% 85%, 99% 98%, 85% 100%, 28% 96%, 10% 86%, 0 73%);
+  clip-path: polygon(0 47%, 14% 45%, 34% 36%, 51% 40%, 75% 35%, 96% 38%, 100% 85%, 99% 98%, 85% 100%, 28% 96%, 10% 86%, 0 73%); }
+
+#len_5 {
+  position: absolute;
+  width: 200px;
+  height: 250px;
+  top: 550px;
+  left: 800px;
+  z-index: 1;
+  transform: rotate(180deg); }
+
+#len_5_image {
+  background: url("../img/len-5.jpeg");
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+  width: 350px;
+  height: 300px;
+  transition: transform .25s ease;
+  -webkit-clip-path: polygon(0 47%, 14% 45%, 34% 36%, 51% 40%, 75% 35%, 96% 38%, 100% 85%, 99% 98%, 85% 100%, 28% 96%, 10% 86%, 0 73%);
+  clip-path: polygon(0 47%, 14% 45%, 34% 36%, 51% 40%, 75% 35%, 96% 38%, 100% 85%, 99% 98%, 85% 100%, 28% 96%, 10% 86%, 0 73%); }
 
 /*# sourceMappingURL=style.css.map */
