@@ -165,13 +165,13 @@ box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.75);
 .info_bar_left{
   display: block;
   position: absolute;
-  top: 50px;
+  top: 80px;
   left: 30px;
-  width:270px;
+  width:290px;
   height: auto;
   .info_image{
     width: 100%;
-    height: 200px;
+    height: 300px;
     display: block;
     margin:auto;
     background-position: center;
@@ -190,13 +190,13 @@ box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.75);
 .info_bar_right{
   display: block;
   position: absolute;
-  top: 50px;
+  top: 80px;
   left: 30px;
-  width:270px;
+  width:290px;
   height: auto;
   .info_image{
     width: 100%;
-    height: 200px;
+    height: 300px;
     display: block;
     margin:auto;
     background-position: center;
@@ -214,73 +214,85 @@ box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.75);
 
 
 ///////////////////////////////////////////////
-//Bird Element
+//Len 1 Element
 ///////////////////////////////////////////////
 
-#bird {
+#len_1 {
   position: absolute;
   width: 200px;
-  height: 200px;
+  height: 300px;
   top: 200px;
-  left: 400px;
+  left: 650px;
   z-index: 1;
-  transform: rotateY(180deg);
+  -webkit-transform: rotate(30deg);
+  transform: rotate(30deg);
 }
 
-#bird_image {
-  background: url('../img/bird.png');
+#len_1_image {
+  background: url('../img/len-1.jpeg');
   background-size: contain;
   background-position: center;
   background-repeat: no-repeat;
-  width: 200px;
-  height: 200px;
+  width: 300px;
+  height: 350px;
   transition: transform .25s ease;
+//crops image
+  -webkit-clip-path: polygon(7% 43%, 19% 23%, 40% 27%, 50% 26%, 69% 19%, 85% 31%, 80% 54%, 90% 89%, 61% 100%, 28% 95%, 15% 85%, 20% 66%);
+clip-path: polygon(7% 43%, 19% 23%, 40% 27%, 50% 26%, 69% 19%, 85% 31%, 80% 54%, 90% 89%, 61% 100%, 28% 95%, 15% 85%, 20% 66%);
+
 }
 
 ///////////////////////////////////////////////
-//Flower Element
+//len 2 Element
 ///////////////////////////////////////////////
 
-#bass {
+#len_2 {
   position: absolute;
   width: 200px;
   height: 250px;
-  top: 700px;
-  right: 550px;
+  top: 600px;
+  right: 800px;
   z-index: 1;
+  transform: rotate(-13deg);
 }
 
-#bass_image {
-  background: url('../img/bass.png');
+#len_2_image {
+  background: url('../img/len-2.jpeg');
   background-size: contain;
   background-position: center;
   background-repeat: no-repeat;
-  width: 250px;
+  width: 350px;
   height: 300px;
   transition: transform .25s ease;
+
+  -webkit-clip-path: polygon(5% 19%, 16% 10%, 26% 0, 49% 6%, 72% 13%, 94% 22%, 95% 46%, 90% 65%, 70% 76%, 23% 88%, 5% 85%, 6% 66%);
+clip-path: polygon(5% 19%, 16% 10%, 26% 0, 49% 6%, 72% 13%, 94% 22%, 95% 46%, 90% 65%, 70% 76%, 23% 88%, 5% 85%, 6% 66%);
 }
 
 ///////////////////////////////////////////////
-//Leaf Element
+//Len 3 Element
 ///////////////////////////////////////////////
 
-#stamp {
+#len_3 {
   position: absolute;
   width: 200px;
   height: 250px;
   top: 200px;
-  right: 600px;
+  right: 900px;
   z-index: 1;
 }
 
-#stamp_image{
-  background: url('../img/stamp.png');
+#len_3_image{
+  background: url('../img/len-3.jpeg');
   background-size: contain;
   background-position: center;
   background-repeat: no-repeat;
-  width: 150px;
-  height: 200px;
+  width: 300px;
+  height: 350px;
   transition: transform .25s ease;
+
+  -webkit-clip-path: polygon(50% 0%, 77% 4%, 76% 23%, 82% 42%, 69% 85%, 43% 94%, 21% 91%, 26% 50%, 27% 30%, 38% 12%);
+ clip-path: polygon(50% 0%, 77% 4%, 76% 23%, 82% 42%, 69% 85%, 43% 94%, 21% 91%, 26% 50%, 27% 30%, 38% 12%);
 }
 
 ///////////////////////////////////////////////

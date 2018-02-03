@@ -60,7 +60,7 @@ var glassTwo = $('#glass_2');
 
  //bird element interaction
     // enable draggables to be dropped into this
-    interact('#bird').dropzone({
+    interact('#len_1').dropzone({
       // only accept elements matching this CSS selector
       accept: '.magnify_glass',
       // Require a 75% element overlap for a drop to be possible
@@ -73,15 +73,15 @@ var glassTwo = $('#glass_2');
         var glass = draggableElement.getAttribute('id');
         switch(glass){
           case 'glass_1':
-          $('#bird_image').css("transform", "scale(1.5)");
+          $('#len_1_image').css("transform", "scale(1.2)");
           $('#glass_1').css("transform","scale(2.5)");
-          $('.info_bar_left > .info_image').css('background-image', 'url("img/bird.png")');
+          $('.info_bar_left > .info_image').css('background-image', 'url("img/len-1.jpeg")');
           $('.info_bar_left > .info_content > .info_content_wrap').html("This is where the information about the magnified object would display.");
           break;
           case 'glass_2':
-          $('#bird_image').css("transform", "scale(1.5)");
+          $('#len_1_image').css("transform", "scale(1.2)");
           $('#glass_2').css("transform","scale(2.5)");
-          $('.info_bar_right > .info_image').css('background-image', 'url("img/bird.png")');
+          $('.info_bar_right > .info_image').css('background-image', 'url("img/len-1.jpeg")');
           $('.info_bar_right > .info_content > .info_content_wrap').html("This is where the information about the magnified object would display.");
           break;
         }
@@ -94,13 +94,13 @@ var glassTwo = $('#glass_2');
         var glass = draggableElement.getAttribute('id');
         switch(glass){
           case 'glass_1':
-          $('#bird_image').css("transform", "scale(1)");
+          $('#len_1_image').css("transform", "scale(1)");
           $('#glass_1').css("transform","scale(1)");
           $('.info_bar_left > .info_image').css('background-image', 'none');
           $('.info_bar_left > .info_content > .info_content_wrap').html("");
           break;
           case 'glass_2':
-          $('#bird_image').css("transform", "scale(1)");
+          $('#len_1_image').css("transform", "scale(1)");
           $('#glass_2').css("transform","scale(1)");
           $('.info_bar_right > .info_image').css('background-image', 'none');
           $('.info_bar_right > .info_content > .info_content_wrap').html("");
@@ -111,7 +111,7 @@ var glassTwo = $('#glass_2');
 
 //bass element interaction
        // enable draggables to be dropped into this
-       interact('#bass').dropzone({
+       interact('#len_2').dropzone({
          // only accept elements matching this CSS selector
          accept: '.magnify_glass',
          // Require a 75% element overlap for a drop to be possible
@@ -124,15 +124,15 @@ var glassTwo = $('#glass_2');
           var glass = draggableElement.getAttribute('id');
           switch(glass){
              case 'glass_1':
-             $('#bass_image').css("transform", "scale(2)");
+             $('#len_2_image').css("transform", "scale(1.2)");
              $('#glass_1').css("transform","scale(2)");
-             $('.info_bar_left > .info_image').css('background-image', 'url("img/bass.png")');
+             $('.info_bar_left > .info_image').css('background-image', 'url("img/len-2.jpeg")');
              $('.info_bar_left > .info_content > .info_content_wrap').html("This is where the information about the magnified object would display.");
              break;
              case 'glass_2':
-             $('#bass_image').css("transform", "scale(2)");
+             $('#len_2_image').css("transform", "scale(1.2)");
              $('#glass_2').css("transform","scale(2)");
-             $('.info_bar_right > .info_image').css('background-image', 'url("img/bass.png")');
+             $('.info_bar_right > .info_image').css('background-image', 'url("img/len-2.jpeg")');
              $('.info_bar_right > .info_content > .info_content_wrap').html("This is where the information about the magnified object would display.");
              break;
           }
@@ -145,13 +145,13 @@ var glassTwo = $('#glass_2');
           var glass = draggableElement.getAttribute('id');
           switch(glass){
              case 'glass_1':
-             $('#bass_image').css("transform", "scale(1)");
+             $('#len_2_image').css("transform", "scale(1)");
              $('#glass_1').css("transform","scale(1)");
              $('.info_bar_left > .info_image').css('background-image', 'none');
              $('.info_bar_left > .info_content > .info_content_wrap').html("");
              break;
              case 'glass_2':
-             $('#bass_image').css("transform", "scale(1)");
+             $('#len_2_image').css("transform", "scale(1)");
              $('#glass_2').css("transform","scale(1)");
              $('.info_bar_right > .info_image').css('background-image', 'none');
              $('.info_bar_right > .info_content > .info_content_wrap').html("");
@@ -162,7 +162,7 @@ var glassTwo = $('#glass_2');
 
 	   //stamp element interaction
 	          // enable draggables to be dropped into this
-	          interact('#stamp').dropzone({
+	          interact('#len_3').dropzone({
 	            // only accept elements matching this CSS selector
 	            accept: '.magnify_glass',
 	            // Require a 75% element overlap for a drop to be possible
@@ -175,15 +175,15 @@ var glassTwo = $('#glass_2');
 	             var glass = draggableElement.getAttribute('id');
 	             switch(glass){
 	                case 'glass_1':
-	                $('#stamp_image').css("transform", "scale(1.5)");
+	                $('#len_3_image').css("transform", "scale(1.2)");
 	                $('#glass_1').css("transform","scale(2)");
-	                $('.info_bar_left > .info_image').css('background-image', 'url("img/stamp.png")');
+	                $('.info_bar_left > .info_image').css('background-image', 'url("img/len-3.jpeg")');
 	                $('.info_bar_left > .info_content > .info_content_wrap').html("This is where the information about the magnified object would display.");
 	                break;
 	                case 'glass_2':
-	                $('#stamp_image').css("transform", "scale(1.5)");
+	                $('#len_3_image').css("transform", "scale(1.2)");
 	                $('#glass_2').css("transform","scale(2)");
-	                $('.info_bar_right > .info_image').css('background-image', 'url("img/stamp.png")');
+	                $('.info_bar_right > .info_image').css('background-image', 'url("img/len-3.jpeg")');
 	                $('.info_bar_right > .info_content > .info_content_wrap').html("This is where the information about the magnified object would display.");
 	                break;
 	             }
@@ -196,13 +196,13 @@ var glassTwo = $('#glass_2');
 	             var glass = draggableElement.getAttribute('id');
 	             switch(glass){
 	                case 'glass_1':
-	                $('#stamp_image').css("transform", "scale(1)");
+	                $('#len_3_image').css("transform", "scale(1)");
 	                $('#glass_1').css("transform","scale(1)");
 	                $('.info_bar_left > .info_image').css('background-image', 'none');
 	                $('.info_bar_left > .info_content > .info_content_wrap').html("");
 	                break;
 	                case 'glass_2':
-	                $('#stamp_image').css("transform", "scale(1)");
+	                $('#len_3_image').css("transform", "scale(1)");
 	                $('#glass_2').css("transform","scale(1)");
 	                $('.info_bar_right > .info_image').css('background-image', 'none');
 	                $('.info_bar_right > .info_content > .info_content_wrap').html("");
