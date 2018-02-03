@@ -1,0 +1,389 @@
+@import 'var.scss';
+///////////////////////////////////////////////
+//Base styles
+///////////////////////////////////////////////
+
+html {
+    overflow-x: hidden;
+    overflow-y: hidden;
+}
+
+body {
+    font-family: "Montserrat";
+    font-weight: 300;
+    font-size: 16px;
+}
+
+.wrapper {
+    position: relative;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    overflow: hidden;
+    background-image: url('../img/BG.jpg');
+    background-size: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.bg_flower_1 {
+    position: absolute;
+    z-index: 5;
+    top: 0;
+    right: 0;
+    background-image: url('../img/FLOWER01.png');
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+    width: 430px;
+    height: 250px;
+}
+
+.bg_flower_2 {
+    position: absolute;
+    z-index: 5;
+    bottom: 0;
+    left: 0;
+    background-image: url('../img/FLOWER02.png');
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+    width: 430px;
+    height: 430px;
+}
+///////////////////////////////////////////////
+//Generic Class Styles
+///////////////////////////////////////////////
+
+.side_panel {
+    position: relative;
+    height: 65vh;
+    width: 350px;
+    margin-top: 15vh;
+    z-index: 3;
+    background-color: $foreground;
+    -webkit-box-shadow: 0 0 10px 0 rgba(0,0,0,0.75);
+    -moz-box-shadow: 0 0 10px 0 rgba(0,0,0,0.75);
+    box-shadow: 0 0 10px 0 rgba(0,0,0,0.75);
+}
+
+.initial_content {
+    padding: 40px;
+    position: absolute;
+    top: 200px;
+    width: 270px;
+
+    .title {
+        font-size: 2rem;
+        padding: 20px 0;
+        font-weight: bold;
+        font-family: $pt_serif;
+        letter-spacing: 1px;
+    }
+
+    .instructions {
+        line-height: 30px;
+    }
+}
+///////////////////////////////////////////////
+//Specific Background Element styles
+///////////////////////////////////////////////
+//
+
+#left_instruct {
+    .title {
+        color: $rouge;
+    }
+}
+
+#right_instruct {
+    .title {
+        color: $blue;
+    }
+}
+
+#left_panel {
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+#right_panel {
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+///////////////////////////////////////////////
+//User Magnifying glass Styles
+///////////////////////////////////////////////
+
+.magnify_glass {
+    text-align: center;
+    float: left;
+    width: 100px;
+    height: 100px;
+    -webkit-box-shadow: 0 0 7px 2px rgba(0, 0, 0, 0.25), inset 0 0 40px 2px rgba(0, 0, 0, 0.25);
+    box-shadow: 0 0 7px 2px rgba(0, 0, 0, 0.25), inset 0 0 40px 2px rgba(0, 0, 0, 0.25);
+}
+
+#glass_1 {
+    background: transparent;
+    position: absolute;
+    top: 200px;
+    left: 295px;
+    -webkit-transform-origin: center;
+    transform-origin: center;
+    border-radius: 50%;
+    border: solid $rouge 6px;
+    color: white;
+    z-index: 5;
+    transition: transform 0.25s ease;
+}
+
+#glass_2 {
+    background: transparent;
+    position: absolute;
+    top: 200px;
+    left: 1755px;
+    -webkit-transform-origin: center;
+    transform-origin: center;
+    border-radius: 50%;
+    border: solid $blue 6px;
+    color: black;
+    z-index: 5;
+    transition: transform 0.25s ease;
+}
+///////////////////////////////////////////////
+//Side bar info
+///////////////////////////////////////////////
+
+.info_bar_left {
+    display: block;
+    position: absolute;
+    top: 80px;
+    left: 30px;
+    width: 290px;
+    height: auto;
+
+    .info_image {
+        width: 100%;
+        height: 300px;
+        display: block;
+        margin: auto;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: contain;
+    }
+
+    .info_content {
+        width: 100%;
+        display: block;
+        text-align: left;
+        padding: 30px 0;
+        line-height: 30px;
+    }
+}
+
+.info_bar_right {
+    display: block;
+    position: absolute;
+    top: 80px;
+    left: 30px;
+    width: 290px;
+    height: auto;
+
+    .info_image {
+        width: 100%;
+        height: 300px;
+        display: block;
+        margin: auto;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: contain;
+    }
+
+    .info_content {
+        width: 100%;
+        display: block;
+        text-align: left;
+        padding: 30px 0;
+        line-height: 30px;
+    }
+}
+///////////////////////////////////////////////
+//Len 1 Element
+///////////////////////////////////////////////
+
+#len_1 {
+    position: absolute;
+    width: 200px;
+    height: 300px;
+    top: 200px;
+    left: 650px;
+    z-index: 1;
+    -webkit-transform: rotate(30deg);
+    transform: rotate(30deg);
+}
+
+#len_1_image {
+    background: url('../img/len-1.jpeg');
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+    width: 300px;
+    height: 350px;
+    transition: transform 0.25s ease; //crops image
+    -webkit-clip-path: polygon(7% 43%, 19% 23%, 40% 27%, 50% 26%, 69% 19%, 85% 31%, 80% 54%, 90% 89%, 61% 100%, 28% 95%, 15% 85%, 20% 66%);
+    clip-path: polygon(7% 43%, 19% 23%, 40% 27%, 50% 26%, 69% 19%, 85% 31%, 80% 54%, 90% 89%, 61% 100%, 28% 95%, 15% 85%, 20% 66%);
+}
+///////////////////////////////////////////////
+//len 2 Element
+///////////////////////////////////////////////
+
+#len_2 {
+    position: absolute;
+    width: 200px;
+    height: 250px;
+    top: 600px;
+    right: 800px;
+    z-index: 1;
+    transform: rotate(-13deg);
+}
+
+#len_2_image {
+    background: url('../img/len-2.jpeg');
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+    width: 350px;
+    height: 300px;
+    transition: transform 0.25s ease;
+    -webkit-clip-path: polygon(5% 19%, 16% 10%, 26% 0, 49% 6%, 72% 13%, 94% 22%, 95% 46%, 90% 65%, 70% 76%, 23% 88%, 5% 85%, 6% 66%);
+    clip-path: polygon(5% 19%, 16% 10%, 26% 0, 49% 6%, 72% 13%, 94% 22%, 95% 46%, 90% 65%, 70% 76%, 23% 88%, 5% 85%, 6% 66%);
+}
+///////////////////////////////////////////////
+//Len 3 Element
+///////////////////////////////////////////////
+
+#len_3 {
+    position: absolute;
+    width: 200px;
+    height: 300px;
+    top: 180px;
+    right: 950px;
+    z-index: 1;
+    transform: rotate(-18deg);
+}
+
+#len_3_image {
+    background: url('../img/len-3.jpeg');
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+    width: 300px;
+    height: 350px;
+    transition: transform 0.25s ease;
+    -webkit-clip-path: polygon(50% 0%, 77% 4%, 76% 23%, 82% 42%, 69% 85%, 43% 94%, 21% 91%, 26% 50%, 27% 30%, 38% 12%);
+    clip-path: polygon(50% 0%, 77% 4%, 76% 23%, 82% 42%, 69% 85%, 43% 94%, 21% 91%, 26% 50%, 27% 30%, 38% 12%);
+}
+///////////////////////////////////////////////
+//len 4 Element
+///////////////////////////////////////////////
+
+#len_4 {
+    position: absolute;
+    width: 200px;
+    height: 250px;
+    top: 650px;
+    left: 600px;
+    z-index: 1;
+}
+
+#len_4_image {
+    background: url('../img/len-4.jpeg');
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+    width: 350px;
+    height: 300px;
+    transition: transform 0.25s ease;
+    -webkit-clip-path: polygon(0 47%, 14% 45%, 34% 36%, 51% 40%, 75% 35%, 96% 38%, 100% 85%, 99% 98%, 85% 100%, 28% 96%, 10% 86%, 0 73%);
+    clip-path: polygon(0 47%, 14% 45%, 34% 36%, 51% 40%, 75% 35%, 96% 38%, 100% 85%, 99% 98%, 85% 100%, 28% 96%, 10% 86%, 0 73%);
+}
+///////////////////////////////////////////////
+//len 5 Element
+///////////////////////////////////////////////
+
+#len_5 {
+    position: absolute;
+    width: 200px;
+    height: 250px;
+    top: 550px;
+    left: 800px;
+    z-index: 1;
+    transform: rotate(180deg);
+}
+
+#len_5_image {
+    background: url('../img/len-5.jpeg');
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+    width: 350px;
+    height: 300px;
+    transition: transform 0.25s ease;
+    -webkit-clip-path: polygon(0 47%, 14% 45%, 34% 36%, 51% 40%, 75% 35%, 96% 38%, 100% 85%, 99% 98%, 85% 100%, 28% 96%, 10% 86%, 0 73%);
+    clip-path: polygon(0 47%, 14% 45%, 34% 36%, 51% 40%, 75% 35%, 96% 38%, 100% 85%, 99% 98%, 85% 100%, 28% 96%, 10% 86%, 0 73%);
+}
+///////////////////////////////////////////////
+//len 8 Element
+///////////////////////////////////////////////
+
+#len_8 {
+    position: absolute;
+    width: 200px;
+    height: 250px;
+    top: 500px;
+    left: 950px;
+    z-index: 1;
+    transform: rotate(260deg);
+}
+
+#len_8_image {
+    background: url('../img/len-8.jpeg');
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+    width: 350px;
+    height: 300px;
+    transition: transform 0.25s ease;
+    -webkit-clip-path: polygon(5% 19%, 16% 10%, 26% 0, 49% 6%, 72% 13%, 94% 22%, 95% 46%, 90% 65%, 70% 76%, 23% 88%, 5% 85%, 6% 66%);
+    clip-path: polygon(5% 19%, 16% 10%, 26% 0, 49% 6%, 72% 13%, 94% 22%, 95% 46%, 90% 65%, 70% 76%, 23% 88%, 5% 85%, 6% 66%);
+}
+///////////////////////////////////////////////
+//Angee 1 Element
+///////////////////////////////////////////////
+
+#ange_1 {
+    position: absolute;
+    width: 200px;
+    height: 300px;
+    top: 250px;
+    right: 700px;
+    z-index: 1;
+    -webkit-transform: rotate(-30deg);
+    transform: rotate(-30deg);
+}
+
+#ange_1_image {
+    background: url('../img/ange-1.jpg');
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+    width: 300px;
+    height: 350px;
+    transition: transform 0.25s ease; //crops image
+    -webkit-clip-path: polygon(7% 43%, 19% 23%, 40% 27%, 50% 26%, 69% 19%, 85% 31%, 80% 54%, 90% 89%, 61% 100%, 28% 95%, 15% 85%, 20% 66%);
+    clip-path: polygon(7% 43%, 19% 23%, 40% 27%, 50% 26%, 69% 19%, 85% 31%, 80% 54%, 90% 89%, 61% 100%, 28% 95%, 15% 85%, 20% 66%);
+}
