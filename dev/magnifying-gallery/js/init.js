@@ -46,16 +46,16 @@ $(document).ready(function() {
         target.setAttribute('data-x', x);
         target.setAttribute('data-y', y);
         // document.getElementById('transform-info').textContent = 'position = ' + x + ',' + y;
-        var hideMe = target.getAttribute('id');
-        switch (hideMe) {
-            case 'glass_1':
-                $('#left_instruct').hide();
-                break;
-            case 'glass_2':
-                $('#right_instruct').hide();
-                break;
-                //this hides the instructions based on what magnifier is moved
-        }
+        // var hideMe = target.getAttribute('id');
+        // switch (hideMe) {
+        //     case 'glass_1':
+        //         $('#left_instruct').hide();
+        //         break;
+        //     case 'glass_2':
+        //         $('#right_instruct').hide();
+        //         break;
+        //         //this hides the instructions based on what magnifier is moved
+        // }
         dragOne.preventDefault();
     };
 
@@ -76,12 +76,14 @@ $(document).ready(function() {
                 case 'glass_1':
                     $('#len_1_image').css("transform", "scale(1.2)");
                     $('#glass_1').css("transform", "scale(2.5)");
+                    $('#left_instruct').hide();
                     $('.info_bar_left > .info_image').css('background-image', 'url("img/len-1.jpeg")');
                     $('.info_bar_left > .info_content > .info_content_wrap').html("This is where the information about the magnified object would display.");
                     break;
                 case 'glass_2':
                     $('#len_1_image').css("transform", "scale(1.2)");
                     $('#glass_2').css("transform", "scale(2.5)");
+                    $('#right_instruct').hide();
                     $('.info_bar_right > .info_image').css('background-image', 'url("img/len-1.jpeg")');
                     $('.info_bar_right > .info_content > .info_content_wrap').html("This is where the information about the magnified object would display.");
                     break;
@@ -97,12 +99,14 @@ $(document).ready(function() {
                 case 'glass_1':
                     $('#len_1_image').css("transform", "scale(1)");
                     $('#glass_1').css("transform", "scale(1)");
+                    $('#left_instruct').show();
                     $('.info_bar_left > .info_image').css('background-image', 'none');
                     $('.info_bar_left > .info_content > .info_content_wrap').html("");
                     break;
                 case 'glass_2':
                     $('#len_1_image').css("transform", "scale(1)");
                     $('#glass_2').css("transform", "scale(1)");
+                    $('#right_instruct').show();
                     $('.info_bar_right > .info_image').css('background-image', 'none');
                     $('.info_bar_right > .info_content > .info_content_wrap').html("");
                     break;
@@ -127,12 +131,14 @@ $(document).ready(function() {
                 case 'glass_1':
                     $('#len_2_image').css("transform", "scale(1.2)");
                     $('#glass_1').css("transform", "scale(2)");
+                    $('#left_instruct').hide();
                     $('.info_bar_left > .info_image').css('background-image', 'url("img/len-2.jpeg")');
                     $('.info_bar_left > .info_content > .info_content_wrap').html("This is where the information about the magnified object would display.");
                     break;
                 case 'glass_2':
                     $('#len_2_image').css("transform", "scale(1.2)");
                     $('#glass_2').css("transform", "scale(2)");
+                    $('#right_instruct').hide();
                     $('.info_bar_right > .info_image').css('background-image', 'url("img/len-2.jpeg")');
                     $('.info_bar_right > .info_content > .info_content_wrap').html("This is where the information about the magnified object would display.");
                     break;
@@ -148,12 +154,14 @@ $(document).ready(function() {
                 case 'glass_1':
                     $('#len_2_image').css("transform", "scale(1)");
                     $('#glass_1').css("transform", "scale(1)");
+                    $('#left_instruct').show();
                     $('.info_bar_left > .info_image').css('background-image', 'none');
                     $('.info_bar_left > .info_content > .info_content_wrap').html("");
                     break;
                 case 'glass_2':
                     $('#len_2_image').css("transform", "scale(1)");
                     $('#glass_2').css("transform", "scale(1)");
+                    $('#right_instruct').show();
                     $('.info_bar_right > .info_image').css('background-image', 'none');
                     $('.info_bar_right > .info_content > .info_content_wrap').html("");
                     break;
@@ -178,12 +186,14 @@ $(document).ready(function() {
                 case 'glass_1':
                     $('#len_3_image').css("transform", "scale(1.2)");
                     $('#glass_1').css("transform", "scale(2)");
+                    $('#left_instruct').hide();
                     $('.info_bar_left > .info_image').css('background-image', 'url("img/len-3.jpeg")');
                     $('.info_bar_left > .info_content > .info_content_wrap').html("This is where the information about the magnified object would display.");
                     break;
                 case 'glass_2':
                     $('#len_3_image').css("transform", "scale(1.2)");
                     $('#glass_2').css("transform", "scale(2)");
+                    $('#right_instruct').hide();
                     $('.info_bar_right > .info_image').css('background-image', 'url("img/len-3.jpeg")');
                     $('.info_bar_right > .info_content > .info_content_wrap').html("This is where the information about the magnified object would display.");
                     break;
@@ -199,12 +209,14 @@ $(document).ready(function() {
                 case 'glass_1':
                     $('#len_3_image').css("transform", "scale(1)");
                     $('#glass_1').css("transform", "scale(1)");
+                    $('#left_instruct').show();
                     $('.info_bar_left > .info_image').css('background-image', 'none');
                     $('.info_bar_left > .info_content > .info_content_wrap').html("");
                     break;
                 case 'glass_2':
                     $('#len_3_image').css("transform", "scale(1)");
                     $('#glass_2').css("transform", "scale(1)");
+                    $('#right_instruct').show();
                     $('.info_bar_right > .info_image').css('background-image', 'none');
                     $('.info_bar_right > .info_content > .info_content_wrap').html("");
                     break;
@@ -230,12 +242,14 @@ $(document).ready(function() {
                 case 'glass_1':
                     $('#len_4_image').css("transform", "scale(1.2)");
                     $('#glass_1').css("transform", "scale(2)");
+                    $('#left_instruct').hide();
                     $('.info_bar_left > .info_image').css('background-image', 'url("img/len-4.jpeg")');
                     $('.info_bar_left > .info_content > .info_content_wrap').html("This is where the information about the magnified object would display.");
                     break;
                 case 'glass_2':
                     $('#len_4_image').css("transform", "scale(1.2)");
                     $('#glass_2').css("transform", "scale(2)");
+                    $('#right_instruct').hide();
                     $('.info_bar_right > .info_image').css('background-image', 'url("img/len-4.jpeg")');
                     $('.info_bar_right > .info_content > .info_content_wrap').html("This is where the information about the magnified object would display.");
                     break;
@@ -251,12 +265,14 @@ $(document).ready(function() {
                 case 'glass_1':
                     $('#len_4_image').css("transform", "scale(1)");
                     $('#glass_1').css("transform", "scale(1)");
+                    $('#left_instruct').show();
                     $('.info_bar_left > .info_image').css('background-image', 'none');
                     $('.info_bar_left > .info_content > .info_content_wrap').html("");
                     break;
                 case 'glass_2':
                     $('#len_4_image').css("transform", "scale(1)");
                     $('#glass_2').css("transform", "scale(1)");
+                    $('#right_instruct').show();
                     $('.info_bar_right > .info_image').css('background-image', 'none');
                     $('.info_bar_right > .info_content > .info_content_wrap').html("");
                     break;
@@ -281,12 +297,14 @@ $(document).ready(function() {
                 case 'glass_1':
                     $('#len_5_image').css("transform", "scale(1.2)");
                     $('#glass_1').css("transform", "scale(2)");
+                    $('#left_instruct').hide();
                     $('.info_bar_left > .info_image').css('background-image', 'url("img/len-5.jpeg")');
                     $('.info_bar_left > .info_content > .info_content_wrap').html("This is where the information about the magnified object would display.");
                     break;
                 case 'glass_2':
                     $('#len_5_image').css("transform", "scale(1.2)");
                     $('#glass_2').css("transform", "scale(2)");
+                    $('#right_instruct').hide();
                     $('.info_bar_right > .info_image').css('background-image', 'url("img/len-5.jpeg")');
                     $('.info_bar_right > .info_content > .info_content_wrap').html("This is where the information about the magnified object would display.");
                     break;
@@ -302,12 +320,14 @@ $(document).ready(function() {
                 case 'glass_1':
                     $('#len_5_image').css("transform", "scale(1)");
                     $('#glass_1').css("transform", "scale(1)");
+                    $('#left_instruct').show();
                     $('.info_bar_left > .info_image').css('background-image', 'none');
                     $('.info_bar_left > .info_content > .info_content_wrap').html("");
                     break;
                 case 'glass_2':
                     $('#len_5_image').css("transform", "scale(1)");
                     $('#glass_2').css("transform", "scale(1)");
+                    $('#right_instruct').show();
                     $('.info_bar_right > .info_image').css('background-image', 'none');
                     $('.info_bar_right > .info_content > .info_content_wrap').html("");
                     break;
@@ -332,12 +352,14 @@ $(document).ready(function() {
                 case 'glass_1':
                     $('#len_8_image').css("transform", "scale(1.2)");
                     $('#glass_1').css("transform", "scale(2)");
+                    $('#left_instruct').hide();
                     $('.info_bar_left > .info_image').css('background-image', 'url("img/len-8.jpeg")');
                     $('.info_bar_left > .info_content > .info_content_wrap').html("This is where the information about the magnified object would display.");
                     break;
                 case 'glass_2':
                     $('#len_8_image').css("transform", "scale(1.2)");
                     $('#glass_2').css("transform", "scale(2)");
+                    $('#right_instruct').hide();
                     $('.info_bar_right > .info_image').css('background-image', 'url("img/len-8.jpeg")');
                     $('.info_bar_right > .info_content > .info_content_wrap').html("This is where the information about the magnified object would display.");
                     break;
@@ -353,12 +375,14 @@ $(document).ready(function() {
                 case 'glass_1':
                     $('#len_8_image').css("transform", "scale(1)");
                     $('#glass_1').css("transform", "scale(1)");
+                    $('#left_instruct').show();
                     $('.info_bar_left > .info_image').css('background-image', 'none');
                     $('.info_bar_left > .info_content > .info_content_wrap').html("");
                     break;
                 case 'glass_2':
                     $('#len_8_image').css("transform", "scale(1)");
                     $('#glass_2').css("transform", "scale(1)");
+                    $('#right_instruct').show();
                     $('.info_bar_right > .info_image').css('background-image', 'none');
                     $('.info_bar_right > .info_content > .info_content_wrap').html("");
                     break;
@@ -383,12 +407,14 @@ $(document).ready(function() {
                 case 'glass_1':
                     $('#ange_1_image').css("transform", "scale(1.2)");
                     $('#glass_1').css("transform", "scale(2)");
+                    $('#left_instruct').hide();
                     $('.info_bar_left > .info_image').css('background-image', 'url("img/ange-1.jpg")');
                     $('.info_bar_left > .info_content > .info_content_wrap').html("This is where the information about the magnified object would display.");
                     break;
                 case 'glass_2':
                     $('#ange_1_image').css("transform", "scale(1.2)");
                     $('#glass_2').css("transform", "scale(2)");
+                    $('#right_instruct').hide();
                     $('.info_bar_right > .info_image').css('background-image', 'url("img/ange-1.jpg")');
                     $('.info_bar_right > .info_content > .info_content_wrap').html("This is where the information about the magnified object would display.");
                     break;
@@ -404,12 +430,14 @@ $(document).ready(function() {
                 case 'glass_1':
                     $('#ange_1_image').css("transform", "scale(1)");
                     $('#glass_1').css("transform", "scale(1)");
+                    $('#left_instruct').show();
                     $('.info_bar_left > .info_image').css('background-image', 'none');
                     $('.info_bar_left > .info_content > .info_content_wrap').html("");
                     break;
                 case 'glass_2':
                     $('#ange_1_image').css("transform", "scale(1)");
                     $('#glass_2').css("transform", "scale(1)");
+                    $('#right_instruct').show();
                     $('.info_bar_right > .info_image').css('background-image', 'none');
                     $('.info_bar_right > .info_content > .info_content_wrap').html("");
                     break;
