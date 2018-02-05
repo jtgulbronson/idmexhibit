@@ -16,7 +16,7 @@ body {
   height: 100vh;
   overflow: hidden;
   background-image: url("../img/BG.jpg");
-  background-size: 100%;
+  background-size: cover;
   background-position: center;
   background-repeat: no-repeat; }
 
@@ -110,7 +110,7 @@ body {
   background: transparent;
   position: absolute;
   top: 200px;
-  left: 1755px;
+  left: 1770px;
   -webkit-transform-origin: center;
   transform-origin: center;
   border-radius: 50%;
