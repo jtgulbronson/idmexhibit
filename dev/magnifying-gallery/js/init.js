@@ -256,16 +256,16 @@ $(document).ready(function() {
                     $('#glass_1').css("transform", "scale(2)");
                     $('#left_instruct').hide();
                     $('.info_bar_left > .info_image').css('background-image', 'url("img/len-4.jpeg")');
-                    $('.info_bar_left > .info_content > .info_content_title').html("Image Title");
-                    $('.info_bar_left > .info_content > .info_content_wrap').html("This is where the information about the magnified object would display.");
+                    $('.info_bar_left > .info_content > .info_content_title').html("Cece Lendeh's House");
+                    $('.info_bar_left > .info_content > .info_content_wrap').html("Traveling across the Atlantic ocean and being able to see where my Mother was raised anchors me. Liberia went through fifteen years or uncivil war and having the opportunity to hear stories from survivors who knew my grandmother and mother as a child helps me understand parts of myself. ");
                     break;
                 case 'glass_2':
                     $('#len_4_image').css("transform", "scale(1.2)");
                     $('#glass_2').css("transform", "scale(2)");
                     $('#right_instruct').hide();
                     $('.info_bar_right > .info_image').css('background-image', 'url("img/len-4.jpeg")');
-                    $('.info_bar_right > .info_content > .info_content_title').html("Image Title");
-                    $('.info_bar_right > .info_content > .info_content_wrap').html("This is where the information about the magnified object would display.");
+                    $('.info_bar_right > .info_content > .info_content_title').html("Cece Lendeh's House");
+                    $('.info_bar_right > .info_content > .info_content_wrap').html("Traveling across the Atlantic ocean and being able to see where my Mother was raised anchors me. Liberia went through fifteen years or uncivil war and having the opportunity to hear stories from survivors who knew my grandmother and mother as a child helps me understand parts of myself. ");
                     break;
             }
         },
@@ -315,16 +315,16 @@ $(document).ready(function() {
                     $('#glass_1').css("transform", "scale(2)");
                     $('#left_instruct').hide();
                     $('.info_bar_left > .info_image').css('background-image', 'url("img/len-5.jpeg")');
-                    $('.info_bar_left > .info_content > .info_content_title').html("Image Title");
-                    $('.info_bar_left > .info_content > .info_content_wrap').html("This is where the information about the magnified object would display.");
+                    $('.info_bar_left > .info_content > .info_content_title').html("Space Between");
+                    $('.info_bar_left > .info_content > .info_content_wrap').html("This image was taken in 2004, six months after the uncivil war ended. I was traveling to the airport and on several occasions was afraid to take pictures.");
                     break;
                 case 'glass_2':
                     $('#len_5_image').css("transform", "scale(1.2)");
                     $('#glass_2').css("transform", "scale(2)");
                     $('#right_instruct').hide();
                     $('.info_bar_right > .info_image').css('background-image', 'url("img/len-5.jpeg")');
-                    $('.info_bar_right > .info_content > .info_content_title').html("Image Title");
-                    $('.info_bar_right > .info_content > .info_content_wrap').html("This is where the information about the magnified object would display.");
+                    $('.info_bar_right > .info_content > .info_content_title').html("Space Between");
+                    $('.info_bar_right > .info_content > .info_content_wrap').html("This image was taken in 2004, six months after the uncivil war ended. I was traveling to the airport and on several occasions was afraid to take pictures.");
                     break;
             }
         },
@@ -374,16 +374,16 @@ $(document).ready(function() {
                     $('#glass_1').css("transform", "scale(2)");
                     $('#left_instruct').hide();
                     $('.info_bar_left > .info_image').css('background-image', 'url("img/len-8.jpeg")');
-                    $('.info_bar_left > .info_content > .info_content_title').html("Image Title");
-                    $('.info_bar_left > .info_content > .info_content_wrap').html("This is where the information about the magnified object would display.");
+                    $('.info_bar_left > .info_content > .info_content_title').html("Uptown - Robertsport, Grand Cape Mount");
+                    $('.info_bar_left > .info_content > .info_content_wrap').html("The simple life from my perspective reminds me of all the wonderful convenience that make life complicated and inconvenient in the West.");
                     break;
                 case 'glass_2':
                     $('#len_8_image').css("transform", "scale(1.2)");
                     $('#glass_2').css("transform", "scale(2)");
                     $('#right_instruct').hide();
                     $('.info_bar_right > .info_image').css('background-image', 'url("img/len-8.jpeg")');
-                    $('.info_bar_right > .info_content > .info_content_title').html("Image Title");
-                    $('.info_bar_right > .info_content > .info_content_wrap').html("This is where the information about the magnified object would display.");
+                    $('.info_bar_right > .info_content > .info_content_title').html("Uptown - Robertsport, Grand Cape Mount");
+                    $('.info_bar_right > .info_content > .info_content_wrap').html("The simple life from my perspective reminds me of all the wonderful convenience that make life complicated and inconvenient in the West.");
                     break;
             }
         },
