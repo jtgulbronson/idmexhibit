@@ -130,7 +130,7 @@ body {
 #glass_1 {
     background: transparent;
     position: absolute;
-    top: 200px;
+    top: 650px;
     left: 295px;
     -webkit-transform-origin: center;
     transform-origin: center;
@@ -144,7 +144,7 @@ body {
 #glass_2 {
     background: transparent;
     position: absolute;
-    top: 200px;
+    top: 650px;
     left: 1770px;
     -webkit-transform-origin: center;
     transform-origin: center;
@@ -182,6 +182,16 @@ body {
         text-align: left;
         padding: 30px 0;
         line-height: 30px;
+        .info_content_wrap{
+            font-size: 14px;
+        }
+        .info_content_title{
+            font-size: 2rem;
+            padding: 20px 0;
+            font-weight: bold;
+            font-family: $pt_serif;
+            letter-spacing: 1px;
+        }
     }
 }
 
@@ -209,6 +219,16 @@ body {
         text-align: left;
         padding: 30px 0;
         line-height: 30px;
+        .info_content_wrap{
+            font-size: 14px;
+        }
+        .info_content_title{
+            font-size: 2rem;
+            padding: 20px 0;
+            font-weight: bold;
+            font-family: $pt_serif;
+            letter-spacing: 1px;
+        }
     }
 }
 ///////////////////////////////////////////////

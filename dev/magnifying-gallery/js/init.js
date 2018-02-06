@@ -78,6 +78,7 @@ $(document).ready(function() {
                     $('#glass_1').css("transform", "scale(2.5)");
                     $('#left_instruct').hide();
                     $('.info_bar_left > .info_image').css('background-image', 'url("img/len-1.jpeg")');
+					$('.info_bar_left > .info_content > .info_content_title').html("Image Title");
                     $('.info_bar_left > .info_content > .info_content_wrap').html("This is where the information about the magnified object would display.");
                     break;
                 case 'glass_2':
@@ -85,6 +86,7 @@ $(document).ready(function() {
                     $('#glass_2').css("transform", "scale(2.5)");
                     $('#right_instruct').hide();
                     $('.info_bar_right > .info_image').css('background-image', 'url("img/len-1.jpeg")');
+                    $('.info_bar_right > .info_content > .info_content_title').html("Image Title");
                     $('.info_bar_right > .info_content > .info_content_wrap').html("This is where the information about the magnified object would display.");
                     break;
             }
@@ -101,6 +103,7 @@ $(document).ready(function() {
                     $('#glass_1').css("transform", "scale(1)");
                     $('#left_instruct').show();
                     $('.info_bar_left > .info_image').css('background-image', 'none');
+                    $('.info_bar_left > .info_content > .info_content_title').html("");
                     $('.info_bar_left > .info_content > .info_content_wrap').html("");
                     break;
                 case 'glass_2':
@@ -108,6 +111,7 @@ $(document).ready(function() {
                     $('#glass_2').css("transform", "scale(1)");
                     $('#right_instruct').show();
                     $('.info_bar_right > .info_image').css('background-image', 'none');
+                    $('.info_bar_right > .info_content > .info_content_title').html("");
                     $('.info_bar_right > .info_content > .info_content_wrap').html("");
                     break;
             }
@@ -133,6 +137,7 @@ $(document).ready(function() {
                     $('#glass_1').css("transform", "scale(2)");
                     $('#left_instruct').hide();
                     $('.info_bar_left > .info_image').css('background-image', 'url("img/len-2.jpeg")');
+                    $('.info_bar_left > .info_content > .info_content_title').html("Image Title");
                     $('.info_bar_left > .info_content > .info_content_wrap').html("This is where the information about the magnified object would display.");
                     break;
                 case 'glass_2':
@@ -140,6 +145,7 @@ $(document).ready(function() {
                     $('#glass_2').css("transform", "scale(2)");
                     $('#right_instruct').hide();
                     $('.info_bar_right > .info_image').css('background-image', 'url("img/len-2.jpeg")');
+                    $('.info_bar_right > .info_content > .info_content_title').html("Image Title");
                     $('.info_bar_right > .info_content > .info_content_wrap').html("This is where the information about the magnified object would display.");
                     break;
             }
@@ -156,6 +162,7 @@ $(document).ready(function() {
                     $('#glass_1').css("transform", "scale(1)");
                     $('#left_instruct').show();
                     $('.info_bar_left > .info_image').css('background-image', 'none');
+                    $('.info_bar_left > .info_content > .info_content_title').html("");
                     $('.info_bar_left > .info_content > .info_content_wrap').html("");
                     break;
                 case 'glass_2':
@@ -163,6 +170,7 @@ $(document).ready(function() {
                     $('#glass_2').css("transform", "scale(1)");
                     $('#right_instruct').show();
                     $('.info_bar_right > .info_image').css('background-image', 'none');
+                    $('.info_bar_right > .info_content > .info_content_title').html("");
                     $('.info_bar_right > .info_content > .info_content_wrap').html("");
                     break;
             }
@@ -188,6 +196,7 @@ $(document).ready(function() {
                     $('#glass_1').css("transform", "scale(2)");
                     $('#left_instruct').hide();
                     $('.info_bar_left > .info_image').css('background-image', 'url("img/len-3.jpeg")');
+                    $('.info_bar_left > .info_content > .info_content_title').html("Image Title");
                     $('.info_bar_left > .info_content > .info_content_wrap').html("This is where the information about the magnified object would display.");
                     break;
                 case 'glass_2':
@@ -195,6 +204,7 @@ $(document).ready(function() {
                     $('#glass_2').css("transform", "scale(2)");
                     $('#right_instruct').hide();
                     $('.info_bar_right > .info_image').css('background-image', 'url("img/len-3.jpeg")');
+                    $('.info_bar_right > .info_content > .info_content_title').html("Image Title");
                     $('.info_bar_right > .info_content > .info_content_wrap').html("This is where the information about the magnified object would display.");
                     break;
             }
@@ -211,6 +221,7 @@ $(document).ready(function() {
                     $('#glass_1').css("transform", "scale(1)");
                     $('#left_instruct').show();
                     $('.info_bar_left > .info_image').css('background-image', 'none');
+                    $('.info_bar_left > .info_content > .info_content_title').html("");
                     $('.info_bar_left > .info_content > .info_content_wrap').html("");
                     break;
                 case 'glass_2':
@@ -218,6 +229,7 @@ $(document).ready(function() {
                     $('#glass_2').css("transform", "scale(1)");
                     $('#right_instruct').show();
                     $('.info_bar_right > .info_image').css('background-image', 'none');
+                    $('.info_bar_right > .info_content > .info_content_title').html("");
                     $('.info_bar_right > .info_content > .info_content_wrap').html("");
                     break;
             }
@@ -244,6 +256,7 @@ $(document).ready(function() {
                     $('#glass_1').css("transform", "scale(2)");
                     $('#left_instruct').hide();
                     $('.info_bar_left > .info_image').css('background-image', 'url("img/len-4.jpeg")');
+                    $('.info_bar_left > .info_content > .info_content_title').html("Image Title");
                     $('.info_bar_left > .info_content > .info_content_wrap').html("This is where the information about the magnified object would display.");
                     break;
                 case 'glass_2':
@@ -251,6 +264,7 @@ $(document).ready(function() {
                     $('#glass_2').css("transform", "scale(2)");
                     $('#right_instruct').hide();
                     $('.info_bar_right > .info_image').css('background-image', 'url("img/len-4.jpeg")');
+                    $('.info_bar_right > .info_content > .info_content_title').html("Image Title");
                     $('.info_bar_right > .info_content > .info_content_wrap').html("This is where the information about the magnified object would display.");
                     break;
             }
@@ -267,6 +281,7 @@ $(document).ready(function() {
                     $('#glass_1').css("transform", "scale(1)");
                     $('#left_instruct').show();
                     $('.info_bar_left > .info_image').css('background-image', 'none');
+                    $('.info_bar_left > .info_content > .info_content_title').html("");
                     $('.info_bar_left > .info_content > .info_content_wrap').html("");
                     break;
                 case 'glass_2':
@@ -274,6 +289,7 @@ $(document).ready(function() {
                     $('#glass_2').css("transform", "scale(1)");
                     $('#right_instruct').show();
                     $('.info_bar_right > .info_image').css('background-image', 'none');
+                    $('.info_bar_right > .info_content > .info_content_title').html("");
                     $('.info_bar_right > .info_content > .info_content_wrap').html("");
                     break;
             }
@@ -299,6 +315,7 @@ $(document).ready(function() {
                     $('#glass_1').css("transform", "scale(2)");
                     $('#left_instruct').hide();
                     $('.info_bar_left > .info_image').css('background-image', 'url("img/len-5.jpeg")');
+                    $('.info_bar_left > .info_content > .info_content_title').html("Image Title");
                     $('.info_bar_left > .info_content > .info_content_wrap').html("This is where the information about the magnified object would display.");
                     break;
                 case 'glass_2':
@@ -306,6 +323,7 @@ $(document).ready(function() {
                     $('#glass_2').css("transform", "scale(2)");
                     $('#right_instruct').hide();
                     $('.info_bar_right > .info_image').css('background-image', 'url("img/len-5.jpeg")');
+                    $('.info_bar_right > .info_content > .info_content_title').html("Image Title");
                     $('.info_bar_right > .info_content > .info_content_wrap').html("This is where the information about the magnified object would display.");
                     break;
             }
@@ -322,6 +340,7 @@ $(document).ready(function() {
                     $('#glass_1').css("transform", "scale(1)");
                     $('#left_instruct').show();
                     $('.info_bar_left > .info_image').css('background-image', 'none');
+                    $('.info_bar_left > .info_content > .info_content_title').html("");
                     $('.info_bar_left > .info_content > .info_content_wrap').html("");
                     break;
                 case 'glass_2':
@@ -329,6 +348,7 @@ $(document).ready(function() {
                     $('#glass_2').css("transform", "scale(1)");
                     $('#right_instruct').show();
                     $('.info_bar_right > .info_image').css('background-image', 'none');
+                    $('.info_bar_right > .info_content > .info_content_title').html("");
                     $('.info_bar_right > .info_content > .info_content_wrap').html("");
                     break;
             }
@@ -354,6 +374,7 @@ $(document).ready(function() {
                     $('#glass_1').css("transform", "scale(2)");
                     $('#left_instruct').hide();
                     $('.info_bar_left > .info_image').css('background-image', 'url("img/len-8.jpeg")');
+                    $('.info_bar_left > .info_content > .info_content_title').html("Image Title");
                     $('.info_bar_left > .info_content > .info_content_wrap').html("This is where the information about the magnified object would display.");
                     break;
                 case 'glass_2':
@@ -361,6 +382,7 @@ $(document).ready(function() {
                     $('#glass_2').css("transform", "scale(2)");
                     $('#right_instruct').hide();
                     $('.info_bar_right > .info_image').css('background-image', 'url("img/len-8.jpeg")');
+                    $('.info_bar_right > .info_content > .info_content_title').html("Image Title");
                     $('.info_bar_right > .info_content > .info_content_wrap').html("This is where the information about the magnified object would display.");
                     break;
             }
@@ -377,6 +399,7 @@ $(document).ready(function() {
                     $('#glass_1').css("transform", "scale(1)");
                     $('#left_instruct').show();
                     $('.info_bar_left > .info_image').css('background-image', 'none');
+                    $('.info_bar_left > .info_content > .info_content_title').html("");
                     $('.info_bar_left > .info_content > .info_content_wrap').html("");
                     break;
                 case 'glass_2':
@@ -384,6 +407,7 @@ $(document).ready(function() {
                     $('#glass_2').css("transform", "scale(1)");
                     $('#right_instruct').show();
                     $('.info_bar_right > .info_image').css('background-image', 'none');
+                    $('.info_bar_right > .info_content > .info_content_title').html("");
                     $('.info_bar_right > .info_content > .info_content_wrap').html("");
                     break;
             }
@@ -409,6 +433,7 @@ $(document).ready(function() {
                     $('#glass_1').css("transform", "scale(2)");
                     $('#left_instruct').hide();
                     $('.info_bar_left > .info_image').css('background-image', 'url("img/ange-1.jpg")');
+                    $('.info_bar_left > .info_content > .info_content_title').html("Image Title");
                     $('.info_bar_left > .info_content > .info_content_wrap').html("This is where the information about the magnified object would display.");
                     break;
                 case 'glass_2':
@@ -416,6 +441,7 @@ $(document).ready(function() {
                     $('#glass_2').css("transform", "scale(2)");
                     $('#right_instruct').hide();
                     $('.info_bar_right > .info_image').css('background-image', 'url("img/ange-1.jpg")');
+                    $('.info_bar_right > .info_content > .info_content_title').html("Image Title");
                     $('.info_bar_right > .info_content > .info_content_wrap').html("This is where the information about the magnified object would display.");
                     break;
             }
@@ -432,6 +458,7 @@ $(document).ready(function() {
                     $('#glass_1').css("transform", "scale(1)");
                     $('#left_instruct').show();
                     $('.info_bar_left > .info_image').css('background-image', 'none');
+                    $('.info_bar_left > .info_content > .info_content_title').html("");
                     $('.info_bar_left > .info_content > .info_content_wrap').html("");
                     break;
                 case 'glass_2':
@@ -439,6 +466,7 @@ $(document).ready(function() {
                     $('#glass_2').css("transform", "scale(1)");
                     $('#right_instruct').show();
                     $('.info_bar_right > .info_image').css('background-image', 'none');
+                    $('.info_bar_right > .info_content > .info_content_title').html("");
                     $('.info_bar_right > .info_content > .info_content_wrap').html("");
                     break;
             }
