@@ -36,8 +36,8 @@ body {
     background-size: contain;
     background-position: center;
     background-repeat: no-repeat;
-    width: 430px;
-    height: 250px;
+    width: 300px;
+    height: 175px;
 }
 
 .bg_flower_2 {
@@ -49,8 +49,8 @@ body {
     background-size: contain;
     background-position: center;
     background-repeat: no-repeat;
-    width: 430px;
-    height: 430px;
+    width: 330px;
+    height: 330px;
 }
 ///////////////////////////////////////////////
 //Generic Class Styles
@@ -63,9 +63,9 @@ body {
     margin-top: 15vh;
     z-index: 3;
     background-color: $foreground;
-    -webkit-box-shadow: 0 0 10px 0 rgba(0,0,0,0.75);
-    -moz-box-shadow: 0 0 10px 0 rgba(0,0,0,0.75);
-    box-shadow: 0 0 10px 0 rgba(0,0,0,0.75);
+	-webkit-box-shadow: 8px 8px 30px 0px rgba(0,0,0,0.75);
+-moz-box-shadow: 8px 8px 30px 0px rgba(0,0,0,0.75);
+box-shadow: 8px 8px 30px 0px rgba(0,0,0,0.75);
 }
 
 .initial_content {
