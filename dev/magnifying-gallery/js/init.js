@@ -78,16 +78,16 @@ $(document).ready(function() {
                     $('#glass_1').css("transform", "scale(2.5)");
                     $('#left_instruct').hide();
                     $('.info_bar_left > .info_image').css('background-image', 'url("img/len-1.jpeg")');
-					$('.info_bar_left > .info_content > .info_content_title').html("Image Title");
-                    $('.info_bar_left > .info_content > .info_content_wrap').html("This is where the information about the magnified object would display.");
+					$('.info_bar_left > .info_content > .info_content_title').html("Mother");
+                    $('.info_bar_left > .info_content > .info_content_wrap').html("My mother's strength and boldness is an inspiration to me. She has raised many children and adults. Her life story is one of triumph.");
                     break;
                 case 'glass_2':
                     $('#len_1_image').css("transform", "scale(1.2)");
                     $('#glass_2').css("transform", "scale(2.5)");
                     $('#right_instruct').hide();
                     $('.info_bar_right > .info_image').css('background-image', 'url("img/len-1.jpeg")');
-                    $('.info_bar_right > .info_content > .info_content_title').html("Image Title");
-                    $('.info_bar_right > .info_content > .info_content_wrap').html("This is where the information about the magnified object would display.");
+                    $('.info_bar_right > .info_content > .info_content_title').html("Mother");
+                    $('.info_bar_right > .info_content > .info_content_wrap').html("My mother's strength and boldness is an inspiration to me. She has raised many children and adults. Her life story is one of triumph.");
                     break;
             }
         },
@@ -137,16 +137,16 @@ $(document).ready(function() {
                     $('#glass_1').css("transform", "scale(2)");
                     $('#left_instruct').hide();
                     $('.info_bar_left > .info_image').css('background-image', 'url("img/len-2.jpeg")');
-                    $('.info_bar_left > .info_content > .info_content_title').html("Image Title");
-                    $('.info_bar_left > .info_content > .info_content_wrap').html("This is where the information about the magnified object would display.");
+                    $('.info_bar_left > .info_content > .info_content_title').html("Space Between");
+                    $('.info_bar_left > .info_content > .info_content_wrap').html("I have so many images from Robertsport, the capital of Grand Cape Mount in Liberia; however, I love the capturing people in their daily routines unbothered by a curious transnational.");
                     break;
                 case 'glass_2':
                     $('#len_2_image').css("transform", "scale(1.2)");
                     $('#glass_2').css("transform", "scale(2)");
                     $('#right_instruct').hide();
                     $('.info_bar_right > .info_image').css('background-image', 'url("img/len-2.jpeg")');
-                    $('.info_bar_right > .info_content > .info_content_title').html("Image Title");
-                    $('.info_bar_right > .info_content > .info_content_wrap').html("This is where the information about the magnified object would display.");
+                    $('.info_bar_right > .info_content > .info_content_title').html("Space Between");
+                    $('.info_bar_right > .info_content > .info_content_wrap').html("I have so many images from Robertsport, the capital of Grand Cape Mount in Liberia; however, I love the capturing people in their daily routines unbothered by a curious transnational.");
                     break;
             }
         },
@@ -196,16 +196,16 @@ $(document).ready(function() {
                     $('#glass_1').css("transform", "scale(2)");
                     $('#left_instruct').hide();
                     $('.info_bar_left > .info_image').css('background-image', 'url("img/len-3.jpeg")');
-                    $('.info_bar_left > .info_content > .info_content_title').html("Image Title");
-                    $('.info_bar_left > .info_content > .info_content_wrap').html("This is where the information about the magnified object would display.");
+                    $('.info_bar_left > .info_content > .info_content_title').html("Grandmother");
+                    $('.info_bar_left > .info_content > .info_content_wrap').html("My maternal grandmother transitioned when I was very young, most likely when I was 5 years old. Although I do not remember her presence, she passed down her love of textiles and artistic creativity. She was a known healer and I was told people would come to her for dislocated limbs and infertility. I am inspired by her generous spirit and proud to carry her name, Lendeh.");
                     break;
                 case 'glass_2':
                     $('#len_3_image').css("transform", "scale(1.2)");
                     $('#glass_2').css("transform", "scale(2)");
                     $('#right_instruct').hide();
                     $('.info_bar_right > .info_image').css('background-image', 'url("img/len-3.jpeg")');
-                    $('.info_bar_right > .info_content > .info_content_title').html("Image Title");
-                    $('.info_bar_right > .info_content > .info_content_wrap').html("This is where the information about the magnified object would display.");
+                    $('.info_bar_right > .info_content > .info_content_title').html("Grandmother");
+                    $('.info_bar_right > .info_content > .info_content_wrap').html("My maternal grandmother transitioned when I was very young, most likely when I was 5 years old. Although I do not remember her presence, she passed down her love of textiles and artistic creativity. She was a known healer and I was told people would come to her for dislocated limbs and infertility. I am inspired by her generous spirit and proud to carry her name, Lendeh.");
                     break;
             }
         },
@@ -475,18 +475,18 @@ $(document).ready(function() {
 
     //Browser Idle Refresh
 
-    var time = new Date().getTime();
-    $(document.body).bind("touchmove mousemove keypress", function(e) {
-        time = new Date().getTime();
-    });
-
-    function refresh() {
-        if (new Date().getTime() - time >= 120000)
-            window.location.reload(true);
-        else
-            setTimeout(refresh, 20000);
-    }
-
-    setTimeout(refresh, 20000);
+    // var time = new Date().getTime();
+    // $(document.body).bind("touchmove mousemove keypress", function(e) {
+    //     time = new Date().getTime();
+    // });
+    //
+    // function refresh() {
+    //     if (new Date().getTime() - time >= 120000)
+    //         window.location.reload(true);
+    //     else
+    //         setTimeout(refresh, 20000);
+    // }
+    //
+    // setTimeout(refresh, 20000);
 
 }); //do not lose this closing bracket - unless you like breaking everything for fun
