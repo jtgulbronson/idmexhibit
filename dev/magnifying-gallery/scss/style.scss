@@ -21,7 +21,7 @@ body {
     width: 100vw;
     height: 100vh;
     overflow: hidden;
-    background-image: url('../img/BG.jpg');
+    background-image: url('../img/BG-no-leaf.jpg');
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -52,6 +52,35 @@ body {
     width: 330px;
     height: 330px;
 }
+
+.bg_leaf_1 {
+    position: absolute;
+    z-index: 0;
+    bottom: 100px;
+    right: -200px;
+    transform: rotate(-15deg);
+    background-image: url('../img/LEAF01.png');
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+    width: 600px;
+    height: 350px;
+}
+
+.bg_leaf_2 {
+    position: absolute;
+    z-index: 0;
+    top: 50px;
+    left: -200px;
+    transform: rotate(-15deg);
+    background-image: url('../img/LEAF02.png');
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+    width: 600px;
+    height: 350px;
+}
+
 ///////////////////////////////////////////////
 //Generic Class Styles
 ///////////////////////////////////////////////
