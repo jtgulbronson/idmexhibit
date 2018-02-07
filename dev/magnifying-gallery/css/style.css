@@ -15,7 +15,7 @@ body {
   width: 100vw;
   height: 100vh;
   overflow: hidden;
-  background-image: url("../img/BG.jpg");
+  background-image: url("../img/BG-no-leaf.jpg");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat; }
@@ -29,8 +29,8 @@ body {
   background-size: contain;
   background-position: center;
   background-repeat: no-repeat;
-  width: 430px;
-  height: 250px; }
+  width: 300px;
+  height: 175px; }
 
 .bg_flower_2 {
   position: absolute;
@@ -41,19 +41,45 @@ body {
   background-size: contain;
   background-position: center;
   background-repeat: no-repeat;
-  width: 430px;
-  height: 430px; }
+  width: 330px;
+  height: 330px; }
+
+.bg_leaf_1 {
+  position: absolute;
+  z-index: 0;
+  bottom: 100px;
+  right: -200px;
+  transform: rotate(-15deg);
+  background-image: url("../img/LEAF01.png");
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+  width: 600px;
+  height: 350px; }
+
+.bg_leaf_2 {
+  position: absolute;
+  z-index: 0;
+  top: 50px;
+  left: -200px;
+  transform: rotate(-15deg);
+  background-image: url("../img/LEAF02.png");
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+  width: 600px;
+  height: 350px; }
 
 .side_panel {
   position: relative;
-  height: 65vh;
-  width: 350px;
-  margin-top: 15vh;
+  height: 80vh;
+  width: 425px;
+  margin-top: 8vh;
   z-index: 3;
   background-color: #f0eceb;
-  -webkit-box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.75);
-  -moz-box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.75);
-  box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.75); }
+  -webkit-box-shadow: 8px 8px 30px 0px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: 8px 8px 30px 0px rgba(0, 0, 0, 0.75);
+  box-shadow: 8px 8px 30px 0px rgba(0, 0, 0, 0.75); }
 
 .initial_content {
   padding: 40px;
@@ -96,7 +122,7 @@ body {
 #glass_1 {
   background: transparent;
   position: absolute;
-  top: 200px;
+  top: 650px;
   left: 295px;
   -webkit-transform-origin: center;
   transform-origin: center;
@@ -109,7 +135,7 @@ body {
 #glass_2 {
   background: transparent;
   position: absolute;
-  top: 200px;
+  top: 650px;
   left: 1770px;
   -webkit-transform-origin: center;
   transform-origin: center;
@@ -122,46 +148,62 @@ body {
 .info_bar_left {
   display: block;
   position: absolute;
-  top: 80px;
-  left: 30px;
-  width: 290px;
+  top: 30px;
+  left: 0px;
+  width: 425px;
   height: auto; }
   .info_bar_left .info_image {
-    width: 100%;
-    height: 300px;
+    width: 270px;
+    height: 450px;
     display: block;
     margin: auto;
     background-position: center;
     background-repeat: no-repeat;
     background-size: contain; }
   .info_bar_left .info_content {
-    width: 100%;
+    width: 320px;
     display: block;
     text-align: left;
-    padding: 30px 0;
+    padding: 20px 40px;
     line-height: 30px; }
+    .info_bar_left .info_content .info_content_wrap {
+      font-size: 14px; }
+    .info_bar_left .info_content .info_content_title {
+      font-size: 1.5rem;
+      padding: 10px 0;
+      font-weight: bold;
+      font-family: "PT Serif", serif;
+      letter-spacing: 1px; }
 
 .info_bar_right {
   display: block;
   position: absolute;
-  top: 80px;
-  left: 30px;
-  width: 290px;
+  top: 30px;
+  left: 0px;
+  width: 425px;
   height: auto; }
   .info_bar_right .info_image {
-    width: 100%;
-    height: 300px;
+    width: 270px;
+    height: 450px;
     display: block;
     margin: auto;
     background-position: center;
     background-repeat: no-repeat;
     background-size: contain; }
   .info_bar_right .info_content {
-    width: 100%;
+    width: 320px;
     display: block;
     text-align: left;
-    padding: 30px 0;
+    padding: 20px 40px;
     line-height: 30px; }
+    .info_bar_right .info_content .info_content_wrap {
+      font-size: 14px; }
+    .info_bar_right .info_content .info_content_title {
+      font-size: 1.5rem;
+      padding: 10px 0;
+      font-weight: bold;
+      font-family: "PT Serif", serif;
+      letter-spacing: 1px; }
 
 #len_1 {
   position: absolute;
