@@ -4,31 +4,38 @@
 <head>
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
-	<title>Magnifying Gallery - Winter V1</title>
-		<script type="text/javascript" src="js/jquery.3.2.1.js"></script>
-		<script type="text/javascript" src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
-		<script type="text/javascript" src="js/interact.js"></script>
+	<title>Magnifying Gallery - A Version</title>
+	<script type="text/javascript" src="js/jquery.3.2.1.js"></script>
+	<script type="text/javascript" src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+	<script type="text/javascript" src="js/interact.js"></script>
 
-		<script type="text/javascript" src="js/init.js"></script>
-		<link rel="stylesheet" href="css/reset.css">
-		<link rel="stylesheet" href="css/style.css">
+	<script type="text/javascript" src="js/init.js"></script>
+	<link rel="stylesheet" href="css/reset.css">
+	<link rel="stylesheet" href="css/style.css">
 </head>
+
 <body>
+	<!-- background image and restriction container for magnifying glasses -->
 	<div class="wrapper">
-		<div class="background-img"></div>
+		<!-- flower background design elements -->
+		<div class="bg_flower_1"></div>
+		<div class="bg_flower_2"></div>
+		<div class="bg_leaf_1"></div>
+		<div class="bg_leaf_2"></div>
+		<!-- side panels and empty divs for dynamic content population on magnify of element -->
 		<div class="side_panel" id="left_panel">
 			<div class="initial_content" id="left_instruct">
 				<div class="title">
 					Instructions
 				</div>
 				<div class="instructions">
-					Lorem ipsum dolor sit amet, donec velit fusce nec per quam a,
-					ex in ut neque sapien vitae wisi.
+					Drag your magnifying glass through the collage to discover the artist's inspiration, history and passion.
 				</div>
 			</div>
 			<div class="info_bar_left">
 				<div class="info_image"></div>
 				<div class="info_content">
+					<div class="info_content_title"></div>
 					<div class="info_content_wrap"></div>
 				</div>
 			</div>
@@ -39,39 +46,59 @@
 					Instructions
 				</div>
 				<div class="instructions">
-					Lorem ipsum dolor sit amet, donec velit fusce nec per quam a,
-					ex in ut neque sapien vitae wisi.
+					Drag your magnifying glass through the collage to discover the artist's inspiration, history and passion.
 				</div>
 			</div>
 			<div class="info_bar_right">
 				<div class="info_image"></div>
 				<div class="info_content">
+					<div class="info_content_title"></div>
 					<div class="info_content_wrap"></div>
 				</div>
 			</div>
 		</div>
 
-		<!-- CARDS -->
-		<div  class="magnify_glass" id="glass_1" data-x="265" data-y="200"></div>
+		<!-- magnifiers -->
+		<div class="magnify_glass" id="glass_1" data-x="295" data-y="600"></div>
+		<div class="magnify_glass" id="glass_2" data-x="1770" data-y="600"></div>
 
-		<div  class="magnify_glass" id="glass_2" data-x="1665" data-y="200"></div>
-
-		<div class="magnify_obj" id="bird">
-			<div id="bird_image"></div>
+		<!-- interactable collage elements -->
+		<div class="magnify_obj" id="len_1">
+			<!-- color portrait black dress -->
+			<div id="len_1_image"></div>
 		</div>
 
-		<div class="magnify_obj" id="bass">
-			<div id="bass_image"></div>
+		<div class="magnify_obj" id="len_2">
+			<!-- alley between houses -->
+			<div id="len_2_image"></div>
 		</div>
 
-		<div class="magnify_obj" id="stamp">
-			<div id="stamp_image"></div>
+		<div class="magnify_obj" id="len_3">
+			<!-- monochromatic portrait -->
+			<div id="len_3_image"></div>
 		</div>
 
-		<div class="magnify_obj" id="diver">
-			<div id="diver_image"></div>
+		<div class="magnify_obj" id="len_8">
+			<!-- road way -->
+			<div id="len_8_image"></div>
+		</div>
+
+		<div class="magnify_obj" id="len_4">
+			<!-- drive way? -->
+			<div id="len_4_image"></div>
+		</div>
+
+		<div class="magnify_obj" id="len_5">
+			<!-- black and white portrait from car -->
+			<div id="len_5_image"></div>
+		</div>
+
+		<div class="magnify_obj" id="ange_1">
+			<!-- mom and child -->
+			<div id="ange_1_image"></div>
 		</div>
 
 	</div>
 </body>
+
 </html>
