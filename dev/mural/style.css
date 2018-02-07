@@ -1,0 +1,87 @@
+body{
+	background-color: #DDDBD9;
+	color: #72716E;
+	text-align: center;
+}
+
+#bg{
+	background-image: url(img/mural-bg.png);
+	background-repeat: no-repeat;
+	width: 1404px;
+	height: 1054px;
+	margin: auto;
+	z-index: 1;
+}
+
+.cart img{
+	width: 93%;
+}
+
+#cart-left{
+	position: absolute;
+	z-index: 2;
+	top: 45.5%;
+	left: 17.7%;
+	opacity: 0;
+}
+
+#cart-left:hover{
+	opacity: 1;
+	-webkit-transition: .75s;
+	transition: .75s;
+}
+
+#cart-mid{
+	position: absolute;
+	z-index: 2;
+	top: 51.8%;
+	left: 38.1%;
+	opacity: 0;
+}
+
+#cart-mid:hover{
+	opacity: 1;
+	-webkit-transition: .75s;
+	transition: .75s;
+}
+
+#cart-right{
+	position: absolute;
+	z-index: 2;
+	top: 47.6%;
+	left: 62.2%;
+	opacity: 0;
+}
+
+#cart-right:hover{
+	opacity: 1;
+	-webkit-transition: .75s;
+	transition: .75s;
+}
+
+.cart:hover + .vid{
+	display: block;
+}
+
+.vid{
+	display: none;
+	
+	width: 550px;
+	height: 300px;
+	
+	position: absolute;
+	top: 17%;
+	left: 35%;
+}
+
+#cart-left-vid{
+	background-color: #63a768;
+}
+
+#cart-mid-vid{
+	background-color: #ccb94d;
+}
+
+#cart-right-vid{
+	background-color: #af4f4f;
+}
