@@ -1,4 +1,5 @@
 onload = function () {
+
 	
 	// array of all audio files
 	window.audioFiles = ['reverb.mp3', 'strings.mp3'];
