@@ -16,22 +16,34 @@ $(document).ready(function() {
     ////////////////////////////////////
 
 	// array of all audio files
-	window.audioFiles = ['reverb.mp3', 'reverb2.mp3', 'strings.mp3', 'strings2.mp3'];
+    // [0 - reverb, 1 - reverb2, 2 - strings, 3 - strings2, 4 - meadowlark, 5 - meadowlark2]
+	window.audioFiles = ['reverb.mp3', 'reverb2.mp3', 'strings.mp3', 'strings2.mp3', 'meadowlark.mp3', 'meadowlark2.mp3'];
+
+    //Finding the audio tag in the HTML to hold and play the files
     window.audio_len_1_L = document.getElementById('audio_len_1_L');
     window.audio_len_1_R = document.getElementById('audio_len_1_R');
+
     window.audio_len_2_L = document.getElementById('audio_len_2_L');
     window.audio_len_2_R = document.getElementById('audio_len_2_R');
+
+    window.audio_len_3_L = document.getElementById('audio_len_3_L');
+    window.audio_len_3_R = document.getElementById('audio_len_3_R');
+
     // setting up AudioContext for WebAudio API
     window.AudioContext = window.AudioContext || window.webkitAudioContext;
     context = new AudioContext();
 
-    // connectind AudioContect to audio HTML element
+    // connecting AudioContext to audio HTML element for each element L and R
     source_len_1_L = context.createMediaElementSource(audio_len_1_L);
     source_len_1_R = context.createMediaElementSource(audio_len_1_R);
+
     source_len_2_L = context.createMediaElementSource(audio_len_2_L);
     source_len_2_R = context.createMediaElementSource(audio_len_2_R);
 
-    // add WebAudio API Analyser
+    source_len_3_L = context.createMediaElementSource(audio_len_3_L);
+    source_len_3_R = context.createMediaElementSource(audio_len_3_R);
+
+    // add WebAudio API Analyser on for L one for R
     analyser_L = context.createAnalyser();
     analyser_R = context.createAnalyser();
 
@@ -45,11 +57,18 @@ $(document).ready(function() {
     source_len_1_L.connect(panNode_L);
     source_len_1_R.connect(analyser_R);
     source_len_1_R.connect(panNode_R);
+
     source_len_2_L.connect(analyser_L);
     source_len_2_L.connect(panNode_L);
     source_len_2_R.connect(analyser_R);
     source_len_2_R.connect(panNode_R);
 
+    source_len_3_L.connect(analyser_L);
+    source_len_3_L.connect(panNode_L);
+    source_len_3_R.connect(analyser_R);
+    source_len_3_R.connect(panNode_R);
+
+    //connecting to the output
     analyser_L.connect(context.destination);
     analyser_R.connect(context.destination);
 	panNode_L.connect(context.destination);
@@ -257,6 +276,12 @@ $(document).ready(function() {
             var glass = draggableElement.getAttribute('id');
             switch (glass) {
                 case 'glass_1':
+                    audio_len_3_L.src = audioFiles[4];
+                    // pan left
+                    panNode_L.pan.value = -1;
+                    // play audio
+                    audio_len_3_L.play();
+                    console.log(panNode_L.pan.value);
                     $('#len_3_image').css("transform", "scale(1.2)");
                     $('#glass_1').css("transform", "scale(2)");
                     $('#left_instruct').hide();
@@ -265,6 +290,12 @@ $(document).ready(function() {
                     $('.info_bar_left > .info_content > .info_content_wrap').html("My maternal grandmother transitioned when I was very young, most likely when I was 5 years old. Although I do not remember her presence, she passed down her love of textiles and artistic creativity. She was a known healer and I was told people would come to her for dislocated limbs and infertility. I am inspired by her generous spirit and proud to carry her name, Lendeh.");
                     break;
                 case 'glass_2':
+                    audio_len_3_R.src = audioFiles[5];
+                    // pan left
+                    panNode_R.pan.value = 1;
+                    // play audio
+                    audio_len_3_R.play();
+                    console.log(panNode_R.pan.value);
                     $('#len_3_image').css("transform", "scale(1.2)");
                     $('#glass_2').css("transform", "scale(2)");
                     $('#right_instruct').hide();
@@ -282,6 +313,8 @@ $(document).ready(function() {
             var glass = draggableElement.getAttribute('id');
             switch (glass) {
                 case 'glass_1':
+                    audio_len_3_L.pause();
+                    audio_len_3_L.currentTime = 0;
                     $('#len_3_image').css("transform", "scale(1)");
                     $('#glass_1').css("transform", "scale(1)");
                     $('#left_instruct').show();
@@ -290,6 +323,8 @@ $(document).ready(function() {
                     $('.info_bar_left > .info_content > .info_content_wrap').html("");
                     break;
                 case 'glass_2':
+                    audio_len_3_R.pause();
+                    audio_len_3_R.currentTime = 0;
                     $('#len_3_image').css("transform", "scale(1)");
                     $('#glass_2').css("transform", "scale(1)");
                     $('#right_instruct').show();
