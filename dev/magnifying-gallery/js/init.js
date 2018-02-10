@@ -16,7 +16,7 @@ $(document).ready(function() {
     ////////////////////////////////////
 
 	// array of all audio files
-	window.audioFiles = ['reverb.mp3', 'strings.mp3'];
+	window.audioFiles = ['reverb.mp3', 'reverb2.mp3', 'strings.mp3'];
     window.audio_len_1_L = document.getElementById('audio_len_1_L');
     window.audio_len_1_R = document.getElementById('audio_len_1_R');
     // setting up AudioContext for WebAudio API
@@ -29,19 +29,23 @@ $(document).ready(function() {
 
     // add WebAudio API Analyser
     analyser = context.createAnalyser();
+    analyser2 = context.createAnalyser();
 
     // add left and right WebAudio API so each ear can be panned independently
-    panNode = context.createStereoPanner();
+    panNodeL = context.createStereoPanner();
+    panNodeR = context.createStereoPanner();
 
 
     // connecting all nodes to audio source
     source_len_1_L.connect(analyser);
-    source_len_1_L.connect(panNode);
-    source_len_1_R.connect(analyser);
-    source_len_1_R.connect(panNode);
+    source_len_1_L.connect(panNodeL);
+    source_len_1_R.connect(analyser2);
+    source_len_1_R.connect(panNodeR);
 
     analyser.connect(context.destination);
-	panNode.connect(context.destination);
+    analyser2.connect(context.destination);
+	panNodeL.connect(context.destination);
+    panNodeR.connect(context.destination);
     /////////////////////////////////////
     // Drag and Drop
     ////////////////////////////////////
@@ -97,10 +101,10 @@ $(document).ready(function() {
                 case 'glass_1':
                     audio_len_1_L.src = audioFiles[0];
                     // pan left
-                    panNode.pan.value = -1;
+                    panNodeL.pan.value = -1;
                     // play audio
                     audio_len_1_L.play();
-                    console.log(panNode.pan.value);
+                    console.log(panNodeL.pan.value);
                     $('#len_1_image').css("transform", "scale(1.2)");
                     $('#glass_1').css("transform", "scale(2.5)");
                     $('#left_instruct').hide();
@@ -109,12 +113,12 @@ $(document).ready(function() {
                     $('.info_bar_left > .info_content > .info_content_wrap').html("My mother's strength and boldness is an inspiration to me. She has raised many children and adults. Her life story is one of triumph.");
                     break;
                 case 'glass_2':
-                    audio_len_1_R.src = audioFiles[0];
+                    audio_len_1_R.src = audioFiles[1];
                     // pan left
-                    panNode.pan.value = 1;
+                    panNodeR.pan.value = 1;
                     // play audio
                     audio_len_1_R.play();
-                    console.log(panNode.pan.value);
+                    console.log(panNodeR.pan.value);
                     $('#len_1_image').css("transform", "scale(1.2)");
                     $('#glass_2').css("transform", "scale(2.5)");
                     $('#right_instruct').hide();
@@ -144,6 +148,7 @@ $(document).ready(function() {
                 case 'glass_2':
                     audio_len_1_R.pause();
                     audio_len_1_R.currentTime = 0;
+                    console.log('audio len 2 paused');
                     $('#len_1_image').css("transform", "scale(1)");
                     $('#glass_2').css("transform", "scale(1)");
                     $('#right_instruct').show();
