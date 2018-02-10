@@ -10,6 +10,34 @@ $(document).ready(function() {
     //keeps users from selecting text (highlighting)
     var textSelect = $("html");
     textSelect.attr('unselectable', 'on').css('user-select', 'none').on('selectstart dragstart', false);
+
+    /////////////////////////////////////
+    // Base Audio Stuff
+    ////////////////////////////////////
+
+	// array of all audio files
+	window.audioFiles = ['reverb.mp3', 'strings.mp3'];
+    window.audio = document.getElementById('audio');
+    // setting up AudioContext for WebAudio API
+    window.AudioContext = window.AudioContext || window.webkitAudioContext;
+    context = new AudioContext();
+
+    // connectind AudioContect to audio HTML element
+    source = context.createMediaElementSource(audio);
+
+    // add WebAudio API Analyser
+    analyser = context.createAnalyser();
+
+    // add left and right WebAudio API so each ear can be panned independently
+    panNode = context.createStereoPanner();
+
+
+    // connecting all nodes to audio source
+    source.connect(analyser);
+    source.connect(panNode);
+
+    analyser.connect(context.destination);
+	panNode.connect(context.destination);
     /////////////////////////////////////
     // Drag and Drop
     ////////////////////////////////////
@@ -45,17 +73,6 @@ $(document).ready(function() {
         // update the position attributes
         target.setAttribute('data-x', x);
         target.setAttribute('data-y', y);
-        // document.getElementById('transform-info').textContent = 'position = ' + x + ',' + y;
-        // var hideMe = target.getAttribute('id');
-        // switch (hideMe) {
-        //     case 'glass_1':
-        //         $('#left_instruct').hide();
-        //         break;
-        //     case 'glass_2':
-        //         $('#right_instruct').hide();
-        //         break;
-        //         //this hides the instructions based on what magnifier is moved
-        // }
         dragOne.preventDefault();
     };
 
@@ -74,6 +91,12 @@ $(document).ready(function() {
             var glass = draggableElement.getAttribute('id');
             switch (glass) {
                 case 'glass_1':
+                    audio.src = audioFiles[0];
+                    // pan left
+                    panNode.pan.value = -1;
+                    // play audio
+                    audio.play();
+                    console.log(panNode.pan.value);
                     $('#len_1_image').css("transform", "scale(1.2)");
                     $('#glass_1').css("transform", "scale(2.5)");
                     $('#left_instruct').hide();
@@ -82,6 +105,12 @@ $(document).ready(function() {
                     $('.info_bar_left > .info_content > .info_content_wrap').html("My mother's strength and boldness is an inspiration to me. She has raised many children and adults. Her life story is one of triumph.");
                     break;
                 case 'glass_2':
+                    audio.src = audioFiles[0];
+                    // pan left
+                    panNode.pan.value = 1;
+                    // play audio
+                    audio.play();
+                    console.log(panNode.pan.value);
                     $('#len_1_image').css("transform", "scale(1.2)");
                     $('#glass_2').css("transform", "scale(2.5)");
                     $('#right_instruct').hide();
@@ -99,6 +128,8 @@ $(document).ready(function() {
             var glass = draggableElement.getAttribute('id');
             switch (glass) {
                 case 'glass_1':
+                    audio.pause();
+                    audio.currentTime = 0;
                     $('#len_1_image').css("transform", "scale(1)");
                     $('#glass_1').css("transform", "scale(1)");
                     $('#left_instruct').show();
@@ -107,6 +138,8 @@ $(document).ready(function() {
                     $('.info_bar_left > .info_content > .info_content_wrap').html("");
                     break;
                 case 'glass_2':
+                    audio.pause();
+                    audio.currentTime = 0;
                     $('#len_1_image').css("transform", "scale(1)");
                     $('#glass_2').css("transform", "scale(1)");
                     $('#right_instruct').show();
