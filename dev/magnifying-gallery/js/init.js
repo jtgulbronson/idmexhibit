@@ -16,8 +16,18 @@ $(document).ready(function() {
     ////////////////////////////////////
 
 	// array of all audio files
-    // [0 - reverb, 1 - reverb2, 2 - strings, 3 - strings2, 4 - meadowlark, 5 - meadowlark2]
-	window.audioFiles = ['reverb.mp3', 'reverb2.mp3', 'strings.mp3', 'strings2.mp3', 'meadowlark.mp3', 'meadowlark2.mp3'];
+	window.audioFiles = [
+        'reverb.mp3', // 0
+        'reverb2.mp3', // 1
+        'strings.mp3', // 2
+        'strings2.mp3', // 3
+        'meadowlark.mp3', // 4
+        'meadowlark2.mp3', // 5
+        'frogs.mp3', // 6
+        'frogs2.mp3', // 7
+        'dream.mp3', // 8
+        'dream2.mp3' // 9
+    ];
 
     //Finding the audio tag in the HTML to hold and play the files
     window.audio_len_1_L = document.getElementById('audio_len_1_L');
@@ -28,6 +38,12 @@ $(document).ready(function() {
 
     window.audio_len_3_L = document.getElementById('audio_len_3_L');
     window.audio_len_3_R = document.getElementById('audio_len_3_R');
+
+    window.audio_len_8_L = document.getElementById('audio_len_8_L');
+    window.audio_len_8_R = document.getElementById('audio_len_8_R');
+
+    window.audio_len_4_L = document.getElementById('audio_len_4_L');
+    window.audio_len_4_R = document.getElementById('audio_len_4_R');
 
     // setting up AudioContext for WebAudio API
     window.AudioContext = window.AudioContext || window.webkitAudioContext;
@@ -42,6 +58,12 @@ $(document).ready(function() {
 
     source_len_3_L = context.createMediaElementSource(audio_len_3_L);
     source_len_3_R = context.createMediaElementSource(audio_len_3_R);
+
+    source_len_8_L = context.createMediaElementSource(audio_len_8_L);
+    source_len_8_R = context.createMediaElementSource(audio_len_8_R);
+
+    source_len_4_L = context.createMediaElementSource(audio_len_4_L);
+    source_len_4_R = context.createMediaElementSource(audio_len_4_R);
 
     // add WebAudio API Analyser on for L one for R
     analyser_L = context.createAnalyser();
@@ -67,6 +89,16 @@ $(document).ready(function() {
     source_len_3_L.connect(panNode_L);
     source_len_3_R.connect(analyser_R);
     source_len_3_R.connect(panNode_R);
+
+    source_len_8_L.connect(analyser_L);
+    source_len_8_L.connect(panNode_L);
+    source_len_8_R.connect(analyser_R);
+    source_len_8_R.connect(panNode_R);
+
+    source_len_4_L.connect(analyser_L);
+    source_len_4_L.connect(panNode_L);
+    source_len_4_R.connect(analyser_R);
+    source_len_4_R.connect(panNode_R);
 
     //connecting to the output
     analyser_L.connect(context.destination);
@@ -336,6 +368,80 @@ $(document).ready(function() {
         }
     });
 
+    //diver element interaction
+    // enable draggables to be dropped into this
+    interact('#len_8').dropzone({
+        // only accept elements matching this CSS selector
+        accept: '.magnify_glass',
+        // Require a 75% element overlap for a drop to be possible
+        overlap: 0.25,
+        ondragenter: function(event) {
+            var draggableElement = event.relatedTarget,
+                dropzoneElement = event.target;
+            draggableElement.classList.add('dropped-element');
+            draggableElement.classList.remove('removed-element');
+            var glass = draggableElement.getAttribute('id');
+            switch (glass) {
+                case 'glass_1':
+                    audio_len_8_L.src = audioFiles[6];
+                    // pan left
+                    panNode_L.pan.value = -1;
+                    // play audio
+                    audio_len_8_L.play();
+                    console.log(panNode_L.pan.value);
+                    $('#len_8_image').css("transform", "scale(1.2)");
+                    $('#glass_1').css("transform", "scale(2)");
+                    $('#left_instruct').hide();
+                    $('.info_bar_left > .info_image').css('background-image', 'url("img/len-8.jpeg")');
+                    $('.info_bar_left > .info_content > .info_content_title').html("Uptown - Robertsport, Grand Cape Mount");
+                    $('.info_bar_left > .info_content > .info_content_wrap').html("The simple life from my perspective reminds me of all the wonderful convenience that make life complicated and inconvenient in the West.");
+                    break;
+                case 'glass_2':
+                    audio_len_8_R.src = audioFiles[7];
+                    // pan left
+                    panNode_R.pan.value = 1;
+                    // play audio
+                    audio_len_8_R.play();
+                    console.log(panNode_R.pan.value);
+                    $('#len_8_image').css("transform", "scale(1.2)");
+                    $('#glass_2').css("transform", "scale(2)");
+                    $('#right_instruct').hide();
+                    $('.info_bar_right > .info_image').css('background-image', 'url("img/len-8.jpeg")');
+                    $('.info_bar_right > .info_content > .info_content_title').html("Uptown - Robertsport, Grand Cape Mount");
+                    $('.info_bar_right > .info_content > .info_content_wrap').html("The simple life from my perspective reminds me of all the wonderful convenience that make life complicated and inconvenient in the West.");
+                    break;
+            }
+        },
+        ondragleave: function(event) {
+            var draggableElement = event.relatedTarget,
+                dropzoneElement = event.target;
+            draggableElement.classList.add('removed-element');
+            draggableElement.classList.remove('dropped-element');
+            var glass = draggableElement.getAttribute('id');
+            switch (glass) {
+                case 'glass_1':
+                    audio_len_8_L.pause();
+                    audio_len_8_L.currentTime = 0;
+                    $('#len_8_image').css("transform", "scale(1)");
+                    $('#glass_1').css("transform", "scale(1)");
+                    $('#left_instruct').show();
+                    $('.info_bar_left > .info_image').css('background-image', 'none');
+                    $('.info_bar_left > .info_content > .info_content_title').html("");
+                    $('.info_bar_left > .info_content > .info_content_wrap').html("");
+                    break;
+                case 'glass_2':
+                    audio_len_8_R.pause();
+                    audio_len_8_R.currentTime = 0;
+                    $('#len_8_image').css("transform", "scale(1)");
+                    $('#glass_2').css("transform", "scale(1)");
+                    $('#right_instruct').show();
+                    $('.info_bar_right > .info_image').css('background-image', 'none');
+                    $('.info_bar_right > .info_content > .info_content_title').html("");
+                    $('.info_bar_right > .info_content > .info_content_wrap').html("");
+                    break;
+            }
+        }
+    });
 
     //diver element interaction
     // enable draggables to be dropped into this
@@ -352,6 +458,12 @@ $(document).ready(function() {
             var glass = draggableElement.getAttribute('id');
             switch (glass) {
                 case 'glass_1':
+                    audio_len_4_L.src = audioFiles[8];
+                    // pan left
+                    panNode_L.pan.value = -1;
+                    // play audio
+                    audio_len_4_L.play();
+                    console.log(panNode_L.pan.value);
                     $('#len_4_image').css("transform", "scale(1.2)");
                     $('#glass_1').css("transform", "scale(2)");
                     $('#left_instruct').hide();
@@ -360,6 +472,12 @@ $(document).ready(function() {
                     $('.info_bar_left > .info_content > .info_content_wrap').html("Traveling across the Atlantic ocean and being able to see where my Mother was raised anchors me. Liberia went through fifteen years or uncivil war and having the opportunity to hear stories from survivors who knew my grandmother and mother as a child helps me understand parts of myself. ");
                     break;
                 case 'glass_2':
+                    audio_len_4_R.src = audioFiles[9];
+                    // pan left
+                    panNode_R.pan.value = 1;
+                    // play audio
+                    audio_len_4_R.play();
+                    console.log(panNode_R.pan.value);
                     $('#len_4_image').css("transform", "scale(1.2)");
                     $('#glass_2').css("transform", "scale(2)");
                     $('#right_instruct').hide();
@@ -377,6 +495,8 @@ $(document).ready(function() {
             var glass = draggableElement.getAttribute('id');
             switch (glass) {
                 case 'glass_1':
+                    audio_len_4_L.pause();
+                    audio_len_4_L.currentTime = 0;
                     $('#len_4_image').css("transform", "scale(1)");
                     $('#glass_1').css("transform", "scale(1)");
                     $('#left_instruct').show();
@@ -385,6 +505,8 @@ $(document).ready(function() {
                     $('.info_bar_left > .info_content > .info_content_wrap').html("");
                     break;
                 case 'glass_2':
+                    audio_len_4_R.pause();
+                    audio_len_4_R.currentTime = 0;
                     $('#len_4_image').css("transform", "scale(1)");
                     $('#glass_2').css("transform", "scale(1)");
                     $('#right_instruct').show();
@@ -445,65 +567,6 @@ $(document).ready(function() {
                     break;
                 case 'glass_2':
                     $('#len_5_image').css("transform", "scale(1)");
-                    $('#glass_2').css("transform", "scale(1)");
-                    $('#right_instruct').show();
-                    $('.info_bar_right > .info_image').css('background-image', 'none');
-                    $('.info_bar_right > .info_content > .info_content_title').html("");
-                    $('.info_bar_right > .info_content > .info_content_wrap').html("");
-                    break;
-            }
-        }
-    });
-
-    //diver element interaction
-    // enable draggables to be dropped into this
-    interact('#len_8').dropzone({
-        // only accept elements matching this CSS selector
-        accept: '.magnify_glass',
-        // Require a 75% element overlap for a drop to be possible
-        overlap: 0.25,
-        ondragenter: function(event) {
-            var draggableElement = event.relatedTarget,
-                dropzoneElement = event.target;
-            draggableElement.classList.add('dropped-element');
-            draggableElement.classList.remove('removed-element');
-            var glass = draggableElement.getAttribute('id');
-            switch (glass) {
-                case 'glass_1':
-                    $('#len_8_image').css("transform", "scale(1.2)");
-                    $('#glass_1').css("transform", "scale(2)");
-                    $('#left_instruct').hide();
-                    $('.info_bar_left > .info_image').css('background-image', 'url("img/len-8.jpeg")');
-                    $('.info_bar_left > .info_content > .info_content_title').html("Uptown - Robertsport, Grand Cape Mount");
-                    $('.info_bar_left > .info_content > .info_content_wrap').html("The simple life from my perspective reminds me of all the wonderful convenience that make life complicated and inconvenient in the West.");
-                    break;
-                case 'glass_2':
-                    $('#len_8_image').css("transform", "scale(1.2)");
-                    $('#glass_2').css("transform", "scale(2)");
-                    $('#right_instruct').hide();
-                    $('.info_bar_right > .info_image').css('background-image', 'url("img/len-8.jpeg")');
-                    $('.info_bar_right > .info_content > .info_content_title').html("Uptown - Robertsport, Grand Cape Mount");
-                    $('.info_bar_right > .info_content > .info_content_wrap').html("The simple life from my perspective reminds me of all the wonderful convenience that make life complicated and inconvenient in the West.");
-                    break;
-            }
-        },
-        ondragleave: function(event) {
-            var draggableElement = event.relatedTarget,
-                dropzoneElement = event.target;
-            draggableElement.classList.add('removed-element');
-            draggableElement.classList.remove('dropped-element');
-            var glass = draggableElement.getAttribute('id');
-            switch (glass) {
-                case 'glass_1':
-                    $('#len_8_image').css("transform", "scale(1)");
-                    $('#glass_1').css("transform", "scale(1)");
-                    $('#left_instruct').show();
-                    $('.info_bar_left > .info_image').css('background-image', 'none');
-                    $('.info_bar_left > .info_content > .info_content_title').html("");
-                    $('.info_bar_left > .info_content > .info_content_wrap').html("");
-                    break;
-                case 'glass_2':
-                    $('#len_8_image').css("transform", "scale(1)");
                     $('#glass_2').css("transform", "scale(1)");
                     $('#right_instruct').show();
                     $('.info_bar_right > .info_image').css('background-image', 'none');

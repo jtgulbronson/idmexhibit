@@ -1,4 +1,5 @@
 @import url("https://fonts.googleapis.com/css?family=Montserrat:300,400|PT+Serif:700");
+@import url("https://use.typekit.net/hpj7hvn.css");
 html {
   overflow-x: hidden;
   overflow-y: hidden; }
@@ -90,7 +91,7 @@ body {
     font-size: 2rem;
     padding: 20px 0;
     font-weight: bold;
-    font-family: "PT Serif", serif;
+    font-family: "Kepler Std", serif;
     letter-spacing: 1px; }
   .initial_content .instructions {
     line-height: 30px; }
@@ -172,7 +173,7 @@ body {
       font-size: 1.5rem;
       padding: 10px 0;
       font-weight: bold;
-      font-family: "PT Serif", serif;
+      font-family: "Kepler Std", serif;
       letter-spacing: 1px; }
 
 .info_bar_right {
@@ -202,7 +203,7 @@ body {
       font-size: 1.5rem;
       padding: 10px 0;
       font-weight: bold;
-      font-family: "PT Serif", serif;
+      font-family: "Kepler Std", serif;
       letter-spacing: 1px; }
 
 #len_1 {
