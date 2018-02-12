@@ -26,7 +26,11 @@ $(document).ready(function() {
         'frogs.mp3', // 6
         'frogs2.mp3', // 7
         'dream.mp3', // 8
-        'dream2.mp3' // 9
+        'dream2.mp3', // 9
+		'rainforest.mp3', // 10
+		'rainforest2.mp3', //11
+        'flute.mp3', //12
+        'flute2.mp3' //13
     ];
 
     //Finding the audio tag in the HTML to hold and play the files
@@ -44,6 +48,12 @@ $(document).ready(function() {
 
     window.audio_len_4_L = document.getElementById('audio_len_4_L');
     window.audio_len_4_R = document.getElementById('audio_len_4_R');
+
+    window.audio_len_5_L = document.getElementById('audio_len_5_L');
+    window.audio_len_5_R = document.getElementById('audio_len_5_R');
+
+    window.audio_ange_1_L = document.getElementById('audio_ange_1_L');
+    window.audio_ange_1_R = document.getElementById('audio_ange_1_R');
 
     // setting up AudioContext for WebAudio API
     window.AudioContext = window.AudioContext || window.webkitAudioContext;
@@ -64,6 +74,12 @@ $(document).ready(function() {
 
     source_len_4_L = context.createMediaElementSource(audio_len_4_L);
     source_len_4_R = context.createMediaElementSource(audio_len_4_R);
+
+    source_len_5_L = context.createMediaElementSource(audio_len_5_L);
+    source_len_5_R = context.createMediaElementSource(audio_len_5_R);
+
+    source_ange_1_L = context.createMediaElementSource(audio_ange_1_L);
+    source_ange_1_R = context.createMediaElementSource(audio_ange_1_R);
 
     // add WebAudio API Analyser on for L one for R
     analyser_L = context.createAnalyser();
@@ -99,6 +115,16 @@ $(document).ready(function() {
     source_len_4_L.connect(panNode_L);
     source_len_4_R.connect(analyser_R);
     source_len_4_R.connect(panNode_R);
+
+    source_len_5_L.connect(analyser_L);
+    source_len_5_L.connect(panNode_L);
+    source_len_5_R.connect(analyser_R);
+    source_len_5_R.connect(panNode_R);
+
+    source_ange_1_L.connect(analyser_L);
+    source_ange_1_L.connect(panNode_L);
+    source_ange_1_R.connect(analyser_R);
+    source_ange_1_R.connect(panNode_R);
 
     //connecting to the output
     analyser_L.connect(context.destination);
@@ -533,6 +559,12 @@ $(document).ready(function() {
             var glass = draggableElement.getAttribute('id');
             switch (glass) {
                 case 'glass_1':
+                    audio_len_5_L.src = audioFiles[10];
+                    // pan left
+                    panNode_L.pan.value = -1;
+                    // play audio
+                    audio_len_5_L.play();
+                    console.log(panNode_L.pan.value);
                     $('#len_5_image').css("transform", "scale(1.2)");
                     $('#glass_1').css("transform", "scale(2)");
                     $('#left_instruct').hide();
@@ -541,6 +573,12 @@ $(document).ready(function() {
                     $('.info_bar_left > .info_content > .info_content_wrap').html("This image was taken in 2004, six months after the uncivil war ended. I was traveling to the airport and on several occasions was afraid to take pictures.");
                     break;
                 case 'glass_2':
+                    audio_len_5_R.src = audioFiles[11];
+                    // pan left
+                    panNode_R.pan.value = 1;
+                    // play audio
+                    audio_len_5_R.play();
+                    console.log(panNode_R.pan.value);
                     $('#len_5_image').css("transform", "scale(1.2)");
                     $('#glass_2').css("transform", "scale(2)");
                     $('#right_instruct').hide();
@@ -558,6 +596,8 @@ $(document).ready(function() {
             var glass = draggableElement.getAttribute('id');
             switch (glass) {
                 case 'glass_1':
+                    audio_len_5_L.pause();
+                    audio_len_5_L.currentTime = 0;
                     $('#len_5_image').css("transform", "scale(1)");
                     $('#glass_1').css("transform", "scale(1)");
                     $('#left_instruct').show();
@@ -566,6 +606,8 @@ $(document).ready(function() {
                     $('.info_bar_left > .info_content > .info_content_wrap').html("");
                     break;
                 case 'glass_2':
+                    audio_len_5_R.pause();
+                    audio_len_5_R.currentTime = 0;
                     $('#len_5_image').css("transform", "scale(1)");
                     $('#glass_2').css("transform", "scale(1)");
                     $('#right_instruct').show();
@@ -592,6 +634,12 @@ $(document).ready(function() {
             var glass = draggableElement.getAttribute('id');
             switch (glass) {
                 case 'glass_1':
+                    audio_ange_1_L.src = audioFiles[12];
+                    // pan left
+                    panNode_L.pan.value = -1;
+                    // play audio
+                    audio_ange_1_L.play();
+                    console.log(panNode_L.pan.value);
                     $('#ange_1_image').css("transform", "scale(1.2)");
                     $('#glass_1').css("transform", "scale(2)");
                     $('#left_instruct').hide();
@@ -600,6 +648,12 @@ $(document).ready(function() {
                     $('.info_bar_left > .info_content > .info_content_wrap').html("This is where the information about the magnified object would display.");
                     break;
                 case 'glass_2':
+                    audio_ange_1_R.src = audioFiles[13];
+                    // pan left
+                    panNode_R.pan.value = 1;
+                    // play audio
+                    audio_ange_1_R.play();
+                    console.log(panNode_R.pan.value);
                     $('#ange_1_image').css("transform", "scale(1.2)");
                     $('#glass_2').css("transform", "scale(2)");
                     $('#right_instruct').hide();
@@ -617,6 +671,8 @@ $(document).ready(function() {
             var glass = draggableElement.getAttribute('id');
             switch (glass) {
                 case 'glass_1':
+                    audio_ange_1_L.pause();
+                    audio_ange_1_L.currentTime = 0;
                     $('#ange_1_image').css("transform", "scale(1)");
                     $('#glass_1').css("transform", "scale(1)");
                     $('#left_instruct').show();
@@ -625,6 +681,8 @@ $(document).ready(function() {
                     $('.info_bar_left > .info_content > .info_content_wrap').html("");
                     break;
                 case 'glass_2':
+                    audio_ange_1_R.pause();
+                    audio_ange_1_R.currentTime = 0;
                     $('#ange_1_image').css("transform", "scale(1)");
                     $('#glass_2').css("transform", "scale(1)");
                     $('#right_instruct').show();
