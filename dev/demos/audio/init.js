@@ -1,6 +1,6 @@
 onload = function () {
 
-	
+
 	// array of all audio files
 	window.audioFiles = ['reverb.mp3', 'strings.mp3'];
 
@@ -20,26 +20,33 @@ onload = function () {
 	analyser = context.createAnalyser();
 
 	// add left and right WebAudio API so each ear can be panned independently
-	panNodeL = context.createStereoPanner();
-	panNodeR = context.createStereoPanner();
+	panNode = context.createStereoPanner();
+
 
 	// connecting all nodes to audio source
 	source.connect(analyser);
-	source.connect(panNodeL);
-	source.connect(panNodeR);
+	source.connect(panNode);
+	// source.connect(panNodeR);
 
 	// on red btn click...
-	red.onclick = function () {
+	$('#red').mouseenter(function () {
 
 		// choose audio source from array
 		audio.src = audioFiles[0];
 
 		// pan left
-		panNodeL.pan.value = -1;
+		panNode.pan.value = -1;
 
 		// play audio
 		audio.play();
-	}
+		console.log(panNode.pan.value);
+	});
+
+	$('#red').mouseleave(function(){
+		audio.pause();
+		audio.currentTime = 0;
+	});
+
 
 	// on blue btn click...
 	blue.onclick = function () {
@@ -47,14 +54,15 @@ onload = function () {
 		//choose audio source from array
 		audio.src = audioFiles[1];
 		// pan right
-		panNodeR.pan.value = 1;
+		panNode.pan.value = 1;
 
 		// play audio
 		audio.play();
+		console.log(panNode.pan.value);
 	}
 
 	// connected each node to destination (in this case headphones)
 	analyser.connect(context.destination);
-	panNodeL.connect(context.destination);
-	panNodeR.connect(context.destination);
+	panNode.connect(context.destination);
+	// panNodeR.connect(context.destination);
 }
