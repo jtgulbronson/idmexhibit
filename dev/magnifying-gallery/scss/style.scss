@@ -21,36 +21,7 @@ body {
     width: 100vw;
     height: 100vh;
     overflow: hidden;
-    background-image: url('../img/BG-no-leaf.jpg');
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-}
-
-.bg_flower_1 {
-    position: absolute;
-    z-index: 5;
-    top: 0;
-    right: 0;
-    background-image: url('../img/FLOWER01.png');
-    background-size: contain;
-    background-position: center;
-    background-repeat: no-repeat;
-    width: 300px;
-    height: 175px;
-}
-
-.bg_flower_2 {
-    position: absolute;
-    z-index: 5;
-    bottom: 0;
-    left: 0;
-    background-image: url('../img/FLOWER02.png');
-    background-size: contain;
-    background-position: center;
-    background-repeat: no-repeat;
-    width: 330px;
-    height: 330px;
+    background-color: $foreground;
 }
 
 .bg_leaf_1 {
@@ -92,9 +63,19 @@ body {
     margin-top: 8vh;
     z-index: 3;
     background-color: $foreground;
-	-webkit-box-shadow: 8px 8px 30px 0px rgba(0,0,0,0.75);
--moz-box-shadow: 8px 8px 30px 0px rgba(0,0,0,0.75);
-box-shadow: 8px 8px 30px 0px rgba(0,0,0,0.75);
+	-webkit-box-shadow: 8px 8px 30px 0px rgba(0,0,0,0.5);
+-moz-box-shadow: 8px 8px 30px 0px rgba(0,0,0,0.5);
+box-shadow: 8px 8px 30px 0px rgba(0,0,0,0.5);
+}
+
+.color_code{
+    width:450px;
+    height: 40vh;
+    position: absolute;
+    z-index: 1;
+    -webkit-box-shadow: 4px 4px 10px 0px rgba(0,0,0,0.7);
+-moz-box-shadow: 4px 4px 10px 0px rgba(0,0,0,0.7);
+box-shadow: 4px 4px 10px 0px rgba(0,0,0,0.7);
 }
 
 .initial_content {
@@ -142,6 +123,18 @@ box-shadow: 8px 8px 30px 0px rgba(0,0,0,0.75);
     position: absolute;
     top: 0;
     right: 0;
+}
+
+#code_red{
+    background-color: $rouge;
+    left:0;
+    top: 30vh;
+}
+
+#code_blue{
+    background-color: $blue;
+    right: 0;
+    top: 30vh;
 }
 ///////////////////////////////////////////////
 //User Magnifying glass Styles
@@ -206,17 +199,27 @@ box-shadow: 8px 8px 30px 0px rgba(0,0,0,0.75);
     }
 
     .info_content {
-        width: 320px;
+        width: 350px;
         display: block;
         text-align: left;
-        padding: 20px 40px;
+        padding: 30px 40px;
         line-height: 30px;
         .info_content_wrap{
             font-size: 14px;
+            padding-top: 20px;
         }
         .info_content_title{
-            font-size: 1.5rem;
-            padding: 10px 0;
+            font-size: 2rem;
+            color: $rouge;
+            padding: 40px 0px 0px;
+            font-weight: bold;
+            font-family: $kepler;
+            letter-spacing: 1px;
+        }
+        .info_content_subtitle{
+            font-size: 1.25rem;
+            color: $rouge;
+            padding: 0px;
             font-weight: bold;
             font-family: $kepler;
             letter-spacing: 1px;
@@ -243,17 +246,27 @@ box-shadow: 8px 8px 30px 0px rgba(0,0,0,0.75);
     }
 
     .info_content {
-        width: 320px;
+        width: 350px;
         display: block;
         text-align: left;
-        padding: 20px 40px;
+        padding: 30px 40px;
         line-height: 30px;
         .info_content_wrap{
             font-size: 14px;
+            padding-top: 20px;
         }
         .info_content_title{
-            font-size: 1.5rem;
-            padding: 10px 0;
+            font-size: 2rem;
+            color: $blue;
+            padding: 40px 0px 0px;
+            font-weight: bold;
+            font-family: $kepler;
+            letter-spacing: 1px;
+        }
+        .info_content_subtitle{
+            font-size: 1.25rem;
+            color: $blue;
+            padding: 0px;
             font-weight: bold;
             font-family: $kepler;
             letter-spacing: 1px;

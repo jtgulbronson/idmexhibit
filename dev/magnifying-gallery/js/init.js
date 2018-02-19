@@ -193,7 +193,11 @@ $(document).ready(function() {
                     $('#len_1_image').css("transform", "scale(1.2)");
                     $('#glass_1').css("transform", "scale(2.5)");
                     $('#left_instruct').hide();
-                    $('.info_bar_left > .info_image').css('background-image', 'url("img/len-1.jpeg")');
+                    $('.info_bar_left > .info_image').css({
+                        'background-image' : 'url("img/len-1.jpeg")',
+                        'width' : '270px',
+                        'height' : '420px'
+                    });
 					$('.info_bar_left > .info_content > .info_content_title').html("Mother");
                     $('.info_bar_left > .info_content > .info_content_wrap').html("My mother's strength and boldness is an inspiration to me. She has raised many children and adults. Her life story is one of triumph.");
                     break;
@@ -207,7 +211,11 @@ $(document).ready(function() {
                     $('#len_1_image').css("transform", "scale(1.2)");
                     $('#glass_2').css("transform", "scale(2.5)");
                     $('#right_instruct').hide();
-                    $('.info_bar_right > .info_image').css('background-image', 'url("img/len-1.jpeg")');
+                    $('.info_bar_right > .info_image').css({
+                        'background-image' : 'url("img/len-1.jpeg")',
+                        'width' : '270px',
+                        'height' : '420px'
+                    });
                     $('.info_bar_right > .info_content > .info_content_title').html("Mother");
                     $('.info_bar_right > .info_content > .info_content_wrap').html("My mother's strength and boldness is an inspiration to me. She has raised many children and adults. Her life story is one of triumph.");
                     break;
@@ -268,7 +276,12 @@ $(document).ready(function() {
                     $('#len_2_image').css("transform", "scale(1.2)");
                     $('#glass_1').css("transform", "scale(2)");
                     $('#left_instruct').hide();
-                    $('.info_bar_left > .info_image').css('background-image', 'url("img/len-2.jpeg")');
+                    $('.info_bar_left > .info_image').css({
+						"background-image": 'url("img/len-2.jpeg")',
+                        'width': '425px',
+                        'height': '330px'
+					});
+
                     $('.info_bar_left > .info_content > .info_content_title').html("Space Between");
                     $('.info_bar_left > .info_content > .info_content_wrap').html("I have so many images from Robertsport, the capital of Grand Cape Mount in Liberia; however, I love the capturing people in their daily routines unbothered by a curious transnational.");
                     break;
@@ -282,7 +295,11 @@ $(document).ready(function() {
                     $('#len_2_image').css("transform", "scale(1.2)");
                     $('#glass_2').css("transform", "scale(2)");
                     $('#right_instruct').hide();
-                    $('.info_bar_right > .info_image').css('background-image', 'url("img/len-2.jpeg")');
+                    $('.info_bar_right > .info_image').css({
+                        "background-image": 'url("img/len-2.jpeg")',
+                        'width': '425px',
+                        'height': '330px'
+                    });
                     $('.info_bar_right > .info_content > .info_content_title').html("Space Between");
                     $('.info_bar_right > .info_content > .info_content_wrap').html("I have so many images from Robertsport, the capital of Grand Cape Mount in Liberia; however, I love the capturing people in their daily routines unbothered by a curious transnational.");
                     break;
@@ -301,7 +318,7 @@ $(document).ready(function() {
                     $('#len_2_image').css("transform", "scale(1)");
                     $('#glass_1').css("transform", "scale(1)");
                     $('#left_instruct').show();
-                    $('.info_bar_left > .info_image').css('background-image', 'none');
+                    $('.info_bar_left > .info_image').css("background-image", 'none');
                     $('.info_bar_left > .info_content > .info_content_title').html("");
                     $('.info_bar_left > .info_content > .info_content_wrap').html("");
                     break;
@@ -311,7 +328,7 @@ $(document).ready(function() {
                     $('#len_2_image').css("transform", "scale(1)");
                     $('#glass_2').css("transform", "scale(1)");
                     $('#right_instruct').show();
-                    $('.info_bar_right > .info_image').css('background-image', 'none');
+                    $('.info_bar_right > .info_image').css("background-image",'none');
                     $('.info_bar_right > .info_content > .info_content_title').html("");
                     $('.info_bar_right > .info_content > .info_content_wrap').html("");
                     break;
@@ -319,7 +336,7 @@ $(document).ready(function() {
         }
     });
 
-    //stamp element interaction
+    //Monochormatic portrait
     // enable draggables to be dropped into this
     interact('#len_3').dropzone({
         // only accept elements matching this CSS selector
@@ -343,7 +360,11 @@ $(document).ready(function() {
                     $('#len_3_image').css("transform", "scale(1.2)");
                     $('#glass_1').css("transform", "scale(2)");
                     $('#left_instruct').hide();
-                    $('.info_bar_left > .info_image').css('background-image', 'url("img/len-3.jpeg")');
+                    $('.info_bar_left > .info_image').css({
+                        'background-image': 'url("img/len-3.jpeg")',
+                        'width' : '270px',
+                        'height' : '420px'
+                    });
                     $('.info_bar_left > .info_content > .info_content_title').html("Grandmother");
                     $('.info_bar_left > .info_content > .info_content_wrap').html("My maternal grandmother transitioned when I was very young, most likely when I was 5 years old. Although I do not remember her presence, she passed down her love of textiles and artistic creativity. She was a known healer and I was told people would come to her for dislocated limbs and infertility. I am inspired by her generous spirit and proud to carry her name, Lendeh.");
                     break;
@@ -357,7 +378,11 @@ $(document).ready(function() {
                     $('#len_3_image').css("transform", "scale(1.2)");
                     $('#glass_2').css("transform", "scale(2)");
                     $('#right_instruct').hide();
-                    $('.info_bar_right > .info_image').css('background-image', 'url("img/len-3.jpeg")');
+                    $('.info_bar_right > .info_image').css({
+                        'background-image': 'url("img/len-3.jpeg")',
+                        'width' : '270px',
+                        'height' : '420px'
+                    });
                     $('.info_bar_right > .info_content > .info_content_title').html("Grandmother");
                     $('.info_bar_right > .info_content > .info_content_wrap').html("My maternal grandmother transitioned when I was very young, most likely when I was 5 years old. Although I do not remember her presence, she passed down her love of textiles and artistic creativity. She was a known healer and I was told people would come to her for dislocated limbs and infertility. I am inspired by her generous spirit and proud to carry her name, Lendeh.");
                     break;
@@ -394,7 +419,7 @@ $(document).ready(function() {
         }
     });
 
-    //diver element interaction
+    //Roadway
     // enable draggables to be dropped into this
     interact('#len_8').dropzone({
         // only accept elements matching this CSS selector
@@ -418,8 +443,13 @@ $(document).ready(function() {
                     $('#len_8_image').css("transform", "scale(1.2)");
                     $('#glass_1').css("transform", "scale(2)");
                     $('#left_instruct').hide();
-                    $('.info_bar_left > .info_image').css('background-image', 'url("img/len-8.jpeg")');
-                    $('.info_bar_left > .info_content > .info_content_title').html("Uptown - Robertsport, Grand Cape Mount");
+                    $('.info_bar_left > .info_image').css({
+                        'background-image' : 'url("img/len-8.jpeg")',
+                        'width' : '425px',
+                        'height' : '330px'
+                    });
+                    $('.info_bar_left > .info_content > .info_content_title').html("Uptown");
+                    $('.info_bar_left > .info_content > .info_content_subtitle').html('Robertsport, Grand Cape Mount');
                     $('.info_bar_left > .info_content > .info_content_wrap').html("The simple life from my perspective reminds me of all the wonderful convenience that make life complicated and inconvenient in the West.");
                     break;
                 case 'glass_2':
@@ -432,8 +462,13 @@ $(document).ready(function() {
                     $('#len_8_image').css("transform", "scale(1.2)");
                     $('#glass_2').css("transform", "scale(2)");
                     $('#right_instruct').hide();
-                    $('.info_bar_right > .info_image').css('background-image', 'url("img/len-8.jpeg")');
-                    $('.info_bar_right > .info_content > .info_content_title').html("Uptown - Robertsport, Grand Cape Mount");
+                    $('.info_bar_right > .info_image').css({
+                        'background-image' : 'url("img/len-8.jpeg")',
+                        'width' : '425px',
+                        'height' : '330px'
+                    });
+                    $('.info_bar_right > .info_content > .info_content_title').html("Uptown");
+                    $('.info_bar_right > .info_content > .info_content_subtitle').html('Robertsport, Grand Cape Mount');
                     $('.info_bar_right > .info_content > .info_content_wrap').html("The simple life from my perspective reminds me of all the wonderful convenience that make life complicated and inconvenient in the West.");
                     break;
             }
@@ -453,6 +488,7 @@ $(document).ready(function() {
                     $('#left_instruct').show();
                     $('.info_bar_left > .info_image').css('background-image', 'none');
                     $('.info_bar_left > .info_content > .info_content_title').html("");
+                    $('.info_bar_left > .info_content > .info_content_subtitle').html('');
                     $('.info_bar_left > .info_content > .info_content_wrap').html("");
                     break;
                 case 'glass_2':
@@ -463,13 +499,14 @@ $(document).ready(function() {
                     $('#right_instruct').show();
                     $('.info_bar_right > .info_image').css('background-image', 'none');
                     $('.info_bar_right > .info_content > .info_content_title').html("");
+                    $('.info_bar_right > .info_content > .info_content_subtitle').html('');
                     $('.info_bar_right > .info_content > .info_content_wrap').html("");
                     break;
             }
         }
     });
 
-    //diver element interaction
+    //Driveway
     // enable draggables to be dropped into this
     interact('#len_4').dropzone({
         // only accept elements matching this CSS selector
@@ -493,7 +530,11 @@ $(document).ready(function() {
                     $('#len_4_image').css("transform", "scale(1.2)");
                     $('#glass_1').css("transform", "scale(2)");
                     $('#left_instruct').hide();
-                    $('.info_bar_left > .info_image').css('background-image', 'url("img/len-4.jpeg")');
+                    $('.info_bar_left > .info_image').css({
+                        'background-image': 'url("img/len-4.jpeg")',
+                        'width': '425px',
+                        'height': '330px'
+                    });
                     $('.info_bar_left > .info_content > .info_content_title').html("Cece Lendeh's House");
                     $('.info_bar_left > .info_content > .info_content_wrap').html("Traveling across the Atlantic ocean and being able to see where my Mother was raised anchors me. Liberia went through fifteen years or uncivil war and having the opportunity to hear stories from survivors who knew my grandmother and mother as a child helps me understand parts of myself. ");
                     break;
@@ -507,7 +548,11 @@ $(document).ready(function() {
                     $('#len_4_image').css("transform", "scale(1.2)");
                     $('#glass_2').css("transform", "scale(2)");
                     $('#right_instruct').hide();
-                    $('.info_bar_right > .info_image').css('background-image', 'url("img/len-4.jpeg")');
+                    $('.info_bar_right > .info_image').css({
+                        'background-image': 'url("img/len-4.jpeg")',
+                        'width': '425px',
+                        'height': '330px'
+                    });
                     $('.info_bar_right > .info_content > .info_content_title').html("Cece Lendeh's House");
                     $('.info_bar_right > .info_content > .info_content_wrap').html("Traveling across the Atlantic ocean and being able to see where my Mother was raised anchors me. Liberia went through fifteen years or uncivil war and having the opportunity to hear stories from survivors who knew my grandmother and mother as a child helps me understand parts of myself. ");
                     break;
@@ -568,7 +613,11 @@ $(document).ready(function() {
                     $('#len_5_image').css("transform", "scale(1.2)");
                     $('#glass_1').css("transform", "scale(2)");
                     $('#left_instruct').hide();
-                    $('.info_bar_left > .info_image').css('background-image', 'url("img/len-5.jpeg")');
+                    $('.info_bar_left > .info_image').css({
+                        "background-image": 'url("img/len-5.jpeg")',
+                        'width': '425px',
+                        'height': '280px'
+                    });
                     $('.info_bar_left > .info_content > .info_content_title').html("Space Between");
                     $('.info_bar_left > .info_content > .info_content_wrap').html("This image was taken in 2004, six months after the uncivil war ended. I was traveling to the airport and on several occasions was afraid to take pictures.");
                     break;
@@ -582,7 +631,11 @@ $(document).ready(function() {
                     $('#len_5_image').css("transform", "scale(1.2)");
                     $('#glass_2').css("transform", "scale(2)");
                     $('#right_instruct').hide();
-                    $('.info_bar_right > .info_image').css('background-image', 'url("img/len-5.jpeg")');
+                    $('.info_bar_right > .info_image').css({
+                        "background-image": 'url("img/len-5.jpeg")',
+                        'width': '425px',
+                        'height': '280px'
+                    });
                     $('.info_bar_right > .info_content > .info_content_title').html("Space Between");
                     $('.info_bar_right > .info_content > .info_content_wrap').html("This image was taken in 2004, six months after the uncivil war ended. I was traveling to the airport and on several occasions was afraid to take pictures.");
                     break;
@@ -601,7 +654,7 @@ $(document).ready(function() {
                     $('#len_5_image').css("transform", "scale(1)");
                     $('#glass_1').css("transform", "scale(1)");
                     $('#left_instruct').show();
-                    $('.info_bar_left > .info_image').css('background-image', 'none');
+                    $('.info_bar_left > .info_image').css("background-image", 'none');
                     $('.info_bar_left > .info_content > .info_content_title').html("");
                     $('.info_bar_left > .info_content > .info_content_wrap').html("");
                     break;
@@ -610,7 +663,7 @@ $(document).ready(function() {
                     audio_len_5_R.currentTime = 0;
                     $('#len_5_image').css("transform", "scale(1)");
                     $('#glass_2').css("transform", "scale(1)");
-                    $('#right_instruct').show();
+                    $('#right_instruct').css("background-image", 'none');
                     $('.info_bar_right > .info_image').css('background-image', 'none');
                     $('.info_bar_right > .info_content > .info_content_title').html("");
                     $('.info_bar_right > .info_content > .info_content_wrap').html("");
@@ -619,7 +672,7 @@ $(document).ready(function() {
         }
     });
 
-    //diver element interaction
+    //Mom and Child
     // enable draggables to be dropped into this
     interact('#ange_1').dropzone({
         // only accept elements matching this CSS selector
@@ -643,7 +696,11 @@ $(document).ready(function() {
                     $('#ange_1_image').css("transform", "scale(1.2)");
                     $('#glass_1').css("transform", "scale(2)");
                     $('#left_instruct').hide();
-                    $('.info_bar_left > .info_image').css('background-image', 'url("img/ange-1.jpg")');
+                    $('.info_bar_left > .info_image').css({
+                        'background-image' : 'url("img/ange-1.jpg")',
+                        'width': '425px',
+                        'height' : '425px'
+                    });
                     $('.info_bar_left > .info_content > .info_content_title').html("Image Title");
                     $('.info_bar_left > .info_content > .info_content_wrap').html("This is where the information about the magnified object would display.");
                     break;
@@ -657,7 +714,11 @@ $(document).ready(function() {
                     $('#ange_1_image').css("transform", "scale(1.2)");
                     $('#glass_2').css("transform", "scale(2)");
                     $('#right_instruct').hide();
-                    $('.info_bar_right > .info_image').css('background-image', 'url("img/ange-1.jpg")');
+                    $('.info_bar_right > .info_image').css({
+                        'background-image' : 'url("img/ange-1.jpg")',
+                        'width': '425px',
+                        'height' : '425px'
+                    });
                     $('.info_bar_right > .info_content > .info_content_title').html("Image Title");
                     $('.info_bar_right > .info_content > .info_content_wrap').html("This is where the information about the magnified object would display.");
                     break;
@@ -694,20 +755,20 @@ $(document).ready(function() {
         }
     });
 
-    //Browser Idle Refresh
+    Browser Idle Refresh
 
-    // var time = new Date().getTime();
-    // $(document.body).bind("touchmove mousemove keypress", function(e) {
-    //     time = new Date().getTime();
-    // });
-    //
-    // function refresh() {
-    //     if (new Date().getTime() - time >= 120000)
-    //         window.location.reload(true);
-    //     else
-    //         setTimeout(refresh, 20000);
-    // }
-    //
-    // setTimeout(refresh, 20000);
+    var time = new Date().getTime();
+    $(document.body).bind("touchmove mousemove keypress", function(e) {
+        time = new Date().getTime();
+    });
+
+    function refresh() {
+        if (new Date().getTime() - time >= 120000)
+            window.location.reload(true);
+        else
+            setTimeout(refresh, 20000);
+    }
+
+    setTimeout(refresh, 20000);
 
 }); //do not lose this closing bracket - unless you like breaking everything for fun
