@@ -21,64 +21,11 @@ body {
     width: 100vw;
     height: 100vh;
     overflow: hidden;
-    background-image: url('../img/BG-no-leaf.jpg');
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-}
-
-.bg_flower_1 {
-    position: absolute;
-    z-index: 5;
-    top: 0;
-    right: 0;
-    background-image: url('../img/FLOWER01.png');
-    background-size: contain;
-    background-position: center;
-    background-repeat: no-repeat;
-    width: 300px;
-    height: 175px;
-}
-
-.bg_flower_2 {
-    position: absolute;
-    z-index: 5;
-    bottom: 0;
-    left: 0;
-    background-image: url('../img/FLOWER02.png');
-    background-size: contain;
-    background-position: center;
-    background-repeat: no-repeat;
-    width: 330px;
-    height: 330px;
-}
-
-.bg_leaf_1 {
-    position: absolute;
-    z-index: 0;
-    bottom: 100px;
-    right: -200px;
-    transform: rotate(-15deg);
-    background-image: url('../img/LEAF01.png');
-    background-size: contain;
-    background-position: center;
-    background-repeat: no-repeat;
-    width: 600px;
-    height: 350px;
-}
-
-.bg_leaf_2 {
-    position: absolute;
-    z-index: 0;
-    top: 50px;
-    left: -200px;
-    transform: rotate(-15deg);
-    background-image: url('../img/LEAF02.png');
-    background-size: contain;
-    background-position: center;
-    background-repeat: no-repeat;
-    width: 600px;
-    height: 350px;
+    background-color: $foreground;
+	background-image: url('../img/bg-with-leaves.jpg');
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: center;
 }
 
 ///////////////////////////////////////////////
@@ -92,28 +39,66 @@ body {
     margin-top: 8vh;
     z-index: 3;
     background-color: $foreground;
-	-webkit-box-shadow: 8px 8px 30px 0px rgba(0,0,0,0.75);
--moz-box-shadow: 8px 8px 30px 0px rgba(0,0,0,0.75);
-box-shadow: 8px 8px 30px 0px rgba(0,0,0,0.75);
+	-webkit-box-shadow: 8px 8px 30px 0px rgba(0,0,0,0.5);
+-moz-box-shadow: 8px 8px 30px 0px rgba(0,0,0,0.5);
+box-shadow: 8px 8px 30px 0px rgba(0,0,0,0.5);
+}
+
+.color_code{
+    width:450px;
+    height: 40vh;
+    position: absolute;
+    z-index: 1;
+    -webkit-box-shadow: 4px 4px 10px 0px rgba(0,0,0,0.7);
+-moz-box-shadow: 4px 4px 10px 0px rgba(0,0,0,0.7);
+box-shadow: 4px 4px 10px 0px rgba(0,0,0,0.7);
 }
 
 .initial_content {
-    padding: 40px;
     position: absolute;
-    top: 200px;
-    width: 270px;
+    width: 425px;
+    height: 100%;
+    .initial-dots{
+        width: 80%;
+        height: 150px;
+        background-image: url('../img/dots.png');
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: contain;
+        position: absolute;
+        top: 150px;
+        left: 20px;
+    }
+    .initial-zigzag{
+        width: 45%;
+        height: 150px;
+        background-image: url('../img/zigzag.png');
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: contain;
+        position: absolute;
+        top: 125px;
+        right: 40px;
+    }
+    .content-wrap{
+        padding: 40px;
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        max-width: 100%;
+        .title {
+            font-size: 2rem;
+            padding: 20px 0;
+            font-weight: bold;
+            font-family: $kepler;
+            letter-spacing: 1px;
+        }
 
-    .title {
-        font-size: 2rem;
-        padding: 20px 0;
-        font-weight: bold;
-        font-family: $kepler;
-        letter-spacing: 1px;
+        .instructions {
+            line-height: 30px;
+        }
     }
 
-    .instructions {
-        line-height: 30px;
-    }
 }
 ///////////////////////////////////////////////
 //Specific Background Element styles
@@ -142,6 +127,18 @@ box-shadow: 8px 8px 30px 0px rgba(0,0,0,0.75);
     position: absolute;
     top: 0;
     right: 0;
+}
+
+#code_red{
+    background-color: $rouge;
+    left:0;
+    top: 30vh;
+}
+
+#code_blue{
+    background-color: $blue;
+    right: 0;
+    top: 30vh;
 }
 ///////////////////////////////////////////////
 //User Magnifying glass Styles
@@ -206,17 +203,27 @@ box-shadow: 8px 8px 30px 0px rgba(0,0,0,0.75);
     }
 
     .info_content {
-        width: 320px;
+        width: 350px;
         display: block;
         text-align: left;
-        padding: 20px 40px;
+        padding: 30px 40px;
         line-height: 30px;
         .info_content_wrap{
             font-size: 14px;
+            padding-top: 20px;
         }
         .info_content_title{
-            font-size: 1.5rem;
-            padding: 10px 0;
+            font-size: 2rem;
+            color: $rouge;
+            padding: 40px 0px 0px;
+            font-weight: bold;
+            font-family: $kepler;
+            letter-spacing: 1px;
+        }
+        .info_content_subtitle{
+            font-size: 1.25rem;
+            color: $rouge;
+            padding: 0px;
             font-weight: bold;
             font-family: $kepler;
             letter-spacing: 1px;
@@ -243,17 +250,27 @@ box-shadow: 8px 8px 30px 0px rgba(0,0,0,0.75);
     }
 
     .info_content {
-        width: 320px;
+        width: 350px;
         display: block;
         text-align: left;
-        padding: 20px 40px;
+        padding: 30px 40px;
         line-height: 30px;
         .info_content_wrap{
             font-size: 14px;
+            padding-top: 20px;
         }
         .info_content_title{
-            font-size: 1.5rem;
-            padding: 10px 0;
+            font-size: 2rem;
+            color: $blue;
+            padding: 40px 0px 0px;
+            font-weight: bold;
+            font-family: $kepler;
+            letter-spacing: 1px;
+        }
+        .info_content_subtitle{
+            font-size: 1.25rem;
+            color: $blue;
+            padding: 0px;
             font-weight: bold;
             font-family: $kepler;
             letter-spacing: 1px;
