@@ -22,34 +22,10 @@ body {
     height: 100vh;
     overflow: hidden;
     background-color: $foreground;
-}
-
-.bg_leaf_1 {
-    position: absolute;
-    z-index: 0;
-    bottom: 100px;
-    right: -200px;
-    transform: rotate(-15deg);
-    background-image: url('../img/LEAF01.png');
-    background-size: contain;
-    background-position: center;
-    background-repeat: no-repeat;
-    width: 600px;
-    height: 350px;
-}
-
-.bg_leaf_2 {
-    position: absolute;
-    z-index: 0;
-    top: 50px;
-    left: -200px;
-    transform: rotate(-15deg);
-    background-image: url('../img/LEAF02.png');
-    background-size: contain;
-    background-position: center;
-    background-repeat: no-repeat;
-    width: 600px;
-    height: 350px;
+	background-image: url('../img/bg-with-leaves.jpg');
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: center;
 }
 
 ///////////////////////////////////////////////
@@ -79,22 +55,50 @@ box-shadow: 4px 4px 10px 0px rgba(0,0,0,0.7);
 }
 
 .initial_content {
-    padding: 40px;
     position: absolute;
-    top: 200px;
-    width: 270px;
+    width: 425px;
+    height: 100%;
+    .initial-dots{
+        width: 80%;
+        height: 150px;
+        background-image: url('../img/dots.png');
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: contain;
+        position: absolute;
+        top: 150px;
+        left: 20px;
+    }
+    .initial-zigzag{
+        width: 45%;
+        height: 150px;
+        background-image: url('../img/zigzag.png');
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: contain;
+        position: absolute;
+        top: 125px;
+        right: 40px;
+    }
+    .content-wrap{
+        padding: 40px;
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        max-width: 100%;
+        .title {
+            font-size: 2rem;
+            padding: 20px 0;
+            font-weight: bold;
+            font-family: $kepler;
+            letter-spacing: 1px;
+        }
 
-    .title {
-        font-size: 2rem;
-        padding: 20px 0;
-        font-weight: bold;
-        font-family: $kepler;
-        letter-spacing: 1px;
+        .instructions {
+            line-height: 30px;
+        }
     }
 
-    .instructions {
-        line-height: 30px;
-    }
 }
 ///////////////////////////////////////////////
 //Specific Background Element styles
