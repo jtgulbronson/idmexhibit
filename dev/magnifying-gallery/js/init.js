@@ -755,7 +755,7 @@ $(document).ready(function() {
         }
     });
 
-    Browser Idle Refresh
+    //Browser Idle Refresh
 
     var time = new Date().getTime();
     $(document.body).bind("touchmove mousemove keypress", function(e) {
