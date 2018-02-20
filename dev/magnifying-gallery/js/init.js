@@ -190,7 +190,6 @@ $(document).ready(function() {
                     // play audio
                     audio_len_1_L.play();
                     console.log(panNode_L.pan.value);
-					$('#len_1').css('z-index', '5');
                     $('#len_1_image').css("transform", "scale(1.2)");
                     $('#glass_1').css("transform", "scale(2.5)");
                     $('#left_instruct').hide();
@@ -209,7 +208,6 @@ $(document).ready(function() {
                     // play audio
                     audio_len_1_R.play();
                     console.log(panNode_R.pan.value);
-                    $('#len_1').css('z-index', '5');
                     $('#len_1_image').css("transform", "scale(1.2)");
                     $('#glass_2').css("transform", "scale(2.5)");
                     $('#right_instruct').hide();
@@ -233,7 +231,6 @@ $(document).ready(function() {
                 case 'glass_1':
                     audio_len_1_L.pause();
                     audio_len_1_L.currentTime = 0;
-                    $('#len_1').css('z-index', '1');
                     $('#len_1_image').css("transform", "scale(1)");
                     $('#glass_1').css("transform", "scale(1)");
                     $('#left_instruct').show();
@@ -244,7 +241,6 @@ $(document).ready(function() {
                 case 'glass_2':
                     audio_len_1_R.pause();
                     audio_len_1_R.currentTime = 0;
-                    $('#len_1').css('z-index', '1');
                     $('#len_1_image').css("transform", "scale(1)");
                     $('#glass_2').css("transform", "scale(1)");
                     $('#right_instruct').show();
@@ -277,7 +273,6 @@ $(document).ready(function() {
                     // play audio
                     audio_len_2_L.play();
                     console.log(panNode_L.pan.value);
-                    $('#len_2').css('z-index', '5');
                     $('#len_2_image').css("transform", "scale(1.2)");
                     $('#glass_1').css("transform", "scale(2)");
                     $('#left_instruct').hide();
@@ -297,7 +292,6 @@ $(document).ready(function() {
                     // play audio
                     audio_len_2_R.play();
                     console.log(panNode_R.pan.value);
-                    $('#len_2').css('z-index', '5');
                     $('#len_2_image').css("transform", "scale(1.2)");
                     $('#glass_2').css("transform", "scale(2)");
                     $('#right_instruct').hide();
@@ -321,7 +315,6 @@ $(document).ready(function() {
                 case 'glass_1':
                     audio_len_2_L.pause();
                     audio_len_2_L.currentTime = 0;
-                    $('#len_2').css('z-index', '1');
                     $('#len_2_image').css("transform", "scale(1)");
                     $('#glass_1').css("transform", "scale(1)");
                     $('#left_instruct').show();
@@ -332,7 +325,6 @@ $(document).ready(function() {
                 case 'glass_2':
                     audio_len_2_R.pause();
                     audio_len_2_R.currentTime = 0;
-                    $('#len_2').css('z-index', '1');
                     $('#len_2_image').css("transform", "scale(1)");
                     $('#glass_2').css("transform", "scale(1)");
                     $('#right_instruct').show();
@@ -365,7 +357,6 @@ $(document).ready(function() {
                     // play audio
                     audio_len_3_L.play();
                     console.log(panNode_L.pan.value);
-                    $('#len_3').css('z-index', '5');
                     $('#len_3_image').css("transform", "scale(1.2)");
                     $('#glass_1').css("transform", "scale(2)");
                     $('#left_instruct').hide();
@@ -384,7 +375,6 @@ $(document).ready(function() {
                     // play audio
                     audio_len_3_R.play();
                     console.log(panNode_R.pan.value);
-                    $('#len_3').css('z-index', '5');
                     $('#len_3_image').css("transform", "scale(1.2)");
                     $('#glass_2').css("transform", "scale(2)");
                     $('#right_instruct').hide();
@@ -408,7 +398,6 @@ $(document).ready(function() {
                 case 'glass_1':
                     audio_len_3_L.pause();
                     audio_len_3_L.currentTime = 0;
-                    $('#len_3').css('z-index', '1');
                     $('#len_3_image').css("transform", "scale(1)");
                     $('#glass_1').css("transform", "scale(1)");
                     $('#left_instruct').show();
@@ -419,7 +408,6 @@ $(document).ready(function() {
                 case 'glass_2':
                     audio_len_3_R.pause();
                     audio_len_3_R.currentTime = 0;
-                    $('#len_3').css('z-index', '1');
                     $('#len_3_image').css("transform", "scale(1)");
                     $('#glass_2').css("transform", "scale(1)");
                     $('#right_instruct').show();
@@ -452,7 +440,6 @@ $(document).ready(function() {
                     // play audio
                     audio_len_8_L.play();
                     console.log(panNode_L.pan.value);
-                    $('#len_8').css('z-index', '5');
                     $('#len_8_image').css("transform", "scale(1.2)");
                     $('#glass_1').css("transform", "scale(2)");
                     $('#left_instruct').hide();
@@ -472,7 +459,6 @@ $(document).ready(function() {
                     // play audio
                     audio_len_8_R.play();
                     console.log(panNode_R.pan.value);
-                    $('#len_8').css('z-index', '5');
                     $('#len_8_image').css("transform", "scale(1.2)");
                     $('#glass_2').css("transform", "scale(2)");
                     $('#right_instruct').hide();
@@ -497,7 +483,6 @@ $(document).ready(function() {
                 case 'glass_1':
                     audio_len_8_L.pause();
                     audio_len_8_L.currentTime = 0;
-                    $('len_8').css('z-index', '1');
                     $('#len_8_image').css("transform", "scale(1)");
                     $('#glass_1').css("transform", "scale(1)");
                     $('#left_instruct').show();
@@ -509,7 +494,6 @@ $(document).ready(function() {
                 case 'glass_2':
                     audio_len_8_R.pause();
                     audio_len_8_R.currentTime = 0;
-                    $('len_8').css('z-index', '1');
                     $('#len_8_image').css("transform", "scale(1)");
                     $('#glass_2').css("transform", "scale(1)");
                     $('#right_instruct').show();
@@ -543,7 +527,6 @@ $(document).ready(function() {
                     // play audio
                     audio_len_4_L.play();
                     console.log(panNode_L.pan.value);
-                    $('#len_4').css('z-index', '5');
                     $('#len_4_image').css("transform", "scale(1.2)");
                     $('#glass_1').css("transform", "scale(2)");
                     $('#left_instruct').hide();
@@ -562,7 +545,6 @@ $(document).ready(function() {
                     // play audio
                     audio_len_4_R.play();
                     console.log(panNode_R.pan.value);
-                    $('#len_4').css('z-index', '5');
                     $('#len_4_image').css("transform", "scale(1.2)");
                     $('#glass_2').css("transform", "scale(2)");
                     $('#right_instruct').hide();
@@ -586,7 +568,6 @@ $(document).ready(function() {
                 case 'glass_1':
                     audio_len_4_L.pause();
                     audio_len_4_L.currentTime = 0;
-                    $('#len_4').css('z-index', '1');
                     $('#len_4_image').css("transform", "scale(1)");
                     $('#glass_1').css("transform", "scale(1)");
                     $('#left_instruct').show();
@@ -597,7 +578,6 @@ $(document).ready(function() {
                 case 'glass_2':
                     audio_len_4_R.pause();
                     audio_len_4_R.currentTime = 0;
-                    $('#len_4').css('z-index', '1');
                     $('#len_4_image').css("transform", "scale(1)");
                     $('#glass_2').css("transform", "scale(1)");
                     $('#right_instruct').show();
@@ -630,7 +610,6 @@ $(document).ready(function() {
                     // play audio
                     audio_len_5_L.play();
                     console.log(panNode_L.pan.value);
-                    $('#len_5').css('z-index','5');
                     $('#len_5_image').css("transform", "scale(1.2)");
                     $('#glass_1').css("transform", "scale(2)");
                     $('#left_instruct').hide();
@@ -649,7 +628,6 @@ $(document).ready(function() {
                     // play audio
                     audio_len_5_R.play();
                     console.log(panNode_R.pan.value);
-                    $('#len_5').css('z-index','5');
                     $('#len_5_image').css("transform", "scale(1.2)");
                     $('#glass_2').css("transform", "scale(2)");
                     $('#right_instruct').hide();
@@ -673,7 +651,6 @@ $(document).ready(function() {
                 case 'glass_1':
                     audio_len_5_L.pause();
                     audio_len_5_L.currentTime = 0;
-                    $('#len_5').css('z-index', '1');
                     $('#len_5_image').css("transform", "scale(1)");
                     $('#glass_1').css("transform", "scale(1)");
                     $('#left_instruct').show();
@@ -684,7 +661,6 @@ $(document).ready(function() {
                 case 'glass_2':
                     audio_len_5_R.pause();
                     audio_len_5_R.currentTime = 0;
-                    $('#len_5').css('z-index', '1');
                     $('#len_5_image').css("transform", "scale(1)");
                     $('#glass_2').css("transform", "scale(1)");
                     $('#right_instruct').css("background-image", 'none');
@@ -717,7 +693,6 @@ $(document).ready(function() {
                     // play audio
                     audio_ange_1_L.play();
                     console.log(panNode_L.pan.value);
-                    $('#ange_1').css('z-index','5');
                     $('#ange_1_image').css("transform", "scale(1.2)");
                     $('#glass_1').css("transform", "scale(2)");
                     $('#left_instruct').hide();
@@ -736,7 +711,6 @@ $(document).ready(function() {
                     // play audio
                     audio_ange_1_R.play();
                     console.log(panNode_R.pan.value);
-                    $('#ange_1').css('z-index','5');
                     $('#ange_1_image').css("transform", "scale(1.2)");
                     $('#glass_2').css("transform", "scale(2)");
                     $('#right_instruct').hide();
@@ -760,7 +734,6 @@ $(document).ready(function() {
                 case 'glass_1':
                     audio_ange_1_L.pause();
                     audio_ange_1_L.currentTime = 0;
-                    $('#ange_1').css('z-index','1');
                     $('#ange_1_image').css("transform", "scale(1)");
                     $('#glass_1').css("transform", "scale(1)");
                     $('#left_instruct').show();
@@ -771,7 +744,6 @@ $(document).ready(function() {
                 case 'glass_2':
                     audio_ange_1_R.pause();
                     audio_ange_1_R.currentTime = 0;
-                    $('#ange_1').css('z-index','1');
                     $('#ange_1_image').css("transform", "scale(1)");
                     $('#glass_2').css("transform", "scale(1)");
                     $('#right_instruct').show();

@@ -112,7 +112,6 @@ body {
   float: left;
   width: 100px;
   height: 100px;
-  z-index: 10;
   -webkit-box-shadow: 0 0 7px 2px rgba(0, 0, 0, 0.25), inset 0 0 40px 2px rgba(0, 0, 0, 0.25);
   box-shadow: 0 0 7px 2px rgba(0, 0, 0, 0.25), inset 0 0 40px 2px rgba(0, 0, 0, 0.25); }
 
@@ -126,6 +125,7 @@ body {
   border-radius: 50%;
   border: solid #a64a60 6px;
   color: white;
+  z-index: 5;
   transition: transform 0.25s ease; }
 
 #glass_2 {
@@ -138,6 +138,7 @@ body {
   border-radius: 50%;
   border: solid #4961a5 6px;
   color: black;
+  z-index: 5;
   transition: transform 0.25s ease; }
 
 .info_bar_left {
