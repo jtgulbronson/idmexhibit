@@ -149,6 +149,7 @@ box-shadow: 4px 4px 10px 0px rgba(0,0,0,0.7);
     float: left;
     width: 100px;
     height: 100px;
+    z-index: 10;
     -webkit-box-shadow: 0 0 7px 2px rgba(0, 0, 0, 0.25), inset 0 0 40px 2px rgba(0, 0, 0, 0.25);
     box-shadow: 0 0 7px 2px rgba(0, 0, 0, 0.25), inset 0 0 40px 2px rgba(0, 0, 0, 0.25);
 }
@@ -163,7 +164,6 @@ box-shadow: 4px 4px 10px 0px rgba(0,0,0,0.7);
     border-radius: 50%;
     border: solid $rouge 6px;
     color: white;
-    z-index: 5;
     transition: transform 0.25s ease;
 }
 
@@ -177,7 +177,6 @@ box-shadow: 4px 4px 10px 0px rgba(0,0,0,0.7);
     border-radius: 50%;
     border: solid $blue 6px;
     color: black;
-    z-index: 5;
     transition: transform 0.25s ease;
 }
 ///////////////////////////////////////////////
