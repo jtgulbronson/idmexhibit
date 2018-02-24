@@ -190,6 +190,7 @@ $(document).ready(function() {
                     // play audio
                     audio_len_1_L.play();
                     console.log(panNode_L.pan.value);
+					$('#len_1').css('z-index', '5');
                     $('#len_1_image').css("transform", "scale(1.2)");
                     $('#glass_1').css("transform", "scale(2.5)");
                     $('#left_instruct').hide();
@@ -208,6 +209,7 @@ $(document).ready(function() {
                     // play audio
                     audio_len_1_R.play();
                     console.log(panNode_R.pan.value);
+					$('#len_1').css('z-index', '5');
                     $('#len_1_image').css("transform", "scale(1.2)");
                     $('#glass_2').css("transform", "scale(2.5)");
                     $('#right_instruct').hide();
@@ -231,6 +233,7 @@ $(document).ready(function() {
                 case 'glass_1':
                     audio_len_1_L.pause();
                     audio_len_1_L.currentTime = 0;
+					$('#len_1').css('z-index', '1');
                     $('#len_1_image').css("transform", "scale(1)");
                     $('#glass_1').css("transform", "scale(1)");
                     $('#left_instruct').show();
@@ -241,6 +244,7 @@ $(document).ready(function() {
                 case 'glass_2':
                     audio_len_1_R.pause();
                     audio_len_1_R.currentTime = 0;
+					$('#len_1').css('z-index', '1');
                     $('#len_1_image').css("transform", "scale(1)");
                     $('#glass_2').css("transform", "scale(1)");
                     $('#right_instruct').show();
@@ -273,6 +277,7 @@ $(document).ready(function() {
                     // play audio
                     audio_len_2_L.play();
                     console.log(panNode_L.pan.value);
+                    $('#len_2').css('z-index', '5');
                     $('#len_2_image').css("transform", "scale(1.2)");
                     $('#glass_1').css("transform", "scale(2)");
                     $('#left_instruct').hide();
@@ -292,6 +297,7 @@ $(document).ready(function() {
                     // play audio
                     audio_len_2_R.play();
                     console.log(panNode_R.pan.value);
+                    $('#len_2').css('z-index', '5');
                     $('#len_2_image').css("transform", "scale(1.2)");
                     $('#glass_2').css("transform", "scale(2)");
                     $('#right_instruct').hide();
@@ -315,6 +321,7 @@ $(document).ready(function() {
                 case 'glass_1':
                     audio_len_2_L.pause();
                     audio_len_2_L.currentTime = 0;
+                    $('#len_2').css('z-index', '1');
                     $('#len_2_image').css("transform", "scale(1)");
                     $('#glass_1').css("transform", "scale(1)");
                     $('#left_instruct').show();
@@ -325,6 +332,7 @@ $(document).ready(function() {
                 case 'glass_2':
                     audio_len_2_R.pause();
                     audio_len_2_R.currentTime = 0;
+                    $('#len_2').css('z-index', '1');
                     $('#len_2_image').css("transform", "scale(1)");
                     $('#glass_2').css("transform", "scale(1)");
                     $('#right_instruct').show();
@@ -357,6 +365,7 @@ $(document).ready(function() {
                     // play audio
                     audio_len_3_L.play();
                     console.log(panNode_L.pan.value);
+                    $('#len_3').css('z-index', '5');
                     $('#len_3_image').css("transform", "scale(1.2)");
                     $('#glass_1').css("transform", "scale(2)");
                     $('#left_instruct').hide();
@@ -366,7 +375,7 @@ $(document).ready(function() {
                         'height' : '420px'
                     });
                     $('.info_bar_left > .info_content > .info_content_title').html("Grandmother");
-                    $('.info_bar_left > .info_content > .info_content_wrap').html("My maternal grandmother transitioned when I was very young, most likely when I was 5 years old. Although I do not remember her presence, she passed down her love of textiles and artistic creativity. She was a known healer and I was told people would come to her for dislocated limbs and infertility. I am inspired by her generous spirit and proud to carry her name, Lendeh.");
+                    $('.info_bar_left > .info_content > .info_content_wrap').html("My maternal grandmother transitioned when I was very young. Although I do not remember her presence, she passed down her love of textiles and artistic creativity. She was a known healer and I was told people would come to her for dislocated limbs and infertility. I am inspired by her generous spirit and proud to carry her name, Lendeh.");
                     break;
                 case 'glass_2':
                     audio_len_3_R.src = audioFiles[5];
@@ -375,6 +384,7 @@ $(document).ready(function() {
                     // play audio
                     audio_len_3_R.play();
                     console.log(panNode_R.pan.value);
+                    $('#len_3').css('z-index', '5');
                     $('#len_3_image').css("transform", "scale(1.2)");
                     $('#glass_2').css("transform", "scale(2)");
                     $('#right_instruct').hide();
@@ -384,7 +394,7 @@ $(document).ready(function() {
                         'height' : '420px'
                     });
                     $('.info_bar_right > .info_content > .info_content_title').html("Grandmother");
-                    $('.info_bar_right > .info_content > .info_content_wrap').html("My maternal grandmother transitioned when I was very young, most likely when I was 5 years old. Although I do not remember her presence, she passed down her love of textiles and artistic creativity. She was a known healer and I was told people would come to her for dislocated limbs and infertility. I am inspired by her generous spirit and proud to carry her name, Lendeh.");
+                    $('.info_bar_right > .info_content > .info_content_wrap').html("My maternal grandmother transitioned when I was very young. Although I do not remember her presence, she passed down her love of textiles and artistic creativity. She was a known healer and I was told people would come to her for dislocated limbs and infertility. I am inspired by her generous spirit and proud to carry her name, Lendeh.");
                     break;
             }
         },
@@ -398,6 +408,7 @@ $(document).ready(function() {
                 case 'glass_1':
                     audio_len_3_L.pause();
                     audio_len_3_L.currentTime = 0;
+                    $('#len_3').css('z-index', '1');
                     $('#len_3_image').css("transform", "scale(1)");
                     $('#glass_1').css("transform", "scale(1)");
                     $('#left_instruct').show();
@@ -408,6 +419,7 @@ $(document).ready(function() {
                 case 'glass_2':
                     audio_len_3_R.pause();
                     audio_len_3_R.currentTime = 0;
+                    $('#len_3').css('z-index', '1');
                     $('#len_3_image').css("transform", "scale(1)");
                     $('#glass_2').css("transform", "scale(1)");
                     $('#right_instruct').show();
@@ -440,6 +452,7 @@ $(document).ready(function() {
                     // play audio
                     audio_len_8_L.play();
                     console.log(panNode_L.pan.value);
+                    $('#len_8').css('z-index', '5');
                     $('#len_8_image').css("transform", "scale(1.2)");
                     $('#glass_1').css("transform", "scale(2)");
                     $('#left_instruct').hide();
@@ -459,6 +472,7 @@ $(document).ready(function() {
                     // play audio
                     audio_len_8_R.play();
                     console.log(panNode_R.pan.value);
+                    $('#len_8').css('z-index', '5');
                     $('#len_8_image').css("transform", "scale(1.2)");
                     $('#glass_2').css("transform", "scale(2)");
                     $('#right_instruct').hide();
@@ -483,6 +497,7 @@ $(document).ready(function() {
                 case 'glass_1':
                     audio_len_8_L.pause();
                     audio_len_8_L.currentTime = 0;
+                    $('#len_8').css('z-index', '1');
                     $('#len_8_image').css("transform", "scale(1)");
                     $('#glass_1').css("transform", "scale(1)");
                     $('#left_instruct').show();
@@ -494,6 +509,7 @@ $(document).ready(function() {
                 case 'glass_2':
                     audio_len_8_R.pause();
                     audio_len_8_R.currentTime = 0;
+                    $('#len_8').css('z-index', '1');
                     $('#len_8_image').css("transform", "scale(1)");
                     $('#glass_2').css("transform", "scale(1)");
                     $('#right_instruct').show();
@@ -527,6 +543,7 @@ $(document).ready(function() {
                     // play audio
                     audio_len_4_L.play();
                     console.log(panNode_L.pan.value);
+                    $('#len_4').css('z-index', '5');
                     $('#len_4_image').css("transform", "scale(1.2)");
                     $('#glass_1').css("transform", "scale(2)");
                     $('#left_instruct').hide();
@@ -545,6 +562,7 @@ $(document).ready(function() {
                     // play audio
                     audio_len_4_R.play();
                     console.log(panNode_R.pan.value);
+                    $('#len_4').css('z-index', '5');
                     $('#len_4_image').css("transform", "scale(1.2)");
                     $('#glass_2').css("transform", "scale(2)");
                     $('#right_instruct').hide();
@@ -568,6 +586,7 @@ $(document).ready(function() {
                 case 'glass_1':
                     audio_len_4_L.pause();
                     audio_len_4_L.currentTime = 0;
+                    $('#len_4').css('z-index', '1');
                     $('#len_4_image').css("transform", "scale(1)");
                     $('#glass_1').css("transform", "scale(1)");
                     $('#left_instruct').show();
@@ -578,6 +597,7 @@ $(document).ready(function() {
                 case 'glass_2':
                     audio_len_4_R.pause();
                     audio_len_4_R.currentTime = 0;
+                    $('#len_4').css('z-index', '1');
                     $('#len_4_image').css("transform", "scale(1)");
                     $('#glass_2').css("transform", "scale(1)");
                     $('#right_instruct').show();
@@ -610,6 +630,7 @@ $(document).ready(function() {
                     // play audio
                     audio_len_5_L.play();
                     console.log(panNode_L.pan.value);
+                    $('#len_5').css('z-index', '5');
                     $('#len_5_image').css("transform", "scale(1.2)");
                     $('#glass_1').css("transform", "scale(2)");
                     $('#left_instruct').hide();
@@ -628,6 +649,7 @@ $(document).ready(function() {
                     // play audio
                     audio_len_5_R.play();
                     console.log(panNode_R.pan.value);
+                    $('#len_5').css('z-index', '5');
                     $('#len_5_image').css("transform", "scale(1.2)");
                     $('#glass_2').css("transform", "scale(2)");
                     $('#right_instruct').hide();
@@ -651,6 +673,7 @@ $(document).ready(function() {
                 case 'glass_1':
                     audio_len_5_L.pause();
                     audio_len_5_L.currentTime = 0;
+                    $('#len_5').css('z-index', '1');
                     $('#len_5_image').css("transform", "scale(1)");
                     $('#glass_1').css("transform", "scale(1)");
                     $('#left_instruct').show();
@@ -661,6 +684,7 @@ $(document).ready(function() {
                 case 'glass_2':
                     audio_len_5_R.pause();
                     audio_len_5_R.currentTime = 0;
+                    $('#len_5').css('z-index', '1');
                     $('#len_5_image').css("transform", "scale(1)");
                     $('#glass_2').css("transform", "scale(1)");
                     $('#right_instruct').css("background-image", 'none');
@@ -693,13 +717,14 @@ $(document).ready(function() {
                     // play audio
                     audio_ange_1_L.play();
                     console.log(panNode_L.pan.value);
+                    $('#ange_1').css('z-index', '5');
                     $('#ange_1_image').css("transform", "scale(1.2)");
                     $('#glass_1').css("transform", "scale(2)");
                     $('#left_instruct').hide();
                     $('.info_bar_left > .info_image').css({
-                        'background-image' : 'url("img/ange-1.jpg")',
+                        'background-image' : 'url("img/ange-1.png")',
                         'width': '425px',
-                        'height' : '425px'
+                        'height' : '300px'
                     });
                     $('.info_bar_left > .info_content > .info_content_title').html("Image Title");
                     $('.info_bar_left > .info_content > .info_content_wrap').html("This is where the information about the magnified object would display.");
@@ -711,13 +736,14 @@ $(document).ready(function() {
                     // play audio
                     audio_ange_1_R.play();
                     console.log(panNode_R.pan.value);
+                    $('#ange_1').css('z-index', '5');
                     $('#ange_1_image').css("transform", "scale(1.2)");
                     $('#glass_2').css("transform", "scale(2)");
                     $('#right_instruct').hide();
                     $('.info_bar_right > .info_image').css({
-                        'background-image' : 'url("img/ange-1.jpg")',
+                        'background-image' : 'url("img/ange-1.png")',
                         'width': '425px',
-                        'height' : '425px'
+                        'height' : '300px'
                     });
                     $('.info_bar_right > .info_content > .info_content_title').html("Image Title");
                     $('.info_bar_right > .info_content > .info_content_wrap').html("This is where the information about the magnified object would display.");
@@ -734,6 +760,7 @@ $(document).ready(function() {
                 case 'glass_1':
                     audio_ange_1_L.pause();
                     audio_ange_1_L.currentTime = 0;
+                    $('#ange_1').css('z-index', '1');
                     $('#ange_1_image').css("transform", "scale(1)");
                     $('#glass_1').css("transform", "scale(1)");
                     $('#left_instruct').show();
@@ -744,7 +771,157 @@ $(document).ready(function() {
                 case 'glass_2':
                     audio_ange_1_R.pause();
                     audio_ange_1_R.currentTime = 0;
+                    $('#ange_1').css('z-index', '1');
                     $('#ange_1_image').css("transform", "scale(1)");
+                    $('#glass_2').css("transform", "scale(1)");
+                    $('#right_instruct').show();
+                    $('.info_bar_right > .info_image').css('background-image', 'none');
+                    $('.info_bar_right > .info_content > .info_content_title').html("");
+                    $('.info_bar_right > .info_content > .info_content_wrap').html("");
+                    break;
+            }
+        }
+    });
+    //Children in Tree
+    // enable draggables to be dropped into this
+    interact('#ange_2').dropzone({
+        // only accept elements matching this CSS selector
+        accept: '.magnify_glass',
+        // Require a 75% element overlap for a drop to be possible
+        overlap: 0.25,
+        ondragenter: function(event) {
+            var draggableElement = event.relatedTarget,
+                dropzoneElement = event.target;
+            draggableElement.classList.add('dropped-element');
+            draggableElement.classList.remove('removed-element');
+            var glass = draggableElement.getAttribute('id');
+            switch (glass) {
+                case 'glass_1':
+                    $('#ange_2').css('z-index', '5');
+                    $('#ange_2_image').css("transform", "scale(1.2)");
+                    $('#glass_1').css("transform", "scale(2)");
+                    $('#left_instruct').hide();
+                    $('.info_bar_left > .info_image').css({
+                        'background-image' : 'url("img/ange-2.png")',
+                        'width': '425px',
+                        'height' : '450px'
+                    });
+                    $('.info_bar_left > .info_content > .info_content_title').html("Image Title");
+                    $('.info_bar_left > .info_content > .info_content_wrap').html("This is where the information about the magnified object would display.");
+                    break;
+                case 'glass_2':
+                    $('#ange_2').css('z-index', '5');
+                    $('#ange_2_image').css("transform", "scale(1.2)");
+                    $('#glass_2').css("transform", "scale(2)");
+                    $('#right_instruct').hide();
+                    $('.info_bar_right > .info_image').css({
+                        'background-image' : 'url("img/ange-2.png")',
+                        'width': '425px',
+                        'height' : '450px'
+                    });
+                    $('.info_bar_right > .info_content > .info_content_title').html("Image Title");
+                    $('.info_bar_right > .info_content > .info_content_wrap').html("This is where the information about the magnified object would display.");
+                    break;
+            }
+        },
+        ondragleave: function(event) {
+            var draggableElement = event.relatedTarget,
+                dropzoneElement = event.target;
+            draggableElement.classList.add('removed-element');
+            draggableElement.classList.remove('dropped-element');
+            var glass = draggableElement.getAttribute('id');
+            switch (glass) {
+                case 'glass_1':
+                    audio_ange_1_L.pause();
+                    audio_ange_1_L.currentTime = 0;
+                    $('#ange_2').css('z-index', '1');
+                    $('#ange_2_image').css("transform", "scale(1)");
+                    $('#glass_1').css("transform", "scale(1)");
+                    $('#left_instruct').show();
+                    $('.info_bar_left > .info_image').css('background-image', 'none');
+                    $('.info_bar_left > .info_content > .info_content_title').html("");
+                    $('.info_bar_left > .info_content > .info_content_wrap').html("");
+                    break;
+                case 'glass_2':
+                    audio_ange_1_R.pause();
+                    audio_ange_1_R.currentTime = 0;
+                    $('#ange_2').css('z-index', '1');
+                    $('#ange_2_image').css("transform", "scale(1)");
+                    $('#glass_2').css("transform", "scale(1)");
+                    $('#right_instruct').show();
+                    $('.info_bar_right > .info_image').css('background-image', 'none');
+                    $('.info_bar_right > .info_content > .info_content_title').html("");
+                    $('.info_bar_right > .info_content > .info_content_wrap').html("");
+                    break;
+            }
+        }
+    });
+
+    //kiss
+    // enable draggables to be dropped into this
+    interact('#ange_3').dropzone({
+        // only accept elements matching this CSS selector
+        accept: '.magnify_glass',
+        // Require a 75% element overlap for a drop to be possible
+        overlap: 0.25,
+        ondragenter: function(event) {
+            var draggableElement = event.relatedTarget,
+                dropzoneElement = event.target;
+            draggableElement.classList.add('dropped-element');
+            draggableElement.classList.remove('removed-element');
+            var glass = draggableElement.getAttribute('id');
+            switch (glass) {
+                case 'glass_1':
+                    $('#ange_3').css('z-index', '5');
+                    $('#ange_3_image').css("transform", "scale(1.2)");
+                    $('#glass_2').css("transform", "scale(2)");
+                    $('#left_instruct').hide();
+                    $('.info_bar_left > .info_image').css({
+                        'background-image' : 'url("img/ange-3.png")',
+                        'width': '425px',
+                        'height' : '305px'
+                    });
+                    $('.info_bar_left > .info_content > .info_content_title').html("Image Title");
+                    $('.info_bar_left > .info_content > .info_content_wrap').html("This is where the information about the magnified object would display.");
+                    break;
+                case 'glass_2':
+                    $('#ange_3').css('z-index', '5');
+                    $('#ange_3_image').css("transform", "scale(1.2)");
+                    $('#glass_2').css("transform", "scale(2)");
+                    $('#right_instruct').hide();
+                    $('.info_bar_right > .info_image').css({
+                        'background-image' : 'url("img/ange-3.png")',
+                        'width': '425px',
+                        'height' : '305px'
+                    });
+                    $('.info_bar_right > .info_content > .info_content_title').html("Image Title");
+                    $('.info_bar_right > .info_content > .info_content_wrap').html("This is where the information about the magnified object would display.");
+                    break;
+            }
+        },
+        ondragleave: function(event) {
+            var draggableElement = event.relatedTarget,
+                dropzoneElement = event.target;
+            draggableElement.classList.add('removed-element');
+            draggableElement.classList.remove('dropped-element');
+            var glass = draggableElement.getAttribute('id');
+            switch (glass) {
+                case 'glass_1':
+                    audio_ange_1_L.pause();
+                    audio_ange_1_L.currentTime = 0;
+                    $('#ange_3').css('z-index', '1');
+                    $('#ange_3_image').css("transform", "scale(1)");
+                    $('#glass_1').css("transform", "scale(1)");
+                    $('#left_instruct').show();
+                    $('.info_bar_left > .info_image').css('background-image', 'none');
+                    $('.info_bar_left > .info_content > .info_content_title').html("");
+                    $('.info_bar_left > .info_content > .info_content_wrap').html("");
+                    break;
+                case 'glass_2':
+                    audio_ange_1_R.pause();
+                    audio_ange_1_R.currentTime = 0;
+                    $('#ange_3').css('z-index', '1');
+                    $('#ange_3_image').css("transform", "scale(1)");
                     $('#glass_2').css("transform", "scale(1)");
                     $('#right_instruct').show();
                     $('.info_bar_right > .info_image').css('background-image', 'none');
