@@ -1,53 +1,87 @@
 body{
-	background-color: #DDDBD9;
+	background-color: #e2d1c1;
 	color: #72716E;
-	text-align: center;
 }
 
 #bg{
+	text-align: center;
+}
+
+#bg img{
+/*
 	background-image: url(img/mural-bg.png);
 	background-repeat: no-repeat;
-	width: 1404px;
-	height: 1054px;
+	width: 4032px;
+	height: 3024px;
 	margin: auto;
+*/
+	
 	z-index: 1;
+	width: 74%;
 }
 
 .cart img{
-	width: 93%;
+	width: 145%;
 }
 
-#cart-left{
+.lantern img{
+	width: 63%;
+}
+
+#bg{
+	position: absolute;
+}
+
+#cart-L{
+	/*border: 1px solid black;*/
+	position: relative;
+	width: 320px;
+	height: 500px;
+	top: 448px;
+	left: 395px;
+}
+
+#left-active{
 	position: absolute;
 	z-index: 2;
-	top: 46.2%;
-	left: 17.7%;
+	opacity: 0;
+	top: -55px;
+	left: -85px;
+}
+
+#left-lantern{
+	position: absolute;
+	z-index: 2;
+	text-align: center;
+}
+
+#cart-L:hover{
+	cursor: pointer;
+}
+
+#cart-L:hover #left-active{
+	opacity: 1;
+	-webkit-transition: .75s;
+	transition: .75s;
+}
+
+/*
+#mid-active{
+	position: absolute;
+	z-index: 2;
+	top: 43.5%;
+	left: 25%;
 	opacity: 0;
 }
 
-#cart-left:hover{
+#mid-active:hover{
 	opacity: 1;
 	-webkit-transition: .75s;
 	transition: .75s;
 	cursor: pointer;
 }
 
-#cart-mid{
-	position: absolute;
-	z-index: 2;
-	top: 52.6%;
-	left: 38.1%;
-	opacity: 0;
-}
-
-#cart-mid:hover{
-	opacity: 1;
-	-webkit-transition: .75s;
-	transition: .75s;
-	cursor: pointer;
-}
-
-#cart-right{
+#right-active{
 	position: absolute;
 	z-index: 2;
 	top: 48.4%;
@@ -55,7 +89,7 @@ body{
 	opacity: 0;
 }
 
-#cart-right:hover{
+#right-active:hover{
 	opacity: 1;
 	-webkit-transition: .75s;
 	transition: .75s;
@@ -67,7 +101,7 @@ body{
 }
 
 .vid{
-/*	display: none;*/
+	display: none;
 	position: absolute;
 	top: 5%;
 	left: 32%;
@@ -85,4 +119,4 @@ body{
 .vid-btn:hover{
 	background-color: black;
 	color: #DDDBD9;
-}
+}*/
