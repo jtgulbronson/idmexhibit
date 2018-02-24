@@ -722,9 +722,9 @@ $(document).ready(function() {
                     $('#glass_1').css("transform", "scale(2)");
                     $('#left_instruct').hide();
                     $('.info_bar_left > .info_image').css({
-                        'background-image' : 'url("img/ange-1.jpg")',
+                        'background-image' : 'url("img/ange-1.png")',
                         'width': '425px',
-                        'height' : '425px'
+                        'height' : '300px'
                     });
                     $('.info_bar_left > .info_content > .info_content_title').html("Image Title");
                     $('.info_bar_left > .info_content > .info_content_wrap').html("This is where the information about the magnified object would display.");
@@ -741,9 +741,9 @@ $(document).ready(function() {
                     $('#glass_2').css("transform", "scale(2)");
                     $('#right_instruct').hide();
                     $('.info_bar_right > .info_image').css({
-                        'background-image' : 'url("img/ange-1.jpg")',
+                        'background-image' : 'url("img/ange-1.png")',
                         'width': '425px',
-                        'height' : '425px'
+                        'height' : '300px'
                     });
                     $('.info_bar_right > .info_content > .info_content_title').html("Image Title");
                     $('.info_bar_right > .info_content > .info_content_wrap').html("This is where the information about the magnified object would display.");
@@ -773,6 +773,155 @@ $(document).ready(function() {
                     audio_ange_1_R.currentTime = 0;
                     $('#ange_1').css('z-index', '1');
                     $('#ange_1_image').css("transform", "scale(1)");
+                    $('#glass_2').css("transform", "scale(1)");
+                    $('#right_instruct').show();
+                    $('.info_bar_right > .info_image').css('background-image', 'none');
+                    $('.info_bar_right > .info_content > .info_content_title').html("");
+                    $('.info_bar_right > .info_content > .info_content_wrap').html("");
+                    break;
+            }
+        }
+    });
+    //Children in Tree
+    // enable draggables to be dropped into this
+    interact('#ange_2').dropzone({
+        // only accept elements matching this CSS selector
+        accept: '.magnify_glass',
+        // Require a 75% element overlap for a drop to be possible
+        overlap: 0.25,
+        ondragenter: function(event) {
+            var draggableElement = event.relatedTarget,
+                dropzoneElement = event.target;
+            draggableElement.classList.add('dropped-element');
+            draggableElement.classList.remove('removed-element');
+            var glass = draggableElement.getAttribute('id');
+            switch (glass) {
+                case 'glass_1':
+                    $('#ange_2').css('z-index', '5');
+                    $('#ange_2_image').css("transform", "scale(1.2)");
+                    $('#glass_1').css("transform", "scale(2)");
+                    $('#left_instruct').hide();
+                    $('.info_bar_left > .info_image').css({
+                        'background-image' : 'url("img/ange-2.png")',
+                        'width': '425px',
+                        'height' : '450px'
+                    });
+                    $('.info_bar_left > .info_content > .info_content_title').html("Image Title");
+                    $('.info_bar_left > .info_content > .info_content_wrap').html("This is where the information about the magnified object would display.");
+                    break;
+                case 'glass_2':
+                    $('#ange_2').css('z-index', '5');
+                    $('#ange_2_image').css("transform", "scale(1.2)");
+                    $('#glass_2').css("transform", "scale(2)");
+                    $('#right_instruct').hide();
+                    $('.info_bar_right > .info_image').css({
+                        'background-image' : 'url("img/ange-2.png")',
+                        'width': '425px',
+                        'height' : '450px'
+                    });
+                    $('.info_bar_right > .info_content > .info_content_title').html("Image Title");
+                    $('.info_bar_right > .info_content > .info_content_wrap').html("This is where the information about the magnified object would display.");
+                    break;
+            }
+        },
+        ondragleave: function(event) {
+            var draggableElement = event.relatedTarget,
+                dropzoneElement = event.target;
+            draggableElement.classList.add('removed-element');
+            draggableElement.classList.remove('dropped-element');
+            var glass = draggableElement.getAttribute('id');
+            switch (glass) {
+                case 'glass_1':
+                    audio_ange_1_L.pause();
+                    audio_ange_1_L.currentTime = 0;
+                    $('#ange_2').css('z-index', '1');
+                    $('#ange_2_image').css("transform", "scale(1)");
+                    $('#glass_1').css("transform", "scale(1)");
+                    $('#left_instruct').show();
+                    $('.info_bar_left > .info_image').css('background-image', 'none');
+                    $('.info_bar_left > .info_content > .info_content_title').html("");
+                    $('.info_bar_left > .info_content > .info_content_wrap').html("");
+                    break;
+                case 'glass_2':
+                    audio_ange_1_R.pause();
+                    audio_ange_1_R.currentTime = 0;
+                    $('#ange_2').css('z-index', '1');
+                    $('#ange_2_image').css("transform", "scale(1)");
+                    $('#glass_2').css("transform", "scale(1)");
+                    $('#right_instruct').show();
+                    $('.info_bar_right > .info_image').css('background-image', 'none');
+                    $('.info_bar_right > .info_content > .info_content_title').html("");
+                    $('.info_bar_right > .info_content > .info_content_wrap').html("");
+                    break;
+            }
+        }
+    });
+
+    //kiss
+    // enable draggables to be dropped into this
+    interact('#ange_3').dropzone({
+        // only accept elements matching this CSS selector
+        accept: '.magnify_glass',
+        // Require a 75% element overlap for a drop to be possible
+        overlap: 0.25,
+        ondragenter: function(event) {
+            var draggableElement = event.relatedTarget,
+                dropzoneElement = event.target;
+            draggableElement.classList.add('dropped-element');
+            draggableElement.classList.remove('removed-element');
+            var glass = draggableElement.getAttribute('id');
+            switch (glass) {
+                case 'glass_1':
+                    $('#ange_3').css('z-index', '5');
+                    $('#ange_3_image').css("transform", "scale(1.2)");
+                    $('#glass_2').css("transform", "scale(2)");
+                    $('#left_instruct').hide();
+                    $('.info_bar_left > .info_image').css({
+                        'background-image' : 'url("img/ange-3.png")',
+                        'width': '425px',
+                        'height' : '305px'
+                    });
+                    $('.info_bar_left > .info_content > .info_content_title').html("Image Title");
+                    $('.info_bar_left > .info_content > .info_content_wrap').html("This is where the information about the magnified object would display.");
+                    break;
+                case 'glass_2':
+                    $('#ange_3').css('z-index', '5');
+                    $('#ange_3_image').css("transform", "scale(1.2)");
+                    $('#glass_2').css("transform", "scale(2)");
+                    $('#right_instruct').hide();
+                    $('.info_bar_right > .info_image').css({
+                        'background-image' : 'url("img/ange-3.png")',
+                        'width': '425px',
+                        'height' : '305px'
+                    });
+                    $('.info_bar_right > .info_content > .info_content_title').html("Image Title");
+                    $('.info_bar_right > .info_content > .info_content_wrap').html("This is where the information about the magnified object would display.");
+                    break;
+            }
+        },
+        ondragleave: function(event) {
+            var draggableElement = event.relatedTarget,
+                dropzoneElement = event.target;
+            draggableElement.classList.add('removed-element');
+            draggableElement.classList.remove('dropped-element');
+            var glass = draggableElement.getAttribute('id');
+            switch (glass) {
+                case 'glass_1':
+                    audio_ange_1_L.pause();
+                    audio_ange_1_L.currentTime = 0;
+                    $('#ange_3').css('z-index', '1');
+                    $('#ange_3_image').css("transform", "scale(1)");
+                    $('#glass_1').css("transform", "scale(1)");
+                    $('#left_instruct').show();
+                    $('.info_bar_left > .info_image').css('background-image', 'none');
+                    $('.info_bar_left > .info_content > .info_content_title').html("");
+                    $('.info_bar_left > .info_content > .info_content_wrap').html("");
+                    break;
+                case 'glass_2':
+                    audio_ange_1_R.pause();
+                    audio_ange_1_R.currentTime = 0;
+                    $('#ange_3').css('z-index', '1');
+                    $('#ange_3_image').css("transform", "scale(1)");
                     $('#glass_2').css("transform", "scale(1)");
                     $('#right_instruct').show();
                     $('.info_bar_right > .info_image').css('background-image', 'none');
