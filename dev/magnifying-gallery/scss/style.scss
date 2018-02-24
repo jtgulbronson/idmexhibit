@@ -1,5 +1,4 @@
-@import 'var.scss';
-///////////////////////////////////////////////
+@import 'var.scss'; ///////////////////////////////////////////////
 //Base styles
 ///////////////////////////////////////////////
 
@@ -22,24 +21,24 @@ body {
     height: 100vh;
     overflow: hidden;
     background-color: $foreground;
-	background-image: url('../img/bg-with-leaves.jpg');
-	background-size: cover;
-	background-repeat: no-repeat;
-	background-position: center;
+    background-image: url('../img/bg-with-leaves.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
 }
 
-.collage_bg{
-	position: relative;
+.collage_bg {
+    position: relative;
     top: 0;
-	left: 15vw;
-	width: 70vw;
-	height: 100vh;
-	overflow: hidden;
-	background-color: $foreground;
-   background-image: url('../img/Background.png');
-   background-size: cover;
-   background-repeat: no-repeat;
-   background-position: center;
+    left: 15vw;
+    width: 70vw;
+    height: 100vh;
+    overflow: hidden;
+    background-color: $foreground;
+    background-image: url('../img/Background.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
 }
 ///////////////////////////////////////////////
 //Generic Class Styles
@@ -52,26 +51,27 @@ body {
     margin-top: 8vh;
     z-index: 15;
     background-color: $foreground;
-	-webkit-box-shadow: 8px 8px 30px 0px rgba(0,0,0,0.5);
--moz-box-shadow: 8px 8px 30px 0px rgba(0,0,0,0.5);
-box-shadow: 8px 8px 30px 0px rgba(0,0,0,0.5);
+    -webkit-box-shadow: 8px 8px 30px 0 rgba(0,0,0,0.5);
+    -moz-box-shadow: 8px 8px 30px 0 rgba(0,0,0,0.5);
+    box-shadow: 8px 8px 30px 0 rgba(0,0,0,0.5);
 }
 
-.color_code{
-    width:450px;
+.color_code {
+    width: 450px;
     height: 40vh;
     position: absolute;
     z-index: 14;
-    -webkit-box-shadow: 4px 4px 10px 0px rgba(0,0,0,0.7);
--moz-box-shadow: 4px 4px 10px 0px rgba(0,0,0,0.7);
-box-shadow: 4px 4px 10px 0px rgba(0,0,0,0.7);
+    -webkit-box-shadow: 4px 4px 10px 0 rgba(0,0,0,0.7);
+    -moz-box-shadow: 4px 4px 10px 0 rgba(0,0,0,0.7);
+    box-shadow: 4px 4px 10px 0 rgba(0,0,0,0.7);
 }
 
 .initial_content {
     position: absolute;
     width: 425px;
     height: 100%;
-    .initial-dots{
+
+    .initial-dots {
         width: 80%;
         height: 150px;
         background-image: url('../img/dots.png');
@@ -82,7 +82,8 @@ box-shadow: 4px 4px 10px 0px rgba(0,0,0,0.7);
         top: 150px;
         left: 20px;
     }
-    .initial-zigzag{
+
+    .initial-zigzag {
         width: 45%;
         height: 150px;
         background-image: url('../img/zigzag.png');
@@ -93,12 +94,14 @@ box-shadow: 4px 4px 10px 0px rgba(0,0,0,0.7);
         top: 125px;
         right: 40px;
     }
-    .content-wrap{
+
+    .content-wrap {
         padding: 40px;
         position: absolute;
         top: 50%;
         transform: translateY(-50%);
         max-width: 100%;
+
         .title {
             font-size: 2rem;
             padding: 20px 0;
@@ -111,7 +114,6 @@ box-shadow: 4px 4px 10px 0px rgba(0,0,0,0.7);
             line-height: 30px;
         }
     }
-
 }
 ///////////////////////////////////////////////
 //Specific Background Element styles
@@ -142,13 +144,13 @@ box-shadow: 4px 4px 10px 0px rgba(0,0,0,0.7);
     right: 0;
 }
 
-#code_red{
+#code_red {
     background-color: $rouge;
-    left:0;
+    left: 0;
     top: 30vh;
 }
 
-#code_blue{
+#code_blue {
     background-color: $blue;
     right: 0;
     top: 30vh;
@@ -199,16 +201,16 @@ box-shadow: 4px 4px 10px 0px rgba(0,0,0,0.7);
 .info_bar_left {
     display: block;
     position: absolute;
-    top: 30px;
-    left: 0px;
+    top: 0px;
+    left: 0;
     width: 425px;
-    height: auto;
+    height: 100%;
 
     .info_image {
         width: 270px;
         height: 450px;
         display: block;
-        margin: auto;
+        margin: 50px auto;
         background-position: center;
         background-repeat: no-repeat;
         background-size: contain;
@@ -220,22 +222,27 @@ box-shadow: 4px 4px 10px 0px rgba(0,0,0,0.7);
         text-align: left;
         padding: 30px 40px;
         line-height: 30px;
-        .info_content_wrap{
+        position: absolute;
+        top:475px;
+
+        .info_content_wrap {
             font-size: 14px;
             padding-top: 20px;
         }
-        .info_content_title{
+
+        .info_content_title {
             font-size: 2rem;
             color: $rouge;
-            padding: 40px 0px 0px;
+            padding: 40px 0 0;
             font-weight: bold;
             font-family: $kepler;
             letter-spacing: 1px;
         }
-        .info_content_subtitle{
+
+        .info_content_subtitle {
             font-size: 1.25rem;
             color: $rouge;
-            padding: 0px;
+            padding: 0;
             font-weight: bold;
             font-family: $kepler;
             letter-spacing: 1px;
@@ -246,16 +253,16 @@ box-shadow: 4px 4px 10px 0px rgba(0,0,0,0.7);
 .info_bar_right {
     display: block;
     position: absolute;
-    top: 30px;
-    left: 0px;
+    top: 0px;
+    left: 0;
     width: 425px;
-    height: auto;
+    height: 100%;
 
     .info_image {
         width: 270px;
         height: 450px;
         display: block;
-        margin: auto;
+        margin: 50px auto;
         background-position: center;
         background-repeat: no-repeat;
         background-size: contain;
@@ -267,22 +274,27 @@ box-shadow: 4px 4px 10px 0px rgba(0,0,0,0.7);
         text-align: left;
         padding: 30px 40px;
         line-height: 30px;
-        .info_content_wrap{
+        position: absolute;
+        top:475px;
+
+        .info_content_wrap {
             font-size: 14px;
             padding-top: 20px;
         }
-        .info_content_title{
+
+        .info_content_title {
             font-size: 2rem;
             color: $blue;
-            padding: 40px 0px 0px;
+            padding: 40px 0 0;
             font-weight: bold;
             font-family: $kepler;
             letter-spacing: 1px;
         }
-        .info_content_subtitle{
+
+        .info_content_subtitle {
             font-size: 1.25rem;
             color: $blue;
-            padding: 0px;
+            padding: 0;
             font-weight: bold;
             font-family: $kepler;
             letter-spacing: 1px;
@@ -297,7 +309,7 @@ box-shadow: 4px 4px 10px 0px rgba(0,0,0,0.7);
     position: absolute;
     width: 200px;
     height: 300px;
-    bottom: 0px;
+    bottom: 0;
     left: 1175px;
     z-index: 1;
 }
@@ -332,7 +344,7 @@ box-shadow: 4px 4px 10px 0px rgba(0,0,0,0.7);
     width: 700px;
     height: 600px;
     transition: transform 0.25s ease;
-   }
+}
 ///////////////////////////////////////////////
 //Len 3 Element
 ///////////////////////////////////////////////
@@ -363,7 +375,7 @@ box-shadow: 4px 4px 10px 0px rgba(0,0,0,0.7);
     position: absolute;
     width: 445px;
     height: 525px;
-    bottom: 0px;
+    bottom: 0;
     left: 700px;
     z-index: 1;
 }
@@ -376,7 +388,7 @@ box-shadow: 4px 4px 10px 0px rgba(0,0,0,0.7);
     width: 445px;
     height: 525px;
     transition: transform 0.25s ease;
-    }
+}
 ///////////////////////////////////////////////
 //len 5 Element
 ///////////////////////////////////////////////
@@ -385,7 +397,7 @@ box-shadow: 4px 4px 10px 0px rgba(0,0,0,0.7);
     position: absolute;
     width: 450px;
     height: 500px;
-    bottom: 0px;
+    bottom: 0;
     right: 295px;
     z-index: 1;
 }
@@ -398,7 +410,7 @@ box-shadow: 4px 4px 10px 0px rgba(0,0,0,0.7);
     width: 450px;
     height: 500px;
     transition: transform 0.25s ease;
-    }
+}
 ///////////////////////////////////////////////
 //len 8 Element
 ///////////////////////////////////////////////
@@ -410,7 +422,6 @@ box-shadow: 4px 4px 10px 0px rgba(0,0,0,0.7);
     top: 245px;
     right: 325px;
     z-index: 1;
-
 }
 
 #len_8_image {
@@ -421,7 +432,7 @@ box-shadow: 4px 4px 10px 0px rgba(0,0,0,0.7);
     width: 455px;
     height: 320px;
     transition: transform 0.25s ease;
-    }
+}
 ///////////////////////////////////////////////
 //Angee 1 Element
 ///////////////////////////////////////////////
@@ -433,7 +444,7 @@ box-shadow: 4px 4px 10px 0px rgba(0,0,0,0.7);
     bottom: 20px;
     left: 450px;
     z-index: 1;
-    }
+}
 
 #ange_1_image {
     background: url('../img/Ange_Baby.png');
@@ -443,50 +454,46 @@ box-shadow: 4px 4px 10px 0px rgba(0,0,0,0.7);
     width: 250px;
     height: 200px;
     transition: transform 0.25s ease; //crops image
- }
+}
+///////////////////////////////////////////////
+//Angee 2 Element
+///////////////////////////////////////////////
+#ange_2 {
+    position: absolute;
+    width: 600px;
+    height: 500px;
+    top: 200px;
+    left: 250px;
+    z-index: 1;
+}
 
- ///////////////////////////////////////////////
- //Angee 2 Element
- ///////////////////////////////////////////////
+#ange_2_image {
+    background: url('../img/Ange_Child.png');
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+    width: 600px;
+    height: 500px;
+    transition: transform 0.25s ease; //crops image
+}
+//////////////////////////////////////////////
+//Angee 2 Element
+///////////////////////////////////////////////
+#ange_3 {
+    position: absolute;
+    width: 250px;
+    height: 200px;
+    top: 50px;
+    right: 300px;
+    z-index: 1;
+}
 
- #ange_2 {
-     position: absolute;
-     width: 600px;
-     height: 500px;
-     top: 200px;
-     left: 250px;
-     z-index: 1;
-     }
-
- #ange_2_image {
-     background: url('../img/Ange_Child.png');
-     background-size: contain;
-     background-position: center;
-     background-repeat: no-repeat;
-     width: 600px;
-     height: 500px;
-     transition: transform 0.25s ease; //crops image
-  }
-
-  //////////////////////////////////////////////
-  //Angee 2 Element
-  ///////////////////////////////////////////////
-
-  #ange_3 {
-      position: absolute;
-      width: 250px;
-      height:200px;
-      top: 50px;
-      right: 300px;
-      z-index: 1;
-      }
-
-  #ange_3_image {
-      background: url('../img/Ange_Kiss.png');
-      background-size: contain;
-      background-position: center;
-      background-repeat: no-repeat;
-      width: 250px;
-      height: 200px;
-      transition: transform 0.25s ease; //crops image
-   }
+#ange_3_image {
+    background: url('../img/Ange_Kiss.png');
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+    width: 250px;
+    height: 200px;
+    transition: transform 0.25s ease; //crops image
+}

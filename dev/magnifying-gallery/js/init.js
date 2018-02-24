@@ -375,7 +375,7 @@ $(document).ready(function() {
                         'height' : '420px'
                     });
                     $('.info_bar_left > .info_content > .info_content_title').html("Grandmother");
-                    $('.info_bar_left > .info_content > .info_content_wrap').html("My maternal grandmother transitioned when I was very young, most likely when I was 5 years old. Although I do not remember her presence, she passed down her love of textiles and artistic creativity. She was a known healer and I was told people would come to her for dislocated limbs and infertility. I am inspired by her generous spirit and proud to carry her name, Lendeh.");
+                    $('.info_bar_left > .info_content > .info_content_wrap').html("My maternal grandmother transitioned when I was very young. Although I do not remember her presence, she passed down her love of textiles and artistic creativity. She was a known healer and I was told people would come to her for dislocated limbs and infertility. I am inspired by her generous spirit and proud to carry her name, Lendeh.");
                     break;
                 case 'glass_2':
                     audio_len_3_R.src = audioFiles[5];
@@ -394,7 +394,7 @@ $(document).ready(function() {
                         'height' : '420px'
                     });
                     $('.info_bar_right > .info_content > .info_content_title').html("Grandmother");
-                    $('.info_bar_right > .info_content > .info_content_wrap').html("My maternal grandmother transitioned when I was very young, most likely when I was 5 years old. Although I do not remember her presence, she passed down her love of textiles and artistic creativity. She was a known healer and I was told people would come to her for dislocated limbs and infertility. I am inspired by her generous spirit and proud to carry her name, Lendeh.");
+                    $('.info_bar_right > .info_content > .info_content_wrap').html("My maternal grandmother transitioned when I was very young. Although I do not remember her presence, she passed down her love of textiles and artistic creativity. She was a known healer and I was told people would come to her for dislocated limbs and infertility. I am inspired by her generous spirit and proud to carry her name, Lendeh.");
                     break;
             }
         },
