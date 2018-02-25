@@ -47,7 +47,7 @@ body {
 .side_panel {
     position: relative;
     height: 80vh;
-    width: 425px;
+    width: 375px;
     margin-top: 8vh;
     z-index: 15;
     background-color: $foreground;
@@ -57,7 +57,7 @@ body {
 }
 
 .color_code {
-    width: 450px;
+    width: 400px;
     height: 40vh;
     position: absolute;
     z-index: 14;
@@ -68,7 +68,7 @@ body {
 
 .initial_content {
     position: absolute;
-    width: 425px;
+    width: 375px;
     height: 100%;
 
     .initial-dots {
@@ -122,13 +122,13 @@ body {
 
 #left_instruct {
     .title {
-        color: $rouge;
+        color: $blue;
     }
 }
 
 #right_instruct {
     .title {
-        color: $blue;
+        color: $rouge;
     }
 }
 
@@ -145,13 +145,13 @@ body {
 }
 
 #code_red {
-    background-color: $rouge;
+    background-color: $blue;
     left: 0;
     top: 30vh;
 }
 
 #code_blue {
-    background-color: $blue;
+    background-color: $rouge;
     right: 0;
     top: 30vh;
 }
@@ -177,7 +177,7 @@ body {
     -webkit-transform-origin: center;
     transform-origin: center;
     border-radius: 50%;
-    border: solid $rouge 6px;
+    border: solid $blue 6px;
     color: white;
     transition: transform 0.25s ease;
 }
@@ -190,7 +190,7 @@ body {
     -webkit-transform-origin: center;
     transform-origin: center;
     border-radius: 50%;
-    border: solid $blue 6px;
+    border: solid $rouge 6px;
     color: black;
     transition: transform 0.25s ease;
 }
@@ -203,7 +203,7 @@ body {
     position: absolute;
     top: 0px;
     left: 0;
-    width: 425px;
+    width: 375px;
     height: 100%;
 
     .info_image {
@@ -217,10 +217,10 @@ body {
     }
 
     .info_content {
-        width: 350px;
+        width: 325px;
         display: block;
         text-align: left;
-        padding: 30px 40px;
+        padding: 30px 25px;
         line-height: 30px;
         position: absolute;
         top:475px;
@@ -232,7 +232,7 @@ body {
 
         .info_content_title {
             font-size: 2rem;
-            color: $rouge;
+            color: $blue;
             padding: 40px 0 0;
             font-weight: bold;
             font-family: $kepler;
@@ -241,7 +241,7 @@ body {
 
         .info_content_subtitle {
             font-size: 1.25rem;
-            color: $rouge;
+            color: $blue;
             padding: 0;
             font-weight: bold;
             font-family: $kepler;
@@ -255,7 +255,7 @@ body {
     position: absolute;
     top: 0px;
     left: 0;
-    width: 425px;
+    width: 375px;
     height: 100%;
 
     .info_image {
@@ -269,10 +269,10 @@ body {
     }
 
     .info_content {
-        width: 350px;
+        width: 325px;
         display: block;
         text-align: left;
-        padding: 30px 40px;
+        padding: 30px 25px;
         line-height: 30px;
         position: absolute;
         top:475px;
@@ -284,7 +284,7 @@ body {
 
         .info_content_title {
             font-size: 2rem;
-            color: $blue;
+            color: $rouge;
             padding: 40px 0 0;
             font-weight: bold;
             font-family: $kepler;
@@ -293,7 +293,7 @@ body {
 
         .info_content_subtitle {
             font-size: 1.25rem;
-            color: $blue;
+            color: $rouge;
             padding: 0;
             font-weight: bold;
             font-family: $kepler;
@@ -329,10 +329,10 @@ body {
 
 #len_2 {
     position: absolute;
-    width: 700px;
-    height: 600px;
-    top: -115px;
-    left: 550px;
+    width: 460px;
+    height: 365px;
+    top: 0px;
+    left: 700px;
     z-index: 1;
 }
 
@@ -341,8 +341,8 @@ body {
     background-size: contain;
     background-position: center;
     background-repeat: no-repeat;
-    width: 700px;
-    height: 600px;
+    width: 460px;
+    height: 365px;
     transition: transform 0.25s ease;
 }
 ///////////////////////////////////////////////
@@ -373,10 +373,10 @@ body {
 
 #len_4 {
     position: absolute;
-    width: 445px;
-    height: 525px;
+    width: 460px;
+    height: 545px;
     bottom: 0;
-    left: 700px;
+    left: 692px;
     z-index: 1;
 }
 
@@ -385,8 +385,8 @@ body {
     background-size: contain;
     background-position: center;
     background-repeat: no-repeat;
-    width: 445px;
-    height: 525px;
+    width: 460px;
+    height: 545px;
     transition: transform 0.25s ease;
 }
 ///////////////////////////////////////////////
@@ -396,7 +396,7 @@ body {
 #len_5 {
     position: absolute;
     width: 450px;
-    height: 500px;
+    height: 375px;
     bottom: 0;
     right: 295px;
     z-index: 1;
@@ -408,7 +408,7 @@ body {
     background-position: center;
     background-repeat: no-repeat;
     width: 450px;
-    height: 500px;
+    height: 375px;
     transition: transform 0.25s ease;
 }
 ///////////////////////////////////////////////
@@ -417,9 +417,9 @@ body {
 
 #len_8 {
     position: absolute;
-    width: 455px;
+    width: 450px;
     height: 320px;
-    top: 245px;
+    top: 259px;
     right: 325px;
     z-index: 1;
 }
@@ -429,7 +429,7 @@ body {
     background-size: contain;
     background-position: center;
     background-repeat: no-repeat;
-    width: 455px;
+    width: 450px;
     height: 320px;
     transition: transform 0.25s ease;
 }

@@ -283,8 +283,8 @@ $(document).ready(function() {
                     $('#left_instruct').hide();
                     $('.info_bar_left > .info_image').css({
 						"background-image": 'url("img/len-2.jpeg")',
-                        'width': '425px',
-                        'height': '330px'
+                        'width': '375px',
+                        'height': '290px'
 					});
 
                     $('.info_bar_left > .info_content > .info_content_title').html("Space Between");
@@ -303,8 +303,8 @@ $(document).ready(function() {
                     $('#right_instruct').hide();
                     $('.info_bar_right > .info_image').css({
                         "background-image": 'url("img/len-2.jpeg")',
-                        'width': '425px',
-                        'height': '330px'
+                        'width': '375px',
+                        'height': '290px'
                     });
                     $('.info_bar_right > .info_content > .info_content_title').html("Space Between");
                     $('.info_bar_right > .info_content > .info_content_wrap').html("I have so many images from Robertsport, the capital of Grand Cape Mount in Liberia; however, I love the capturing people in their daily routines unbothered by a curious transnational.");
@@ -458,8 +458,8 @@ $(document).ready(function() {
                     $('#left_instruct').hide();
                     $('.info_bar_left > .info_image').css({
                         'background-image' : 'url("img/len-8.jpeg")',
-                        'width' : '425px',
-                        'height' : '330px'
+                        'width' : '375px',
+                        'height' : '290px'
                     });
                     $('.info_bar_left > .info_content > .info_content_title').html("Uptown");
                     $('.info_bar_left > .info_content > .info_content_subtitle').html('Robertsport, Grand Cape Mount');
@@ -478,8 +478,8 @@ $(document).ready(function() {
                     $('#right_instruct').hide();
                     $('.info_bar_right > .info_image').css({
                         'background-image' : 'url("img/len-8.jpeg")',
-                        'width' : '425px',
-                        'height' : '330px'
+                        'width' : '375px',
+                        'height' : '290px'
                     });
                     $('.info_bar_right > .info_content > .info_content_title').html("Uptown");
                     $('.info_bar_right > .info_content > .info_content_subtitle').html('Robertsport, Grand Cape Mount');
@@ -549,8 +549,8 @@ $(document).ready(function() {
                     $('#left_instruct').hide();
                     $('.info_bar_left > .info_image').css({
                         'background-image': 'url("img/len-4.jpeg")',
-                        'width': '425px',
-                        'height': '330px'
+                        'width': '375px',
+                        'height': '290px'
                     });
                     $('.info_bar_left > .info_content > .info_content_title').html("Cece Lendeh's House");
                     $('.info_bar_left > .info_content > .info_content_wrap').html("Traveling across the Atlantic ocean and being able to see where my Mother was raised anchors me. Liberia went through fifteen years or uncivil war and having the opportunity to hear stories from survivors who knew my grandmother and mother as a child helps me understand parts of myself. ");
@@ -568,8 +568,8 @@ $(document).ready(function() {
                     $('#right_instruct').hide();
                     $('.info_bar_right > .info_image').css({
                         'background-image': 'url("img/len-4.jpeg")',
-                        'width': '425px',
-                        'height': '330px'
+                        'width': '375px',
+                        'height': '290px'
                     });
                     $('.info_bar_right > .info_content > .info_content_title').html("Cece Lendeh's House");
                     $('.info_bar_right > .info_content > .info_content_wrap').html("Traveling across the Atlantic ocean and being able to see where my Mother was raised anchors me. Liberia went through fifteen years or uncivil war and having the opportunity to hear stories from survivors who knew my grandmother and mother as a child helps me understand parts of myself. ");
@@ -636,8 +636,8 @@ $(document).ready(function() {
                     $('#left_instruct').hide();
                     $('.info_bar_left > .info_image').css({
                         "background-image": 'url("img/len-5.jpeg")',
-                        'width': '425px',
-                        'height': '280px'
+                        'width': '375px',
+                        'height': '245px'
                     });
                     $('.info_bar_left > .info_content > .info_content_title').html("Space Between");
                     $('.info_bar_left > .info_content > .info_content_wrap').html("This image was taken in 2004, six months after the uncivil war ended. I was traveling to the airport and on several occasions was afraid to take pictures.");
@@ -655,8 +655,8 @@ $(document).ready(function() {
                     $('#right_instruct').hide();
                     $('.info_bar_right > .info_image').css({
                         "background-image": 'url("img/len-5.jpeg")',
-                        'width': '425px',
-                        'height': '280px'
+                        'width': '375px',
+                        'height': '245px'
                     });
                     $('.info_bar_right > .info_content > .info_content_title').html("Space Between");
                     $('.info_bar_right > .info_content > .info_content_wrap').html("This image was taken in 2004, six months after the uncivil war ended. I was traveling to the airport and on several occasions was afraid to take pictures.");
@@ -723,8 +723,8 @@ $(document).ready(function() {
                     $('#left_instruct').hide();
                     $('.info_bar_left > .info_image').css({
                         'background-image' : 'url("img/ange-1.png")',
-                        'width': '425px',
-                        'height' : '300px'
+                        'width': '375px',
+                        'height' : '265px'
                     });
                     $('.info_bar_left > .info_content > .info_content_title').html("Image Title");
                     $('.info_bar_left > .info_content > .info_content_wrap').html("This is where the information about the magnified object would display.");
@@ -742,8 +742,8 @@ $(document).ready(function() {
                     $('#right_instruct').hide();
                     $('.info_bar_right > .info_image').css({
                         'background-image' : 'url("img/ange-1.png")',
-                        'width': '425px',
-                        'height' : '300px'
+                        'width': '375px',
+                        'height' : '265px'
                     });
                     $('.info_bar_right > .info_content > .info_content_title').html("Image Title");
                     $('.info_bar_right > .info_content > .info_content_wrap').html("This is where the information about the magnified object would display.");
@@ -803,8 +803,8 @@ $(document).ready(function() {
                     $('#left_instruct').hide();
                     $('.info_bar_left > .info_image').css({
                         'background-image' : 'url("img/ange-2.png")',
-                        'width': '425px',
-                        'height' : '450px'
+                        'width': '375px',
+                        'height' : '400px'
                     });
                     $('.info_bar_left > .info_content > .info_content_title').html("Image Title");
                     $('.info_bar_left > .info_content > .info_content_wrap').html("This is where the information about the magnified object would display.");
@@ -816,8 +816,8 @@ $(document).ready(function() {
                     $('#right_instruct').hide();
                     $('.info_bar_right > .info_image').css({
                         'background-image' : 'url("img/ange-2.png")',
-                        'width': '425px',
-                        'height' : '450px'
+                        'width': '375px',
+                        'height' : '400px'
                     });
                     $('.info_bar_right > .info_content > .info_content_title').html("Image Title");
                     $('.info_bar_right > .info_content > .info_content_wrap').html("This is where the information about the magnified object would display.");
@@ -874,12 +874,12 @@ $(document).ready(function() {
                 case 'glass_1':
                     $('#ange_3').css('z-index', '5');
                     $('#ange_3_image').css("transform", "scale(1.2)");
-                    $('#glass_2').css("transform", "scale(2)");
+                    $('#glass_1').css("transform", "scale(2)");
                     $('#left_instruct').hide();
                     $('.info_bar_left > .info_image').css({
                         'background-image' : 'url("img/ange-3.png")',
-                        'width': '425px',
-                        'height' : '305px'
+                        'width': '375px',
+                        'height' : '355px'
                     });
                     $('.info_bar_left > .info_content > .info_content_title').html("Image Title");
                     $('.info_bar_left > .info_content > .info_content_wrap').html("This is where the information about the magnified object would display.");
@@ -891,8 +891,8 @@ $(document).ready(function() {
                     $('#right_instruct').hide();
                     $('.info_bar_right > .info_image').css({
                         'background-image' : 'url("img/ange-3.png")',
-                        'width': '425px',
-                        'height' : '305px'
+                        'width': '375px',
+                        'height' : '355px'
                     });
                     $('.info_bar_right > .info_content > .info_content_title').html("Image Title");
                     $('.info_bar_right > .info_content > .info_content_wrap').html("This is where the information about the magnified object would display.");
