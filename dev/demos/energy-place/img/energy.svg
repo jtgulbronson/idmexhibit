@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 21.0.2, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 viewBox="0 0 770 855.8" style="enable-background:new 0 0 770 855.8;" xml:space="preserve">
+<style type="text/css">
+	.st0{fill:url(#SVGID_1_);}
+	.st1{fill:url(#SVGID_2_);}
+	.st2{fill:url(#SVGID_3_);}
+</style>
+<title>Asset 1</title>
+<image style="overflow:visible;" width="354" height="717" xlink:href="../img/energy-right.png"  transform="matrix(1 0 0 1 415.0094 60.7158)">
+</image>
+<image style="overflow:visible;" width="630" height="560" xlink:href="../img/energy-bottom.png"  transform="matrix(1 0 0 1 102.9133 295.1348)">
+</image>
+<image style="overflow:visible;" width="404" height="776" xlink:href="../img/energy-left.png"  transform="matrix(1 0 0 1 1.032 -1.3694)">
+</image>
+<g>
+	<g id="Layer_2">
+		<g id="Layer_1-2">
+			<g id="Color">
+				
+					<linearGradient id="SVGID_1_" gradientUnits="userSpaceOnUse" x1="203.2197" y1="977.08" x2="203.2197" y2="213.25" gradientTransform="matrix(1 0 0 1 0 -192.93)">
+					<stop  offset="0" style="stop-color:${energy.colors[0]}"/>
+					<stop  offset="1" style="stop-color:${energy.colors[1]}"/>
+				</linearGradient>
+				<path class="st0" d="M246.7,753.6c0,0-7.1,9.5-11.3,11.4c-3.3,1.7-9.5,13.6-23.3,8.9c-13.5-5.6-55.3-31.8-55.3-31.8l-58.1-29.9
+					c0,0-41.2-23.8-47-32.1S42,667,34,633.5C26,600.2,7,511,7,511s-12.5-77.8,9.3-138.5c18.2-50.7,41-123.4,124.4-214.8
+					c73.5-80.7,121-123.5,121-123.5v-5.3c0,0,21-21.9,41.3-20.7c14.8-2.6,48.9-4.4,51.8-7s31.5,0.9,33.4,8.6s10.2,50.8,11.1,63.9
+					s3.7,84.6,3.7,84.6v72.2l-3.7,78.2l-7.6,85.2c0,0-6.9,65.1-8.2,66.3c-0.7,4.1-16.1,83.4-24.3,95.4c-3.1,8.1-20.4,52.7-24.7,59.9
+					c-3.2,6.5-36.6,71.2-41,75.5C289.4,697.9,258,742.1,246.7,753.6z"/>
+			</g>
+		</g>
+		<g id="Layer_3">
+			<g id="Color3">
+				
+					<linearGradient id="SVGID_2_" gradientUnits="userSpaceOnUse" x1="-73.7667" y1="974.0126" x2="-73.7667" y2="253.1626" gradientTransform="matrix(-0.92 0.6 0.53 0.82 70.62 96.58)">
+					<stop  offset="0" style="stop-color:${energy.colors[1]}"/>
+					<stop  offset="1" style="stop-color:${energy.colors[2]}"/>
+				</linearGradient>
+				<path class="st1" d="M601.2,851.5c0,0,11,3.3,15.5,2.5c3.7-0.5,15.1,5.2,24.8-6.2c9-12,32.3-55.8,32.3-55.8l35.7-55.9
+					c0,0,24-41.6,24.9-51.3s1.8-15.7-8-46.2c-9.7-30.3-37.7-110-37.7-110s-28-67.3-77.3-102c-41.2-29-97.4-72.5-215.7-96.4
+					c-104.4-21.1-167.2-27.6-167.2-27.6l-2.6-4.1c0,0-29.3-5.1-46.3,7.2c-14.2,6.3-44.8,24.1-48.6,23.8c-3.8-0.4-27,18.4-24.7,25.5
+					s16.5,45.1,22.2,55.7s39.1,67.6,39.1,67.6l36.1,55.8l42.3,58.5l49.3,61.7c0,0,38.6,46.5,40.3,46.7c2.7,2.8,55.7,55.6,68.9,60.2
+					c6.8,4.5,44.1,29.3,51.4,32.5c6,3.2,67.4,34.5,73.4,35.4C536.2,832.3,585.6,849,601.2,851.5z"/>
+			</g>
+		</g>
+		<g id="Layer_4">
+			<g id="Color2">
+				
+					<linearGradient id="SVGID_3_" gradientUnits="userSpaceOnUse" x1="218.5785" y1="767.1669" x2="218.5785" y2="68.5269" gradientTransform="matrix(-0.94 0.34 -0.34 -0.94 948.15 699.68)">
+					<stop  offset="0" style="stop-color:${energy.colors[2]}"/>
+					<stop  offset="1" style="stop-color:${energy.colors[3]}"/>
+				</linearGradient>
+				<path class="st2" d="M455,89.9c0,0,3.2-10.4,6.2-13.3c2.3-2.5,4-14.6,17.4-14.9C492,62.4,536,72.2,536,72.2l59.3,7.9
+					c0,0,42.8,7.8,50.3,13.2s12.4,8.5,29.6,34.9c17.1,26.2,60.8,97.3,60.8,97.3s34.7,63.2,34.5,122.2
+					c-0.2,49.3,2.5,118.9-41.2,223.3C690.8,663,663,714.5,663,714.5l1.6,4.5c0,0-11.4,25.3-29.2,30.5c-11.9,6.8-40.8,18.8-42.5,21.9
+					s-27.4,8.9-31.4,2.8s-24.4-40.7-29.2-51.6s-29.1-71.7-29.1-71.7L481,588.7l-20.8-68.5l-19.6-75.8c0,0-14-58.2-13.3-59.7
+					c-0.7-3.8-11.8-76.8-8.4-89.7c0.2-8,1.4-51.6,2.9-59.2c0.7-6.6,9.7-72.5,12.1-77.6C435.4,151.1,448.9,103.3,455,89.9z"/>
+			</g>
+		</g>
+	</g>
+</g>
+</svg>
