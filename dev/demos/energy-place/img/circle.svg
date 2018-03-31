@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="13.78" height="13.78" viewBox="0 0 13.78 13.78">
+  <defs>
+    <style>
+      .\30 2565e62-631d-4d5e-8c29-f814184dc1c5 {
+        fill: #fff;
+        opacity: 0.6;
+      }
+    </style>
+  </defs>
+  <title>circle</title>
+  <g id="2ccb77d6-cd3c-4660-a557-88711d7578f6" data-name="Layer 2">
+    <g id="4ef76696-f96f-4983-bfda-dd9f84cd73b2" data-name="Layer 1">
+      <path class="02565e62-631d-4d5e-8c29-f814184dc1c5" d="M6.89,13.78a6.89,6.89,0,1,1,6.89-6.89A6.9,6.9,0,0,1,6.89,13.78ZM6.89,4A2.89,2.89,0,1,0,9.78,6.89,2.89,2.89,0,0,0,6.89,4Z"/>
+    </g>
+  </g>
+</svg>

@@ -1,0 +1,14 @@
+{
+  "name": "energy-place",
+  "version": "1.0.0",
+  "description": "energy place for svg canvas",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "svg-to-canvas": "^1.0.1"
+  }
+}

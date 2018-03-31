@@ -1,0 +1,264 @@
+body {
+    /* background-color: #151d22; */
+    background-color: #000;
+    display: flex;
+    flex-direction: row;
+    overflow: hidden;
+}
+
+.meditate {
+    position: absolute;
+    bottom: 50px;
+    left: 120px;
+    width: 100px;
+    height: 50px;
+    color: #f7f7f7;
+    background-color: rgba(0, 0, 0, 0);
+    border: solid #f7f7f7;
+    cursor: pointer;
+    z-index: 10;
+}
+
+.svg {
+    width: 100px;
+    height: 100px;
+    /* margin-left: 20px;
+    margin-top: 20px; */
+    opacity: .7;
+    z-index: 5;
+}
+
+.st1,
+.st0,
+.st2 {
+    isolation: isolate;
+}
+
+#en-one {
+    animation: rotation 1.75s infinite alternate ease-in-out;
+}
+
+#Color {
+    mix-blend-mode: color;
+    fill: url(#linear-gradient);
+}
+
+@keyframes rotation {
+    0% {
+        -webkit-transform: rotate(0deg) scale(.96);
+    }
+    100% {
+        -webkit-transform: rotate(-4deg) scale(1);
+    }
+}
+
+#Color2 {
+    mix-blend-mode: color;
+    fill: url(#linear-gradient-2);
+}
+
+#en-two {
+    animation: rotationTwo 2.25s infinite alternate ease-in-out;
+}
+
+@keyframes rotationTwo {
+    0% {
+        -webkit-transform: rotate(0deg) scale(1);
+    }
+    100% {
+        -webkit-transform: rotate(6deg) scale(.96);
+    }
+}
+
+#Color3 {
+    mix-blend-mode: color;
+    fill: url(#linear-gradient-3);
+}
+
+#en-three {
+    animation: rotationThree 2.75s infinite alternate ease-in-out;
+}
+
+@keyframes rotationThree {
+    0% {
+        -webkit-transform: rotate(0deg) scale(1);
+    }
+    100% {
+        -webkit-transform: rotate(4deg) scale(.96);
+    }
+}
+
+.dance {
+    position: absolute;
+    bottom: 50px;
+    right: 120px;
+    width: 100px;
+    height: 50px;
+    color: #f7f7f7;
+    background-color: rgba(0, 0, 0, 0);
+    border: 3px solid #f7f7f7;
+    cursor: pointer;
+    z-index: 10;
+}
+
+.dancesvg {
+    width: 200px;
+    height: 300px;
+    z-index: 5;
+}
+.d-lines {
+    fill: none;
+    stroke: url(#grad);
+    stroke-miterlimit: 20;
+    stroke-width: 2px;
+    opacity: 1;
+    stroke-dasharray: 165;
+    stroke-dashoffset: 0;
+    animation: draw 8s linear infinite;
+}
+
+@keyframes draw {
+    to {
+        stroke-dashoffset: 1649;
+    }
+}
+
+.d-one {
+    animation-delay: 50ms;
+    stroke-width: 1px;
+}
+
+.d-two {
+    animation-delay: 100ms;
+    stroke-width: 1px;
+}
+
+.d-three {
+    animation-delay: 150ms;
+    stroke-width: 1px;
+}
+
+.d-four {
+    animation-delay: 200ms;
+    stroke-width: 1px;
+}
+
+.d-five {
+    animation-delay: 250ms;
+    stroke-width: 1px;
+}
+
+.d-six {
+    animation-delay: 300ms;
+    stroke-width: 1px;
+}
+
+.explore {
+    position: absolute;
+    bottom: 50px;
+    right: 45%;
+    width: 100px;
+    height: 50px;
+    color: #f7f7f7;
+    background-color: rgba(0, 0, 0, 0);
+    border: 3px solid #f7f7f7;
+    cursor: pointer;
+    z-index: 10;
+}
+
+.exploresvg {
+    width: 100px;
+    height: 200px;
+    z-index: 5;
+}
+
+.explore-el {
+    fill: none;
+    stroke-width: 2px;
+    opacity: 0;
+    animation: explore .75s ease-in-out forwards infinite;
+}
+
+@keyframes explore {
+    0% {
+        opacity: 0;
+    }
+    25% {
+        opacity: .5;
+    }
+    50% {
+        opacity: 1;
+    }
+    75% {
+        opacity: .5;
+    }
+    100% {
+        opacity: 0;
+    }
+}
+
+.e-one {
+    animation-delay: .75s;
+}
+
+.e-two {
+    animation-delay: .55s;
+}
+
+.e-three {
+    animation-delay: .35s;
+}
+
+.e-four {
+    animation-delay: .15s
+}
+
+.e-five {
+    animation-delay: .15s
+}
+
+.e-six {
+    animation-delay: .35s;
+}
+
+.e-seven {
+    animation-delay: .55s;
+}
+
+.e-eight {
+    animation-delay: .75s;
+}
+
+.explore-path {
+    fill: none;
+    stroke-linecap: round;
+    stroke-miterlimit: 10;
+    stroke-width: 2px;
+}
+
+.circle {
+    width: 50px;
+    height: 50px;
+    z-index: 1;
+}
+
+.line {
+    width: 20px;
+    height: 20px;
+    z-index: 1;
+    transform: rotate(0);
+}
+
+#centerAnim {
+    background: url('img/center-energy.gif');
+    background-repeat: no-repeat;
+    background-position: center;
+    position: absolute;
+    display: block;
+    opacity: .5;
+    top: 20%;
+    left: 30%;
+    width: 500px;
+    height: 500px;
+    transform: scale(2);
+}
