@@ -129,8 +129,8 @@ $(document).ready(function() {
     //connecting to the output
     analyser_L.connect(context.destination);
     analyser_R.connect(context.destination);
-	panNode_L.connect(context.destination);
-    panNode_R.connect(context.destination);
+	panNode.connect(context.destination);
+    // panNode_R.connect(context.destination);
     /////////////////////////////////////
     // Drag and Drop
     ////////////////////////////////////
@@ -282,10 +282,10 @@ $(document).ready(function() {
                     $('#glass_1').css("transform", "scale(2)");
                     $('#left_instruct').hide();
                     $('.info_bar_left > .info_image').css({
-						"background-image": 'url("img/len-2.jpeg")',
-                        'width': '425px',
-                        'height': '330px'
-					});
+                        "background-image": 'url("img/len-2.jpeg")',
+                        'width': '400px',
+                        'height': '307px'
+                    });
 
                     $('.info_bar_left > .info_content > .info_content_title').html("Space Between");
                     $('.info_bar_left > .info_content > .info_content_wrap').html("I have so many images from Robertsport, the capital of Grand Cape Mount in Liberia; however, I love the capturing people in their daily routines unbothered by a curious transnational.");
@@ -303,8 +303,8 @@ $(document).ready(function() {
                     $('#right_instruct').hide();
                     $('.info_bar_right > .info_image').css({
                         "background-image": 'url("img/len-2.jpeg")',
-                        'width': '425px',
-                        'height': '330px'
+                        'width': '400px',
+                        'height': '307px'
                     });
                     $('.info_bar_right > .info_content > .info_content_title').html("Space Between");
                     $('.info_bar_right > .info_content > .info_content_wrap').html("I have so many images from Robertsport, the capital of Grand Cape Mount in Liberia; however, I love the capturing people in their daily routines unbothered by a curious transnational.");
@@ -458,8 +458,8 @@ $(document).ready(function() {
                     $('#left_instruct').hide();
                     $('.info_bar_left > .info_image').css({
                         'background-image' : 'url("img/len-8.jpeg")',
-                        'width' : '425px',
-                        'height' : '330px'
+                        'width' : '400px',
+                        'height' : '307px'
                     });
                     $('.info_bar_left > .info_content > .info_content_title').html("Uptown");
                     $('.info_bar_left > .info_content > .info_content_subtitle').html('Robertsport, Grand Cape Mount');
@@ -478,8 +478,8 @@ $(document).ready(function() {
                     $('#right_instruct').hide();
                     $('.info_bar_right > .info_image').css({
                         'background-image' : 'url("img/len-8.jpeg")',
-                        'width' : '425px',
-                        'height' : '330px'
+                        'width' : '400px',
+                        'height' : '307px'
                     });
                     $('.info_bar_right > .info_content > .info_content_title').html("Uptown");
                     $('.info_bar_right > .info_content > .info_content_subtitle').html('Robertsport, Grand Cape Mount');
@@ -549,8 +549,8 @@ $(document).ready(function() {
                     $('#left_instruct').hide();
                     $('.info_bar_left > .info_image').css({
                         'background-image': 'url("img/len-4.jpeg")',
-                        'width': '425px',
-                        'height': '330px'
+                        'width': '400px',
+                        'height': '307px'
                     });
                     $('.info_bar_left > .info_content > .info_content_title').html("Cece Lendeh's House");
                     $('.info_bar_left > .info_content > .info_content_wrap').html("Traveling across the Atlantic ocean and being able to see where my Mother was raised anchors me. Liberia went through fifteen years or uncivil war and having the opportunity to hear stories from survivors who knew my grandmother and mother as a child helps me understand parts of myself. ");
@@ -568,8 +568,8 @@ $(document).ready(function() {
                     $('#right_instruct').hide();
                     $('.info_bar_right > .info_image').css({
                         'background-image': 'url("img/len-4.jpeg")',
-                        'width': '425px',
-                        'height': '330px'
+                        'width': '400px',
+                        'height': '307px'
                     });
                     $('.info_bar_right > .info_content > .info_content_title').html("Cece Lendeh's House");
                     $('.info_bar_right > .info_content > .info_content_wrap').html("Traveling across the Atlantic ocean and being able to see where my Mother was raised anchors me. Liberia went through fifteen years or uncivil war and having the opportunity to hear stories from survivors who knew my grandmother and mother as a child helps me understand parts of myself. ");
@@ -609,7 +609,7 @@ $(document).ready(function() {
         }
     });
 
-    //diver element interaction
+    //len car black and white
     // enable draggables to be dropped into this
     interact('#len_5').dropzone({
         // only accept elements matching this CSS selector
@@ -636,8 +636,8 @@ $(document).ready(function() {
                     $('#left_instruct').hide();
                     $('.info_bar_left > .info_image').css({
                         "background-image": 'url("img/len-5.jpeg")',
-                        'width': '425px',
-                        'height': '280px'
+                        'width': '400px',
+                        'height': '260px'
                     });
                     $('.info_bar_left > .info_content > .info_content_title').html("Space Between");
                     $('.info_bar_left > .info_content > .info_content_wrap').html("This image was taken in 2004, six months after the uncivil war ended. I was traveling to the airport and on several occasions was afraid to take pictures.");
@@ -655,8 +655,8 @@ $(document).ready(function() {
                     $('#right_instruct').hide();
                     $('.info_bar_right > .info_image').css({
                         "background-image": 'url("img/len-5.jpeg")',
-                        'width': '425px',
-                        'height': '280px'
+                        'width': '400px',
+                        'height': '260px'
                     });
                     $('.info_bar_right > .info_content > .info_content_title').html("Space Between");
                     $('.info_bar_right > .info_content > .info_content_wrap').html("This image was taken in 2004, six months after the uncivil war ended. I was traveling to the airport and on several occasions was afraid to take pictures.");
@@ -723,8 +723,8 @@ $(document).ready(function() {
                     $('#left_instruct').hide();
                     $('.info_bar_left > .info_image').css({
                         'background-image' : 'url("img/ange-1.png")',
-                        'width': '425px',
-                        'height' : '300px'
+                        'width': '400px',
+                        'height' : '278px'
                     });
                     $('.info_bar_left > .info_content > .info_content_title').html("Image Title");
                     $('.info_bar_left > .info_content > .info_content_wrap').html("This is where the information about the magnified object would display.");
@@ -742,8 +742,8 @@ $(document).ready(function() {
                     $('#right_instruct').hide();
                     $('.info_bar_right > .info_image').css({
                         'background-image' : 'url("img/ange-1.png")',
-                        'width': '425px',
-                        'height' : '300px'
+                        'width': '400px',
+                        'height' : '278px'
                     });
                     $('.info_bar_right > .info_content > .info_content_title').html("Image Title");
                     $('.info_bar_right > .info_content > .info_content_wrap').html("This is where the information about the magnified object would display.");
@@ -803,7 +803,7 @@ $(document).ready(function() {
                     $('#left_instruct').hide();
                     $('.info_bar_left > .info_image').css({
                         'background-image' : 'url("img/ange-2.png")',
-                        'width': '425px',
+                        'width': '400px',
                         'height' : '450px'
                     });
                     $('.info_bar_left > .info_content > .info_content_title').html("Image Title");
@@ -816,7 +816,7 @@ $(document).ready(function() {
                     $('#right_instruct').hide();
                     $('.info_bar_right > .info_image').css({
                         'background-image' : 'url("img/ange-2.png")',
-                        'width': '425px',
+                        'width': '400px',
                         'height' : '450px'
                     });
                     $('.info_bar_right > .info_content > .info_content_title').html("Image Title");
@@ -874,12 +874,12 @@ $(document).ready(function() {
                 case 'glass_1':
                     $('#ange_3').css('z-index', '5');
                     $('#ange_3_image').css("transform", "scale(1.2)");
-                    $('#glass_2').css("transform", "scale(2)");
+                    $('#glass_1').css("transform", "scale(2)");
                     $('#left_instruct').hide();
                     $('.info_bar_left > .info_image').css({
                         'background-image' : 'url("img/ange-3.png")',
-                        'width': '425px',
-                        'height' : '305px'
+                        'width': '400px',
+                        'height' : '287px'
                     });
                     $('.info_bar_left > .info_content > .info_content_title').html("Image Title");
                     $('.info_bar_left > .info_content > .info_content_wrap').html("This is where the information about the magnified object would display.");
@@ -891,8 +891,8 @@ $(document).ready(function() {
                     $('#right_instruct').hide();
                     $('.info_bar_right > .info_image').css({
                         'background-image' : 'url("img/ange-3.png")',
-                        'width': '425px',
-                        'height' : '305px'
+                        'width': '400px',
+                        'height' : '287px'
                     });
                     $('.info_bar_right > .info_content > .info_content_title').html("Image Title");
                     $('.info_bar_right > .info_content > .info_content_wrap').html("This is where the information about the magnified object would display.");
@@ -932,20 +932,171 @@ $(document).ready(function() {
         }
     });
 
-    //Browser Idle Refresh
 
-    var time = new Date().getTime();
-    $(document.body).bind("touchmove mousemove keypress", function(e) {
-        time = new Date().getTime();
+    //lettering
+    // enable draggables to be dropped into this
+    interact('#ange_4').dropzone({
+        // only accept elements matching this CSS selector
+        accept: '.magnify_glass',
+        // Require a 75% element overlap for a drop to be possible
+        overlap: 0.25,
+        ondragenter: function(event) {
+            var draggableElement = event.relatedTarget,
+                dropzoneElement = event.target;
+            draggableElement.classList.add('dropped-element');
+            draggableElement.classList.remove('removed-element');
+            var glass = draggableElement.getAttribute('id');
+            switch (glass) {
+                case 'glass_1':
+                    $('#ange_4').css('z-index', '5');
+                    $('#ange_4_image').css("transform", "scale(1.2)");
+                    $('#glass_1').css("transform", "scale(2)");
+                    $('#left_instruct').hide();
+                    $('.info_bar_left > .info_image').css({
+                        'background-image' : 'url("img/ange-3.png")',
+                        'width': '400px',
+                        'height' : '287px'
+                    });
+                    $('.info_bar_left > .info_content > .info_content_title').html("Image Title");
+                    $('.info_bar_left > .info_content > .info_content_wrap').html("This is where the information about the magnified object would display.");
+                    break;
+                case 'glass_2':
+                    $('#ange_4').css('z-index', '5');
+                    $('#ange_4_image').css("transform", "scale(1.2)");
+                    $('#glass_2').css("transform", "scale(2)");
+                    $('#right_instruct').hide();
+                    $('.info_bar_right > .info_image').css({
+                        'background-image' : 'url("img/ange-3.png")',
+                        'width': '400px',
+                        'height' : '287px'
+                    });
+                    $('.info_bar_right > .info_content > .info_content_title').html("Image Title");
+                    $('.info_bar_right > .info_content > .info_content_wrap').html("This is where the information about the magnified object would display.");
+                    break;
+            }
+        },
+        ondragleave: function(event) {
+            var draggableElement = event.relatedTarget,
+                dropzoneElement = event.target;
+            draggableElement.classList.add('removed-element');
+            draggableElement.classList.remove('dropped-element');
+            var glass = draggableElement.getAttribute('id');
+            switch (glass) {
+                case 'glass_1':
+                    audio_ange_1_L.pause();
+                    audio_ange_1_L.currentTime = 0;
+                    $('#ange_4').css('z-index', '1');
+                    $('#ange_4_image').css("transform", "scale(1)");
+                    $('#glass_1').css("transform", "scale(1)");
+                    $('#left_instruct').show();
+                    $('.info_bar_left > .info_image').css('background-image', 'none');
+                    $('.info_bar_left > .info_content > .info_content_title').html("");
+                    $('.info_bar_left > .info_content > .info_content_wrap').html("");
+                    break;
+                case 'glass_2':
+                    audio_ange_1_R.pause();
+                    audio_ange_1_R.currentTime = 0;
+                    $('#ange_4').css('z-index', '1');
+                    $('#ange_4_image').css("transform", "scale(1)");
+                    $('#glass_2').css("transform", "scale(1)");
+                    $('#right_instruct').show();
+                    $('.info_bar_right > .info_image').css('background-image', 'none');
+                    $('.info_bar_right > .info_content > .info_content_title').html("");
+                    $('.info_bar_right > .info_content > .info_content_wrap').html("");
+                    break;
+            }
+        }
     });
 
-    function refresh() {
-        if (new Date().getTime() - time >= 120000)
-            window.location.reload(true);
-        else
-            setTimeout(refresh, 20000);
-    }
+    //stitching
+    // enable draggables to be dropped into this
+    interact('#ange_5').dropzone({
+        // only accept elements matching this CSS selector
+        accept: '.magnify_glass',
+        // Require a 75% element overlap for a drop to be possible
+        overlap: 0.25,
+        ondragenter: function(event) {
+            var draggableElement = event.relatedTarget,
+                dropzoneElement = event.target;
+            draggableElement.classList.add('dropped-element');
+            draggableElement.classList.remove('removed-element');
+            var glass = draggableElement.getAttribute('id');
+            switch (glass) {
+                case 'glass_1':
+                    $('#ange_5').css('z-index', '5');
+                    $('#ange_5_image').css("transform", "scale(1.2)");
+                    $('#glass_1').css("transform", "scale(2)");
+                    $('#left_instruct').hide();
+                    $('.info_bar_left > .info_image').css({
+                        'background-image' : 'url("img/ange-3.png")',
+                        'width': '400px',
+                        'height' : '287px'
+                    });
+                    $('.info_bar_left > .info_content > .info_content_title').html("Image Title");
+                    $('.info_bar_left > .info_content > .info_content_wrap').html("This is where the information about the magnified object would display.");
+                    break;
+                case 'glass_2':
+                    $('#ange_5').css('z-index', '5');
+                    $('#ange_5_image').css("transform", "scale(1.2)");
+                    $('#glass_2').css("transform", "scale(2)");
+                    $('#right_instruct').hide();
+                    $('.info_bar_right > .info_image').css({
+                        'background-image' : 'url("img/ange-3.png")',
+                        'width': '400px',
+                        'height' : '287px'
+                    });
+                    $('.info_bar_right > .info_content > .info_content_title').html("Image Title");
+                    $('.info_bar_right > .info_content > .info_content_wrap').html("This is where the information about the magnified object would display.");
+                    break;
+            }
+        },
+        ondragleave: function(event) {
+            var draggableElement = event.relatedTarget,
+                dropzoneElement = event.target;
+            draggableElement.classList.add('removed-element');
+            draggableElement.classList.remove('dropped-element');
+            var glass = draggableElement.getAttribute('id');
+            switch (glass) {
+                case 'glass_1':
+                    audio_ange_1_L.pause();
+                    audio_ange_1_L.currentTime = 0;
+                    $('#ange_5').css('z-index', '1');
+                    $('#ange_5_image').css("transform", "scale(1)");
+                    $('#glass_1').css("transform", "scale(1)");
+                    $('#left_instruct').show();
+                    $('.info_bar_left > .info_image').css('background-image', 'none');
+                    $('.info_bar_left > .info_content > .info_content_title').html("");
+                    $('.info_bar_left > .info_content > .info_content_wrap').html("");
+                    break;
+                case 'glass_2':
+                    audio_ange_1_R.pause();
+                    audio_ange_1_R.currentTime = 0;
+                    $('#ange_5').css('z-index', '1');
+                    $('#ange_5_image').css("transform", "scale(1)");
+                    $('#glass_2').css("transform", "scale(1)");
+                    $('#right_instruct').show();
+                    $('.info_bar_right > .info_image').css('background-image', 'none');
+                    $('.info_bar_right > .info_content > .info_content_title').html("");
+                    $('.info_bar_right > .info_content > .info_content_wrap').html("");
+                    break;
+            }
+        }
+    });
 
-    setTimeout(refresh, 20000);
+    //Browser Idle Refresh
+	//
+    // var time = new Date().getTime();
+    // $(document.body).bind("touchmove mousemove keypress", function(e) {
+    //     time = new Date().getTime();
+    // });
+	//
+    // function refresh() {
+    //     if (new Date().getTime() - time >= 120000)
+    //         window.location.reload(true);
+    //     else
+    //         setTimeout(refresh, 20000);
+    // }
+	//
+    // setTimeout(refresh, 20000);
 
 }); //do not lose this closing bracket - unless you like breaking everything for fun

@@ -1,4 +1,6 @@
-@import 'var.scss'; ///////////////////////////////////////////////
+//import of color and font variables
+@import 'var.scss';
+///////////////////////////////////////////////
 //Base styles
 ///////////////////////////////////////////////
 
@@ -21,17 +23,14 @@ body {
     height: 100vh;
     overflow: hidden;
     background-color: $foreground;
-    background-image: url('../img/bg-with-leaves.jpg');
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center;
+
 }
 
 .collage_bg {
     position: relative;
     top: 0;
-    left: 15vw;
-    width: 70vw;
+    left: 0;
+    width: 100vw;
     height: 100vh;
     overflow: hidden;
     background-color: $foreground;
@@ -47,7 +46,7 @@ body {
 .side_panel {
     position: relative;
     height: 80vh;
-    width: 425px;
+    width: 400px;
     margin-top: 8vh;
     z-index: 15;
     background-color: $foreground;
@@ -57,18 +56,24 @@ body {
 }
 
 .color_code {
-    width: 450px;
-    height: 40vh;
+    width: 350px;
+    height: 10vh;
     position: absolute;
     z-index: 14;
     -webkit-box-shadow: 4px 4px 10px 0 rgba(0,0,0,0.7);
     -moz-box-shadow: 4px 4px 10px 0 rgba(0,0,0,0.7);
     box-shadow: 4px 4px 10px 0 rgba(0,0,0,0.7);
+    &.red{
+        background-color: $rouge;
+    }
+    &.green{
+        background-color: $forest;
+    }
 }
 
 .initial_content {
     position: absolute;
-    width: 425px;
+    width: 400px;
     height: 100%;
 
     .initial-dots {
@@ -96,7 +101,7 @@ body {
     }
 
     .content-wrap {
-        padding: 40px;
+        padding: 60px;
         position: absolute;
         top: 50%;
         transform: translateY(-50%);
@@ -118,17 +123,16 @@ body {
 ///////////////////////////////////////////////
 //Specific Background Element styles
 ///////////////////////////////////////////////
-//
+
+#right_instruct {
+    .title {
+        color: $forest;
+    }
+}
 
 #left_instruct {
     .title {
         color: $rouge;
-    }
-}
-
-#right_instruct {
-    .title {
-        color: $blue;
     }
 }
 
@@ -144,16 +148,25 @@ body {
     right: 0;
 }
 
-#code_red {
-    background-color: $rouge;
-    left: 0;
-    top: 30vh;
+#code_green_one {
+    right: -160px;
+    top: 35px;
 }
 
-#code_blue {
-    background-color: $blue;
-    right: 0;
-    top: 30vh;
+
+#code_green_two{
+    right: 0px;
+    bottom: 85px;
+}
+
+#code_red_one {
+    left: 75px;
+    top: 65px;
+}
+
+#code_red_two {
+    left: 0px;
+    bottom: 100px;
 }
 ///////////////////////////////////////////////
 //User Magnifying glass Styles
@@ -169,28 +182,28 @@ body {
     box-shadow: 0 0 7px 2px rgba(0, 0, 0, 0.25), inset 0 0 40px 2px rgba(0, 0, 0, 0.25);
 }
 
-#glass_1 {
+#glass_2 {
     background: transparent;
     position: absolute;
-    top: 650px;
-    left: 295px;
+    top: 750px;
+    left: 1720px;
     -webkit-transform-origin: center;
     transform-origin: center;
     border-radius: 50%;
-    border: solid $rouge 6px;
+    border: solid $forest 10px;
     color: white;
     transition: transform 0.25s ease;
 }
 
-#glass_2 {
+#glass_1 {
     background: transparent;
     position: absolute;
-    top: 650px;
-    left: 1770px;
+    top: 750px;
+    left: 340px;
     -webkit-transform-origin: center;
     transform-origin: center;
     border-radius: 50%;
-    border: solid $blue 6px;
+    border: solid $rouge 10px;
     color: black;
     transition: transform 0.25s ease;
 }
@@ -203,7 +216,7 @@ body {
     position: absolute;
     top: 0px;
     left: 0;
-    width: 425px;
+    width: 400px;
     height: 100%;
 
     .info_image {
@@ -217,13 +230,13 @@ body {
     }
 
     .info_content {
-        width: 350px;
+        width: 320px;
         display: block;
         text-align: left;
         padding: 30px 40px;
         line-height: 30px;
         position: absolute;
-        top:475px;
+        top:500px;
 
         .info_content_wrap {
             font-size: 14px;
@@ -255,7 +268,7 @@ body {
     position: absolute;
     top: 0px;
     left: 0;
-    width: 425px;
+    width: 400px;
     height: 100%;
 
     .info_image {
@@ -269,13 +282,13 @@ body {
     }
 
     .info_content {
-        width: 350px;
+        width: 325px;
         display: block;
         text-align: left;
-        padding: 30px 40px;
+        padding: 30px 25px;
         line-height: 30px;
         position: absolute;
-        top:475px;
+        top:500px;
 
         .info_content_wrap {
             font-size: 14px;
@@ -284,7 +297,7 @@ body {
 
         .info_content_title {
             font-size: 2rem;
-            color: $blue;
+            color: $forest;
             padding: 40px 0 0;
             font-weight: bold;
             font-family: $kepler;
@@ -293,7 +306,7 @@ body {
 
         .info_content_subtitle {
             font-size: 1.25rem;
-            color: $blue;
+            color: $forest;
             padding: 0;
             font-weight: bold;
             font-family: $kepler;
@@ -302,15 +315,15 @@ body {
     }
 }
 ///////////////////////////////////////////////
-//Len 1 Element
+//Len 1 Element color portrait in black and red dress
 ///////////////////////////////////////////////
 
 #len_1 {
     position: absolute;
-    width: 200px;
-    height: 300px;
-    bottom: 0;
-    left: 1175px;
+    width: 232px;
+    height: 350px;
+    bottom: 550px;
+    right: 614px;
     z-index: 1;
 }
 
@@ -319,20 +332,20 @@ body {
     background-size: contain;
     background-position: center;
     background-repeat: no-repeat;
-    width: 200px;
-    height: 300px;
+    width: 232px;
+    height: 350px;
     transition: transform 0.25s ease; //crops image
 }
 ///////////////////////////////////////////////
-//len 2 Element
+//len 2 Element alley between houses
 ///////////////////////////////////////////////
 
 #len_2 {
     position: absolute;
-    width: 700px;
-    height: 600px;
-    top: -115px;
-    left: 550px;
+    width: 309px;
+    height: 204px;
+    top: 0px;
+    right:355px;
     z-index: 1;
 }
 
@@ -341,20 +354,20 @@ body {
     background-size: contain;
     background-position: center;
     background-repeat: no-repeat;
-    width: 700px;
-    height: 600px;
+    width: 309px;
+    height: 204px;
     transition: transform 0.25s ease;
 }
 ///////////////////////////////////////////////
-//Len 3 Element
+//Len 3 Element monochromatic portrait
 ///////////////////////////////////////////////
 
 #len_3 {
     position: absolute;
-    width: 300px;
-    height: 350px;
-    top: 205px;
-    left: 1135px;
+    width: 250px;
+    height: 320px;
+    bottom: 0px;
+    right: 392px;
     z-index: 1;
 }
 
@@ -363,20 +376,20 @@ body {
     background-size: contain;
     background-position: center;
     background-repeat: no-repeat;
-    width: 300px;
-    height: 350px;
+    width: 250px;
+    height: 320px;
     transition: transform 0.25s ease;
 }
 ///////////////////////////////////////////////
-//len 4 Element
+//len 4 Element driveway photo with palm trees
 ///////////////////////////////////////////////
 
 #len_4 {
     position: absolute;
-    width: 445px;
-    height: 525px;
-    bottom: 0;
-    left: 700px;
+    width: 460px;
+    height: 430px;
+    bottom:125px;
+    left: 766px;
     z-index: 1;
 }
 
@@ -385,20 +398,20 @@ body {
     background-size: contain;
     background-position: center;
     background-repeat: no-repeat;
-    width: 445px;
-    height: 525px;
+    width: 460px;
+    height: 430px;
     transition: transform 0.25s ease;
 }
 ///////////////////////////////////////////////
-//len 5 Element
+//len 5 Element black and white portrait between cars
 ///////////////////////////////////////////////
 
 #len_5 {
     position: absolute;
     width: 450px;
-    height: 500px;
+    height: 187px;
     bottom: 0;
-    right: 295px;
+    right: 759px;
     z-index: 1;
 }
 
@@ -408,19 +421,19 @@ body {
     background-position: center;
     background-repeat: no-repeat;
     width: 450px;
-    height: 500px;
+    height:187px;
     transition: transform 0.25s ease;
 }
 ///////////////////////////////////////////////
-//len 8 Element
+//len 8 Element roadway with houses
 ///////////////////////////////////////////////
 
 #len_8 {
     position: absolute;
-    width: 455px;
-    height: 320px;
-    top: 245px;
-    right: 325px;
+    width: 450px;
+    height: 246px;
+    top: 158px;
+    left: 812px;
     z-index: 1;
 }
 
@@ -429,20 +442,20 @@ body {
     background-size: contain;
     background-position: center;
     background-repeat: no-repeat;
-    width: 455px;
-    height: 320px;
+    width: 450px;
+    height: 246px;
     transition: transform 0.25s ease;
 }
 ///////////////////////////////////////////////
-//Angee 1 Element
+//Angee 1 Element photo of mother and baby
 ///////////////////////////////////////////////
 
 #ange_1 {
     position: absolute;
-    width: 250px;
-    height: 200px;
-    bottom: 20px;
-    left: 450px;
+    width: 400px;
+    height: 175px;
+    top: 383px;
+    left: 942px;
     z-index: 1;
 }
 
@@ -451,19 +464,19 @@ body {
     background-size: contain;
     background-position: center;
     background-repeat: no-repeat;
-    width: 250px;
-    height: 200px;
-    transition: transform 0.25s ease; //crops image
+    width: 400px;
+    height: 175px;
+    transition: transform 0.25s ease;
 }
 ///////////////////////////////////////////////
-//Angee 2 Element
+//Angee 2 Element children sitting on tree
 ///////////////////////////////////////////////
 #ange_2 {
     position: absolute;
     width: 600px;
-    height: 500px;
-    top: 200px;
-    left: 250px;
+    height: 200px;
+    top: 250px;
+    left: 350px;
     z-index: 1;
 }
 
@@ -472,19 +485,19 @@ body {
     background-size: contain;
     background-position: center;
     background-repeat: no-repeat;
-    width: 600px;
-    height: 500px;
-    transition: transform 0.25s ease; //crops image
+    width: 500px;
+    height: 455px;
+    transition: transform 0.25s ease;
 }
 //////////////////////////////////////////////
-//Angee 2 Element
+//Ange 3 Element kiss on cheek photo
 ///////////////////////////////////////////////
 #ange_3 {
     position: absolute;
-    width: 250px;
-    height: 200px;
-    top: 50px;
-    right: 300px;
+    width: 400px;
+    height: 260px;
+    bottom: 0px;
+    left: 284px;
     z-index: 1;
 }
 
@@ -493,7 +506,51 @@ body {
     background-size: contain;
     background-position: center;
     background-repeat: no-repeat;
-    width: 250px;
-    height: 200px;
+    width: 400px;
+    height: 260px;
+    transition: transform 0.25s ease; //crops image
+}
+
+//////////////////////////////////////////////
+//Ange 4 Element
+///////////////////////////////////////////////
+#ange_4 {
+    position: absolute;
+    width: 176px;
+    height: 318px;
+    top: 0px;
+    right: 729px;
+    z-index: 1;
+}
+
+#ange_4_image {
+    background: url('../img/Ange_Sign.png');
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+    width: 176px;
+    height: 318px;
+    transition: transform 0.25s ease; //crops image
+}
+
+//////////////////////////////////////////////
+//Ange 5 Element
+///////////////////////////////////////////////
+#ange_5 {
+    position: absolute;
+    width: 200px;
+    height: 300px;
+    top: 350px;
+    right: 400px;
+    z-index: 1;
+}
+
+#ange_5_image {
+    background: url('../img/Ange_Stitch.png');
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+    width: 200px;
+    height: 300px;
     transition: transform 0.25s ease; //crops image
 }
