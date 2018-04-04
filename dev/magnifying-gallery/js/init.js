@@ -129,8 +129,8 @@ $(document).ready(function() {
     //connecting to the output
     analyser_L.connect(context.destination);
     analyser_R.connect(context.destination);
-	panNode_L.connect(context.destination);
-    panNode_R.connect(context.destination);
+	panNode.connect(context.destination);
+    // panNode_R.connect(context.destination);
     /////////////////////////////////////
     // Drag and Drop
     ////////////////////////////////////
@@ -282,10 +282,10 @@ $(document).ready(function() {
                     $('#glass_1').css("transform", "scale(2)");
                     $('#left_instruct').hide();
                     $('.info_bar_left > .info_image').css({
-						"background-image": 'url("img/len-2.jpeg")',
+                        "background-image": 'url("img/len-2.jpeg")',
                         'width': '400px',
                         'height': '307px'
-					});
+                    });
 
                     $('.info_bar_left > .info_content > .info_content_title').html("Space Between");
                     $('.info_bar_left > .info_content > .info_content_wrap').html("I have so many images from Robertsport, the capital of Grand Cape Mount in Liberia; however, I love the capturing people in their daily routines unbothered by a curious transnational.");

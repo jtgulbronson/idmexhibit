@@ -1,4 +1,6 @@
-@import 'var.scss'; ///////////////////////////////////////////////
+//import of color and font variables
+@import 'var.scss';
+///////////////////////////////////////////////
 //Base styles
 ///////////////////////////////////////////////
 
@@ -121,7 +123,6 @@ body {
 ///////////////////////////////////////////////
 //Specific Background Element styles
 ///////////////////////////////////////////////
-//
 
 #right_instruct {
     .title {
@@ -314,7 +315,7 @@ body {
     }
 }
 ///////////////////////////////////////////////
-//Len 1 Element
+//Len 1 Element color portrait in black and red dress
 ///////////////////////////////////////////////
 
 #len_1 {
@@ -336,7 +337,7 @@ body {
     transition: transform 0.25s ease; //crops image
 }
 ///////////////////////////////////////////////
-//len 2 Element
+//len 2 Element alley between houses
 ///////////////////////////////////////////////
 
 #len_2 {
@@ -358,7 +359,7 @@ body {
     transition: transform 0.25s ease;
 }
 ///////////////////////////////////////////////
-//Len 3 Element
+//Len 3 Element monochromatic portrait
 ///////////////////////////////////////////////
 
 #len_3 {
@@ -380,7 +381,7 @@ body {
     transition: transform 0.25s ease;
 }
 ///////////////////////////////////////////////
-//len 4 Element
+//len 4 Element driveway photo with palm trees
 ///////////////////////////////////////////////
 
 #len_4 {
@@ -402,7 +403,7 @@ body {
     transition: transform 0.25s ease;
 }
 ///////////////////////////////////////////////
-//len 5 Element
+//len 5 Element black and white portrait between cars
 ///////////////////////////////////////////////
 
 #len_5 {
@@ -424,7 +425,7 @@ body {
     transition: transform 0.25s ease;
 }
 ///////////////////////////////////////////////
-//len 8 Element
+//len 8 Element roadway with houses
 ///////////////////////////////////////////////
 
 #len_8 {
@@ -446,7 +447,7 @@ body {
     transition: transform 0.25s ease;
 }
 ///////////////////////////////////////////////
-//Angee 1 Element
+//Angee 1 Element photo of mother and baby
 ///////////////////////////////////////////////
 
 #ange_1 {
@@ -465,10 +466,10 @@ body {
     background-repeat: no-repeat;
     width: 400px;
     height: 175px;
-    transition: transform 0.25s ease; //crops image
+    transition: transform 0.25s ease;
 }
 ///////////////////////////////////////////////
-//Angee 2 Element
+//Angee 2 Element children sitting on tree
 ///////////////////////////////////////////////
 #ange_2 {
     position: absolute;
@@ -486,10 +487,10 @@ body {
     background-repeat: no-repeat;
     width: 500px;
     height: 455px;
-    transition: transform 0.25s ease; //crops image
+    transition: transform 0.25s ease;
 }
 //////////////////////////////////////////////
-//Ange 3 Element
+//Ange 3 Element kiss on cheek photo
 ///////////////////////////////////////////////
 #ange_3 {
     position: absolute;
