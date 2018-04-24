@@ -5,7 +5,7 @@
 	<link rel="stylesheet" href="style.css">
 	<script src="jquery-3.3.1.min.js"></script>
 	<script src="jquery.zoomooz.min.js"></script>
-	<title>Mural Interaction</title>
+	<title>Mural</title>
 </head>
 
 <body onclick="hideVid()">
@@ -14,8 +14,20 @@
 		<img src="img/mural-bg.png" alt="mural background">
 	</div>
 	
+	<div id="archway">
+		<img src="img/archway.png" alt="archway">
+	</div>
+	
+	<div id="brick">
+		<img src="img/brick-texture.png" alt="brick texture">
+	</div>
+	
+	<div id="left-imgs">
+		<img src="img/left-imgs.png" alt="left side images">
+	</div>
+	
 	<div id="paper-lantern">
-		<img src="img/paper-lantern-glow.png" alt="paper lanterns">
+		<img src="img/paper-lantern-glow.png" alt="paper lanterns" draggable="false">
 	</div>
 	
 	<!--LEFT CART-->
@@ -29,10 +41,12 @@
 		</div>
 	</div>
 <!--	add in ogg and mp4 files when finalized-->
+<!--
 	<div id="cart-L-vid">
 		<video id="left-vid" width="270" src="video/cart-right-vid.mov"></video>
 		<div class="vid-shadow"></div>
 	</div>
+-->
 	
 	<!--MIDDLE CART-->
 	<div id="cart-M-container" class="zoomTarget" onclick="displayVidM()"></div>
@@ -44,10 +58,12 @@
 			<img src="img/mid-lantern.png" alt="middle lantern">
 		</div>
 	</div>
+<!--
 	<div id="cart-M-vid">
 		<video id="mid-vid" width="265" src="video/cart-mid-vid.mov"></video>
 		<div class="vid-shadow"></div>
 	</div>
+-->
 	
 	<!--RIGHT CART-->
 	<div id="cart-R-container" class="zoomTarget" onclick="displayVidR()"></div>
@@ -59,9 +75,21 @@
 			<img src="img/right-lantern.png" alt="right lantern">
 		</div>
 	</div>
+<!--
 	<div id="cart-R-vid">
 		<video id="right-vid" width="300" src="video/cart-right-vid.mov"></video>
 		<div class="vid-shadow"></div>
+	</div>
+-->
+	
+<!--
+	<div id="posters">
+		<img src="img/posters.png" alt="posters">
+	</div>
+-->
+	
+	<div id="right-imgs">
+		<img src="img/right-imgs.png" alt="right side images">
 	</div>
 	
 	<script src="script.js"></script>

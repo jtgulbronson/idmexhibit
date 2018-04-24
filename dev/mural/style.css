@@ -1,5 +1,5 @@
 body{
-	background-color: #e2d1c1;
+	background-color: #faf0e8;
 	color: #72716E;
 	overflow: hidden;
 }
@@ -15,8 +15,6 @@ body{
   background-color: transparent;
 	color:#000;
 }
-/*CLICK AND DRAG*/
-
 
 /*MURAL*/
 #bg{
@@ -27,67 +25,122 @@ body{
 
 #bg img{
 	z-index: 1;
-	width: 74%;
+	width: 57%;
 }
+
+#archway img{
+	z-index: 2;
+	width: 100%;
+}
+
+#archway{
+	position: absolute;
+	top: -10px;
+	left: -10px;
+}
+
+#brick img{
+	z-index: 2;
+	width: 102%;
+}
+
+#brick{
+	position: absolute;
+	top: -10px;
+	left: -20px;
+}
+
+#left-imgs img{
+	z-index: 3;
+	width: 100%;
+}
+
+#left-imgs{
+	position: absolute;
+	left: -10px;
+}
+
+#right-imgs img{
+	z-index: 3;
+	width: 100%;
+}
+
+#right-imgs{
+	position: absolute;
+	top: -5px;
+	left: 50px;
+}
+
+/*
+#posters img{
+	width: 80%;
+}
+
+#posters{
+	position: absolute;
+	top: 20px;
+	left: 320px;
+}
+*/
 
 /*PAPER LANTERN ANIMATION*/
 #paper-lantern img{
-	width: 108%;
+	width: 53%;
 }
 
 #paper-lantern{
 	position: relative;
 	width: 520px;
 	height: 150px;
-	top: 250px;
-	left: 670px;
+	top: 115px;
+	left: 810px;
 	
-	-webkit-animation: flash linear .5s infinite;
-	animation: flash linear .5s infinite;
+	-webkit-animation: flash linear 1.5s infinite;
+	animation: flash linear 1.5s infinite;
 }
 
 @-webkit-keyframes flash{
 	0%{ opacity: 1; }
-	50%{ opacity: .83; }
+	50%{ opacity: .60; }
 	100%{ opacity: 1; }
 }
 @keyframes flash{
 	0%{ opacity: 1; }
-	50%{ opacity: .83; }
+	50%{ opacity: .60; }
 	100%{ opacity: 1; }
 }
 
 /*LEFT CART*/
 #left-active img{
-	width: 145%;
+	width: 150%;
 }
 
 #left-lantern img{
-	width: 63%;
+	width: 65%;
 }
 
 #cart-L-container{
 	position: relative;
-	width: 320px;
-	height: 500px;
-	top: 310px;
-	left: 393px;
-	z-index: 4;
+	width: 235px;
+	height: 375px;
+	top: 205px;
+	left: 520px;
+	z-index: 5;
 }
 
 #cart-L{
 	position: relative;
-	width: 320px;
-	height: 500px;
-	top: -200px;
-	left: 385px;
+	width: 235px;
+	height: 375px;
+	top: -170px;
+	left: 520px;
 }
 
 #left-active{
 	position: absolute;
 	opacity: 0;
 	top: -50px;
-	left: -80px;
+	left: -65px;
 }
 
 #left-lantern{
@@ -104,39 +157,40 @@ body{
 
 /*MIDDLE CART*/
 #mid-active img{
-	width: 110%;
+	width: 111%;
 }
 
 #mid-lantern img{
-	width: 42%;
+	width: 45%;
 }
 
 #cart-M-container{
 	position: relative;
-	width: 420px;
-	height: 420px;
-	top: -620px;
-	left: 765px;
-	z-index: 4;
+	width: 320px;
+	height: 320px;
+	top: -485px;
+	left: 815px;
+	z-index: 5;
 }
 
 #cart-M{
 	position: relative;
-	width: 420px;
-	height: 420px;
-	top: -1050px;
-	left: 765px;
+	width: 320px;
+	height: 320px;
+	top: -805px;
+	left: 815px;
 }
 
 #mid-active{
 	position: absolute;
 	opacity: 0;
-	top: -48px;
-	left: -190px;
+	top: -60px;
+	left: -160px;
 }
 
 #mid-lantern{
 	position: absolute;
+	top: -10px;
 	left: -35px;
 	z-index: 3;
 }
@@ -149,40 +203,41 @@ body{
 
 /*RIGHT CART*/
 #right-active img{
-	width: 111%;
+	width: 112%;
 }
 
 #right-lantern img{
-	width: 55%;
+	width: 60%;
 }
 
 #cart-R-container{
 	position: relative;
-	width: 320px;
-	height: 450px;
-	top: -1500px;
-	left: 1215px;
-	z-index: 4;
+	width: 235px;
+	height: 335px;
+	top: -1150px;
+	left: 1165px;
+	z-index: 5;
 }
 
 #cart-R{
 	position: relative;
-	width: 320px;
-	height: 450px;
-	top: -1945px;
-	left: 1215px;
+	width: 235px;
+	height: 335px;
+	top: -1485px;
+	left: 1165px;
 }
 
 #right-active{
 	position: absolute;
 	opacity: 0;
-	left: -230px;
-	top: -52px;
+	top: -40px;
+	left: -180px;
 }
 
 #right-lantern{
 	position: absolute;
-	left: -45px;
+	top: -3px;
+	left: -40px;
 	z-index: 3;
 }
 
