@@ -1,0 +1,106 @@
+<!----------------------- 
+-------------------------
+--------Animated---------
+------------------------- 
+------------------------>
+<?xml version="1.0" encoding="UTF-8"?>
+<svg enable-background="new 0 0 1300 1200" viewBox="0 0 1300 1200" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><g transform="translate(30, 0)">
+<g class="en-one"><image transform="translate(245 226.63)" width="404" height="776" opacity=".9" overflow="visible" xlink:href="img/energy-left.png"
+	/>
+	<g id="Color" >
+	<path transform="translate(20)" d="m473.7 981.6s-7.1 9.5-11.3 11.4c-3.3 1.7-9.5 13.6-23.3 8.9-13.5-5.6-55.3-31.8-55.3-31.8l-58.1-29.9s-41.2-23.8-47-32.1-9.7-13.1-17.7-46.6c-8-33.3-27-122.5-27-122.5s-12.5-77.8 9.3-138.5c18.2-50.7 41-123.4 124.4-214.8 73.5-80.7 121-123.5 121-123.5v-5.3s21-21.9 41.3-20.7c14.8-2.6 48.9-4.4 51.8-7s31.5 0.9 33.4 8.6 10.2 50.8 11.1 63.9 3.7 84.6 3.7 84.6v72.2l-3.7 78.2-7.6 85.2s-6.9 65.1-8.2 66.3c-0.7 4.1-16.1 83.4-24.3 95.4-3.1 8.1-20.4 52.7-24.7 59.9-3.2 6.5-36.6 71.2-41 75.5-4.1 6.9-35.5 51.1-46.8 62.6z"
+		fill="${en.color[0]}" opacity=".8" />
+		</g>
+		</g>
+	<g class="en-three"><image transform="translate(345 523.14)" width="630" height="560" opacity=".9" overflow="visible" xlink:href="img/energy-bottom.png"
+	/>
+	<g id="Color3">
+		<path transform="translate(20)" d="m828.2 1079.5s11 3.3 15.5 2.5c3.7-0.5 15.1 5.2 24.8-6.2 9-12 32.3-55.8 32.3-55.8l35.7-55.9s24-41.6 24.9-51.3 1.8-15.7-8-46.2c-9.7-30.3-37.7-110-37.7-110s-28-67.3-77.3-102c-41.2-29-97.4-72.5-215.7-96.4-104.4-21.1-167.2-27.6-167.2-27.6l-2.6-4.1s-29.3-5.1-46.3 7.2c-14.2 6.3-44.8 24.1-48.6 23.8-3.8-0.4-27 18.4-24.7 25.5s16.5 45.1 22.2 55.7 39.1 67.6 39.1 67.6l36.1 55.8 42.3 58.5 49.3 61.7s38.6 46.5 40.3 46.7c2.7 2.8 55.7 55.6 68.9 60.2 6.8 4.5 44.1 29.3 51.4 32.5 6 3.2 67.4 34.5 73.4 35.4 6.9 3.2 56.3 19.9 71.9 22.4z"
+			fill="${en.color[1]}" opacity=".8" />
+			</g>
+			</g>
+	<g class="en-two"><image transform="translate(658 288.72)" width="354" height="717" opacity=".9" overflow="visible" xlink:href="img/energy-right.png"
+	/>
+	<g id="Color2">
+	<path transform="translate(20)" d="m682 317.9s3.2-10.4 6.2-13.3c2.3-2.5 4-14.6 17.4-14.9 13.4 0.7 57.4 10.5 57.4 10.5l59.3 7.9s42.8 7.8 50.3 13.2 12.4 8.5 29.6 34.9c17.1 26.2 60.8 97.3 60.8 97.3s34.7 63.2 34.5 122.2c-0.2 49.3 2.5 118.9-41.2 223.3-38.5 92-66.3 143.5-66.3 143.5l1.6 4.5s-11.4 25.3-29.2 30.5c-11.9 6.8-40.8 18.8-42.5 21.9s-27.4 8.9-31.4 2.8-24.4-40.7-29.2-51.6-29.1-71.7-29.1-71.7l-22.2-62.2-20.8-68.5-19.6-75.8s-14-58.2-13.3-59.7c-0.7-3.8-11.8-76.8-8.4-89.7 0.2-8 1.4-51.6 2.9-59.2 0.7-6.6 9.7-72.5 12.1-77.6 1.5-7.1 15-54.9 21.1-68.3z"
+		fill="${en.color[2]}" opacity=".8" />
+		</g>
+		</g>
+	<g class="meditate-circle" fill="none" stroke="${en.color[2]}" stroke-width="10">
+		<circle class="st3 m-circle meditate-five right" cx="1201.9" cy="913" r="38.5" />
+		<circle class="st3 m-circle meditate-five left" cx="82.1" cy="913" r="38.5" />
+	</g>
+	<g class="meditate-circle" fill="none" stroke="${en.color[0]}" stroke-width="10">
+		<circle class="st3 m-circle meditate-four right" cx="1194.5" cy="718.1" r="38.5" />
+		<circle class="st3 m-circle meditate-four left" cx="89.5" cy="718.1" r="38.5" />
+	</g>
+	<g class="meditate-circle" fill="none" stroke="${en.color[2]}" stroke-width="10">
+		<circle class="st3 m-circle meditate-three right" cx="1156" cy="523.1" r="38.5" />
+		<circle class="st3 m-circle meditate-three left" cx="128" cy="523.1" r="38.5" />
+	</g>
+	<g class="meditate-circle" fill="none" stroke="${en.color[1]}" stroke-width="10">
+		<circle class="st3 m-circle meditate-two right" cx="1085" cy="328.2" r="38.5" />
+		<circle class="st3 m-circle meditate-two left" cx="199" cy="328.2" r="38.5" />
+	</g>
+	<g class="meditate-circle" fill="none" stroke="${en.color[0]}" stroke-width="10">
+		<circle class="st3 m-circle meditate-one right" cx="899.7" cy="147.6" r="38.5" />
+		<circle class="st3 m-circle meditate-one left" cx="384.4" cy="147.6" r="38.5" />
+	</g>
+	<g class="meditate-circle">
+		<circle class="st3 m-circle meditate-center" cx="642" cy="70.6" r="38.5" fill="none" stroke="${en.color[1]}" stroke-width="10" />
+	</g>
+    </g>
+</svg>
+<!----------------------- 
+-------------------------
+---------Static----------
+------------------------- 
+------------------------>
+<?xml version="1.0" encoding="UTF-8"?>
+<svg enable-background="new 0 0 1300 1200" viewBox="0 0 1300 1200" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><g transform="translate(30, 0)">
+<g class=""><image transform="translate(245 226.63)" width="404" height="776" opacity=".9" overflow="visible" xlink:href="img/energy-left.png"
+	/>
+	<g id="Color" >
+	<path transform="translate(20)" d="m473.7 981.6s-7.1 9.5-11.3 11.4c-3.3 1.7-9.5 13.6-23.3 8.9-13.5-5.6-55.3-31.8-55.3-31.8l-58.1-29.9s-41.2-23.8-47-32.1-9.7-13.1-17.7-46.6c-8-33.3-27-122.5-27-122.5s-12.5-77.8 9.3-138.5c18.2-50.7 41-123.4 124.4-214.8 73.5-80.7 121-123.5 121-123.5v-5.3s21-21.9 41.3-20.7c14.8-2.6 48.9-4.4 51.8-7s31.5 0.9 33.4 8.6 10.2 50.8 11.1 63.9 3.7 84.6 3.7 84.6v72.2l-3.7 78.2-7.6 85.2s-6.9 65.1-8.2 66.3c-0.7 4.1-16.1 83.4-24.3 95.4-3.1 8.1-20.4 52.7-24.7 59.9-3.2 6.5-36.6 71.2-41 75.5-4.1 6.9-35.5 51.1-46.8 62.6z"
+		fill="${en.color[0]}" opacity=".8" />
+		</g>
+		</g>
+	<g class=""><image transform="translate(345 523.14)" width="630" height="560" opacity=".9" overflow="visible" xlink:href="img/energy-bottom.png"
+	/>
+	<g id="Color3">
+		<path transform="translate(20)" d="m828.2 1079.5s11 3.3 15.5 2.5c3.7-0.5 15.1 5.2 24.8-6.2 9-12 32.3-55.8 32.3-55.8l35.7-55.9s24-41.6 24.9-51.3 1.8-15.7-8-46.2c-9.7-30.3-37.7-110-37.7-110s-28-67.3-77.3-102c-41.2-29-97.4-72.5-215.7-96.4-104.4-21.1-167.2-27.6-167.2-27.6l-2.6-4.1s-29.3-5.1-46.3 7.2c-14.2 6.3-44.8 24.1-48.6 23.8-3.8-0.4-27 18.4-24.7 25.5s16.5 45.1 22.2 55.7 39.1 67.6 39.1 67.6l36.1 55.8 42.3 58.5 49.3 61.7s38.6 46.5 40.3 46.7c2.7 2.8 55.7 55.6 68.9 60.2 6.8 4.5 44.1 29.3 51.4 32.5 6 3.2 67.4 34.5 73.4 35.4 6.9 3.2 56.3 19.9 71.9 22.4z"
+			fill="${en.color[1]}" opacity=".8" />
+			</g>
+			</g>
+	<g class=""><image transform="translate(658 288.72)" width="354" height="717" opacity=".9" overflow="visible" xlink:href="img/energy-right.png"
+	/>
+	<g id="Color2">
+	<path transform="translate(20)" d="m682 317.9s3.2-10.4 6.2-13.3c2.3-2.5 4-14.6 17.4-14.9 13.4 0.7 57.4 10.5 57.4 10.5l59.3 7.9s42.8 7.8 50.3 13.2 12.4 8.5 29.6 34.9c17.1 26.2 60.8 97.3 60.8 97.3s34.7 63.2 34.5 122.2c-0.2 49.3 2.5 118.9-41.2 223.3-38.5 92-66.3 143.5-66.3 143.5l1.6 4.5s-11.4 25.3-29.2 30.5c-11.9 6.8-40.8 18.8-42.5 21.9s-27.4 8.9-31.4 2.8-24.4-40.7-29.2-51.6-29.1-71.7-29.1-71.7l-22.2-62.2-20.8-68.5-19.6-75.8s-14-58.2-13.3-59.7c-0.7-3.8-11.8-76.8-8.4-89.7 0.2-8 1.4-51.6 2.9-59.2 0.7-6.6 9.7-72.5 12.1-77.6 1.5-7.1 15-54.9 21.1-68.3z"
+		fill="${en.color[2]}" opacity=".8" />
+		</g>
+		</g>
+	<g class="meditate-circle" fill="none" stroke="${en.color[2]}" stroke-width="10">
+		<circle class="st3 m-circle meditate-five right" cx="1201.9" cy="913" r="38.5" />
+		<circle class="st3 m-circle meditate-five left" cx="82.1" cy="913" r="38.5" />
+	</g>
+	<g class="meditate-circle" fill="none" stroke="${en.color[0]}" stroke-width="10">
+		<circle class="st3 m-circle meditate-four right" cx="1194.5" cy="718.1" r="38.5" />
+		<circle class="st3 m-circle meditate-four left" cx="89.5" cy="718.1" r="38.5" />
+	</g>
+	<g class="meditate-circle" fill="none" stroke="${en.color[2]}" stroke-width="10">
+		<circle class="st3 m-circle meditate-three right" cx="1156" cy="523.1" r="38.5" />
+		<circle class="st3 m-circle meditate-three left" cx="128" cy="523.1" r="38.5" />
+	</g>
+	<g class="meditate-circle" fill="none" stroke="${en.color[1]}" stroke-width="10">
+		<circle class="st3 m-circle meditate-two right" cx="1085" cy="328.2" r="38.5" />
+		<circle class="st3 m-circle meditate-two left" cx="199" cy="328.2" r="38.5" />
+	</g>
+	<g class="meditate-circle" fill="none" stroke="${en.color[0]}" stroke-width="10">
+		<circle class="st3 m-circle meditate-one right" cx="899.7" cy="147.6" r="38.5" />
+		<circle class="st3 m-circle meditate-one left" cx="384.4" cy="147.6" r="38.5" />
+	</g>
+	<g class="meditate-circle">
+		<circle class="st3 m-circle meditate-center" cx="642" cy="70.6" r="38.5" fill="none" stroke="${en.color[1]}" stroke-width="10" />
+	</g>
+    </g>
+</svg>

@@ -333,7 +333,6 @@ $(document).ready(function () {
                         'height': '400px'
                     });
                     $('.info_bar_left > .info_content > .info_content_title').html("Uptown");
-                    $('.info_bar_left > .info_content > .info_content_subtitle').html('Robertsport, Grand Cape Mount');
                     $('.info_bar_left > .info_content > .info_content_wrap').html("The simple life from my perspective reminds me of all the wonderful convenience that make life complicated and inconvenient in the West.");
                     break;
                 case 'glass_2':
@@ -350,7 +349,6 @@ $(document).ready(function () {
                         'height': '400px'
                     });
                     $('.info_bar_right > .info_content > .info_content_title').html("Uptown");
-                    $('.info_bar_right > .info_content > .info_content_subtitle').html('Robertsport, Grand Cape Mount');
                     $('.info_bar_right > .info_content > .info_content_wrap').html("The simple life from my perspective reminds me of all the wonderful convenience that make life complicated and inconvenient in the West.");
                     break;
             }
@@ -374,7 +372,6 @@ $(document).ready(function () {
                         'display': 'none'
                     });
                     $('.info_bar_left > .info_content > .info_content_title').html("");
-                    $('.info_bar_left > .info_content > .info_content_subtitle').html('');
                     $('.info_bar_left > .info_content > .info_content_wrap').html("");
                     break;
                 case 'glass_2':
@@ -389,7 +386,6 @@ $(document).ready(function () {
                         'display': 'none'
                     });
                     $('.info_bar_right > .info_content > .info_content_title').html("");
-                    $('.info_bar_right > .info_content > .info_content_subtitle').html('');
                     $('.info_bar_right > .info_content > .info_content_wrap').html("");
                     break;
             }
@@ -553,7 +549,7 @@ $(document).ready(function () {
                     $('#len_5').css('z-index', '1');
                     $('#len_5_image').css("transform", "scale(1)");
                     $('#glass_2').css("transform", "scale(1)");
-                    $('#left_instruct').hide();
+                    $('#right_instruct').show();
                     $('.info_bar_right .extras').show();
                     $('.info_bar_right > .info_name').html("");
                     $('.info_bar_right > .info_image').css({
@@ -1006,7 +1002,7 @@ $(document).ready(function () {
         console.log('left clicked');
         $("#glass_1").animate({
             'top': '750px',
-            'left': '340px'
+            'left': '400px'
         });
         $('#left_instruct').show();
         $('.info_bar_left .extras').hide();
@@ -1017,7 +1013,7 @@ $(document).ready(function () {
         });
         $('.info_bar_left > .info_content > .info_content_title').html("");
         $('.info_bar_left > .info_content > .info_content_wrap').html("");
-        $("#glass_1").attr("data-x", "340");
+        $("#glass_1").attr("data-x", "400");
         $("#glass_1").attr("data-y", "750");
         $('#glass_1').css("transform", "scale(1)");
         $('#ange_1_image').css("transform", "scale(1)");
@@ -1046,7 +1042,7 @@ $(document).ready(function () {
         console.log('right clicked');
         $("#glass_2").animate({
             'top': '750px',
-            'left': '1720px'
+            'left': '2040px'
         });
         $('#right_instruct').show();
         $('.info_bar_right .extras').hide();
@@ -1057,7 +1053,7 @@ $(document).ready(function () {
         });
         $('.info_bar_right > .info_content > .info_content_title').html("");
         $('.info_bar_right > .info_content > .info_content_wrap').html("");
-        $("#glass_2").attr("data-x", "1720");
+        $("#glass_2").attr("data-x", "2040");
         $("#glass_2").attr("data-y", "750");
         $('#glass_2').css("transform", "scale(1)");
         $('#ange_1_image').css("transform", "scale(1)");
