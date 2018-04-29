@@ -1,22 +1,36 @@
-//play and pause button for videos
-var myVid = document.getElementById("left-vid");
-var myVid = document.getElementById("mid-vid");
-var myVid = document.getElementById("right-vid");
-var btnVid = document.getElementsByClassName("vid-btn");
+//VARIABLES
+var vidL = document.getElementById("cart-L-vid");
+var vidM = document.getElementById("cart-M-vid");
+var vidR = document.getElementById("cart-R-vid");
 
-function playVid(){
-	if(myVid.paused){
-		myVid.play();
-		
-		for(var i = 0; i < btnVid.length; i++){
-			btnVid[i].innerHTML = "Pause";
-		}
-		
-	}else{
-		myVid.pause();
-		
-		for(var i = 0; i < btnVid.length; i++){
-			btnVid[i].innerHTML = "Play";
-		}
-	}
+//videos appear and start playing when carts are zoomed in
+function displayVidL(){
+	document.getElementById("cart-L-vid").style.display = "block";
+	document.getElementById("cart-M-vid").style.display = "none";
+	document.getElementById("cart-R-vid").style.display = "none";
+	vidL.play();
+}
+
+function displayVidM(){
+	document.getElementById("cart-M-vid").style.display = "block";
+	document.getElementById("cart-L-vid").style.display = "none";
+	document.getElementById("cart-R-vid").style.display = "none";
+	vidM.play();
+}
+
+function displayVidR(){
+	document.getElementById("cart-R-vid").style.display = "block";
+	document.getElementById("cart-L-vid").style.display = "none";
+	document.getElementById("cart-M-vid").style.display = "none";
+	vidR.play();
+}
+
+//videos stop playing and disappear when zoomed out
+function hideVid(){
+	document.getElementById("cart-L-vid").style.display = "none";
+	document.getElementById("cart-M-vid").style.display = "none";
+	document.getElementById("cart-R-vid").style.display = "none";
+//	vidL.pause();
+//	vidM.pause();
+//	vidR.pause();
 }
