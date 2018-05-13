@@ -762,7 +762,7 @@ $(document).ready(function () {
                         'background-image': 'url("img/sides/Cropped_Ange_Kiss.png")',
                         'width': '100%',
                         'height': '400px'
-                    });
+                    }).fadeIn('slow');
                     $('.info_bar_left > .info_content > .info_content_title').html("Image Title");
                     $('.info_bar_left > .info_content > .info_content_wrap').html("This is where the information about the magnified object would display.");
                     break;
@@ -997,87 +997,96 @@ $(document).ready(function () {
             }
         }
     });
+    interact('.left_reset')
+        .on('tap', function (event) {
+            console.log('left clicked');
+            $("#glass_1").animate({
+                'top': '750px',
+                'left': '400px'
+            });
+            $('#left_instruct').show();
+            $('.info_bar_left .extras').hide();
+            $('.info_bar_left > .info_name').html("");
+            $('.info_bar_left > .info_image').css({
+                'background-image': 'none',
+                'display': 'none'
+            });
+            $('.info_bar_left > .info_content > .info_content_title').html("");
+            $('.info_bar_left > .info_content > .info_content_wrap').html("");
+            $("#glass_1").attr("data-x", "400");
+            $("#glass_1").attr("data-y", "750");
+            $('#glass_1').css("transform", "scale(1)");
+            $('#ange_1_image').css("transform", "scale(1)");
+            $('#ange_1').css('z-index', '1');
+            $('#ange_2_image').css("transform", "scale(1)");
+            $('#ange_2').css('z-index', '1');
+            $('#ange_3_image').css("transform", "scale(1)");
+            $('#ange_3').css('z-index', '1');
+            $('#ange_4_image').css("transform", "scale(1)");
+            $('#ange_4').css('z-index', '1');
+            $('#ange_5_image').css("transform", "scale(1)");
+            $('#ange_5').css('z-index', '1');
+            $('#len_1').css('z-index', '1');
+            $('#len_1_image').css("transform", "scale(1)");
+            $('#len_2').css('z-index', '1');
+            $('#len_2_image').css("transform", "scale(1)");
+            $('#len_3').css('z-index', '1');
+            $('#len_3_image').css("transform", "scale(1)");
+            $('#len_4').css('z-index', '1');
+            $('#len_4_image').css("transform", "scale(1)");
+            $('#len_5').css('z-index', '1');
+            $('#len_5_image').css("transform", "scale(1)");
+        });
 
-    document.querySelector(".left_reset").addEventListener("click", function () {
-        console.log('left clicked');
-        $("#glass_1").animate({
-            'top': '750px',
-            'left': '400px'
+    interact('.right_reset')
+        .on('tap', function (event) {
+            console.log('right clicked');
+            $("#glass_2").animate({
+                'top': '750px',
+                'left': '2040px'
+            });
+            $('#right_instruct').show();
+            $('.info_bar_right .extras').hide();
+            $('.info_bar_right > .info_name').html("");
+            $('.info_bar_right > .info_image').css({
+                'background-image': 'none',
+                'display': 'none'
+            });
+            $('.info_bar_right > .info_content > .info_content_title').html("");
+            $('.info_bar_right > .info_content > .info_content_wrap').html("");
+            $("#glass_2").attr("data-x", "2040");
+            $("#glass_2").attr("data-y", "750");
+            $('#glass_2').css("transform", "scale(1)");
+            $('#ange_1_image').css("transform", "scale(1)");
+            $('#ange_1').css('z-index', '1');
+            $('#ange_2_image').css("transform", "scale(1)");
+            $('#ange_2').css('z-index', '1');
+            $('#ange_3_image').css("transform", "scale(1)");
+            $('#ange_3').css('z-index', '1');
+            $('#ange_4_image').css("transform", "scale(1)");
+            $('#ange_4').css('z-index', '1');
+            $('#ange_5_image').css("transform", "scale(1)");
+            $('#ange_5').css('z-index', '1');
+            $('#len_1').css('z-index', '1');
+            $('#len_1_image').css("transform", "scale(1)");
+            $('#len_2').css('z-index', '1');
+            $('#len_2_image').css("transform", "scale(1)");
+            $('#len_3').css('z-index', '1');
+            $('#len_3_image').css("transform", "scale(1)");
+            $('#len_4').css('z-index', '1');
+            $('#len_4_image').css("transform", "scale(1)");
+            $('#len_5').css('z-index', '1');
+            $('#len_5_image').css("transform", "scale(1)");
         });
-        $('#left_instruct').show();
-        $('.info_bar_left .extras').hide();
-        $('.info_bar_left > .info_name').html("");
-        $('.info_bar_left > .info_image').css({
-            'background-image': 'none',
-            'display': 'none'
-        });
-        $('.info_bar_left > .info_content > .info_content_title').html("");
-        $('.info_bar_left > .info_content > .info_content_wrap').html("");
-        $("#glass_1").attr("data-x", "400");
-        $("#glass_1").attr("data-y", "750");
-        $('#glass_1').css("transform", "scale(1)");
-        $('#ange_1_image').css("transform", "scale(1)");
-        $('#ange_1').css('z-index', '1');
-        $('#ange_2_image').css("transform", "scale(1)");
-        $('#ange_2').css('z-index', '1');
-        $('#ange_3_image').css("transform", "scale(1)");
-        $('#ange_3').css('z-index', '1');
-        $('#ange_4_image').css("transform", "scale(1)");
-        $('#ange_4').css('z-index', '1');
-        $('#ange_5_image').css("transform", "scale(1)");
-        $('#ange_5').css('z-index', '1');
-        $('#len_1').css('z-index', '1');
-        $('#len_1_image').css("transform", "scale(1)");
-        $('#len_2').css('z-index', '1');
-        $('#len_2_image').css("transform", "scale(1)");
-        $('#len_3').css('z-index', '1');
-        $('#len_3_image').css("transform", "scale(1)");
-        $('#len_4').css('z-index', '1');
-        $('#len_4_image').css("transform", "scale(1)");
-        $('#len_5').css('z-index', '1');
-        $('#len_5_image').css("transform", "scale(1)");
-    });
 
-    document.querySelector(".right_reset").addEventListener("click", function () {
-        console.log('right clicked');
-        $("#glass_2").animate({
-            'top': '750px',
-            'left': '2040px'
+    interact(document.body)
+        .on('tap', function (ev) {
+            console.log('a thing is happening');
+            $("#glass_1").css('transform', 'scale(1.2)');
+            $("#glass_1").delay(200).css('transform', 'scale(1)');
+            $("#glass_2").css('transform', 'scale(1.2)');
+            $("#glass_2").delay(200).css('transform', 'scale(1)');
         });
-        $('#right_instruct').show();
-        $('.info_bar_right .extras').hide();
-        $('.info_bar_right > .info_name').html("");
-        $('.info_bar_right > .info_image').css({
-            'background-image': 'none',
-            'display': 'none'
-        });
-        $('.info_bar_right > .info_content > .info_content_title').html("");
-        $('.info_bar_right > .info_content > .info_content_wrap').html("");
-        $("#glass_2").attr("data-x", "2040");
-        $("#glass_2").attr("data-y", "750");
-        $('#glass_2').css("transform", "scale(1)");
-        $('#ange_1_image').css("transform", "scale(1)");
-        $('#ange_1').css('z-index', '1');
-        $('#ange_2_image').css("transform", "scale(1)");
-        $('#ange_2').css('z-index', '1');
-        $('#ange_3_image').css("transform", "scale(1)");
-        $('#ange_3').css('z-index', '1');
-        $('#ange_4_image').css("transform", "scale(1)");
-        $('#ange_4').css('z-index', '1');
-        $('#ange_5_image').css("transform", "scale(1)");
-        $('#ange_5').css('z-index', '1');
-        $('#len_1').css('z-index', '1');
-        $('#len_1_image').css("transform", "scale(1)");
-        $('#len_2').css('z-index', '1');
-        $('#len_2_image').css("transform", "scale(1)");
-        $('#len_3').css('z-index', '1');
-        $('#len_3_image').css("transform", "scale(1)");
-        $('#len_4').css('z-index', '1');
-        $('#len_4_image').css("transform", "scale(1)");
-        $('#len_5').css('z-index', '1');
-        $('#len_5_image').css("transform", "scale(1)");
-
-    });
 
     //Browser Idle Refresh
 
