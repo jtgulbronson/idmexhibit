@@ -180,34 +180,39 @@ document.getElementById("right-vid").addEventListener("ended", function(){
 });
 
 // RETICLE
+
+var setVidL;
+var setVidM;
+var setVidR;
+
 function reticleOnL(){
 	document.getElementById("reticle-L").style.display = "block";
-	setTimeout(playVidL, 2000);
+	setVidL = setTimeout(playVidL, 2000);
 }
 
 function reticleOffL(){
 	document.getElementById("reticle-L").style.display = "none";
-	clearTimeout(playVidL);
+	clearTimeout(setVidL);
 }
 
 function reticleOnM(){
 	document.getElementById("reticle-M").style.display = "block";
-	setTimeout(playVidM, 2000);
+	setVidM = setTimeout(playVidM, 2000);
 }
 
 function reticleOffM(){
 	document.getElementById("reticle-M").style.display = "none";
-	clearTimeout(playVidM);
+	clearTimeout(setVidM);
 }
 
 function reticleOnR(){
 	document.getElementById("reticle-R").style.display = "block";
-	setTimeout(playVidR, 2000);
+	setVidR = setTimeout(playVidR, 2000);
 }
 
 function reticleOffR(){
 	document.getElementById("reticle-R").style.display = "none";
-	clearTimeout(playVidR);
+	clearTimeout(setVidR);
 }
 
 $(document).ready(function(){
