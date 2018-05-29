@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
 	<meta charset="UTF-8">
 	<link rel="stylesheet" href="style.css">
@@ -12,24 +13,24 @@
 	<div id="bg">
 		<img src="img/mural-bg.jpg" alt="mural background">
 	</div>
-	
+
 	<!--ARCHWAY-->
 	<div id="archway">
 		<img src="img/archway.png" alt="archway">
 	</div>
-	
+
 	<div id="brick">
 		<img src="img/brick-texture.png" alt="brick texture">
 	</div>
-	
+
 	<div id="left-imgs">
 		<img src="img/left-imgs.png" alt="left side images">
 	</div>
-	
+
 	<div id="paper-lantern">
 		<img src="img/paper-lantern-glow.png" alt="paper lanterns" draggable="false">
 	</div>
-	
+
 	<!--LEFT CART-->
 	<div id="cart-L-container" onmouseover="reticleOnL()" onmouseout="reticleOffL()"></div>
 	<div id="cart-L">
@@ -40,18 +41,19 @@
 			<img src="img/left-lantern.png" alt="left lantern">
 		</div>
 	</div>
-	
-	<div id="reticle-L" class="reticle">
-  	<svg>
-    	<circle r="50" cx="70" cy="70"></circle>
-  	</svg>
-	</div>
-	
+
+	<!-- <div id="reticle-L" class="reticle"> -->
+	<svg class="circle">
+		<circle r="50" class="bg" cx="70" cy="70"></circle>
+		<circle class="fg" r="50" cx="70" cy="70"></circle>
+	</svg>
+	<!-- </div> -->
+
 	<div id="cart-L-vid">
 		<button class="vid-btn" onmouseover="setTimeout(stopVidL, 800);">exit</button>
 		<video id="left-vid" width="1000" src="video/cart-left-vid.mp4"></video>
 	</div>
-	
+
 	<!--MIDDLE CART-->
 	<div id="cart-M-container" onmouseover="reticleOnM()" onmouseout="reticleOffM()"></div>
 	<div id="cart-M">
@@ -62,18 +64,18 @@
 			<img src="img/mid-lantern.png" alt="middle lantern">
 		</div>
 	</div>
-	
-	<div id="reticle-M" class="reticle">
+
+	<!-- <div id="reticle-M" class="reticle">
   	<svg>
     	<circle r="50" cx="70" cy="70"></circle>
   	</svg>
-	</div>
-	
+	</div> -->
+
 	<div id="cart-M-vid">
 		<button class="vid-btn" onmouseover="setTimeout(stopVidM, 800);">exit</button>
 		<video id="mid-vid" width="1000" src="video/cart-mid-vid.mp4"></video>
 	</div>
-	
+
 	<!--RIGHT CART-->
 	<div id="cart-R-container" onmouseover="reticleOnR()" onmouseout="reticleOffR()"></div>
 	<div id="cart-R">
@@ -84,23 +86,24 @@
 			<img src="img/right-lantern.png" alt="right lantern">
 		</div>
 	</div>
-	
-	<div id="reticle-R" class="reticle">
+
+	<!-- <div id="reticle-R" class="reticle">
   	<svg>
     	<circle r="50" cx="70" cy="70"></circle>
   	</svg>
-	</div>
-	
+	</div> -->
+
 	<div id="cart-R-vid">
 		<button class="vid-btn" onmouseover="setTimeout(stopVidR, 800);">exit</button>
 		<video id="right-vid" width="1000" src="video/cart-right-vid.mp4"></video>
 	</div>
-	
+
 	<!--ARCHWAY-->
 	<div id="right-imgs">
 		<img src="img/right-imgs.png" alt="right side images">
 	</div>
-	
+
 	<script src="script.js"></script>
 </body>
+
 </html>

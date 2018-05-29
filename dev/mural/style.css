@@ -2,6 +2,7 @@ body{
 	background-color: #faf0e8;
 	color: #72716E;
 	overflow: hidden;
+	cursor: none;
 }
 
 /*****BROWSER SETTINGS*****/
@@ -101,7 +102,7 @@ body{
 	height: 375px;
 	top: 200px;
 	left: 528px;
-	z-index: 5;
+	/* ;z-index: 6 */
 }
 
 #cart-L{
@@ -146,7 +147,7 @@ body{
 	height: 320px;
 	top: -490px;
 	left: 815px;
-	z-index: 5;
+	/* z-index: 6; */
 }
 
 #cart-M{
@@ -192,7 +193,7 @@ body{
 	height: 335px;
 	top: -1155px;
 	left: 1170px;
-	z-index: 5;
+	/* z-index: 6; */
 }
 
 #cart-R{
@@ -251,7 +252,7 @@ body{
 #cart-M-vid,
 #cart-R-vid
 {
-	z-index: 6;
+	z-index: 5;
 	position: absolute;
 	top: 260px;
 	left: 450px;
@@ -298,7 +299,7 @@ body{
 }*/
 
 /*RETICLE*/
-svg{
+/* svg{
 	-webkit-transform: rotateY(-180deg) rotateZ(-90deg);
 	transform: rotateY(-180deg) rotateZ(-90deg);
 }
@@ -330,8 +331,8 @@ svg circle{
   to{
     stroke-dashoffset: 0px;
   }
-}
-
+} */
+/* 
 .reticle{
 	display: none;
 }
@@ -352,4 +353,72 @@ svg circle{
   position: absolute;
 	top: 290px;
 	left: 1070px;
+} */
+
+svg{
+	z-index: 6;
+    -webkit-transform: rotateY(-180deg) rotateZ(-90deg);
+    transform: rotateY(-180deg) rotateZ(-90deg);
+}
+
+svg .bg{
+  stroke-dasharray: 314px;
+  stroke-dashoffset: 0px;
+  stroke-linecap: round;
+  stroke-width: 6px;
+  stroke: #eeeeee;
+  fill: none;
+}
+
+svg .fg{
+  stroke-dasharray: 314px;
+  stroke-dashoffset: 0px;
+  stroke-linecap: round;
+  stroke-width: 6px;
+  stroke: #eeeeee;
+  fill: none;
+}
+
+#cart-L-container, #cart-M-container, #cart-R-container {
+	z-index: 7;
+}
+
+#cart-L-container:hover ~ svg .fg {
+	-webkit-animation: count 2s linear infinite forwards;
+  animation: count 2s linear infinite forwards;
+}
+
+#cart-M-container:hover ~ svg .fg {
+	-webkit-animation: count 2s linear infinite forwards;
+  animation: count 2s linear infinite forwards;
+}
+
+#cart-R-container:hover ~ svg .fg {
+	-webkit-animation: count 2s linear infinite forwards;
+  animation: count 2s linear infinite forwards;
+}
+
+.circle {
+	position: absolute;
+}
+
+@-webkit-keyframes count{
+  from{
+    stroke-dashoffset: 314px;
+		stroke: #ffcf0f;
+  }
+  to{
+    stroke-dashoffset: 0px;
+		stroke: #ffcf0f;
+  }
+}
+@keyframes count{
+  from{
+    stroke-dashoffset: 314px;
+		stroke: #ffcf0f;
+  }
+  to{
+    stroke-dashoffset: 0px;
+		stroke: #ffcf0f;
+  }
 }
