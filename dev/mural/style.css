@@ -17,9 +17,9 @@ body{
 }
 
 /*MURAL*/
-body{
-/*	cursor: url("img/custom-cursor.png"), auto;*/
-}
+/* body{
+	cursor: url("img/custom-cursor.png"), auto;
+} */
 
 #bg{
 	text-align: center;
@@ -81,10 +81,10 @@ body{
 }
 
 /*ALL CARTS*/
-#cart-L-container,
+/* #cart-L-container,
 #cart-M-container,
 #cart-R-container:hover{
-}
+} */
 
 /*LEFT CART*/
 #left-active img{
@@ -304,14 +304,14 @@ svg{
 }
 
 svg circle{
-	stroke-dasharray: 314px;
+  stroke-dasharray: 314px;
   stroke-dashoffset: 0px;
   stroke-linecap: round;
   stroke-width: 6px;
-  stroke: #eee;
+  stroke: #ffcf0f;
   fill: none;
-  -webkit-animation: count 3.5s linear infinite forwards;
-  animation: count 3.5s linear infinite forwards;
+  -webkit-animation: count 2s linear infinite forwards;
+  animation: count 2s linear infinite forwards;
 }
 
 @-webkit-keyframes count{
