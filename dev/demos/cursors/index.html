@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Test</title>
+    <style>
+        body {
+            cursor: url('SVG/cursor.svg'), pointer;
+        }
+
+        #wrapper {
+            width: 250px;
+            height: 250px;
+        }
+
+        #wrapper {
+            animation: animate 2s infinite;
+        }
+
+        @keyframes animate{
+  25%{ 
+    cursor: url('SVG/25_load.svg'), auto;
+  }
+  50%{ 
+    cursor: url('SVG/50_load.svg'), auto;
+  }
+  75%{ 
+    cursor: url('SVG/75_load.svg'), auto;
+  }
+  100%{ 
+    cursor: url('SVG/100_load.svg'), auto;
+  }
+}
+    </style>
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+        crossorigin="anonymous"></script>
+    <!-- <script>
+        $(document).ready(function () {
+            console.log($("body").length)
+            $("#wrapper").css('cursor', 'url(http://w17.snunit.k12.il/images/big_arrow.png),auto');
+        });
+    </script> -->
+</head>
+
+<body>
+    <div id="wrapper"></div>
+</body>
+
+</html>

@@ -56,11 +56,12 @@ body {
     background: url('../img/sides/Red_Reset.svg');
     background-size: contain;
     background-repeat: no-repeat;
+    background-position: center center;
     display: block;
-    width: 300px;
-    height: 50px;
+    width: 160px;
+    height: 100px;
     position: absolute;
-    top: 80%;
+    top: 77%;
     left: 5.3%;
     z-index: 20;
     cursor: pointer;
@@ -70,12 +71,13 @@ body {
     background: url('../img/sides/Green_Reset.svg');
     background-size: contain;
     background-repeat: no-repeat;
+    background-position: center center;
     display: block;
-    width: 300px;
-    height: 50px;
+    width: 160px;
+    height: 100px;
     position: absolute;
-    top: 80%;
-    right: 0;
+    top: 77%;
+    right: 5.6%;
     z-index: 20;
     cursor: pointer;
 }
@@ -108,6 +110,7 @@ body {
     position: absolute;
     width: 440px;
     height: 100%;
+    transition: all 200ms ease-in;
     .initial-dots {
         width: 80%;
         height: 150px;
@@ -133,18 +136,30 @@ body {
     .content-wrap {
         padding: 60px;
         position: absolute;
-        top: 50%;
+        top: 45%;
         transform: translateY(-50%);
         max-width: 100%;
         .title {
-            font-size: 3rem;
+            font-size: 5rem;
             padding: 20px 0;
             font-weight: bold;
             font-family: $kepler;
             letter-spacing: 1px;
         }
         .instructions {
-            line-height: 30px;
+            line-height: 3rem;
+            font-size: 1.5rem;
+            margin-top: 20%;
+        }
+        .underline {
+            background: url('../img/sides/Navy_Lines@4x.png');
+            background-repeat: no-repeat;
+            background-size: contain;
+            width: 80px;
+            height: 30px;
+            position: absolute;
+            top: 37%;
+            left: 15%;
         }
     }
 }
@@ -157,11 +172,19 @@ body {
     .title {
         color: $forest;
     }
+    .bolded {
+        color: $forest;
+        font-weight: bold;
+    }
 }
 
 #left_instruct {
     .title {
         color: $rouge;
+    }
+    .bolded {
+        color: $rouge;
+        font-weight: bold;
     }
 }
 
@@ -197,6 +220,15 @@ body {
     bottom: 100px;
 }
 
+#block {
+    display: none;
+    background-color: rgba(0,0,0,0);
+    width: 100vw;
+    height: 100vh;
+    z-index: 999;
+    position: fixed;
+}
+
 ///////////////////////////////////////////////
 //User Magnifying glass Styles
 ///////////////////////////////////////////////
@@ -213,27 +245,27 @@ body {
 #glass_2 {
     background: transparent;
     position: absolute;
-    top: 750px;
-    left: 2040px;
+    top: 930px;
+    left: 2263px;
     -webkit-transform-origin: center;
     transform-origin: center;
     border-radius: 50%;
-    border: solid $forest 10px;
+    border: solid $forest 20px;
     color: white;
-    transition: transform 0.25s ease;
+    transform-origin: center;
 }
 
 #glass_1 {
     background: transparent;
     position: absolute;
-    top: 750px;
-    left: 400px;
+    top: 930px;
+    left: 142px;
     -webkit-transform-origin: center;
     transform-origin: center;
     border-radius: 50%;
-    border: solid $rouge 10px;
+    border: solid $rouge 20px;
     color: $navy;
-    transition: transform 0.25s ease;
+    transform-origin: center;
 }
 
 ///////////////////////////////////////////////
@@ -246,6 +278,7 @@ body {
     left: 0;
     width: 440px;
     height: 100%;
+    transition: all 200ms ease-in;
     .info_name {
         font-family: "Kepler Std", serif;
         font-weight: bold;
@@ -258,7 +291,7 @@ body {
         width: 100%;
         height: 400px;
         display: none;
-        margin: 50px auto 0;
+        margin: 0 auto 0;
         background-position: center;
         background-repeat: no-repeat;
         background-size: cover;
@@ -269,20 +302,20 @@ body {
         width: 320px;
         display: block;
         text-align: left;
-        padding: 30px 40px;
-        line-height: 25px;
+        padding: 30px 30px;
+        line-height: 30px;
         position: absolute;
         margin-top: 50px;
         top: 500px;
         .info_content_wrap {
-            font-size: 14px;
+            font-size: 18px;
             padding-top: 20px;
             margin-top: 25px;
         }
         .info_content_title {
             font-size: 1.3rem;
             color: $rouge;
-            padding: 80px 0 0;
+            padding: 40px 0 0;
             font-weight: bold;
             font-family: $mont_reg;
             text-transform: uppercase;
@@ -290,7 +323,6 @@ body {
         }
     }
     .extras {
-        display: none;
         .name_circle {
             background: url('../img/sides/Red_Circle@4x.png');
             background-size: contain;
@@ -298,8 +330,8 @@ body {
             width: 20px;
             height: 20px;
             position: absolute;
-            top: 85px;
-            left: 15px;
+            top: 485px;
+            left: 23px;
             z-index: -1;
         }
         .name_lines {
@@ -309,7 +341,7 @@ body {
             width: 100px;
             height: 20px;
             position: absolute;
-            top: 160px;
+            top: 560px;
             left: 30px;
         }
         .misc {
@@ -319,18 +351,16 @@ body {
             width: 75px;
             height: 75px;
             position: absolute;
-            top: 40px;
+            top: 440px;
             left: 300px;
         }
         .underlines {
-            background: url('../img/sides/Navy_Lines@4x.png');
-            background-repeat: no-repeat;
-            background-size: contain;
-            width: 50px;
-            height: 10px;
+            width: 20px;
+            border: 1px solid $navy;
+            // height: 0px;
             position: absolute;
-            top: 61%;
-            left: 10%;
+            top: 660px;
+            left: 7%;
         }
     }
 }
@@ -342,7 +372,7 @@ body {
     left: 0;
     width: 440px;
     height: 100%;
-    transition: all 150ms linear;
+    transition: all 200ms ease-in;
     .info_name {
         font-family: "Kepler Std", serif;
         font-weight: bold;
@@ -355,7 +385,7 @@ body {
         width: 100%;
         height: 400px;
         display: none;
-        margin: 50px auto;
+        margin: 0 auto;
         background-position: center;
         background-repeat: no-repeat;
         background-size: cover;
@@ -366,20 +396,20 @@ body {
         width: 320px;
         display: block;
         text-align: left;
-        padding: 30px 40px;
-        line-height: 25px;
+        padding: 30px 30px;
+        line-height: 30px;
         position: absolute;
         margin-top: 50px;
         top: 500px;
         .info_content_wrap {
-            font-size: 14px;
+            font-size: 18px;
             padding-top: 20px;
             margin-top: 25px;
         }
         .info_content_title {
             font-size: 1.3rem;
             color: $forest;
-            padding: 80px 0 0;
+            padding: 40px 0 0;
             font-weight: bold;
             font-family: $mont_reg;
             text-transform: uppercase;
@@ -387,7 +417,6 @@ body {
         }
     }
     .extras {
-        display: none;
         .name_circle {
             background: url('../img/sides/Green_Circle@4x.png');
             background-size: contain;
@@ -395,8 +424,8 @@ body {
             width: 40px;
             height: 40px;
             position: absolute;
-            top: 85px;
-            left: 15px;
+            top: 475px;
+            left: 24px;
             z-index: -1;
         }
         .name_lines {
@@ -406,7 +435,7 @@ body {
             width: 100px;
             height: 20px;
             position: absolute;
-            top: 160px;
+            top: 560px;
             left: 30px;
         }
         .misc {
@@ -416,18 +445,16 @@ body {
             width: 75px;
             height: 75px;
             position: absolute;
-            top: 40px;
+            top: 440px;
             left: 300px;
         }
         .underlines {
-            background: url('../img/sides/Navy_Lines@4x.png');
-            background-repeat: no-repeat;
-            background-size: contain;
-            width: 50px;
-            height: 10px;
+            width: 20px;
+            border: 1px solid $navy;
+            // height: 2px;
             position: absolute;
-            top: 61%;
-            left: 10%;
+            top: 660px;
+            left: 7%;
         }
     }
 }
@@ -439,8 +466,8 @@ body {
     position: absolute;
     width: 332px;
     height: 450px;
-    bottom: 550px;
-    right: 682px;
+    bottom: 580px;
+    right: 695px;
     z-index: 3;
 }
 
@@ -461,8 +488,8 @@ body {
     position: absolute;
     width: 509px;
     height: 404px;
-    top: -30px;
-    right: 310px;
+    top: -50px;
+    right: 320px;
     z-index: 1;
 }
 
@@ -483,8 +510,8 @@ body {
     position: absolute;
     width: 400px;
     height: 480px;
-    bottom: -130px;
-    right: 422px;
+    bottom: -110px;
+    right: 380px;
     z-index: 1;
 }
 
@@ -506,7 +533,7 @@ body {
     width: 600px;
     height: 570px;
     bottom: 115px;
-    left: 900px;
+    left: 876px;
     z-index: 1;
 }
 
@@ -527,8 +554,8 @@ body {
     position: absolute;
     width: 650px;
     height: 437px;
-    bottom: -120px;
-    right: 850px;
+    bottom: -110px;
+    right: 867px;
     z-index: 1;
 }
 
@@ -547,10 +574,10 @@ body {
 ///////////////////////////////////////////////
 #len_8 {
     position: absolute;
-    width: 600px;
-    height: 396px;
-    top: 158px;
-    left: 862px;
+    width: 565px;
+    height: 391px;
+    top: 148px;
+    left: 912px;
     z-index: 1;
 }
 
@@ -559,8 +586,8 @@ body {
     background-size: contain;
     background-position: center;
     background-repeat: no-repeat;
-    width: 600px;
-    height: 396px;
+    width: 595px;
+    height: 391px;
     transition: transform 0.25s ease;
 }
 
@@ -569,10 +596,10 @@ body {
 ///////////////////////////////////////////////
 #ange_1 {
     position: absolute;
-    width: 500px;
-    height: 275px;
-    top: 423px;
-    left: 1080px;
+    width: 540px;
+    height: 185px;
+    top: 390px;
+    left: 1060px;
     z-index: 1;
 }
 
@@ -581,8 +608,8 @@ body {
     background-size: contain;
     background-position: center;
     background-repeat: no-repeat;
-    width: 500px;
-    height: 275px;
+    width: 540px;
+    height: 315px;
     transition: transform 0.25s ease; //crops image
 }
 
@@ -593,8 +620,8 @@ body {
     position: absolute;
     width: 625px;
     height: 225px;
-    top: 360px;
-    left: 370px;
+    top: 330px;
+    left: 400px;
     z-index: 1;
 }
 
@@ -616,7 +643,7 @@ body {
     width: 600px;
     height: 460px;
     bottom: -50px;
-    left: 304px;
+    left: 310px;
     z-index: 1;
 }
 
@@ -637,8 +664,8 @@ body {
     position: absolute;
     width: 268px;
     height: 410px;
-    top: -10px;
-    right: 900px;
+    top: -25px;
+    right: 860px;
     z-index: 1;
 }
 
@@ -659,7 +686,7 @@ body {
     position: absolute;
     width: 270px;
     height: 370px;
-    top: 495px;
+    top: 465px;
     right: 400px;
     z-index: 1;
 }

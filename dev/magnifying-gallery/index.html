@@ -8,13 +8,13 @@
 	<script type="text/javascript" src="js/jquery.3.2.1.js"></script>
 	<script type="text/javascript" src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
 	<script type="text/javascript" src="js/interact.js"></script>
-
 	<script type="text/javascript" src="js/init.js"></script>
 	<link rel="stylesheet" href="css/reset.css">
 	<link rel="stylesheet" href="scss/style.css">
 </head>
 
 <body>
+	<div id="block"></div>
 	<!-- background image and restriction container for magnifying glasses -->
 	<div class="wrapper">
 		<!-- flower background design elements -->
@@ -26,64 +26,66 @@
 				<div class="initial-dots"></div>
 				<div class="content-wrap">
 					<div class="title">
-						Discover
+						Explore
 					</div>
+					<div class="underline"></div>
 					<div class="instructions">
-						Drag your circle to discover pieces of Len and Ange's lives that have influenced their life's work.
+						Drag <span class="bolded">the red circle</span> to discover pieces of Len and Ange's lives that have influenced their life's work.
 					</div>
 				</div>
 
 			</div>
 			<div class="info_bar_left">
+					<div class="info_image"></div>
 				<div class="extras">
 					<div class="name_circle"></div>
 					<div class="name_lines"></div>
-					<div class="underlines"></div>
+					<hr class="underlines">
 					<div class="misc"></div>
 				</div>
 				<div class="info_name"></div>
-				<div class="info_image"></div>
 				<div class="info_content">
 					<div class="info_content_title"></div>
 					<div class="info_content_wrap"></div>
 				</div>
 			</div>
 		</div>
-		<div class="reset left_reset"></div>
+		<!-- <div class="reset left_reset"></div> -->
 		<div class="side_panel" id="right_panel">
 			<div class="black_bar"></div>
 			<div class="initial_content" id="right_instruct">
 				<div class="initial-zigzag"></div>
 				<div class="content-wrap">
 					<div class="title">
-						Discover
+						Explore
 					</div>
+					<div class="underline"></div>
 					<div class="instructions">
-						Drag your circle to discover pieces of Len and Ange's lives that have influenced their life's work.
+						Drag <span class="bolded">the green circle</span> to discover pieces of Len and Ange's lives that have influenced their life's work.
 					</div>
 				</div>
 
 			</div>
 			<div class="info_bar_right">
+				<div class="info_image"></div>
 					<div class="extras">
 							<div class="name_circle"></div>
 							<div class="name_lines"></div>
 							<div class="misc"></div>
-							<div class="underlines"></div>
+							<hr class="underlines">
 						</div>
 				<div class="info_name"></div>
-				<div class="info_image"></div>
 				<div class="info_content">
 					<div class="info_content_title"></div>
 					<div class="info_content_wrap"></div>
 				</div>
 			</div>
 		</div>
-		<div class="reset right_reset"></div>
+		<!-- <div class="reset right_reset"></div> -->
 
 		<!-- magnifiers -->
-		<div class="magnify_glass" id="glass_1" data-x="400" data-y="750"></div>
-		<div class="magnify_glass" id="glass_2" data-x="2040" data-y="750"></div>
+		<div class="magnify_glass" id="glass_1" data-x="142" data-y="930"></div>
+		<div class="magnify_glass" id="glass_2" data-x="2263" data-y="930"></div>
 
 		<!-- interactable collage elements -->
 		<div class="magnify_obj" id="len_1">
