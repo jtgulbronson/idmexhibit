@@ -4,16 +4,16 @@
 	<meta charset="UTF-8">
 	<link rel="stylesheet" href="style.css">
 	<script src="jquery-3.3.1.min.js"></script>
-	<script src="jquery.zoomooz.min.js"></script>
 	<title>Mural</title>
 </head>
 
-<body onclick="hideVid()">
+<body>
 
 	<div id="bg">
-		<img src="img/mural-bg.png" alt="mural background">
+		<img src="img/mural-bg.jpg" alt="mural background">
 	</div>
 	
+	<!--ARCHWAY-->
 	<div id="archway">
 		<img src="img/archway.png" alt="archway">
 	</div>
@@ -31,7 +31,7 @@
 	</div>
 	
 	<!--LEFT CART-->
-	<div id="cart-L-container" class="zoomTarget" onclick="displayVidL()"></div>
+	<div id="cart-L-container" onmouseover="reticleOnL()" onmouseout="reticleOffL()"></div>
 	<div id="cart-L">
 		<div id="left-active">
 			<img src="img/left-active.png" alt="left cart active">
@@ -40,16 +40,20 @@
 			<img src="img/left-lantern.png" alt="left lantern">
 		</div>
 	</div>
-<!--	add in ogg and mp4 files when finalized-->
-<!--
-	<div id="cart-L-vid">
-		<video id="left-vid" width="270" src="video/cart-right-vid.mov"></video>
-		<div class="vid-shadow"></div>
+	
+	<div id="reticle-L" class="reticle">
+  	<svg>
+    	<circle r="50" cx="70" cy="70"></circle>
+  	</svg>
 	</div>
--->
+	
+	<div id="cart-L-vid">
+		<button class="vid-btn" onmouseover="setTimeout(stopVidL, 800);">exit</button>
+		<video id="left-vid" width="1000" src="video/cart-left-vid.mp4"></video>
+	</div>
 	
 	<!--MIDDLE CART-->
-	<div id="cart-M-container" class="zoomTarget" onclick="displayVidM()"></div>
+	<div id="cart-M-container" onmouseover="reticleOnM()" onmouseout="reticleOffM()"></div>
 	<div id="cart-M">
 		<div id="mid-active">
 			<img src="img/mid-active.png" alt="middle cart active">
@@ -58,15 +62,20 @@
 			<img src="img/mid-lantern.png" alt="middle lantern">
 		</div>
 	</div>
-<!--
-	<div id="cart-M-vid">
-		<video id="mid-vid" width="265" src="video/cart-mid-vid.mov"></video>
-		<div class="vid-shadow"></div>
+	
+	<div id="reticle-M" class="reticle">
+  	<svg>
+    	<circle r="50" cx="70" cy="70"></circle>
+  	</svg>
 	</div>
--->
+	
+	<div id="cart-M-vid">
+		<button class="vid-btn" onmouseover="setTimeout(stopVidM, 800);">exit</button>
+		<video id="mid-vid" width="1000" src="video/cart-mid-vid.mp4"></video>
+	</div>
 	
 	<!--RIGHT CART-->
-	<div id="cart-R-container" class="zoomTarget" onclick="displayVidR()"></div>
+	<div id="cart-R-container" onmouseover="reticleOnR()" onmouseout="reticleOffR()"></div>
 	<div id="cart-R">
 		<div id="right-active">
 			<img src="img/right-active.png" alt="right cart active">
@@ -75,19 +84,19 @@
 			<img src="img/right-lantern.png" alt="right lantern">
 		</div>
 	</div>
-<!--
+	
+	<div id="reticle-R" class="reticle">
+  	<svg>
+    	<circle r="50" cx="70" cy="70"></circle>
+  	</svg>
+	</div>
+	
 	<div id="cart-R-vid">
-		<video id="right-vid" width="300" src="video/cart-right-vid.mov"></video>
-		<div class="vid-shadow"></div>
+		<button class="vid-btn" onmouseover="setTimeout(stopVidR, 800);">exit</button>
+		<video id="right-vid" width="1000" src="video/cart-right-vid.mp4"></video>
 	</div>
--->
 	
-<!--
-	<div id="posters">
-		<img src="img/posters.png" alt="posters">
-	</div>
--->
-	
+	<!--ARCHWAY-->
 	<div id="right-imgs">
 		<img src="img/right-imgs.png" alt="right side images">
 	</div>
