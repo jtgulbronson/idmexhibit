@@ -186,32 +186,32 @@ var setVidM;
 var setVidR;
 
 function reticleOnL(){
-	document.getElementById("reticle-L").style.display = "block";
+	// document.getElementById("reticle-L").style.display = "block";
 	setVidL = setTimeout(playVidL, 2000);
 }
 
 function reticleOffL(){
-	document.getElementById("reticle-L").style.display = "none";
+	// document.getElementById("reticle-L").style.display = "none";
 	clearTimeout(setVidL);
 }
 
 function reticleOnM(){
-	document.getElementById("reticle-M").style.display = "block";
+	// document.getElementById("reticle-M").style.display = "block";
 	setVidM = setTimeout(playVidM, 2000);
 }
 
 function reticleOffM(){
-	document.getElementById("reticle-M").style.display = "none";
+	// document.getElementById("reticle-M").style.display = "none";
 	clearTimeout(setVidM);
 }
 
 function reticleOnR(){
-	document.getElementById("reticle-R").style.display = "block";
+	// document.getElementById("reticle-R").style.display = "block";
 	setVidR = setTimeout(playVidR, 2000);
 }
 
 function reticleOffR(){
-	document.getElementById("reticle-R").style.display = "none";
+	// document.getElementById("reticle-R").style.display = "none";
 	clearTimeout(setVidR);
 }
 

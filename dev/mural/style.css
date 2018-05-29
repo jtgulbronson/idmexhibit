@@ -389,13 +389,13 @@ svg .fg{
 }
 
 #cart-M-container:hover ~ svg .fg {
-	-webkit-animation: count 2s linear infinite forwards;
-  animation: count 2s linear infinite forwards;
+	-webkit-animation: count2 2s linear infinite forwards;
+  animation: count2 2s linear infinite forwards;
 }
 
 #cart-R-container:hover ~ svg .fg {
-	-webkit-animation: count 2s linear infinite forwards;
-  animation: count 2s linear infinite forwards;
+	-webkit-animation: count3 2s linear infinite forwards;
+  animation: count3 2s linear infinite forwards;
 }
 
 .circle {
@@ -422,3 +422,45 @@ svg .fg{
 		stroke: #ffcf0f;
   }
 }
+
+@-webkit-keyframes count2{
+	from{
+	  stroke-dashoffset: 314px;
+		  stroke: #ffcf0f;
+	}
+	to{
+	  stroke-dashoffset: 0px;
+		  stroke: #ffcf0f;
+	}
+  }
+  @keyframes count2{
+	from{
+	  stroke-dashoffset: 314px;
+		  stroke: #ffcf0f;
+	}
+	to{
+	  stroke-dashoffset: 0px;
+		  stroke: #ffcf0f;
+	}
+  }
+
+  @-webkit-keyframes count3{
+	from{
+	  stroke-dashoffset: 314px;
+		  stroke: #ffcf0f;
+	}
+	to{
+	  stroke-dashoffset: 0px;
+		  stroke: #ffcf0f;
+	}
+  }
+  @keyframes count3{
+	from{
+	  stroke-dashoffset: 314px;
+		  stroke: #ffcf0f;
+	}
+	to{
+	  stroke-dashoffset: 0px;
+		  stroke: #ffcf0f;
+	}
+  }
