@@ -259,17 +259,29 @@ body{
 	display: none;
 }
 
-.vid-btn{
-	z-index: 4;
+.vid-btn-container{
+	z-index: 7;
 	position: absolute;
-	top: -150px;
-	left: 435px;
+	top: 125px;
+	left: 415px;
 	cursor: pointer;
+	width: 200px;
+	height: 60px;
+	display: none;
+}
+
+.vid-btn{
+	z-index: 6;
+	position: absolute;
+	top: 150px;
+	left: 435px;
+	cursor: none;
 	width: 200px;
 	height: 60px;
 	border: 2px black solid;
 	border-radius: 13px;
 	font-size: 25px;
+	display: none;
 }
 
 /*VIDEO TRANSITION*/
@@ -362,7 +374,7 @@ svg{
 }
 
 svg .bg{
-  stroke-dasharray: 314px;
+  stroke-dasharray: 200px;
   stroke-dashoffset: 0px;
   stroke-linecap: round;
   stroke-width: 6px;
@@ -371,7 +383,7 @@ svg .bg{
 }
 
 svg .fg{
-  stroke-dasharray: 314px;
+  stroke-dasharray: 200px;
   stroke-dashoffset: 0px;
   stroke-linecap: round;
   stroke-width: 6px;
@@ -389,13 +401,18 @@ svg .fg{
 }
 
 #cart-M-container:hover ~ svg .fg {
-	-webkit-animation: count2 2s linear infinite forwards;
-  animation: count2 2s linear infinite forwards;
+	-webkit-animation: count 2s linear infinite forwards;
+  animation: count 2s linear infinite forwards;
 }
 
 #cart-R-container:hover ~ svg .fg {
-	-webkit-animation: count3 2s linear infinite forwards;
-  animation: count3 2s linear infinite forwards;
+	-webkit-animation: count 2s linear infinite forwards;
+  animation: count 2s linear infinite forwards;
+}
+
+.vid-btn-container:hover ~ svg .fg {
+	-webkit-animation: count 2s linear infinite forwards;
+  animation: count 2s linear infinite forwards;
 }
 
 .circle {
@@ -404,7 +421,7 @@ svg .fg{
 
 @-webkit-keyframes count{
   from{
-    stroke-dashoffset: 314px;
+    stroke-dashoffset: 200px;
 		stroke: #ffcf0f;
   }
   to{
@@ -414,7 +431,7 @@ svg .fg{
 }
 @keyframes count{
   from{
-    stroke-dashoffset: 314px;
+    stroke-dashoffset: 200px;
 		stroke: #ffcf0f;
   }
   to{
@@ -422,45 +439,3 @@ svg .fg{
 		stroke: #ffcf0f;
   }
 }
-
-@-webkit-keyframes count2{
-	from{
-	  stroke-dashoffset: 314px;
-		  stroke: #ffcf0f;
-	}
-	to{
-	  stroke-dashoffset: 0px;
-		  stroke: #ffcf0f;
-	}
-  }
-  @keyframes count2{
-	from{
-	  stroke-dashoffset: 314px;
-		  stroke: #ffcf0f;
-	}
-	to{
-	  stroke-dashoffset: 0px;
-		  stroke: #ffcf0f;
-	}
-  }
-
-  @-webkit-keyframes count3{
-	from{
-	  stroke-dashoffset: 314px;
-		  stroke: #ffcf0f;
-	}
-	to{
-	  stroke-dashoffset: 0px;
-		  stroke: #ffcf0f;
-	}
-  }
-  @keyframes count3{
-	from{
-	  stroke-dashoffset: 314px;
-		  stroke: #ffcf0f;
-	}
-	to{
-	  stroke-dashoffset: 0px;
-		  stroke: #ffcf0f;
-	}
-  }

@@ -1,189 +1,218 @@
 // CURSOR STATE WHEN VIDEOS ARE PLAYING
-$(function(){
-	var timer;
-	var fadeIn = false;
+// $(function(){
+// 	var timer;
+// 	var fadeIn = false;
 
-	$(document).mousemove(function(){
-		if(!fadeIn){
-			if(timer){
-				clearTimeout(timer);
-				timer = 0;
-			}
+// 	$(document).mousemove(function(){
+// 		if(!fadeIn){
+// 			if(timer){
+// 				clearTimeout(timer);
+// 				timer = 0;
+// 			}
 
-			$("html").css({
-				cursor: ''
-			});
-		}else{
-			$("video").css({
-				cursor: 'default'
-			});
-			fadeIn = false;
-		}
+// 			$("html").css({
+// 				cursor: ''
+// 			});
+// 		}else{
+// 			$("video").css({
+// 				cursor: 'default'
+// 			});
+// 			fadeIn = false;
+// 		}
 
-		timer = setTimeout(function(){
-			$("video").css({
-				cursor: 'none'
-			});
-			fadeIn = true;
-		}, 2000)
-	});
+// 		timer = setTimeout(function(){
+// 			$("video").css({
+// 				cursor: 'none'
+// 			});
+// 			fadeIn = true;
+// 		}, 2000)
+// 	});
 
-	$("video").css({
-		cursor: 'default'
-	});
-});
+// 	$("video").css({
+// 		cursor: 'default'
+// 	});
+// });
 
 // VIDEO TRANSITIONS
-$(document).ready(function(){
-	var delay = 500, setTimeoutConst;
+// $(document).ready(function(){
+// 	var delay = 500, setTimeoutConst;
 	
-	$("#cart-L-container").hover(function(){
-		setTimeoutConst = setTimeout(function(){
+// 	$("#cart-L-container").hover(function(){
+// 		setTimeoutConst = setTimeout(function(){
 			
-			$("#cart-L-vid").css({
-				transition: '1s'
-			});
+// 			$("#cart-L-vid").css({
+// 				transition: '2s'
+// 			});
 			
-		}, delay);
-	}, function(){
-		clearTimeout(setTimeoutConst);
-	});
+// 		}, delay);
+// 	}, function(){
+// 		clearTimeout(setTimeoutConst);
+// 	});
 	
-	$("#cart-M-container").hover(function(){
-		setTimeoutConst = setTimeout(function(){
+// 	$("#cart-M-container").hover(function(){
+// 		setTimeoutConst = setTimeout(function(){
 			
-			$("#cart-M-vid").css({
-				transition: '1s'
-			});
+// 			$("#cart-M-vid").css({
+// 				transition: '2s'
+// 			});
 			
-		}, delay);
-	}, function(){
-		clearTimeout(setTimeoutConst);
-	});
+// 		}, delay);
+// 	}, function(){
+// 		clearTimeout(setTimeoutConst);
+// 	});
 	
-	$("#cart-R-container").hover(function(){
-		setTimeoutConst = setTimeout(function(){
+// 	$("#cart-R-container").hover(function(){
+// 		setTimeoutConst = setTimeout(function(){
 			
-			$("#cart-R-vid").css({
-				transition: '1s'
-			});
+// 			$("#cart-R-vid").css({
+// 				transition: '2s'
+// 			});
 			
-		}, delay);
-	}, function(){
-		clearTimeout(setTimeoutConst);
-	});
+// 		}, delay);
+// 	}, function(){
+// 		clearTimeout(setTimeoutConst);
+// 	});
 	
-	// EXIT VIDEOS
-	$(".vid-btn").hover(function(){
-		setTimeoutConst = setTimeout(function(){
+	// // EXIT VIDEOS
+	// $(".vid-btn-container").hover(function(){
+	// 	setTimeoutConst = setTimeout(function(){
 			
-			$("#cart-L-vid").css({
-				transition: '1s',
-				display: 'none'
-			});
+	// 		$("#cart-L-vid").css({
+	// 			transition: '2s',
+	// 			display: 'none'
+	// 		});
 			
-			$("#cart-M-vid").css({
-				transition: '1s',
-				display: 'none'
-			});
+	// 		$("#cart-M-vid").css({
+	// 			transition: '2s',
+	// 			display: 'none'
+	// 		});
 			
-			$("#cart-R-vid").css({
-				transition: '1s',
-				display: 'none'
-			});
+	// 		$("#cart-R-vid").css({
+	// 			transition: '2s',
+	// 			display: 'none'
+	// 		});
 			
-		}, delay);
-	}, function(){
-		clearTimeout(setTimeoutConst);
-	});
+	// 	}, delay);
+	// }, function(){
+	// 	clearTimeout(setTimeoutConst);
+	// });
 	
-});
+// });
 
 // PLAY AND STOP VIDEOS
 var lVid = document.getElementById("left-vid");
 var mVid = document.getElementById("mid-vid");
 var rVid = document.getElementById("right-vid");
-var lCart = document.getElementById("cart-L-container");
-var mCart = document.getElementById("cart-M-container");
-var rCart = document.getElementById("cart-R-container");
 
 function playVidL(){
 	document.getElementById("cart-L-vid").style.display = "block";
+	document.querySelector(".vid-btn-container").style.display = "block";
+	document.querySelector(".vid-btn").style.display = "block";
 	lVid.play();
-	lCart.style.display = "none";
-	mCart.style.display = "none";
-	rCart.style.display = "none";
+	document.getElementById("cart-L-container").style.display = "none";
+	document.getElementById("cart-M-container").style.display = "none";
+	document.getElementById("cart-R-container").style.display = "none";
 }
 
 function playVidM(){
 	document.getElementById("cart-M-vid").style.display = "block";
+	document.querySelector(".vid-btn-container").style.display = "block";
+	document.querySelector(".vid-btn").style.display = "block";
 	mVid.play();
-	lCart.style.display = "none";
-	mCart.style.display = "none";
-	rCart.style.display = "none";
+	document.getElementById("cart-L-container").style.display = "none";
+	document.getElementById("cart-M-container").style.display = "none";
+	document.getElementById("cart-R-container").style.display = "none";
 }
 
 function playVidR(){
 	document.getElementById("cart-R-vid").style.display = "block";
+	document.querySelector(".vid-btn-container").style.display = "block";
+	document.querySelector(".vid-btn").style.display = "block";
 	rVid.play();
-	lCart.style.display = "none";
-	mCart.style.display = "none";
-	rCart.style.display = "none";
+	document.getElementById("cart-L-container").style.display = "none";
+	document.getElementById("cart-M-container").style.display = "none";
+	document.getElementById("cart-R-container").style.display = "none";
 }
 
 function stopVidL(){
 	document.getElementById("cart-L-vid").style.display = "none";
+	document.querySelector(".vid-btn-container").style.display = "none";
+	document.querySelector(".vid-btn").style.display = "none";
 	lVid.pause();
 	lVid.currentTime = 0;
-	lCart.style.display = "block";
-	mCart.style.display = "block";
-	rCart.style.display = "block";
+	document.getElementById("cart-L-container").style.display = "block";
+	document.getElementById("cart-M-container").style.display = "block";
+	document.getElementById("cart-R-container").style.display = "block";
 }
 
 function stopVidM(){
 	document.getElementById("cart-M-vid").style.display = "none";
+	document.querySelector(".vid-btn-container").style.display = "none";
+	document.querySelector(".vid-btn").style.display = "none";
 	mVid.pause();
 	mVid.currentTime = 0;
-	lCart.style.display = "block";
-	mCart.style.display = "block";
-	rCart.style.display = "block";
+	document.getElementById("cart-L-container").style.display = "block";
+	document.getElementById("cart-M-container").style.display = "block";
+	document.getElementById("cart-R-container").style.display = "block";
 }
 
 function stopVidR(){
 	document.getElementById("cart-R-vid").style.display = "none";
+	document.querySelector(".vid-btn-container").style.display = "none";
+	document.querySelector(".vid-btn").style.display = "none";
 	rVid.pause();
 	rVid.currentTime = 0;
-	lCart.style.display = "block";
-	mCart.style.display = "block";
-	rCart.style.display = "block";
+	document.getElementById("cart-L-container").style.display = "block";
+	document.getElementById("cart-M-container").style.display = "block";
+	document.getElementById("cart-R-container").style.display = "block";
 }
 
 document.getElementById("left-vid").addEventListener("ended", function(){
 	document.getElementById("cart-L-vid").style.display = "none";
-	lCart.style.display = "block";
-	mCart.style.display = "block";
-	rCart.style.display = "block";
+	document.querySelector(".vid-btn-container").style.display = "none";
+	document.querySelector(".vid-btn").style.display = "none";
+	document.getElementById("cart-L-container").style.display = "block";
+	document.getElementById("cart-M-container").style.display = "block";
+	document.getElementById("cart-R-container").style.display = "block";
 });
 
 document.getElementById("mid-vid").addEventListener("ended", function(){
 	document.getElementById("cart-M-vid").style.display = "none";
-	lCart.style.display = "block";
-	mCart.style.display = "block";
-	rCart.style.display = "block";
+	document.querySelector(".vid-btn-container").style.display = "none";
+	document.querySelector(".vid-btn").style.display = "none";
+	document.getElementById("cart-L-container").style.display = "block";
+	document.getElementById("cart-M-container").style.display = "block";
+	document.getElementById("cart-R-container").style.display = "block";
 });
 
 document.getElementById("right-vid").addEventListener("ended", function(){
 	document.getElementById("cart-R-vid").style.display = "none";
-	lCart.style.display = "block";
-	mCart.style.display = "block";
-	rCart.style.display = "block";
+	document.querySelector(".vid-btn-container").style.display = "none";
+	document.querySelector(".vid-btn").style.display = "none";
+	document.getElementById("cart-L-container").style.display = "block";
+	document.getElementById("cart-M-container").style.display = "block";
+	document.getElementById("cart-R-container").style.display = "block";
 });
+
+document.querySelector(".vid-btn").addEventListener("ended", function(){
+	document.getElementById("cart-R-vid").style.display = "none";
+	document.querySelector(".vid-btn-container").style.display = "none";
+	document.querySelector(".vid-btn").style.display = "none";
+	document.getElementById("cart-L-container").style.display = "block";
+	document.getElementById("cart-M-container").style.display = "block";
+	document.getElementById("cart-R-container").style.display = "block";
+});
+
+
 
 // RETICLE
 
 var setVidL;
 var setVidM;
 var setVidR;
+var setExitL;
+var setExitM;
+var setExitR;
 
 function reticleOnL(){
 	// document.getElementById("reticle-L").style.display = "block";
@@ -214,6 +243,18 @@ function reticleOffR(){
 	// document.getElementById("reticle-R").style.display = "none";
 	clearTimeout(setVidR);
 }
+
+function reticleOnBtn(){
+	setExitL = setTimeout(stopVidL, 2000);
+	setExitM = setTimeout(stopVidM, 2000);
+	setExitR = setTimeout(stopVidR, 2000);
+}
+
+function reticleOffBtn() {
+			clearTimeout(setExitL);
+			clearTimeout(setExitM);
+			clearTimeout(setExitR);	
+	}
 
 $(document).ready(function(){
 	$("body").mousemove(function(event){

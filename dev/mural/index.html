@@ -43,9 +43,9 @@
 	</div>
 
 	<div id="cart-L-vid">
-		<button class="vid-btn" onmouseover="setTimeout(stopVidL, 800);">exit</button>
 		<video id="left-vid" width="1000" src="video/cart-left-vid.mp4"></video>
 	</div>
+	<!-- <button class="vid-btn" onmouseover="setTimeout(stopVidL, 800);">exit</button> -->
 
 	<!--MIDDLE CART-->
 	<div id="cart-M-container" onmouseover="reticleOnM()" onmouseout="reticleOffM()"></div>
@@ -65,9 +65,9 @@
 	</div> -->
 
 	<div id="cart-M-vid">
-		<button class="vid-btn" onmouseover="setTimeout(stopVidM, 800);">exit</button>
 		<video id="mid-vid" width="1000" src="video/cart-mid-vid.mp4"></video>
 	</div>
+	<!-- <button class="vid-btn" onmouseover="setTimeout(stopVidM, 800);">exit</button> -->
 
 	<!--RIGHT CART-->
 	<div id="cart-R-container" onmouseover="reticleOnR()" onmouseout="reticleOffR()"></div>
@@ -87,9 +87,10 @@
 	</div> -->
 
 	<div id="cart-R-vid">
-		<button class="vid-btn" onmouseover="setTimeout(stopVidR, 800);">exit</button>
 		<video id="right-vid" width="1000" src="video/cart-right-vid.mp4"></video>
 	</div>
+	<div class="vid-btn-container" onmouseover="reticleOnBtn()" onmouseout="reticleOffBtn()"></div>
+	<button class="vid-btn">exit</button>
 
 	<!--ARCHWAY-->
 	<div id="right-imgs">
@@ -98,8 +99,8 @@
 
 	<!-- <div id="reticle-L" class="reticle"> -->
 		<svg class="circle">
-			<circle r="50" class="bg" cx="70" cy="70"></circle>
-			<circle class="fg" r="50" cx="70" cy="70"></circle>
+			<circle r="30" class="bg" cx="50" cy="50"></circle>
+			<circle class="fg" r="30" cx="50" cy="50"></circle>
 		</svg>
 		<!-- </div> -->
 
