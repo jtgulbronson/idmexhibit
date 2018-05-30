@@ -264,7 +264,7 @@ body{
 	position: absolute;
 	top: 125px;
 	left: 415px;
-	cursor: pointer;
+	cursor: none;
 	width: 200px;
 	height: 60px;
 	display: none;
