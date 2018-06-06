@@ -254,16 +254,16 @@ body{
 {
 	z-index: 5;
 	position: absolute;
-	top: 260px;
-	left: 450px;
+	top: 310px;
+	left: 490px;
 	display: none;
 }
 
 .vid-btn-container{
 	z-index: 7;
 	position: absolute;
-	top: 125px;
-	left: 415px;
+	top: 255px;
+	left: 900px;
 	cursor: none;
 	width: 200px;
 	height: 60px;
@@ -273,100 +273,44 @@ body{
 .vid-btn{
 	z-index: 6;
 	position: absolute;
-	top: 150px;
-	left: 435px;
+	top: 255px;
+	left: 900px;
 	cursor: none;
-	width: 200px;
-	height: 60px;
+	width: 150px;
+	height: 50px;
 	border: 2px black solid;
 	border-radius: 13px;
-	font-size: 25px;
+	font-size: 17px;
+	font-weight: bold;
 	display: none;
 }
 
-/*VIDEO TRANSITION*/
-/*
-#exposure-M img{
-	width: 30%;
+/*SHUTTER*/
+#shutter img{
+	z-index: 3;
+	width: 103%;
 }
 
-#exposure-M{
-	z-index: 4;
+#shutter{
 	position: absolute;
-	top: 405px;
-	left: 795px;
-	opacity: 0;
+	top: -100px;
+	left: -30px;
+	display: none;
 }
 
-#exposure-R img{
-	width: 30%;
-}
-
-#exposure-R{
+/*ARCHWAY BRICK TEXTURE*/
+#brick-archway img{
 	z-index: 4;
+	width: 104%;
+}
+
+#brick-archway{
 	position: absolute;
-	top: 380px;
-	left: 1150px;
-	opacity: 0;
-}*/
+	top: -100px;
+	left: -70px;
+}
 
 /*RETICLE*/
-/* svg{
-	-webkit-transform: rotateY(-180deg) rotateZ(-90deg);
-	transform: rotateY(-180deg) rotateZ(-90deg);
-}
-
-svg circle{
-  stroke-dasharray: 314px;
-  stroke-dashoffset: 0px;
-  stroke-linecap: round;
-  stroke-width: 6px;
-  stroke: #ffcf0f;
-  fill: none;
-  -webkit-animation: count 2s linear infinite forwards;
-  animation: count 2s linear infinite forwards;
-}
-
-@-webkit-keyframes count{
-  from{
-    stroke-dashoffset: 314px;
-  }
-  to{
-    stroke-dashoffset: 0px;
-  }
-}
-
-@keyframes count{
-  from{
-    stroke-dashoffset: 314px;
-  }
-  to{
-    stroke-dashoffset: 0px;
-  }
-} */
-/* 
-.reticle{
-	display: none;
-}
-
-#reticle-L{
-  position: absolute;
-	top: 260px;
-	left: 498px;
-}
-
-#reticle-M{
-  position: absolute;
-	top: 320px;
-	left: 715px;
-}
-
-#reticle-R{
-  position: absolute;
-	top: 290px;
-	left: 1070px;
-} */
-
 svg{
 	z-index: 6;
     -webkit-transform: rotateY(-180deg) rotateZ(-90deg);
@@ -378,7 +322,7 @@ svg .bg{
   stroke-dashoffset: 0px;
   stroke-linecap: round;
   stroke-width: 6px;
-  stroke: #eeeeee;
+  stroke: #ccc0c0;
   fill: none;
 }
 
@@ -387,7 +331,7 @@ svg .fg{
   stroke-dashoffset: 0px;
   stroke-linecap: round;
   stroke-width: 6px;
-  stroke: #eeeeee;
+  stroke: #ccc0c0;
   fill: none;
 }
 

@@ -11,7 +11,7 @@
 <body>
 
 	<div id="bg">
-		<img src="img/mural-bg.jpg" alt="mural background">
+		<img src="img/mural-bg.png" alt="mural background">
 	</div>
 
 	<!--ARCHWAY-->
@@ -31,6 +31,14 @@
 		<img src="img/paper-lantern-glow.png" alt="paper lanterns" draggable="false">
 	</div>
 
+	<div id="shutter">
+		<img src="img/shutter.png" alt="shutter">
+	</div>
+
+	<div id="brick-archway">
+		<img src="img/brick-archway.png" alt="archway brick texture">
+	</div>
+
 	<!--LEFT CART-->
 	<div id="cart-L-container" onmouseover="reticleOnL()" onmouseout="reticleOffL()"></div>
 	<div id="cart-L">
@@ -43,9 +51,8 @@
 	</div>
 
 	<div id="cart-L-vid">
-		<video id="left-vid" width="1000" src="video/cart-left-vid.mp4"></video>
+		<video id="left-vid" width="950" src="video/cart-left-vid.mov"></video>
 	</div>
-	<!-- <button class="vid-btn" onmouseover="setTimeout(stopVidL, 800);">exit</button> -->
 
 	<!--MIDDLE CART-->
 	<div id="cart-M-container" onmouseover="reticleOnM()" onmouseout="reticleOffM()"></div>
@@ -58,16 +65,9 @@
 		</div>
 	</div>
 
-	<!-- <div id="reticle-M" class="reticle">
-  	<svg>
-    	<circle r="50" cx="70" cy="70"></circle>
-  	</svg>
-	</div> -->
-
 	<div id="cart-M-vid">
-		<video id="mid-vid" width="1000" src="video/cart-mid-vid.mp4"></video>
+		<video id="mid-vid" width="950" src="video/cart-mid-vid.mov"></video>
 	</div>
-	<!-- <button class="vid-btn" onmouseover="setTimeout(stopVidM, 800);">exit</button> -->
 
 	<!--RIGHT CART-->
 	<div id="cart-R-container" onmouseover="reticleOnR()" onmouseout="reticleOffR()"></div>
@@ -80,29 +80,21 @@
 		</div>
 	</div>
 
-	<!-- <div id="reticle-R" class="reticle">
-  	<svg>
-    	<circle r="50" cx="70" cy="70"></circle>
-  	</svg>
-	</div> -->
-
 	<div id="cart-R-vid">
-		<video id="right-vid" width="1000" src="video/cart-right-vid.mp4"></video>
+		<video id="right-vid" width="950" src="video/cart-right-vid.mov"></video>
 	</div>
 	<div class="vid-btn-container" onmouseover="reticleOnBtn()" onmouseout="reticleOffBtn()"></div>
-	<button class="vid-btn">exit</button>
+	<button class="vid-btn">CLOSE VIDEO</button>
 
 	<!--ARCHWAY-->
 	<div id="right-imgs">
 		<img src="img/right-imgs.png" alt="right side images">
 	</div>
 
-	<!-- <div id="reticle-L" class="reticle"> -->
-		<svg class="circle">
-			<circle r="30" class="bg" cx="50" cy="50"></circle>
-			<circle class="fg" r="30" cx="50" cy="50"></circle>
-		</svg>
-		<!-- </div> -->
+	<svg class="circle">
+		<circle class="bg" r="30" cx="50" cy="50"></circle>
+		<circle class="fg" r="30" cx="50" cy="50"></circle>
+	</svg>
 
 	<script src="script.js"></script>
 </body>
