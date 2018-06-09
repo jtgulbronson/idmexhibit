@@ -33,7 +33,6 @@ body{
 }
 
 #archway img{
-	z-index: 9;
 	width: 100%;
 }
 
@@ -52,6 +51,7 @@ body{
 	position: absolute;
 	top: -10px;
 	left: -20px;
+	z-index: 7;
 }
 
 /*PAPER LANTERN ANIMATION*/
@@ -86,6 +86,24 @@ body{
 #cart-M-container,
 #cart-R-container:hover{
 } */
+
+#exposure {
+	position: absolute;
+	top: 0;
+	left: 0;
+	z-index: 3;
+	width: 100%;
+	height: 100%;
+	background: #EBE2E1;
+	transform-origin: center center;
+	opacity: 0;
+	transition: fade 4s ease-in;
+}
+
+.light {
+	transition: all 4s ease-in;
+	opacity: 1;
+}
 
 /*LEFT CART*/
 #left-active img{
@@ -132,6 +150,12 @@ body{
 	transition: .75s;
 }
 
+/* #cart-L-container:hover ~ .exposure{
+	opacity: 1;
+	-webkit-transition: 2s ease-in;
+	transition: 2s ease-in;
+} */
+
 /*MIDDLE CART*/
 #mid-active img{
 	width: 110%;
@@ -177,6 +201,13 @@ body{
 	-webkit-transition: .75s;
 	transition: .75s;
 }
+/* 
+#cart-M-container:hover ~ .exposure{
+	opacity: 1;
+	-webkit-transition: 2s ease-in;
+	transition: 2s ease-in;
+} */
+
 
 /*RIGHT CART*/
 #right-active img{
@@ -224,26 +255,33 @@ body{
 	transition: .75s;
 }
 
+/* #cart-R-container:hover ~ .exposure{
+	opacity: 1;
+	-webkit-transition: 2s ease-in;
+	transition: 2s ease-in;
+} */
+
+
 /*ARCHWAY LEFT SIDE*/
 #left-imgs img{
-	z-index: 6;
 	width: 100%;
 }
 
 #left-imgs{
 	position: absolute;
 	left: -10px;
+	z-index: 9;
 }
 
 /*ARCHWAY RIGHT SIDE*/
 #right-imgs img{
-	z-index: 6;
 	width: 100%;
 }
 
 #right-imgs{
 	position: absolute;
 	top: -5px;
+	z-index: 9;
 	left: 50px;
 }
 
@@ -260,9 +298,9 @@ body{
 }
 
 .vid-btn-container{
-	z-index: 7;
+	z-index: 11;
 	position: absolute;
-	top: 255px;
+	top: 200px;
 	left: 900px;
 	cursor: none;
 	width: 200px;
@@ -271,18 +309,32 @@ body{
 }
 
 .vid-btn{
-	z-index: 6;
+	background: #F3F3EC;
+	z-index: 10;
 	position: absolute;
-	top: 255px;
+	top: 220px;
 	left: 900px;
 	cursor: none;
-	width: 150px;
-	height: 50px;
-	border: 2px black solid;
-	border-radius: 13px;
-	font-size: 17px;
-	font-weight: bold;
+	width: 200px;
+	height: 40px;
+	font-family: 'Montserrat', sans-serif;
+    font-weight: 400;
+    letter-spacing: 2px;
+    color: #1b2b3c;
+    font-size: 18px;
+    vertical-align: middle;
+    border: solid 2px #1b2b3c;
+    border-radius: 8px;
+    -webkit-box-shadow: 6px 6px 20px 1px rgba(0,0,0,0.15);
+    -moz-box-shadow: 6px 6px 20px 1px rgba(0,0,0,0.15);
+	box-shadow: 6px 6px 20px 1px rgba(0,0,0,0.15);
 	display: none;
+	
+}
+
+video {
+	position: absolute;
+	z-index: 10;
 }
 
 /*SHUTTER*/
@@ -296,6 +348,7 @@ body{
 	top: -100px;
 	left: -30px;
 	display: none;
+	z-index: 10;
 }
 
 /*ARCHWAY BRICK TEXTURE*/
@@ -312,7 +365,7 @@ body{
 
 /*RETICLE*/
 svg{
-	z-index: 6;
+	z-index: 10;
     -webkit-transform: rotateY(-180deg) rotateZ(-90deg);
     transform: rotateY(-180deg) rotateZ(-90deg);
 }
@@ -336,7 +389,7 @@ svg .fg{
 }
 
 #cart-L-container, #cart-M-container, #cart-R-container {
-	z-index: 7;
+	z-index: 11;
 }
 
 #cart-L-container:hover ~ svg .fg {
