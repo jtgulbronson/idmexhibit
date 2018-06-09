@@ -51,6 +51,8 @@ function playVidL(){
 
 	// lanterns issue quick fix
 	document.getElementById("left-lantern").style.display = "none";
+	document.getElementById("mid-lantern").style.display = "none";
+	document.getElementById("right-lantern").style.display = "none";
 }
 
 function playVidM(){
@@ -64,7 +66,9 @@ function playVidM(){
 	document.getElementById("cart-R-container").style.display = "none";
 
 	// lanterns issue quick fix
+	document.getElementById("left-lantern").style.display = "none";
 	document.getElementById("mid-lantern").style.display = "none";
+	document.getElementById("right-lantern").style.display = "none";
 }
 
 function playVidR(){
@@ -78,6 +82,8 @@ function playVidR(){
 	document.getElementById("cart-R-container").style.display = "none";
 
 	// lanterns issue quick fix
+	document.getElementById("left-lantern").style.display = "none";
+	document.getElementById("mid-lantern").style.display = "none";
 	document.getElementById("right-lantern").style.display = "none";
 }
 
